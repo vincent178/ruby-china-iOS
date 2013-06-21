@@ -18,6 +18,7 @@
 		BF97E56A1773D0AF009F859E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97E5691773D0AF009F859E /* Default-568h@2x.png */; };
 		BF97E56D1773D0AF009F859E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */; };
 		BF97E5701773D0AF009F859E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF97E56F1773D0AF009F859E /* ViewController.m */; };
+		BFBB6FD117749BAF009EBE4A /* RCTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB6FD017749BAF009EBE4A /* RCTopicsViewController.m */; };
 		C404E219628F49509DB3CC28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B0BD3DDE284E7F9F70D5B6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,8 @@
 		BF97E56C1773D0AF009F859E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BF97E56E1773D0AF009F859E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BF97E56F1773D0AF009F859E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFBB6FCF17749BAF009EBE4A /* RCTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicsViewController.h; sourceTree = "<group>"; };
+		BFBB6FD017749BAF009EBE4A /* RCTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 		BFBB6FC917748C35009EBE4A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFBB6FCF17749BAF009EBE4A /* RCTopicsViewController.h */,
+				BFBB6FD017749BAF009EBE4A /* RCTopicsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				BF97E5601773D0AF009F859E /* main.m in Sources */,
 				BF97E5641773D0AF009F859E /* AppDelegate.m in Sources */,
 				BF97E5701773D0AF009F859E /* ViewController.m in Sources */,
+				BFBB6FD117749BAF009EBE4A /* RCTopicsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
