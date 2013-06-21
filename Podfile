@@ -1,11 +1,3 @@
 platform :ios, "6.0"
-pod 'SDWebImage'
-pod 'SVProgressHUD'
 pod 'RestKit'
-pod 'SSPullToRefresh'
-pod 'SSToolkit'
-pod 'ASIHTTPRequest'
 pod 'AFNetworking'
-pod 'Survey'
-pod 'ActiveSupportInflector'
-pod 'ShareKit'
