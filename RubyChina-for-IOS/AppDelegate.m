@@ -12,7 +12,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSLog(@"We are here...");
+    
+    NSString *urlAsString = @"http://www.yahoo.com";
+    NSURL *url = [NSURL URLWithString:urlAsString];
+    
+    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    
+    NSURLResponse *response = nil;
+    NSError *error = nil;
+    
+    NSLog(@"Firing synchronous url connection...");
+    NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
+    
+    if ([data length] > 0 && error == nil) {
+        NSLog(@"%lu bytes of data was returned.", (unsigned long)[data length]);
+    } else if ([data length] == 0 && error == nil) {
+        NSLog(@"No data was returned.");
+    } else if (error != nil) {
+        NSLog(@"Error happened = %@", error);
+    }
+    
+    NSLog(@"We are done.");
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor blackColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
