@@ -12,32 +12,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"We are here...");
+    NSString *baseURL = @"http://pixolity.com/get.php";
+    NSString *urlAsString = [baseURL stringByAppendingString:@"?param1=First&param2=Second"];
+    NSLog(@"the query string is = %@", urlAsString);
     
-    NSString *urlAsString = @"http://www.yahoo.com";
     NSURL *url = [NSURL URLWithString:urlAsString];
     
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest setTimeoutInterval:30.0f];
+    [urlRequest setHTTPMethod:@"POST"];
     
-    NSURLResponse *response = nil;
-    NSError *error = nil;
+    NSString *body = @"bodyParam1=BodyValue1&bodyParam2=BodyValue2";
+    [urlRequest setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
     
-    NSLog(@"Firing synchronous url connection...");
-    NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
-    if ([data length] > 0 && error == nil) {
-        NSLog(@"%lu bytes of data was returned.", (unsigned long)[data length]);
-    } else if ([data length] == 0 && error == nil) {
-        NSLog(@"No data was returned.");
-    } else if (error != nil) {
-        NSLog(@"Error happened = %@", error);
-    }
-    
-    NSLog(@"We are done.");
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor blackColor];
-    [self.window makeKeyAndVisible];
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:queue
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+                               if (data && !error) {
+                                   NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                   NSLog(@"HTML = %@", html);
+                               } else if (!data && !error) {
+                                   NSLog(@"No data translated...");
+                               } else if (error) {
+                                   NSLog(@"Error happened.");
+                               }
+                           }];
     return YES;
 }
 							
