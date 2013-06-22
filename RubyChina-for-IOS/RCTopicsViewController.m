@@ -9,6 +9,7 @@
 #import "RCTopicsViewController.h"
 
 @interface RCTopicsViewController ()
+@property (nonatomic, strong) UITableView *myTableView;
 @end
 
 @implementation RCTopicsViewController
@@ -26,6 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.myTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    [self.view addSubview:self.myTableView];
 }
 
 - (void)didReceiveMemoryWarning
