@@ -19,6 +19,7 @@
 		BF97E56D1773D0AF009F859E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */; };
 		BF97E5701773D0AF009F859E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF97E56F1773D0AF009F859E /* ViewController.m */; };
 		BFBB6FD117749BAF009EBE4A /* RCTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB6FD017749BAF009EBE4A /* RCTopicsViewController.m */; };
+		BFEA20F1179D731C00F0E369 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEA20F0179D731C00F0E369 /* User.m */; };
 		C404E219628F49509DB3CC28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B0BD3DDE284E7F9F70D5B6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,8 @@
 		BF97E56F1773D0AF009F859E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BFBB6FCF17749BAF009EBE4A /* RCTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicsViewController.h; sourceTree = "<group>"; };
 		BFBB6FD017749BAF009EBE4A /* RCTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicsViewController.m; sourceTree = "<group>"; };
+		BFEA20EF179D731C00F0E369 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BFEA20F0179D731C00F0E369 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 		BFBB6FC817748C2E009EBE4A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BFEA20EF179D731C00F0E369 /* User.h */,
+				BFEA20F0179D731C00F0E369 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				BF97E5641773D0AF009F859E /* AppDelegate.m in Sources */,
 				BF97E5701773D0AF009F859E /* ViewController.m in Sources */,
 				BFBB6FD117749BAF009EBE4A /* RCTopicsViewController.m in Sources */,
+				BFEA20F1179D731C00F0E369 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
