@@ -7,21 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
 
+@class User;
 
 @interface Topic : NSObject
 
 @property (nonatomic, strong) NSNumber *ID;
-@property (nonatomic, copy) NSString *title, *body, *bodyHtml, *nodeName, *lastReplyUserLogin;
-@property (nonatomic, copy) NSNumber *repliesCount, *lastReplyUserId, *nodeId, *hits;
+@property (nonatomic, copy) NSString *title, *body, *bodyHtml, *nodeName;
+@property (nonatomic, copy) NSNumber *repliesCount, *nodeId;
 @property (nonatomic, strong) NSMutableArray *replies;
 @property (nonatomic, strong) User *creator;
-@property (nonatomic, strong) NSDate *repliedAt;
-@property (nonatomic, strong) NSDate *createdAt;
-@property (nonatomic, strong) NSString *creatorAvatar;
-@property (nonatomic, strong) NSString *creatorLogin;
+@property (nonatomic, strong) NSDate *repliedAt, *createdAt;
+@property (nonatomic, strong) NSString *creatorAvatar, *creatorLogin;
 
-+(Topic *) initWithDictionary: (NSDictionary *)dict;
++ (Topic *) initWithDictionary: (NSDictionary *)dict;
 
 @end

@@ -11,12 +11,11 @@
 #import "Topic.h"
 
 @implementation Reply
-@synthesize user, topicId, body, bodyHtml, creatorAvatar, creatorLogin;
 
 + (Reply *) initWithDictionary:(NSDictionary *)obj {
     Reply *reply = [[Reply alloc] init];
     
-    reply.ID = [obj objectForKey:@"id"];
+    reply.ID       = [obj objectForKey:@"id"];
     reply.bodyHtml = [obj objectForKey:@"body_html"];
     
     NSString *dateStr = [obj objectForKey:@"created_at"];
@@ -25,7 +24,7 @@
     reply.createdAt = [dateFormatter dateFromString:dateStr];
     
     reply.creatorAvatar = [[obj objectForKey:@"user"] objectForKey:@"avatar_url"];
-    reply.creatorLogin = [[obj objectForKey:@"user"] objectForKey:@"login"];
+    reply.creatorLogin  = [[obj objectForKey:@"user"] objectForKey:@"login"];
     
     return reply;
 }

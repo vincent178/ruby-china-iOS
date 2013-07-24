@@ -9,13 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface User : NSObject
-@property (nonatomic, strong) NSString *login, *email, *name, *location, *company, *twitter, *bio, *website, *githubUrl, *avatarUrl, *tagline;
-@property (nonatomic, assign) BOOL emailPublic;
 
-+ (UIImage *) defaultAvatarImage;
-+ (BOOL) authorize: (NSString *)login password: (NSString *)password;
+@property (nonatomic, strong) NSString *login, *email, *name, *bio, *avatarUrl;
+
 + (User *) currentUser;
-+ (void) checkLogin;
 + (User *) initWithDictionary:(NSDictionary *)dict;
 
 @end

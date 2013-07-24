@@ -12,9 +12,7 @@
 
 @interface Node : NSObject
 
-@property (nonatomic, strong) User *followers;
-@property (nonatomic, strong) NSString *name, *summary;
-@property (nonatomic, strong) NSNumber *sort, *topicCount;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSNumber *ID;
 
 + (Node *) initWithDictionary: (NSDictionary *)dict;

@@ -11,8 +11,6 @@
 
 @implementation Node
 
-@synthesize followers, name, sort, topicCount, summary;
-
 + (Node *) initWithDictionary:(NSDictionary *)obj {
     Node *node = [[Node alloc] init];
     

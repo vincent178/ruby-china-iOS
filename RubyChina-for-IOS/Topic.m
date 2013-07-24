@@ -7,15 +7,16 @@
 //
 
 #import "Topic.h"
+#import "User.h"
 
 @implementation Topic
 
-+(Topic *) initWithDictionary: (NSDictionary *)obj {
++ (Topic *) initWithDictionary: (NSDictionary *)obj {
     Topic *topic = [[Topic alloc] init];
     
-    topic.ID = [obj objectForKey:@"id"];
-    topic.bodyHtml = [obj objectForKey:@"body_html"];
-    topic.title = [obj objectForKey:@"title"];
+    topic.ID           = [obj objectForKey:@"id"];
+    topic.bodyHtml     = [obj objectForKey:@"body_html"];
+    topic.title        = [obj objectForKey:@"title"];
     topic.repliesCount = [obj objectForKey:@"replies_count"];
     
     NSString *dateStr = [obj objectForKey:@"created_at"];
@@ -24,7 +25,7 @@
     topic.createdAt = [dateFormater dateFromString:dateStr];
     
     topic.creatorAvatar = [[obj objectForKey:@"user"] objectForKey:@"avatar_url"];
-    topic.creatorLogin = [[obj objectForKey:@"user"] objectForKey:@"login"];
+    topic.creatorLogin  = [[obj objectForKey:@"user"] objectForKey:@"login"];
     
     return topic;
 }

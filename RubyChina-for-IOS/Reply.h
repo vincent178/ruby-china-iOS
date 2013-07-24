@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
-#import "Topic.h"
+
+@class User;
+@class Topic;
 
 @interface Reply : NSObject
 
