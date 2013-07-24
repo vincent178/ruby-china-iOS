@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF89DCD4179FF59700DB6056 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89DCD3179FF59700DB6056 /* Node.m */; };
 		BF97E5541773D0AF009F859E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5531773D0AF009F859E /* UIKit.framework */; };
 		BF97E5561773D0AF009F859E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5551773D0AF009F859E /* Foundation.framework */; };
 		BF97E5581773D0AF009F859E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5571773D0AF009F859E /* CoreGraphics.framework */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		21B0BD3DDE284E7F9F70D5B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9A103C4D4849668EFD60DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BF89DCD2179FF59700DB6056 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		BF89DCD3179FF59700DB6056 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		BF97E5501773D0AF009F859E /* RubyChina-for-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-for-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF97E5531773D0AF009F859E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF97E5551773D0AF009F859E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				BFEA20F3179DFF4E00F0E369 /* Topic.m */,
 				BFB54A23179F55D600643E38 /* Reply.h */,
 				BFB54A24179F55D600643E38 /* Reply.m */,
+				BF89DCD2179FF59700DB6056 /* Node.h */,
+				BF89DCD3179FF59700DB6056 /* Node.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				BFEA20F1179D731C00F0E369 /* User.m in Sources */,
 				BFEA20F4179DFF4E00F0E369 /* Topic.m in Sources */,
 				BFB54A25179F55D700643E38 /* Reply.m in Sources */,
+				BF89DCD4179FF59700DB6056 /* Node.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
