@@ -1,18 +1,18 @@
 //
-//  RCTopicsViewController.m
+//  TopicsViewController.m
 //  RubyChina-for-IOS
 //
 //  Created by Vincent on 13-6-21.
 //  Copyright (c) 2013年 Vincent. All rights reserved.
 //
 
-#import "RCTopicsViewController.h"
+#import "TopicsViewController.h"
 
-@interface RCTopicsViewController ()
+@interface TopicsViewController ()
 @property (nonatomic, strong) UITableView *myTableView;
 @end
 
-@implementation RCTopicsViewController
+@implementation TopicsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

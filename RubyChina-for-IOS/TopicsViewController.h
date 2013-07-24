@@ -1,5 +1,5 @@
 //
-//  RCTopicsViewController.h
+//  TopicsViewController.h
 //  RubyChina-for-IOS
 //
 //  Created by Vincent on 13-6-21.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RCTopicsViewController : UIViewController
+@interface TopicsViewController : UIViewController
 
 @end
