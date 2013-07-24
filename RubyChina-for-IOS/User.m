@@ -19,7 +19,18 @@ static User *_currentUser;
 +(User *) initWithDictionary:(NSDictionary *)obj {
     User *user = [[User alloc] init];
     
-    user.login = [obj objectForKey:@"login"];
+    user.avatarUrl = [obj objectForKey:@"avatar_url"];
+    user.login     = [obj objectForKey:@"login"];
+    user.name      = [obj objectForKey:@"name"];
+    user.email     = [obj objectForKey:@"email"];
+    user.githubUrl = [obj objectForKey:@"github_url"];
+    user.bio       = [obj objectForKey:@"bio"];
+    
+    return user;
+}
+
++(User *) currentUser {
+    return _currentUser;
 }
 
 @end
