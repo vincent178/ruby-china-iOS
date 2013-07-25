@@ -47,7 +47,7 @@
 		BFBB6FD117749BAF009EBE4A /* TopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB6FD017749BAF009EBE4A /* TopicsViewController.m */; };
 		BFEA20F1179D731C00F0E369 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEA20F0179D731C00F0E369 /* User.m */; };
 		BFEA20F4179DFF4E00F0E369 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEA20F3179DFF4E00F0E369 /* Topic.m */; };
-		C404E219628F49509DB3CC28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B0BD3DDE284E7F9F70D5B6 /* libPods.a */; };
+		C404E219628F49509DB3CC28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B0BD3DDE284E7F9F70D5B6 /* libPods.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

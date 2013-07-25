@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 Vincent. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "UserController.h"
 #import "User.h"
 
