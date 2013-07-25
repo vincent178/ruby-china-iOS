@@ -1,0 +1,1007 @@
+TRubyChina-for-IOS
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Info.plist RubyChina-for-IOS/RubyChina-for-IOS-Info.plist
+cPhaseScriptExecution "Check Pods Manifest.lock" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-B38FECC491954CEC9EC6DBD7.sh
+cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.pth RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS normal i386
+cGenerateDSYMFile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS
+cCopyStringsFile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/InfoPlist.strings RubyChina-for-IOS/en.lproj/InfoPlist.strings
+cCpResource RubyChina-for-IOS/Default.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png
+cCpResource RubyChina-for-IOS/Default@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png
+cCpResource RubyChina-for-IOS/Default-568h@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png
+cCompileStoryboard /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard
+cCpResource RubyChina-for-IOS/Resources/avatar@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.png
+cCpResource RubyChina-for-IOS/Resources/back@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png
+cCpResource RubyChina-for-IOS/Resources/background@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png
+cCpResource RubyChina-for-IOS/Resources/button@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.png
+cCpResource RubyChina-for-IOS/Resources/deep.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png
+cCpResource RubyChina-for-IOS/Resources/MessageEntryBackground@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.png
+cCpResource RubyChina-for-IOS/Resources/logo@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png
+cCpResource RubyChina-for-IOS/Resources/MessageEntryInputField@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png
+cCpResource RubyChina-for-IOS/Resources/MessageEntrySendButton@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png
+cCpResource RubyChina-for-IOS/Resources/MessageEntrySendButtonPressed@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png
+cCpResource RubyChina-for-IOS/Resources/navbar@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png
+cCpResource RubyChina-for-IOS/Resources/navbutton@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png
+cCpResource RubyChina-for-IOS/Resources/new_message@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png
+cCpResource RubyChina-for-IOS/Resources/ruby-china-logo-2-small.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png
+cCpResource RubyChina-for-IOS/Resources/ruby-china-logo-2.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png
+cCpResource RubyChina-for-IOS/Resources/ruby-logo@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png
+cCpResource RubyChina-for-IOS/Resources/tab1.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png
+cCpResource RubyChina-for-IOS/Resources/shadow@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png
+cCpResource RubyChina-for-IOS/Resources/tab1@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png
+cCpResource RubyChina-for-IOS/Resources/tab2.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.png
+cCpResource RubyChina-for-IOS/Resources/tab3@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png
+cCpResource RubyChina-for-IOS/Resources/tab4.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.png
+cCpResource RubyChina-for-IOS/Resources/timeago@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.png
+cPhaseScriptExecution "Copy Pods Resources" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-C2D5EEEAA0A646EDAEC380FB.sh
+cTouch /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c0000000051BBB4270000000000000110
+t1371255847
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000510AB5F00000000000228FE0
+t1359656432
+s2265056
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000510AB5F100000000003DDFA0
+t1359656433
+s4054944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000510AB5F100000000000015F7
+t1359656433
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000510AB5F60000000000000E8D
+t1359656438
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000510AB5F80000000000AB6230
+t1359656440
+s11231792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include/Availability.h
+c00000000510AB6040000000000001B73
+t1359656452
+s7027
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-cmptmnbmbaudtlaahmxmdgvmiyzn/RubyChina-for-IOS-Prefix.pch.pth
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.pth
+t1374761858
+s4678628
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.o
+t1374761859
+s93168
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.o
+t1374761859
+s9084
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.o
+t1374761859
+s18504
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/RubyChina-for-IOS.LinkFileList
+c0000000051F1338200000000000005F1
+t1374761858
+s1521
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.o
+t1374761859
+s25272
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.o
+t1374761859
+s72376
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.o
+t1374761859
+s13528
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.o
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.o
+t1374761859
+s67564
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.o
+t1374761859
+s3324
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-B38FECC491954CEC9EC6DBD7.sh
+c0000000051F133820000000000000103
+t1374761858
+s259
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-C2D5EEEAA0A646EDAEC380FB.sh
+c0000000051F13382000000000000002F
+t1374761858
+s47
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app
+t1374761858
+s136
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Info.plist
+t1374761858
+s881
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/PkgInfo
+t1374761858
+s8
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.png
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/build/Release-iphoneos/libPods.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.h
+c0000000051C83C4D000000000000011A
+t1372077133
+s282
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m
+c0000000051F06E940000000000000CED
+t1374711444
+s3309
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Default-568h@2x.png
+c0000000050748B2300000000000048A2
+t1349815075
+s18594
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Default.png
+c0000000050748B23000000000000198C
+t1349815075
+s6540
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Default@2x.png
+c0000000050748B230000000000003EEB
+t1349815075
+s16107
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.h
+c0000000051EFCBE60000000000000168
+t1374669798
+s360
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m
+c0000000051EFCBCF0000000000000190
+t1374669775
+s400
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.h
+c0000000051EFCB9C000000000000027C
+t1374669724
+s636
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m
+c0000000051EFCBB80000000000000367
+t1374669752
+s871
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntryBackground@2x.png
+c0000000051C396BE0000000000000112
+t1371772606
+s274
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntryInputField@2x.png
+c0000000051C396BE0000000000000C69
+t1371772606
+s3177
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntrySendButton@2x.png
+c0000000051C396BE00000000000009A2
+t1371772606
+s2466
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntrySendButtonPressed@2x.png
+c0000000051C396BE000000000000093D
+t1371772606
+s2365
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/avatar@2x.png
+c0000000051C396BE0000000000001119
+t1371772606
+s4377
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/back@2x.png
+c0000000051C396BE0000000000000949
+t1371772606
+s2377
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/background@2x.png
+c0000000051C396BE000000000001A2A9
+t1371772606
+s107177
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/button@2x.png
+c0000000051C396BE000000000000183E
+t1371772606
+s6206
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/deep.png
+c0000000051C396BE0000000000001A59
+t1371772606
+s6745
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/logo@2x.png
+c0000000051C396BE0000000000005A6C
+t1371772606
+s23148
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/navbar@2x.png
+c0000000051C396BE0000000000001011
+t1371772606
+s4113
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/navbutton@2x.png
+c0000000051C396BE00000000000013AC
+t1371772606
+s5036
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/new_message@2x.png
+c0000000051C396BE0000000000001821
+t1371772606
+s6177
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/ruby-china-logo-2-small.png
+c0000000051C396BE00000000000016C2
+t1371772606
+s5826
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/ruby-china-logo-2.png
+c0000000051C396BE000000000000208B
+t1371772606
+s8331
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/ruby-logo@2x.png
+c0000000051C396BE00000000000030AA
+t1371772606
+s12458
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/shadow@2x.png
+c0000000051C396BE00000000000004A6
+t1371772606
+s1190
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab1.png
+c0000000051C396BE0000000000000FE3
+t1371772606
+s4067
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab1@2x.png
+c0000000051C396BE0000000000001A20
+t1371772606
+s6688
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab2.png
+c0000000051C396BE0000000000000FE3
+t1371772606
+s4067
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab3@2x.png
+c0000000051C396BE0000000000000462
+t1371772606
+s1122
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab4.png
+c0000000051C396BE00000000000001EA
+t1371772606
+s490
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/timeago@2x.png
+c0000000051C396BE00000000000017B2
+t1371772606
+s6066
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch
+c0000000051C3992F0000000000000151
+t1371773231
+s337
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.h
+c0000000051EFCCAB00000000000002AC
+t1374669995
+s684
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m
+c0000000051EFCB6800000000000003CE
+t1374669672
+s974
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.h
+c0000000051EFCE4700000000000000E8
+t1374670407
+s232
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m
+c0000000051EFCE7500000000000003B8
+t1374670453
+s952
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.h
+c0000000051EFCC500000000000000168
+t1374669904
+s360
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m
+c0000000051EFCC240000000000000278
+t1374669860
+s632
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m
+c0000000051F13B560000000000000EB5
+t1374763862
+s3765
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.h
+c0000000051C5403200000000000000DC
+t1371881522
+s220
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m
+c0000000051C4576B00000000000001F2
+t1371821931
+s498
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/InfoPlist.strings
+c0000000051C3992F000000000000002D
+t1371773231
+s45
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard
+c0000000051C53DD30000000000000FE3
+t1371880915
+s4067
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m
+c0000000051C48BF60000000000000154
+t1371835382
+s340
+
+NRubyChina-for-IOS/RubyChina-for-IOS-Info.plist
+c0000000051C3992F00000000000004D1
+t1371773231
+s1233
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese02cc1d772a1b741^1267c1d772a1b741^---0#1#0#--18"Check dependencies36"33ABE021-1084-45E4-B292-14959BFD4F7E-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454658.999878
+e396454659.183464
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m791e00036ba1b741^83f62e036ba1b741^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m0000000000000000^4719"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.o RubyChina-for-IOS/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/AppDelegate.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/AppDelegate.o36"EA4690B9-536F-437F-B990-489DC3C72DE9-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454658.999761
+e396454659.175688
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.md52000036ba1b741^19012d036ba1b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m0000000000000000^4677"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.o RubyChina-for-IOS/Node.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Node.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Node.o36"91B28064-B6CD-47F8-8901-207AFA44EC9E-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454658.999853
+e396454659.172005
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.mb82300036ba1b741^d1212c036ba1b741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m0000000000000000^4683"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.o RubyChina-for-IOS/Reply.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Reply.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Reply.o36"32A4B9C0-14F9-4395-838F-5D0AA73B73D4-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454659.184834
+e396454659.244332
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.mbb802f036ba1b741^aa103f036ba1b741^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m0000000000000000^4683"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.o RubyChina-for-IOS/Topic.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Topic.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/Topic.o36"756F7EF1-2ED4-43A9-9F01-A5DB8C2C58A4-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454659.173215
+e396454659.272595
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.mdf8a2c036ba1b741^9dda45036ba1b741^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m0000000000000000^4773"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.o RubyChina-for-IOS/TopicsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/TopicsViewController.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/TopicsViewController.o36"F603A8E9-DBAF-4ACB-871D-77CF4B349164-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454659.177088
+e396454659.223838
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m01862d036ba1b741^ec4c39036ba1b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m0000000000000000^4677"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.o RubyChina-for-IOS/User.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/User.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/User.o36"1815A0F1-9BFC-42D5-8615-138E42F0F138-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396456663.857923
+e396456663.928740
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m:61:2: warning: Potentially incomplete method implementation. [-W#warnings]
+o#warning Potentially incomplete method implementation.
+o ^
+o/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m:68:2: warning: Incomplete method implementation. [-W#warnings]
+o#warning Incomplete method implementation.
+o ^
+o2 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.mbdc5dbd772a1b741^3fe0edd772a1b741^-428"/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m:61:2: warning: Potentially incomplete method implementation. [-W#warnings]#warning Potentially incomplete method implementation. ^/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m:68:2: warning: Incomplete method implementation. [-W#warnings]#warning Incomplete method implementation. ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@45"Potentially incomplete method implementation.-396456663#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@97"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m0000000000000000^60#1#60#1#1298#0#18"#warning Directive--2@33"Incomplete method implementation.-396456663#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@97"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m0000000000000000^67#1#67#1#1499#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@97"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m0000000000000000^4737"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.o RubyChina-for-IOS/UserController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/UserController.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/UserController.o36"B818ADE1-5DCA-4F51-88B7-00CC4FE3B650-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454659.172143
+e396454659.267242
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m24452c036ba1b741^1a6a44036ba1b741^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m0000000000000000^4737"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.o RubyChina-for-IOS/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/ViewController.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/ViewController.o36"C068ABFC-F825-4837-B929-99635BB71FB3-
+
+CCompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.o /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454658.999874
+e396454659.170715
+r1
+xCompileC
+xBuild/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m1d2000036ba1b741^8db52b036ba1b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m0000000000000000^4677"CompileC Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.o RubyChina-for-IOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/main.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/main.o36"73605FE3-6DA0-472F-B947-CA57F64F6032-
+
+CCompileStoryboard /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard
+s396456664.247726
+e396456664.448720
+r1
+xCompileStoryboard
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard
+o/* com.apple.ibtool.document.warnings */
+o/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard:2hR-tD-OPw: warning: Scene is unreachable due to lack of entry points and does not have an identifier for runtime access via -instantiateViewControllerWithIdentifier:. [9]
+o/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard:4pa-F4-zKq: warning: Prototype table cells must have reuse identifiers [9]
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"CompileStoryboard RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard33883fd872a1b741^da1a79d872a1b741^-477"/* com.apple.ibtool.document.warnings *//Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard:2hR-tD-OPw: warning: Scene is unreachable due to lack of entry points and does not have an identifier for runtime access via -instantiateViewControllerWithIdentifier:./Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard:4pa-F4-zKq: warning: Prototype table cells must have reuse identifiers2(21%IDEActivityLogMessage2@146"Scene is unreachable due to lack of entry points and does not have an identifier for runtime access via -instantiateViewControllerWithIdentifier:.-396456664#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@115"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard0000000000000000^1#18446744073709551615#1#18446744073709551615#18446744073709551615#0#25"Unsupported Configuration--2@49"Prototype table cells must have reuse identifiers-396456664#18446744073709551615#0#-1#-3@115"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard0000000000000000^3#18446744073709551615#3#18446744073709551615#18446744073709551615#0#25"Unsupported Configuration--0#0#0#-19%DVTDocumentLocation4@115"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard0000000000000000^1007"CompileStoryboard RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/MainStoryboard.storyboardc /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"32C5BBC1-6561-4EEF-B7F8-626C50C43728-
+
+CCopyStringsFile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/InfoPlist.strings RubyChina-for-IOS/en.lproj/InfoPlist.strings
+s396456664.220835
+e396456664.273600
+r1
+xCopyStringsFile
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/InfoPlist.strings
+xRubyChina-for-IOS/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy RubyChina-for-IOS/en.lproj/InfoPlist.strings21ae38d872a1b741^f99e4dd872a1b741^---0#0#0#-19%DVTDocumentLocation2@107"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/en.lproj/InfoPlist.strings0000000000000000^649"CopyStringsFile Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj/InfoPlist.strings RubyChina-for-IOS/en.lproj/InfoPlist.strings    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/en.lproj -- RubyChina-for-IOS/en.lproj/InfoPlist.strings36"9E7DF023-2482-4F89-9E1B-52A58C3A6CC5-
+
+CCpResource RubyChina-for-IOS/Default-568h@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png
+s396456664.240598
+e396456664.250057
+r1
+xCpResource
+xRubyChina-for-IOS/Default-568h@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png27da3dd872a1b741^997e41d872a1b741^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png000000000080d041^686"CpResource "RubyChina-for-IOS/Default-568h@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default-568h@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Default-568h@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"89D97B2F-83DE-4612-9DF0-C50C9EF0BF93-
+
+CCpResource RubyChina-for-IOS/Default.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png
+s396456664.239915
+e396456664.246664
+r1
+xCpResource
+xRubyChina-for-IOS/Default.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png32e33dd872a1b741^637b41d872a1b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png000000000080d041^656"CpResource RubyChina-for-IOS/Default.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Default.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"9594ADEE-DD9F-47C7-8EC3-CF5211E8920B-
+
+CCpResource RubyChina-for-IOS/Default@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png
+s396456664.240016
+e396456664.244293
+r1
+xCpResource
+xRubyChina-for-IOS/Default@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png0de03dd872a1b741^537741d872a1b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png000000000080d041^671"CpResource "RubyChina-for-IOS/Default@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Default@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Default@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"D073A33C-4DB3-42F6-8BB0-E412B0138174-
+
+CCpResource RubyChina-for-IOS/Resources/MessageEntryBackground@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.png
+s396456664.311972
+e396456664.327134
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/MessageEntryBackground@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.pngec6c50d872a1b741^43595cd872a1b741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.png000000000080d041^736"CpResource "RubyChina-for-IOS/Resources/MessageEntryBackground@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryBackground@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntryBackground@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"0C75BCC6-7EEA-4C54-8B54-87FF07DC7F7E-
+
+CCpResource RubyChina-for-IOS/Resources/MessageEntryInputField@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png
+s396456664.356802
+e396456664.383308
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/MessageEntryInputField@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png76715bd872a1b741^ef7067d872a1b741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png000000000080d041^736"CpResource "RubyChina-for-IOS/Resources/MessageEntryInputField@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntryInputField@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntryInputField@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"DAA765B2-EEFA-4078-BCEF-11E51AD0D79F-
+
+CCpResource RubyChina-for-IOS/Resources/MessageEntrySendButton@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png
+s396456664.357496
+e396456664.405646
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/MessageEntrySendButton@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png7fa15bd872a1b741^4d1568d872a1b741^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png000000000080d041^736"CpResource "RubyChina-for-IOS/Resources/MessageEntrySendButton@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButton@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntrySendButton@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"9DDD2637-9B8F-4590-AC49-07DF82C71930-
+
+CCpResource RubyChina-for-IOS/Resources/MessageEntrySendButtonPressed@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png
+s396456664.362229
+e396456664.402472
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/MessageEntrySendButtonPressed@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png30d55cd872a1b741^977567d872a1b741^---0#0#0#-19%DVTDocumentLocation2@158"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png000000000080d041^757"CpResource "RubyChina-for-IOS/Resources/MessageEntrySendButtonPressed@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/MessageEntrySendButtonPressed@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/MessageEntrySendButtonPressed@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"AE40B500-953C-4453-92A5-F2F98A43B7B1-
+
+CCpResource RubyChina-for-IOS/Resources/avatar@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.png
+s396456664.248382
+e396456664.273370
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/avatar@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.pngc5ac3fd872a1b741^0b9b4dd872a1b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.png000000000080d041^688"CpResource "RubyChina-for-IOS/Resources/avatar@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/avatar@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/avatar@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"BF479C8B-2961-4B44-8AA0-E26A27E2282D-
+
+CCpResource RubyChina-for-IOS/Resources/back@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png
+s396456664.251285
+e396456664.297642
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/back@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png6d7240d872a1b741^c2a34dd872a1b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png000000000080d041^682"CpResource "RubyChina-for-IOS/Resources/back@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/back@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/back@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"17078EE7-E92E-4449-AC5D-D4DC506100AE-
+
+CCpResource RubyChina-for-IOS/Resources/background@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png
+s396456664.295345
+e396456664.299629
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/background@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png67b64bd872a1b741^6ea74dd872a1b741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png000000000080d041^700"CpResource "RubyChina-for-IOS/Resources/background@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/background@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/background@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"FA681D67-1AFA-4B4A-9BE9-3E2AAA37A495-
+
+CCpResource RubyChina-for-IOS/Resources/button@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.png
+s396456664.296390
+e396456664.299867
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/button@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.pngf0f74bd872a1b741^fca94dd872a1b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.png000000000080d041^688"CpResource "RubyChina-for-IOS/Resources/button@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/button@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/button@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"B9E3B1AA-D730-4317-B361-BC2CED8CBCE8-
+
+CCpResource RubyChina-for-IOS/Resources/deep.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png
+s396456664.299159
+e396456664.326410
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/deep.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png3ece4cd872a1b741^040259d872a1b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png000000000080d041^667"CpResource RubyChina-for-IOS/Resources/deep.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/deep.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/deep.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"E4BC2836-5FE4-45D1-A6AB-89F34CBF932E-
+
+CCpResource RubyChina-for-IOS/Resources/logo@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png
+s396456664.314442
+e396456664.359897
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/logo@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png029a50d872a1b741^096b67d872a1b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png000000000080d041^682"CpResource "RubyChina-for-IOS/Resources/logo@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/logo@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/logo@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"D6505B85-80F8-4229-9C4A-F0B227686CBF-
+
+CCpResource RubyChina-for-IOS/Resources/navbar@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png
+s396456664.405544
+e396456664.410231
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/navbar@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png7deb67d872a1b741^6c2469d872a1b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png000000000080d041^688"CpResource "RubyChina-for-IOS/Resources/navbar@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbar@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/navbar@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"8D698FDA-FDE9-4F6D-A3DD-1EFC34C8C232-
+
+CCpResource RubyChina-for-IOS/Resources/navbutton@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png
+s396456664.405776
+e396456664.410524
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/navbutton@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png87f867d872a1b741^aa2969d872a1b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png000000000080d041^697"CpResource "RubyChina-for-IOS/Resources/navbutton@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/navbutton@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/navbutton@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"6F422A8F-84D3-4ACC-B494-442C39842B0C-
+
+CCpResource RubyChina-for-IOS/Resources/new_message@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png
+s396456664.407148
+e396456664.415566
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/new_message@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png865568d872a1b741^4b3a72d872a1b741^---0#0#0#-19%DVTDocumentLocation2@140"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png000000000080d041^703"CpResource "RubyChina-for-IOS/Resources/new_message@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/new_message@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/new_message@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"F933CDEF-C8E8-42B1-9EB5-C693A3AC5B57-
+
+CCpResource RubyChina-for-IOS/Resources/ruby-china-logo-2-small.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png
+s396456664.412128
+e396456664.446534
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/ruby-china-logo-2-small.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png2d9769d872a1b741^6cb478d872a1b741^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png000000000080d041^724"CpResource RubyChina-for-IOS/Resources/ruby-china-logo-2-small.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2-small.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/ruby-china-logo-2-small.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"964401F1-31C2-4781-828B-AF8A3EDA5BE8-
+
+CCpResource RubyChina-for-IOS/Resources/ruby-china-logo-2.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png
+s396456664.412747
+e396456664.453343
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/ruby-china-logo-2.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png39f169d872a1b741^c23379d872a1b741^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png000000000080d041^706"CpResource RubyChina-for-IOS/Resources/ruby-china-logo-2.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-china-logo-2.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/ruby-china-logo-2.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"8B06B934-9494-4BF6-A602-F05DF65714AF-
+
+CCpResource RubyChina-for-IOS/Resources/ruby-logo@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png
+s396456664.416915
+e396456664.446441
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/ruby-logo@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png13276bd872a1b741^1b1079d872a1b741^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png000000000080d041^697"CpResource "RubyChina-for-IOS/Resources/ruby-logo@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/ruby-logo@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/ruby-logo@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"673226E2-8E09-44DA-A002-9BD65A2D8D92-
+
+CCpResource RubyChina-for-IOS/Resources/shadow@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png
+s396456664.453653
+e396456664.474551
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/shadow@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png093874d872a1b741^707c79d872a1b741^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png000000000080d041^688"CpResource "RubyChina-for-IOS/Resources/shadow@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/shadow@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/shadow@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"76DF8D2E-BF29-4401-B730-5EE1C8BB2F99-
+
+CCpResource RubyChina-for-IOS/Resources/tab1.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png
+s396456664.453487
+e396456664.473659
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/tab1.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png163174d872a1b741^184379d872a1b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png000000000080d041^667"CpResource RubyChina-for-IOS/Resources/tab1.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab1.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"BBEB2BC1-9427-42E7-87F6-C428EB2C42B4-
+
+CCpResource RubyChina-for-IOS/Resources/tab1@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png
+s396456664.454176
+e396456664.475740
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/tab1@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png6fbb78d872a1b741^08ca79d872a1b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png000000000080d041^682"CpResource "RubyChina-for-IOS/Resources/tab1@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab1@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab1@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"76FF27C5-F657-4959-8BD0-A14601C2BC04-
+
+CCpResource RubyChina-for-IOS/Resources/tab2.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.png
+s396456664.471340
+e396456664.476648
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/tab2.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.pngd84979d872a1b741^bc057ad872a1b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.png000000000080d041^667"CpResource RubyChina-for-IOS/Resources/tab2.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab2.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab2.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"31DDD98A-A386-4978-984A-13F2FBC27D77-
+
+CCpResource RubyChina-for-IOS/Resources/tab3@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png
+s396456664.474856
+e396456664.477897
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/tab3@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png72a679d872a1b741^c9577ad872a1b741^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png000000000080d041^682"CpResource "RubyChina-for-IOS/Resources/tab3@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab3@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab3@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"1A4443DA-2BEE-4A4D-A5A7-B6055F407F55-
+
+CCpResource RubyChina-for-IOS/Resources/tab4.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.png
+s396456664.474868
+e396456664.479038
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/tab4.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.pnga0a779d872a1b741^c7a17ad872a1b741^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.png000000000080d041^667"CpResource RubyChina-for-IOS/Resources/tab4.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/tab4.png    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/tab4.png /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"15E20275-260B-4875-AAF9-35C8C487F83C-
+
+CCpResource RubyChina-for-IOS/Resources/timeago@2x.png Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.png
+s396456664.476894
+e396456664.480006
+r1
+xCpResource
+xRubyChina-for-IOS/Resources/timeago@2x.png
+xBuild/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.pnga52d7ad872a1b741^11e27ad872a1b741^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.png000000000080d041^691"CpResource "RubyChina-for-IOS/Resources/timeago@2x.png" "Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/timeago@2x.png"    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/Resources/timeago@2x.png" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"3BC57FA3-B601-491F-9BE1-7A6D5A463199-
+
+CGenerateDSYMFile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS
+s396456664.100523
+e396456664.197183
+r1
+xGenerateDSYMFile
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Generate /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM16f81ed872a1b741^998132d872a1b741^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM000000000080d041^745"GenerateDSYMFile Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app.dSYM36"3C57824E-BEB3-44CA-A83A-DBBBD11765BF-
+
+CLd /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS normal i386
+s396456663.948638
+e396456664.093586
+r1
+xLd
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Link /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOSe412f3d772a1b741^78081fd872a1b741^---0#0#0#--1459"Ld Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS normal i386    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -filelist /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/RubyChina-for-IOS.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -ObjC -framework CFNetwork -framework CoreData -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/RubyChina-for-IOS36"299C0291-CB12-4FC9-B0EA-D2253A250BA8-
+
+CPhaseScriptExecution "Check Pods Manifest.lock" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-B38FECC491954CEC9EC6DBD7.sh
+s396456663.783376
+e396456663.822744
+r1
+xPhaseScriptExecution
+xCheck Pods Manifest.lock
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-B38FECC491954CEC9EC6DBD7.sh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'c174ced772a1b741^d89dd2d772a1b741^---0#0#0#--22969"PhaseScriptExecution "Check Pods Manifest.lock" Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-B38FECC491954CEC9EC6DBD7.sh    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER vincent    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products    setenv BUILD_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/r1/wjpljdps20l6jp5x399wyb2w0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/r1/wjpljdps20l6jp5x399wyb2w0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_CXX_LANGUAGE_STANDARD gnu++0x    setenv CLANG_CXX_LIBRARY libc++    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/r1/wjpljdps20l6jp5x399wyb2w0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH RubyChina-for-IOS.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH RubyChina-for-IOS.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/RubyChina-for-IOS.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME RubyChina-for-IOS.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH RubyChina-for-IOS.app/Executables    setenv EXECUTABLE_FOLDER_PATH RubyChina-for-IOS.app    setenv EXECUTABLE_NAME RubyChina-for-IOS    setenv EXECUTABLE_PATH RubyChina-for-IOS.app/RubyChina-for-IOS    setenv FILE_LIST /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH RubyChina-for-IOS.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME RubyChina-for-IOS.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS "DEBUG=1  COCOAPODS=1"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE RubyChina-for-IOS/RubyChina-for-IOS-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH RubyChina-for-IOS.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH RubyChina-for-IOS.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/RubyChina-for-IOS.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER vincent    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/RubyChina-for-IOS.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH RubyChina-for-IOS.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/RubyChina-for-IOS.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH RubyChina-for-IOS.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12E55    setenv MAC_OS_X_VERSION_ACTUAL 1084    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0804    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal    setenv OBJROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-ObjC -framework CFNetwork -framework CoreData -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH RubyChina-for-IOS.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/PkgInfo    setenv PKGINFO_PATH RubyChina-for-IOS.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 10B141    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH RubyChina-for-IOS.app/PlugIns    setenv PODS_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH RubyChina-for-IOS.app/PrivateHeaders    setenv PRODUCT_NAME RubyChina-for-IOS    setenv PRODUCT_SETTINGS_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/RubyChina-for-IOS-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT RubyChina-for-IOS    setenv PROJECT_DERIVED_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/DerivedSources    setenv PROJECT_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PROJECT_FILE_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS.xcodeproj    setenv PROJECT_NAME RubyChina-for-IOS    setenv PROJECT_TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build    setenv PROJECT_TEMP_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates    setenv PUBLIC_HEADERS_FOLDER_PATH RubyChina-for-IOS.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH RubyChina-for-IOS.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_NAME iphonesimulator6.1    setenv SDK_PRODUCT_BUILD_VERSION 10B141    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH RubyChina-for-IOS.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH RubyChina-for-IOS.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv SRCROOT /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME RubyChina-for-IOS    setenv TARGET_BUILD_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv TARGET_NAME RubyChina-for-IOS    setenv TARGET_TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_FILES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH RubyChina-for-IOS.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER vincent    setenv USER_APPS_DIR /Users/vincent/Applications    setenv USER_LIBRARY_DIR /Users/vincent/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH RubyChina-for-IOS.app/version.plist    setenv VERSION_INFO_BUILDER vincent    setenv VERSION_INFO_FILE RubyChina-for-IOS_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:RubyChina-for-IOS  PROJECT:RubyChina-for-IOS-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME RubyChina-for-IOS.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4H1503    setenv XCODE_VERSION_ACTUAL 0463    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0460    setenv YACC yacc    /bin/sh -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-B38FECC491954CEC9EC6DBD7.sh36"FA44063A-D648-455B-BDEA-B292391919FF-
+
+CPhaseScriptExecution "Copy Pods Resources" /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-C2D5EEEAA0A646EDAEC380FB.sh
+s396456664.500691
+e396456664.626019
+r1
+xPhaseScriptExecution
+xCopy Pods Resources
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-C2D5EEEAA0A646EDAEC380FB.sh
+obuilding file list ... done
+o
+osent 29 bytes  received 20 bytes  98.00 bytes/sec
+ototal size is 0  speedup is 0.00
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Run custom shell script 'Copy Pods Resources'7afc86d872a1b741^209ba0d872a1b741^-112"building file list ... donesent 29 bytes  received 20 bytes  98.00 bytes/sectotal size is 0  speedup is 0.003(21%IDEActivityLogMessage2@28"building file list ... done-396456664#0#28#-0#-----2@50"sent 29 bytes  received 20 bytes  98.00 bytes/sec-396456664#29#50#-0#-----2@33"total size is 0  speedup is 0.00-396456664#79#33#-0#-----0#0#0#--22964"PhaseScriptExecution "Copy Pods Resources" Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-C2D5EEEAA0A646EDAEC380FB.sh    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER vincent    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products    setenv BUILD_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/r1/wjpljdps20l6jp5x399wyb2w0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/r1/wjpljdps20l6jp5x399wyb2w0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_CXX_LANGUAGE_STANDARD gnu++0x    setenv CLANG_CXX_LIBRARY libc++    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/r1/wjpljdps20l6jp5x399wyb2w0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH RubyChina-for-IOS.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH RubyChina-for-IOS.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/RubyChina-for-IOS.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME RubyChina-for-IOS.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH RubyChina-for-IOS.app/Executables    setenv EXECUTABLE_FOLDER_PATH RubyChina-for-IOS.app    setenv EXECUTABLE_NAME RubyChina-for-IOS    setenv EXECUTABLE_PATH RubyChina-for-IOS.app/RubyChina-for-IOS    setenv FILE_LIST /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH RubyChina-for-IOS.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME RubyChina-for-IOS.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS "DEBUG=1  COCOAPODS=1"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit\" \"/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE RubyChina-for-IOS/RubyChina-for-IOS-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH RubyChina-for-IOS.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH RubyChina-for-IOS.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/RubyChina-for-IOS.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER vincent    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/RubyChina-for-IOS.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH RubyChina-for-IOS.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal/i386/RubyChina-for-IOS.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH RubyChina-for-IOS.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12E55    setenv MAC_OS_X_VERSION_ACTUAL 1084    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0804    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Objects-normal    setenv OBJROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-ObjC -framework CFNetwork -framework CoreData -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH RubyChina-for-IOS.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/PkgInfo    setenv PKGINFO_PATH RubyChina-for-IOS.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 10B141    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 60100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH RubyChina-for-IOS.app/PlugIns    setenv PODS_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH RubyChina-for-IOS.app/PrivateHeaders    setenv PRODUCT_NAME RubyChina-for-IOS    setenv PRODUCT_SETTINGS_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/RubyChina-for-IOS-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT RubyChina-for-IOS    setenv PROJECT_DERIVED_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/DerivedSources    setenv PROJECT_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PROJECT_FILE_PATH /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS.xcodeproj    setenv PROJECT_NAME RubyChina-for-IOS    setenv PROJECT_TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build    setenv PROJECT_TEMP_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates    setenv PUBLIC_HEADERS_FOLDER_PATH RubyChina-for-IOS.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH RubyChina-for-IOS.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk    setenv SDK_NAME iphonesimulator6.1    setenv SDK_PRODUCT_BUILD_VERSION 10B141    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH RubyChina-for-IOS.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH RubyChina-for-IOS.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv SRCROOT /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME RubyChina-for-IOS    setenv TARGET_BUILD_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator    setenv TARGET_NAME RubyChina-for-IOS    setenv TARGET_TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_FILES_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_FILE_DIR /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build    setenv TEMP_ROOT /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH RubyChina-for-IOS.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER vincent    setenv USER_APPS_DIR /Users/vincent/Applications    setenv USER_LIBRARY_DIR /Users/vincent/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH RubyChina-for-IOS.app/version.plist    setenv VERSION_INFO_BUILDER vincent    setenv VERSION_INFO_FILE RubyChina-for-IOS_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:RubyChina-for-IOS  PROJECT:RubyChina-for-IOS-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME RubyChina-for-IOS.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4H1503    setenv XCODE_VERSION_ACTUAL 0463    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0460    setenv YACC yacc    /bin/sh -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/Script-C2D5EEEAA0A646EDAEC380FB.sh36"205F31BF-EC5B-459F-AAC0-9C9BBE7FD78F-
+
+CProcessInfoPlistFile /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Info.plist RubyChina-for-IOS/RubyChina-for-IOS-Info.plist
+s396454658.454601
+e396454658.459596
+r1
+xProcessInfoPlistFile
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Info.plist
+xRubyChina-for-IOS/RubyChina-for-IOS-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Process RubyChina-for-IOS/RubyChina-for-IOS-Info.plistd97c74026ba1b741^58e275026ba1b741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/RubyChina-for-IOS-Info.plist0000000000000000^771"ProcessInfoPlistFile Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Info.plist RubyChina-for-IOS/RubyChina-for-IOS-Info.plist    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RubyChina-for-IOS/RubyChina-for-IOS-Info.plist -genpkginfo /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app/Info.plist36"2D8081A6-71EA-45EB-A286-E1D90FE27908-
+
+CProcessPCH /Users/vincent/Library/Developer/Xcode/DerivedData/RubyChina-for-IOS-ddfwmygjiaxrgtgilicebtcfvdlk/Index/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gkrggpbmjdswdddfyhxxxcotscba_ast/RubyChina-for-IOS-Prefix.pch.pth RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/vincent/Library/Developer/Xcode/DerivedData/RubyChina-for-IOS-ddfwmygjiaxrgtgilicebtcfvdlk/Index/PrecompiledHeaders/RubyChina-for-IOS-Prefix-hktvmldqfydlhvbrpkxnguwkiiqc_ast/RubyChina-for-IOS-Prefix.pch.pth RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-cmptmnbmbaudtlaahmxmdgvmiyzn/RubyChina-for-IOS-Prefix.pch.pth RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.pth RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396454658.509753
+e396454658.992713
+r1
+xProcessPCH
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.pth
+xRubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Precompile RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pchfda482026ba1b741^a721fe026ba1b741^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch0000000000000000^4584"ProcessPCH Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.pth RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/RubyChina-for-IOS-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/RubyChina-for-IOS.build/Debug-iphonesimulator/RubyChina-for-IOS.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/RubyChina-for-IOS/RubyChina-for-IOS-Prefix.pch -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.pth -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/RubyChina-for-IOS-Prefix-gtkhmolozpzprufqhpevnqedtzbw/RubyChina-for-IOS-Prefix.pch.d36"CF21E771-D719-4723-B6A9-0DF6F724B7B9-
+
+CTouch /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app
+s396456664.633586
+e396456664.677068
+r1
+xTouch
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Touch /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app3543a2d872a1b741^8e1eafd872a1b741^---0#0#0#--442"Touch Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app    cd /Users/vincent/Project/xcode/RubyChina-for-IOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/RubyChina-for-IOS.app36"CE75E998-E4AB-4179-B40A-14164D705AAA-
+

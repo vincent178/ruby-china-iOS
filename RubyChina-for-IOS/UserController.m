@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "UserController.h"
 #import "User.h"
+#import "MKNetworkEngine.h"
 
 @interface UserController ()
 
@@ -38,7 +39,6 @@
     self.tableView.separatorColor = [UIColor colorWithRed:211.0/255 green:211.0/255 blue:211.0/255 alpha:0.2];
     
     if (!self.login) {
-        self.login = [Preferences login];
     }
     
     if (!self.topics) {
