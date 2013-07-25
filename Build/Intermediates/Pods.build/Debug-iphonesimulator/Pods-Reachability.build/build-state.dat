@@ -1,0 +1,127 @@
+TPods-Reachability
+v5
+r1
+cCheck dependencies
+cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.pth Pods-Reachability-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a normal i386
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000510AB5D6000000000062AD10
+t1359656406
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
+c0000000051BBB4270000000000000110
+t1371255847
+s272
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o
+t1374765070
+s3340
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability.LinkFileList
+c0000000051F1400D0000000000000149
+t1374765069
+s329
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o
+t1374765070
+s39904
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.pth
+t1374765070
+s4673652
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a
+t1374765070
+s44056
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m
+c0000000051F13FF0000000000000008A
+t1374765040
+s138
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-prefix.pch
+c0000000051F13FF0000000000000004D
+t1374765040
+s77
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-environment.h
+c0000000051F13FF000000000000009D0
+t1374765040
+s2512
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.h
+c0000000051F070F00000000000000E57
+t1374712048
+s3671
+
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m
+c0000000051F070F00000000000003737
+t1374712048
+s14135
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m
+r0
+
+CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies9f39b32684a1b741^5c8db42684a1b741^---0#1#0#--18"Check dependencies36"8F370710-540F-484C-AE9F-4CD2E3C217BB-
+
+CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396457870.573569
+e396457870.614882
+r1
+xCompileC
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m5471938e77a1b741^e1799d8e77a1b741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m0000000000000000^4814"CompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o Pods-Reachability-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o36"1E14B2E6-52F6-491A-B0C1-3178D25AE18D-
+
+CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396457870.559631
+e396457870.688873
+r1
+xCompileC
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m8881928e77a1b741^ec6cb08e77a1b741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m0000000000000000^4774"CompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -include /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o36"329E6F16-5B4B-4F56-93AA-045A048AC661-
+
+CLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a normal i386
+s396457870.734992
+e396457870.747571
+r1
+xLibtool
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Libtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a normal i3865649bc8e77a1b741^7861bf8e77a1b741^---0#0#0#--1077"Libtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a normal i386    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -filelist /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability.LinkFileList -framework Foundation -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a36"232CB02B-9BEB-4D1D-9F84-25BA54EAD2B7-
+
+CProcessPCH /Users/vincent/Library/Developer/Xcode/DerivedData/RubyChina-for-IOS-ddfwmygjiaxrgtgilicebtcfvdlk/Index/PrecompiledHeaders/Pods-Reachability-prefix-fizyuidbgdqkndgswtvhjvrrbdjk_ast/Pods-Reachability-prefix.pch.pth Pods-Reachability-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.pth Pods-Reachability-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s396457869.812728
+e396457870.513699
+r1
+xProcessPCH
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.pth
+xPods-Reachability-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Pods-Reachability-prefix.pch323ad08d77a1b741^cc9b838e77a1b741^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-prefix.pch0000000000000000^4659"ProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.pth Pods-Reachability-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Pods-Reachability-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-prefix.pch -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.pth -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-gaclfcjwindakccduqdgkgpmnxfy/Pods-Reachability-prefix.pch.d36"44B8096B-246E-45C9-B0D2-66EDA3A3E277-
+

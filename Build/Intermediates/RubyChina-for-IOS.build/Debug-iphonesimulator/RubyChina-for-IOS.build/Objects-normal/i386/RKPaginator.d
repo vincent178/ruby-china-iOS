@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/RestKit/Code/Network/RKPaginator.m \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/RestKit/Code/Network/RKPaginator.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/RestKit/Code/Network/RKHTTPRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFNetworking.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFHTTPClient.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/CoreData/RKManagedObjectCaching.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKObjectMapping.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/RKMacros.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKMapping.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKMappingResult.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKMappingOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKAttributeMapping.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKPropertyMapping.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/RestKit/Code/Network/RKObjectRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKMapperOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKMappingOperationDataSource.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/RKErrors.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/RestKit/Code/Network/RKManagedObjectRequestOperation.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/SOCKit/SOCKit.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/RKLog.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/lcl_RK.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/lcl_config_components_RK.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/lcl_config_logger_RK.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/LCLNSLog_RK.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/lcl_config_extensions_RK.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/Support/RKPathUtilities.h \
+  /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/BuildHeaders/RestKit/RestKit/ObjectMapping/RKHTTPUtilities.h
