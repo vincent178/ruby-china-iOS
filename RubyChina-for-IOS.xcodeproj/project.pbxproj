@@ -34,6 +34,7 @@
 		BF89DD0817A0088C00DB6056 /* tab4.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89DCF117A0088C00DB6056 /* tab4.png */; };
 		BF89DD0917A0088C00DB6056 /* timeago@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF89DCF217A0088C00DB6056 /* timeago@2x.png */; };
 		BF89DF9017A1752100DB6056 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89DF8F17A1752100DB6056 /* LoginController.m */; };
+		BF89E00017A1FB2B00DB6056 /* RemoteEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89DFFF17A1FB2B00DB6056 /* RemoteEngine.m */; };
 		BF97E5541773D0AF009F859E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5531773D0AF009F859E /* UIKit.framework */; };
 		BF97E5561773D0AF009F859E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5551773D0AF009F859E /* Foundation.framework */; };
 		BF97E5581773D0AF009F859E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5571773D0AF009F859E /* CoreGraphics.framework */; };
@@ -179,6 +180,8 @@
 		BF89DFFB17A1783F00DB6056 /* TKState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKState.h; sourceTree = "<group>"; };
 		BF89DFFC17A1783F00DB6056 /* TKStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKStateMachine.h; sourceTree = "<group>"; };
 		BF89DFFD17A1783F00DB6056 /* TransitionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionKit.h; sourceTree = "<group>"; };
+		BF89DFFE17A1FB2B00DB6056 /* RemoteEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteEngine.h; sourceTree = "<group>"; };
+		BF89DFFF17A1FB2B00DB6056 /* RemoteEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteEngine.m; sourceTree = "<group>"; };
 		BF97E5501773D0AF009F859E /* RubyChina-for-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-for-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF97E5531773D0AF009F859E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF97E5551773D0AF009F859E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -536,6 +539,8 @@
 				BF89DCD917A006FC00DB6056 /* UserController.m */,
 				BF89DF8E17A1752100DB6056 /* LoginController.h */,
 				BF89DF8F17A1752100DB6056 /* LoginController.m */,
+				BF89DFFE17A1FB2B00DB6056 /* RemoteEngine.h */,
+				BF89DFFF17A1FB2B00DB6056 /* RemoteEngine.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -687,6 +692,7 @@
 				BF89DCD4179FF59700DB6056 /* Node.m in Sources */,
 				BF89DCDA17A006FC00DB6056 /* UserController.m in Sources */,
 				BF89DF9017A1752100DB6056 /* LoginController.m in Sources */,
+				BF89E00017A1FB2B00DB6056 /* RemoteEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
