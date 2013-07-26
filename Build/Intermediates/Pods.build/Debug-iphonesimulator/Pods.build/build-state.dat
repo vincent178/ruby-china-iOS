@@ -68,7 +68,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa514d02684a1b741^c66dd02684a1b741^---0#1#0#--18"Check dependencies36"59E87D4E-6BE9-4F65-8F4D-D8F067AA2C17-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese336b6d7f9a1b741^6589b6d7f9a1b741^---0#1#0#--18"Check dependencies36"AE564685-B243-45A1-80E4-1E87B4459BDA-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s396457874.883713

@@ -69,6 +69,15 @@
 
 - (void) loginIsPressed: (UIButton *)sender {
     NSLog(@"Hello world");
+    NSString *login = [self.loginField text];
+    NSString *password = [self.passwordField text];
+    
+    NSString *authStr = [NSString stringWithFormat:@"%@:%@", login, password];
+    NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *authHeader = [NSString stringWithFormat:@"Basic %@", authData];
+    
+    NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
+    [headerFields setValue:authHeader forKey:@"Authorization"];
 }
 
 - (void)didReceiveMemoryWarning
