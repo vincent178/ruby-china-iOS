@@ -3,8 +3,8 @@ v5
 r1
 cCheck dependencies
 cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-Reachability-prefix-elfgaewqeunjkpegntvrppdpwosp/Pods-Reachability-prefix.pch.pth Pods-Reachability-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Reachability.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Reachability/Reachability.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a normal i386
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
@@ -107,7 +107,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies177f438dbba2b741^4e09448dbba2b741^---0#1#0#--18"Check dependencies36"3A17E601-D8FF-455E-90E0-52BAFD2CA7C8-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies45b85986c2a2b741^363f5a86c2a2b741^---0#1#0#--18"Check dependencies36"2E2EB297-CE9A-437C-BFF7-AFCC3E9CE3D3-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s396511419.661036

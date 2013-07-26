@@ -4,8 +4,8 @@ r1
 cCheck dependencies
 cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-TransitionKit-prefix-ellmdawetohclndatpjqofbhamfw/Pods-TransitionKit-prefix.pch.pth Pods-TransitionKit-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-TransitionKit-prefix-dzedhwkgnchzyicyytczyvianyua/Pods-TransitionKit-prefix.pch.pth Pods-TransitionKit-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-TransitionKit.build/Objects-normal/i386/TKEvent.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/TransitionKit/Code/TKEvent.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-TransitionKit.build/Objects-normal/i386/TKState.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/TransitionKit/Code/TKState.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-TransitionKit.build/Objects-normal/i386/TKEvent.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/TransitionKit/Code/TKEvent.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-TransitionKit.build/Objects-normal/i386/TKStateMachine.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/TransitionKit/Code/TKStateMachine.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-TransitionKit.build/Objects-normal/i386/Pods-TransitionKit-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-TransitionKit-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-TransitionKit.a normal i386
@@ -176,7 +176,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7498438dbba2b741^7576468dbba2b741^---0#1#0#--18"Check dependencies36"868BF02A-1A5D-4B50-B49C-D39515C68D22-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies97ad5986c2a2b741^774b5a86c2a2b741^---0#1#0#--18"Check dependencies36"B51B9D2C-21FC-4F85-A389-4BAEE895C9B9-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-TransitionKit.build/Objects-normal/i386/Pods-TransitionKit-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-TransitionKit-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s396511419.662158

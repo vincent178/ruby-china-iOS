@@ -3,8 +3,8 @@ v5
 r1
 cCheck dependencies
 cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-SOCKit-prefix-foogtabymdcnijgxeotdzvxbpdup/Pods-SOCKit-prefix.pch.pth Pods-SOCKit-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SOCKit.build/Objects-normal/i386/SOCKit.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/SOCKit/SOCKit.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SOCKit.build/Objects-normal/i386/Pods-SOCKit-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-SOCKit-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SOCKit.build/Objects-normal/i386/SOCKit.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/SOCKit/SOCKit.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-SOCKit.a normal i386
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
@@ -103,7 +103,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies338c438dbba2b741^4771468dbba2b741^---0#1#0#--18"Check dependencies36"041D4A36-11D6-498C-83C6-E1DC3D7F87BC-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies36ac5986c2a2b741^8d465a86c2a2b741^---0#1#0#--18"Check dependencies36"590D7D45-E669-43D9-8C7B-4D864ECDCC5A-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SOCKit.build/Objects-normal/i386/Pods-SOCKit-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-SOCKit-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s396511419.661768

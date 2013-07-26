@@ -77,18 +77,23 @@
     NSString *login = [self.loginField text];
     NSString *password = [self.passwordField text];
     
+    // Get the login and password information from textfield
     NSString *authStr = [NSString stringWithFormat:@"%@:%@", login, password];
+    // Encoding information
     NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
     NSString *authHeader = [NSString stringWithFormat:@"Basic %@", authData];
     
+    // Store information in http request header
     NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
     [headerFields setValue:authHeader forKey:@"Authorization"];
     
+    // initialize the RemoteEngine Class which is a subclass of MKNetworkEngine
     RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain
                                                      customHeaderFields:headerFields];
-//    MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
-    
+    // send post request in queue and store it in object currentOp
+    MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
     [SVProgressHUD showWithStatus:@"正在登陆..."];
+    
     
 }
      
@@ -109,7 +114,34 @@
     if (loginActive || passwordActive) {
         [self.loginField resignFirstResponder];
         [self.passwordField resignFirstResponder];
+        [self animateView:0];
     }
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (void) textFieldDidBeginEditing:(UITextField *)textField {
+    NSUInteger tag = [textField tag];
+    [self animateView:tag];
+}
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    [self animateView:0];
+    return YES;
+}
+
+- (void) animateView:(NSUInteger)tag {
+    CGRect rect = self.view.frame;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.3];
+    
+    if (tag > 0) {
+        rect.origin.y = -120.0f;
+    } else {
+        rect.origin.y = 20.0f;
+    }
+    self.view.frame = rect;
+    [UIView commitAnimations];
 }
 
 @end

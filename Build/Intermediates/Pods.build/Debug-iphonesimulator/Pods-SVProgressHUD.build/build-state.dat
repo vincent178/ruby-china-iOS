@@ -4,8 +4,8 @@ r1
 cCheck dependencies
 cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-SVProgressHUD-prefix-eapddkneyouwaygrfmjjkhmrlxrj/Pods-SVProgressHUD-prefix.pch.pth Pods-SVProgressHUD-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cProcessPCH /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/PrecompiledHeaders/Pods-SVProgressHUD-prefix-etwbyrfcotieqfglguiofvnmrjvl/Pods-SVProgressHUD-prefix.pch.pth Pods-SVProgressHUD-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SVProgressHUD.build/Objects-normal/i386/Pods-SVProgressHUD-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-SVProgressHUD-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SVProgressHUD.build/Objects-normal/i386/SVProgressHUD.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SVProgressHUD.build/Objects-normal/i386/Pods-SVProgressHUD-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-SVProgressHUD-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-SVProgressHUD.a normal i386
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
@@ -76,7 +76,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies143e4b8dbba2b741^187b4b8dbba2b741^---0#1#0#--18"Check dependencies36"D87EA24E-D0E9-4419-92C4-E96271FC3F1D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies40856386c2a2b741^b1c06386c2a2b741^---0#1#0#--18"Check dependencies36"A05573B0-DFD3-4F80-B101-3F7F6B0E814A-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SVProgressHUD.build/Objects-normal/i386/Pods-SVProgressHUD-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-SVProgressHUD-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s396511421.894207
