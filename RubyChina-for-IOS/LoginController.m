@@ -8,13 +8,16 @@
 
 #import "LoginController.h"
 #import "RemoteEngine.h"
+#import "NSData+MKBase64.h"
+#import "Preference.h"
+#import "AppDelegate.h"
 
 @interface LoginController ()
 
 
 @end
 
-@implementation LoginController
+@implementation LoginController 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,12 +68,12 @@
     [self.loginButton setBackgroundImage:bg forState:UIControlStateNormal];
     [self.loginButton setTitle:@"登陆" forState:UIControlStateNormal];
     [self.loginButton setBackgroundColor:[UIColor clearColor]];
-    [self.loginButton addTarget:self action:@selector(loginIsPressed:) forControlEvents:UIControlEventTouchDown];
+    [self.loginButton addTarget:self action:@selector(loginIsPressed:)
+               forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.loginButton];
 }
 
 - (void) loginIsPressed: (UIButton *)sender {
-    NSLog(@"%@", BaseDomain);
     NSString *login = [self.loginField text];
     NSString *password = [self.passwordField text];
     
@@ -83,13 +86,30 @@
     
     RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain
                                                      customHeaderFields:headerFields];
-    MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
+//    MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
+    
+    [SVProgressHUD showWithStatus:@"正在登陆..."];
+    
 }
+     
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITextFieldDeleage
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [[event allTouches] anyObject];
+    BOOL loginActive = [self.loginField isFirstResponder] && ([touch view] != self.loginField);
+    BOOL passwordActive = [self.passwordField isFirstResponder] && ([touch view] != self.passwordField);
+    
+    if (loginActive || passwordActive) {
+        [self.loginField resignFirstResponder];
+        [self.passwordField resignFirstResponder];
+    }
 }
 
 @end

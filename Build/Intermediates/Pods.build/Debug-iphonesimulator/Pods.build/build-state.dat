@@ -16,7 +16,7 @@ t1371255847
 s272
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
-t1374765074
+t1374818624
 s3236
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
@@ -24,55 +24,72 @@ c0000000051F140120000000000000090
 t1374765074
 s144
 
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/StaticAnalyzer/Pods/Pods/normal/i386/Pods-dummy.plist
+t1374818199
+s382
+
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a
-c0000000051F1401000000000000CB7A8
-t1374765072
+c0000000051F2113D00000000000CB7A8
+t1374818621
 s833448
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-MKNetworkKit.a
-c0000000051F14010000000000007BB70
-t1374765072
-s506736
+c0000000051F2113D000000000007BB60
+t1374818621
+s506720
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-Reachability.a
-c0000000051F1400E000000000000AC18
-t1374765070
+c0000000051F2113B000000000000AC18
+t1374818619
 s44056
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-RestKit.a
-c0000000051F1401200000000002B96C8
-t1374765074
-s2856648
+c0000000051F2113F00000000002B96A8
+t1374818623
+s2856616
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-SOCKit.a
-c0000000051F1400E000000000000C878
-t1374765070
+c0000000051F2113B000000000000C878
+t1374818619
 s51320
 
+N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-SVProgressHUD.a
+c0000000051F2113D0000000000029DB0
+t1374818621
+s171440
+
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-TransitionKit.a
-c0000000051F1400F000000000001B418
-t1374765071
+c0000000051F2113B000000000001B418
+t1374818619
 s111640
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a
-t1374765075
-s4406744
+t1374818624
+s4578032
 
 N/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m
-c0000000051F13FF00000000000000070
-t1374765040
+c0000000051F210980000000000000070
+t1374818456
 s112
+
+CAnalyze /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m
+s396510999.295796
+e396510999.417434
+r1
+xAnalyze
+x/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Analyze /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.mffe84b1747a2b741^16dd6a1747a2b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m0000000000000000^4514"Analyze Pods-dummy.m    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -Xclang -analyzer-output=plist-multi-file -Xclang -analyzer-checker -Xclang security.insecureAPI.UncheckedReturn -Xclang -analyzer-checker -Xclang security.insecureAPI.getpw -Xclang -analyzer-checker -Xclang security.insecureAPI.gets -Xclang -analyzer-checker -Xclang security.insecureAPI.mkstemp -Xclang -analyzer-checker -Xclang security.insecureAPI.mktemp -Xclang -analyzer-disable-checker -Xclang security.insecureAPI.rand -Xclang -analyzer-disable-checker -Xclang security.insecureAPI.strcpy -Xclang -analyzer-checker -Xclang security.insecureAPI.vfork -mios-simulator-version-min=6.0 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/StaticAnalyzer/Pods/Pods/normal/i386/Pods-dummy.d --analyze /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/StaticAnalyzer/Pods/Pods/normal/i386/Pods-dummy.plist36"124790A4-0DFC-4B80-A743-B3940CFBC088-
 
 CBuild AST from /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m
 r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies95d64f4f46a2b741^3b38504f46a2b741^---0#1#0#--18"Check dependencies36"A3B40B35-429F-4211-8011-D64A3E0A8CB9-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies3047638dbba2b741^a2b8638dbba2b741^---0#1#0#--18"Check dependencies36"CF006020-293E-4C66-965F-52CF97D05785-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s396457874.883713
-e396457874.984702
+s396511423.955285
+e396511424.137412
 r1
 xCompileC
 x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
@@ -81,16 +98,16 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.mcf65e29277a1b741^1a15fc9277a1b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m0000000000000000^4294"CompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"B6286951-5F17-406F-A577-2F74228B5E4A-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m82c6f4bf48a2b741^f92c23c048a2b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m0000000000000000^4375"CompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/include -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/AFNetworking -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/MKNetworkKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/MKNetworkKit/Categories -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/Reachability -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/CoreData -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/Network -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/ObjectMapping -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/RestKit/RestKit/Support -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/SOCKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/SVProgressHUD -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods/Headers/TransitionKit -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources -F/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-dummy.m -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"EE5CD777-81D4-4A4D-A983-A87564C276E1-
 
 CLibtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a normal i386
-s396457874.991625
-e396457875.175710
+s396511424.160844
+e396511424.428765
 r1
 xLibtool
 x/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a
 xnormal
 xi386
 o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-RestKit.a(LCLNSLog_RK.o) has no symbols
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Libtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a normal i386c0edfd9277a1b741^7bfa2c9377a1b741^-234"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-RestKit.a(LCLNSLog_RK.o) has no symbols-0#0#0#--1135"Libtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a normal i386    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -filelist /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-AFNetworking -lPods-MKNetworkKit -lPods-Reachability -lPods-RestKit -lPods-SOCKit -lPods-TransitionKit -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a36"7D8DA3D1-7786-4880-B753-86DD8BA18D93-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Libtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a normal i386aa102bc048a2b741^f94e70c048a2b741^-234"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: file: /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods-RestKit.a(LCLNSLog_RK.o) has no symbols-0#0#0#--1156"Libtool /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a normal i386    cd /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator -filelist /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-AFNetworking -lPods-MKNetworkKit -lPods-Reachability -lPods-RestKit -lPods-SOCKit -lPods-SVProgressHUD -lPods-TransitionKit -o /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Products/Debug-iphonesimulator/libPods.a36"39240452-B025-4A2B-8739-D0CF59A172F8-
 
