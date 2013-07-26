@@ -12,3 +12,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define BaseDomain @"ruby-china.org"
+#define BaseAPIURL [NSString stringWithFormat:@"http://%@/api/v2", BaseDomain]

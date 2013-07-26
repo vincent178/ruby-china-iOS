@@ -71,7 +71,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesabe7f45f3aa2b741^44c4f55f3aa2b741^---0#1#0#--18"Check dependencies36"59172299-2844-4705-B485-F11C16E0B008-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies971d2a4f46a2b741^35d3354f46a2b741^---0#1#0#--18"Check dependencies36"EB35A6FC-EED0-4F67-9275-D5088EBBF8A2-
 
 CCompileC /Users/vincent/Project/xcode/RubyChina-for-IOS/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Reachability.build/Objects-normal/i386/Pods-Reachability-dummy.o /Users/vincent/Project/xcode/RubyChina-for-IOS/Pods/Pods-Reachability-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s396457870.573569

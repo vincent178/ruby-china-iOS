@@ -7,8 +7,10 @@
 //
 
 #import "LoginController.h"
+#import "RemoteEngine.h"
 
 @interface LoginController ()
+
 
 @end
 
@@ -68,7 +70,7 @@
 }
 
 - (void) loginIsPressed: (UIButton *)sender {
-    NSLog(@"Hello world");
+    NSLog(@"%@", BaseDomain);
     NSString *login = [self.loginField text];
     NSString *password = [self.passwordField text];
     
@@ -78,6 +80,10 @@
     
     NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
     [headerFields setValue:authHeader forKey:@"Authorization"];
+    
+    RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain
+                                                     customHeaderFields:headerFields];
+    MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
 }
 
 - (void)didReceiveMemoryWarning
