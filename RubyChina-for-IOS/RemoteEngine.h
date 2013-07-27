@@ -10,7 +10,10 @@
 
 @interface RemoteEngine : MKNetworkEngine
 
-- (MKNetworkOperation *) login:(NSString *)username password:(NSString *)password;
+- (MKNetworkOperation *) login:(NSString *)username
+                      password:(NSString *)password
+                  onCompletion:(MKNKResponseBlock)completionBlock
+                       onError:(MKNKResponseErrorBlock)errorBlock;
 
 - (MKNetworkOperation *) createTopic:(NSString *)title body:(NSString *)body
                              NodeId:(NSNumber *)nodeId;

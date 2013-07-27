@@ -77,32 +77,14 @@
     NSString *login = [self.loginField text];
     NSString *password = [self.passwordField text];
     
-    // Get the login and password information from textfield
-    NSString *authStr = [NSString stringWithFormat:@"%@:%@", login, password];
-    // Encoding information
-    NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
-    NSString *authHeader = [NSString stringWithFormat:@"Basic %@", authData];
-    
-    // Store information in http request header
-    NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
-    [headerFields setValue:authHeader forKey:@"Authorization"];
-    NSLog(@"%@", headerFields);
-    
-    // initialize the RemoteEngine Class which is a subclass of MKNetworkEngine
-    RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain
-                                                     customHeaderFields:headerFields];
-    // send post request in queue and store it in object currentOp
-    MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
-    [SVProgressHUD showWithStatus:@"正在登陆..."];
-    
-    [currentOp addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-        NSDictionary *response = [completedOperation responseJSON];
-        NSLog(@"%@", response);
-    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-        NSLog(@"%@", error);
+    RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain];
+    [remoteEngine login:login password:password onCompletion:^(MKNetworkOperation *completedOperation) {
+        NSLog(@"%@", completedOperation);
+        NSLog(@"Hello");
+    } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
+//        NSLog(@"%@", error);
+        NSLog(@"world");
     }];
-    
-    
 }
      
 
