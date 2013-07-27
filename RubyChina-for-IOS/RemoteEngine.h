@@ -10,27 +10,9 @@
 
 @interface RemoteEngine : MKNetworkEngine
 
-- (MKNetworkOperation *) login:(NSString *)username
+- (MKNetworkOperation *) login:(NSString *)login
                       password:(NSString *)password
                   onCompletion:(MKNKResponseBlock)completionBlock
                        onError:(MKNKResponseErrorBlock)errorBlock;
-
-- (MKNetworkOperation *) createTopic:(NSString *)title body:(NSString *)body
-                             NodeId:(NSNumber *)nodeId;
-
-- (MKNetworkOperation *) topics:(NSNumber *)page;
-
-- (MKNetworkOperation *) userTopics:(NSNumber *)page login:(NSString *)login;
-
-- (MKNetworkOperation *) topic:(NSNumber *)topicId;
-
-- (MKNetworkOperation *) createReply:(NSNumber *)topicId body:(NSString *)body;
-
-- (MKNetworkOperation *) nodes;
-
-- (MKNetworkOperation *) node:(NSNumber *)nodeId;
-
-- (MKNetworkOperation *) user:(NSString *)username;
-
 
 @end

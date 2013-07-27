@@ -43,6 +43,7 @@
     self.loginField = [[UITextField alloc] initWithFrame:CGRectMake(35, 150, 255, 40)];
     self.loginField.clearButtonMode = UITextFieldViewModeWhileEditing;
     self.loginField.font = [UIFont systemFontOfSize:18.0f];
+    self.loginField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     self.loginField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.loginField.borderStyle = UITextBorderStyleRoundedRect;
     self.loginField.placeholder = @"用户名";
@@ -76,14 +77,16 @@
 - (void) loginIsPressed: (UIButton *)sender {
     NSString *login = [self.loginField text];
     NSString *password = [self.passwordField text];
-    
-    RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain];
-    [remoteEngine login:login password:password onCompletion:^(MKNetworkOperation *completedOperation) {
-        NSLog(@"%@", completedOperation);
-        NSLog(@"Hello");
-    } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
-//        NSLog(@"%@", error);
-        NSLog(@"world");
+   
+    RemoteEngine *remoteEngine = [[RemoteEngine alloc]
+                                  initWithHostName:BaseDomain];
+    [remoteEngine login:login password:password
+           onCompletion:^(MKNetworkOperation *completedOperation) {
+               NSLog(@"%@", completedOperation);
+               NSLog(@"Hello");
+           } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
+               //        NSLog(@"%@", error);
+               NSLog(@"world");
     }];
 }
      

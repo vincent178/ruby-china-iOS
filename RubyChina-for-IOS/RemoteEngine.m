@@ -10,18 +10,28 @@
 
 @implementation RemoteEngine
 
-- (MKNetworkOperation *) login:(NSString *)username password:(NSString *)password onCompletion:(MKNKResponseBlock)completionBlock onError:(MKNKResponseErrorBlock)errorBlock {
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    [params setValue:username forKey:@"login"];
-    [params setValue:password forKey:@"password"];
+- (MKNetworkOperation *) login:(NSString *)login
+                      password:(NSString *)password
+                  onCompletion:(MKNKResponseBlock)completionBlock
+                       onError:(MKNKResponseErrorBlock)errorBlock {
+    
+    // Basic Authentication Header
+    NSString *authStr = [NSString stringWithFormat:@"%@:%@", login, password];
+    NSData *authData = [authStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *authHeader = [NSString stringWithFormat:@"Basic %@", [authData base64EncodedString]];
+    NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
+    [headerFields setValue:authHeader forKey:@"Authorization"];
+    
     MKNetworkOperation *op = [self operationWithPath:@"account/sign_in.json"
-                              params:params
+                                              params:nil
                                           httpMethod:@"POST"];
+    [op addHeaders:headerFields];
     [op addCompletionHandler:completionBlock errorHandler:errorBlock];
+    
     op.postDataEncoding = MKNKPostDataEncodingTypeJSON;
     [self enqueueOperation:op];
-    return op;
     
+    return op;
 }
 
 @end
