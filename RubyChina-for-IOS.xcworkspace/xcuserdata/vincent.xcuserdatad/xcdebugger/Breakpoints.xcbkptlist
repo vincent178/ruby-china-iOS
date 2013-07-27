@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/LoginController.m"
-         timestampString = "396542600.139629"
+         timestampString = "396576078.666323"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "93"
-         endingLineNumber = "93"
+         startingLineNumber = "104"
+         endingLineNumber = "104"
          landmarkName = "-loginIsPressed:"
          landmarkType = "5">
       </FileBreakpoint>

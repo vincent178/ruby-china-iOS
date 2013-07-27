@@ -86,6 +86,7 @@
     // Store information in http request header
     NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
     [headerFields setValue:authHeader forKey:@"Authorization"];
+    NSLog(@"%@", headerFields);
     
     // initialize the RemoteEngine Class which is a subclass of MKNetworkEngine
     RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseDomain
@@ -93,6 +94,13 @@
     // send post request in queue and store it in object currentOp
     MKNetworkOperation *currentOp = [remoteEngine login:login password:password];
     [SVProgressHUD showWithStatus:@"正在登陆..."];
+    
+    [currentOp addCompletionHandler:^(MKNetworkOperation *completedOperation) {
+        NSDictionary *response = [completedOperation responseJSON];
+        NSLog(@"%@", response);
+    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
     
     
 }
