@@ -22,13 +22,15 @@
     NSMutableDictionary *headerFields = [NSMutableDictionary dictionary];
     [headerFields setValue:authHeader forKey:@"Authorization"];
     
+    // Initialize operation
     MKNetworkOperation *op = [self operationWithPath:@"account/sign_in.json"
                                               params:nil
                                           httpMethod:@"POST"];
     [op addHeaders:headerFields];
     [op addCompletionHandler:completionBlock errorHandler:errorBlock];
-    
     op.postDataEncoding = MKNKPostDataEncodingTypeJSON;
+    
+    // Add operation in Queue
     [self enqueueOperation:op];
     
     return op;

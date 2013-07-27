@@ -14,6 +14,4 @@
 @property (nonatomic, strong) UITextField *loginField;
 @property (nonatomic, strong) UITextField *passwordField;
 
-- (void) animateView: (NSUInteger)tag;
-
 @end

@@ -80,10 +80,11 @@
    
     RemoteEngine *remoteEngine = [[RemoteEngine alloc]
                                   initWithHostName:BaseDomain];
+    
+    // Login in with username and password
     [remoteEngine login:login password:password
            onCompletion:^(MKNetworkOperation *completedOperation) {
                NSLog(@"%@", completedOperation);
-               NSLog(@"Hello");
            } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
                //        NSLog(@"%@", error);
                NSLog(@"world");
@@ -107,34 +108,13 @@
     if (loginActive || passwordActive) {
         [self.loginField resignFirstResponder];
         [self.passwordField resignFirstResponder];
-        [self animateView:0];
     }
     [super touchesBegan:touches withEvent:event];
 }
 
-- (void) textFieldDidBeginEditing:(UITextField *)textField {
-    NSUInteger tag = [textField tag];
-    [self animateView:tag];
-}
-
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
-    [self animateView:0];
     return YES;
-}
-
-- (void) animateView:(NSUInteger)tag {
-    CGRect rect = self.view.frame;
-    [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDuration:0.3];
-    
-    if (tag > 0) {
-        rect.origin.y = -120.0f;
-    } else {
-        rect.origin.y = 20.0f;
-    }
-    self.view.frame = rect;
-    [UIView commitAnimations];
 }
 
 @end
