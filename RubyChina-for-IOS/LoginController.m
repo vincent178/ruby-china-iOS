@@ -81,18 +81,27 @@
     RemoteEngine *remoteEngine = [[RemoteEngine alloc]
                                   initWithHostName:BaseDomain];
     
+    [SVProgressHUD showWithStatus:@"正在登陆..."];
+    
     // Login in with username and password
     [remoteEngine login:login password:password
            onCompletion:^(MKNetworkOperation *completedOperation) {
-               NSLog(@"%@", completedOperation);
+               [SVProgressHUD dismiss];
+               DLog(@"%@", completedOperation);
+               
+               NSDictionary *response = [completedOperation responseJSON];
+               
+               // Get user avatar url
+               NSString *avatar_url = [[[response objectForKey:@"avatar"] objectForKey:@"normal"] objectForKey:@"url"];
+               NSLog(@"%@", avatar_url);
+               
            } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
-               //        NSLog(@"%@", error);
-               NSLog(@"world");
+               [SVProgressHUD showErrorWithStatus:@"用户名或密码错误"];
     }];
 }
      
 
-- (void)didReceiveMemoryWarning
+- (void) didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
