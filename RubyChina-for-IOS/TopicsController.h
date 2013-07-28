@@ -10,7 +10,7 @@
 
 @class Node;
 
-@interface TopicsController : UITableViewController
+@interface TopicsController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, copy, readwrite) NSMutableArray *topics;
 @property (nonatomic, copy) NSNumber *currentPage;
