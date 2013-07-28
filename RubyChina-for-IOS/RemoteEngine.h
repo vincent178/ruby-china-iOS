@@ -15,4 +15,8 @@
                   onCompletion:(MKNKResponseBlock)completionBlock
                        onError:(MKNKResponseErrorBlock)errorBlock;
 
+- (NSMutableArray *) getRemoteData;
+- (NSMutableArray *) getOldRemoteData;
+    
+
 @end

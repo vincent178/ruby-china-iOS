@@ -36,4 +36,15 @@
     return op;
 }
 
+- (NSMutableArray *) getRemoteData {
+    MKNetworkOperation *currentOp = nil;
+    
+    [currentOp addCompletionHandler:^(MKNetworkOperation *completedOperation) {
+        
+    }
+                       errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+    }];
+    
+}
+
 @end
