@@ -37,10 +37,6 @@
                                 </view>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Ydi-Vb-cWc" id="A6v-W0-Ho1"/>
-                            <outlet property="delegate" destination="Ydi-Vb-cWc" id="djc-xu-NOe"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="1yz-Ay-kc9"/>
                 </tableViewController>
@@ -68,14 +64,6 @@
             <point key="canvasLocation" x="-471" y="-899"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="LoginController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoginController.h"/>
-        </class>
-        <class className="TopicsController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TopicsController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

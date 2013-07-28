@@ -28,12 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.title = @"社区";
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
+    [self getRemoteData];
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,21 +45,37 @@
 
 #pragma mark - Table view data source
 
+- (void)getRemoteData {
+    RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
+    [remoteEngine getTopicsWithPage:1 conCompletion:^(MKNetworkOperation *completedOperation) {
+        NSMutableArray *response = [completedOperation responseJSON];
+        self.topics = response;
+        
+        NSLog(@"%d", self.topics.count);
+    } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
+        self.topics = nil;
+    }];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
+    NSLog(@"I'm in number of section in table view");
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 3;
+    NSLog(@"I'm in number of rows section");
+    NSLog(@"%d", self.topics.count);
+    return self.topics.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"I'm in cell for row at index path");
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -66,12 +83,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     }
     
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Hello world!";
-    } else {
-        cell.textLabel.text = @"Hi Objective C";
-    }
-    
+    NSDictionary *cellContent = [self.topics objectAtIndex:indexPath.row];
+    cell.textLabel.text = [cellContent objectForKey:@"title"];
     return cell;
 }
 

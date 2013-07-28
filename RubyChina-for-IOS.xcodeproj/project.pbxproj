@@ -202,12 +202,12 @@
 				BFBB6FC817748C2E009EBE4A /* Models */,
 				BF97E5621773D0AF009F859E /* AppDelegate.h */,
 				BF97E5631773D0AF009F859E /* AppDelegate.m */,
+				BF89E07017A24B6C00DB6056 /* Preference.h */,
+				BF89E07117A24B6C00DB6056 /* Preference.m */,
 				BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */,
 				BF97E56E1773D0AF009F859E /* ViewController.h */,
 				BF97E56F1773D0AF009F859E /* ViewController.m */,
 				BF97E55A1773D0AF009F859E /* Supporting Files */,
-				BF89E07017A24B6C00DB6056 /* Preference.h */,
-				BF89E07117A24B6C00DB6056 /* Preference.m */,
 			);
 			path = "RubyChina-for-IOS";
 			sourceTree = "<group>";

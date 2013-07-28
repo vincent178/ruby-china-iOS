@@ -36,15 +36,18 @@
     return op;
 }
 
-- (NSMutableArray *) getRemoteData {
-    MKNetworkOperation *currentOp = nil;
+- (MKNetworkOperation *) getTopicsWithPage:(NSInteger)page
+                             conCompletion:(MKNKResponseBlock)completionBlock
+                                   onError:(MKNKResponseErrorBlock)errorBlock {
     
-    [currentOp addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-        
-    }
-                       errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-    }];
+    MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"topics.json?page=%d", page]
+                                              params:nil
+                                          httpMethod:@"GET"];
+    [op addCompletionHandler:completionBlock errorHandler:errorBlock];
     
+    [self enqueueOperation:op];
+    
+    return op;
 }
 
 @end

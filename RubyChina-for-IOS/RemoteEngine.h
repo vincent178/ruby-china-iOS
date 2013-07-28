@@ -15,8 +15,8 @@
                   onCompletion:(MKNKResponseBlock)completionBlock
                        onError:(MKNKResponseErrorBlock)errorBlock;
 
-- (NSMutableArray *) getRemoteData;
-- (NSMutableArray *) getOldRemoteData;
-    
+- (MKNetworkOperation *) getTopicsWithPage:(NSInteger)page
+                             conCompletion:(MKNKResponseBlock)completionBlock
+                                   onError:(MKNKResponseErrorBlock)errorBlock;
 
 @end

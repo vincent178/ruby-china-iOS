@@ -15,4 +15,4 @@
 #endif
 
 #define BaseDomain @"ruby-china.org"
-#define BaseAPIURL [NSString stringWithFormat:@"http://%@/api/v2", BaseDomain]
+#define BaseAPIURL [NSString stringWithFormat:@"%@/api/v2", BaseDomain]
