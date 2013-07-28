@@ -16,6 +16,11 @@
 
 @implementation TopicsController
 
+- (void) setTopics:(NSMutableArray *)topics {
+    if (_topics != topics) _topics = [topics mutableCopy];
+    [self.tableView reloadData];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -34,7 +39,6 @@
     self.tableView.delegate = self;
     
     [self getRemoteData];
-    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,9 +53,7 @@
     RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
     [remoteEngine getTopicsWithPage:1 conCompletion:^(MKNetworkOperation *completedOperation) {
         NSMutableArray *response = [completedOperation responseJSON];
-        self.topics = response;
-        
-        NSLog(@"%d", self.topics.count);
+        [self setTopics:response];
     } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
         self.topics = nil;
     }];
@@ -60,22 +62,18 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    NSLog(@"I'm in number of section in table view");
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"I'm in number of rows section");
-    NSLog(@"%d", self.topics.count);
     return self.topics.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"I'm in cell for row at index path");
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
@@ -92,13 +90,6 @@
 //
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 //{
-//    // Navigation logic may go here. Create and push another view controller.
-//    /*
-//     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-//     // ...
-//     // Pass the selected object to the new view controller.
-//     [self.navigationController pushViewController:detailViewController animated:YES];
-//     */
 //}
 //
 @end
