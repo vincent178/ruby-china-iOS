@@ -68,6 +68,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
+    NSLog(@"%d", self.topics.count);
     return self.topics.count;
 }
 
@@ -82,6 +83,7 @@
     }
     
     NSDictionary *cellContent = [self.topics objectAtIndex:indexPath.row];
+    NSLog(@"%@", cellContent);
     cell.textLabel.text = [cellContent objectForKey:@"title"];
     return cell;
 }
