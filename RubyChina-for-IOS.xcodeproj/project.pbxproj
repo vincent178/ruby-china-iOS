@@ -48,7 +48,6 @@
 		BF97E5681773D0AF009F859E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97E5671773D0AF009F859E /* Default@2x.png */; };
 		BF97E56A1773D0AF009F859E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97E5691773D0AF009F859E /* Default-568h@2x.png */; };
 		BF97E56D1773D0AF009F859E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */; };
-		BF97E5701773D0AF009F859E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF97E56F1773D0AF009F859E /* ViewController.m */; };
 		BFB54A25179F55D700643E38 /* Reply.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB54A24179F55D600643E38 /* Reply.m */; };
 		BFEA20F1179D731C00F0E369 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEA20F0179D731C00F0E369 /* User.m */; };
 		BFEA20F4179DFF4E00F0E369 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEA20F3179DFF4E00F0E369 /* Topic.m */; };
@@ -108,8 +107,6 @@
 		BF97E5671773D0AF009F859E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BF97E5691773D0AF009F859E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF97E56C1773D0AF009F859E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BF97E56E1773D0AF009F859E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF97E56F1773D0AF009F859E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BFB54A23179F55D600643E38 /* Reply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reply.h; sourceTree = "<group>"; };
 		BFB54A24179F55D600643E38 /* Reply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reply.m; sourceTree = "<group>"; };
 		BFEA20EF179D731C00F0E369 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -205,8 +202,6 @@
 				BF89E07017A24B6C00DB6056 /* Preference.h */,
 				BF89E07117A24B6C00DB6056 /* Preference.m */,
 				BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */,
-				BF97E56E1773D0AF009F859E /* ViewController.h */,
-				BF97E56F1773D0AF009F859E /* ViewController.m */,
 				BF97E55A1773D0AF009F859E /* Supporting Files */,
 			);
 			path = "RubyChina-for-IOS";
@@ -397,7 +392,6 @@
 			files = (
 				BF97E5601773D0AF009F859E /* main.m in Sources */,
 				BF97E5641773D0AF009F859E /* AppDelegate.m in Sources */,
-				BF97E5701773D0AF009F859E /* ViewController.m in Sources */,
 				BFEA20F1179D731C00F0E369 /* User.m in Sources */,
 				BFEA20F4179DFF4E00F0E369 /* Topic.m in Sources */,
 				BFB54A25179F55D700643E38 /* Reply.m in Sources */,
