@@ -9,6 +9,7 @@
 #import "TopicsController.h"
 #import "Node.h"
 #import "RemoteEngine.h"
+#import "TopicsCell.h"
 
 @interface TopicsController ()
 
@@ -76,16 +77,20 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    TopicsCell *cell = (TopicsCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[TopicsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     NSDictionary *cellContent = [self.topics objectAtIndex:indexPath.row];
+    [cell setTopicsCell:cellContent];
     NSLog(@"%@", cellContent);
-    cell.textLabel.text = [cellContent objectForKey:@"title"];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 135;
 }
 
 #pragma mark - Table view delegate
