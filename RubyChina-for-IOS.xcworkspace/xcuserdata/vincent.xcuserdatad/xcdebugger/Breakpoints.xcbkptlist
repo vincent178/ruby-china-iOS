@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsCell.m"
-         timestampString = "396837496.431275"
+         timestampString = "396873428.805982"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "30"
-         endingLineNumber = "30"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
          landmarkName = "-initWithStyle:reuseIdentifier:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsCell.m"
-         timestampString = "396837496.431275"
+         timestampString = "396873428.805982"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "29"
-         endingLineNumber = "29"
+         startingLineNumber = "28"
+         endingLineNumber = "28"
          landmarkName = "-initWithStyle:reuseIdentifier:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsCell.m"
-         timestampString = "396847508.56873"
+         timestampString = "396873428.805982"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "60"
-         endingLineNumber = "60"
+         startingLineNumber = "58"
+         endingLineNumber = "58"
          landmarkName = "-layoutSubviews"
          landmarkType = "5">
       </FileBreakpoint>

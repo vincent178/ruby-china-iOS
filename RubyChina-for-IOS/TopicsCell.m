@@ -22,30 +22,28 @@
         
         // Add nameLabel
         nameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        nameLabel.backgroundColor = [UIColor yellowColor];
         nameLabel.textAlignment = NSTextAlignmentLeft;
-        nameLabel.textColor = [UIColor blueColor];
-        nameLabel.font = [UIFont systemFontOfSize:13.0f];
+        nameLabel.textColor = [UIColor grayColor];
+        nameLabel.font = [UIFont systemFontOfSize:12.0f];
         [self.contentView addSubview: nameLabel];
-        
-        // Add topicLabel
-        topicLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        topicLabel.backgroundColor = [UIColor redColor];
-        topicLabel.textAlignment = NSTextAlignmentLeft;
-        topicLabel.textColor = [UIColor grayColor];
-        topicLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        topicLabel.adjustsFontSizeToFitWidth = false;
-        topicLabel.numberOfLines = 0;
-        topicLabel.font = [UIFont systemFontOfSize:12.0f];
-        [self.contentView addSubview: topicLabel];
         
         // Add nodeLabel
         nodeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-        nodeLabel.backgroundColor = [UIColor yellowColor];
         nodeLabel.textAlignment = NSTextAlignmentRight;
-        nodeLabel.textColor = [UIColor blueColor];
-        nodeLabel.font = [UIFont systemFontOfSize:13.0f];
+        nodeLabel.textColor = [UIColor grayColor];
+        nodeLabel.font = [UIFont systemFontOfSize:12.0f];
         [self.contentView addSubview:nodeLabel];
+        
+        // Add topicLabel
+        topicLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        topicLabel.textAlignment = NSTextAlignmentLeft;
+        topicLabel.textColor = [UIColor blackColor];
+        topicLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        topicLabel.adjustsFontSizeToFitWidth = false;
+        topicLabel.numberOfLines = 0;
+        topicLabel.font = [UIFont systemFontOfSize:13.0f];
+        [self.contentView addSubview: topicLabel];
+        
     }
     return self;
 }

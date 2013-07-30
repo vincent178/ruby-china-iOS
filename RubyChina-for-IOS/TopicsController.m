@@ -96,7 +96,7 @@
     
     // Make Height Dynamic
     CGSize maximumLabelSize = CGSizeMake(260, FLT_MAX);
-    CGSize expectedLabelSize = [topicTitle sizeWithFont:[UIFont systemFontOfSize:12.0f]
+    CGSize expectedLabelSize = [topicTitle sizeWithFont:[UIFont systemFontOfSize:13.0f]
                                            constrainedToSize:maximumLabelSize
                                                lineBreakMode:NSLineBreakByWordWrapping];
     return 40 + expectedLabelSize.height;
