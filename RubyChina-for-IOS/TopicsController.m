@@ -10,6 +10,8 @@
 #import "Node.h"
 #import "RemoteEngine.h"
 #import "TopicsCell.h"
+#import "TopicController.h"
+#import "Topic.h"
 
 @interface TopicsController ()
 
@@ -104,9 +106,13 @@
 
 #pragma mark - Table view delegate
 
-//
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//}
-//
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Topic *topic = [self.topics objectAtIndex:indexPath.row];
+    TopicController *topicController = [[TopicController alloc] init];
+    topicController.topic = topic;
+    [self.navigationController pushViewController:topicController animated:YES];
+}
+
 @end
