@@ -12,6 +12,7 @@
 {
     UILabel *nameLabel;
     UILabel *topicLabel;
+    UILabel *nodeLabel;
     UIImageView *avatar;
 }
 

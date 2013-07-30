@@ -37,7 +37,6 @@
 		BF89E00017A1FB2B00DB6056 /* RemoteEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89DFFF17A1FB2B00DB6056 /* RemoteEngine.m */; };
 		BF89E07217A24B6C00DB6056 /* Preference.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89E07117A24B6C00DB6056 /* Preference.m */; };
 		BF89E0E217A499B200DB6056 /* TopicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89E0E117A499B200DB6056 /* TopicsController.m */; };
-		BF89E0E517A50A8600DB6056 /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89E0E417A50A8600DB6056 /* TopicController.m */; };
 		BF89E0E817A6A8AD00DB6056 /* TopicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF89E0E717A6A8AD00DB6056 /* TopicsCell.m */; };
 		BF97E5541773D0AF009F859E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5531773D0AF009F859E /* UIKit.framework */; };
 		BF97E5561773D0AF009F859E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5551773D0AF009F859E /* Foundation.framework */; };
@@ -92,8 +91,6 @@
 		BF89E07117A24B6C00DB6056 /* Preference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preference.m; sourceTree = "<group>"; };
 		BF89E0E017A499B200DB6056 /* TopicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsController.h; sourceTree = "<group>"; };
 		BF89E0E117A499B200DB6056 /* TopicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsController.m; sourceTree = "<group>"; };
-		BF89E0E317A50A8500DB6056 /* TopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicController.h; sourceTree = "<group>"; };
-		BF89E0E417A50A8600DB6056 /* TopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicController.m; sourceTree = "<group>"; };
 		BF89E0E617A6A8AD00DB6056 /* TopicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsCell.h; sourceTree = "<group>"; };
 		BF89E0E717A6A8AD00DB6056 /* TopicsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsCell.m; sourceTree = "<group>"; };
 		BF97E5501773D0AF009F859E /* RubyChina-for-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-for-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,8 +247,6 @@
 				BF89DFFF17A1FB2B00DB6056 /* RemoteEngine.m */,
 				BF89E0E017A499B200DB6056 /* TopicsController.h */,
 				BF89E0E117A499B200DB6056 /* TopicsController.m */,
-				BF89E0E317A50A8500DB6056 /* TopicController.h */,
-				BF89E0E417A50A8600DB6056 /* TopicController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -406,7 +401,6 @@
 				BF89E00017A1FB2B00DB6056 /* RemoteEngine.m in Sources */,
 				BF89E07217A24B6C00DB6056 /* Preference.m in Sources */,
 				BF89E0E217A499B200DB6056 /* TopicsController.m in Sources */,
-				BF89E0E517A50A8600DB6056 /* TopicController.m in Sources */,
 				BF89E0E817A6A8AD00DB6056 /* TopicsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

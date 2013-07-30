@@ -25,6 +25,7 @@
         nameLabel.backgroundColor = [UIColor yellowColor];
         nameLabel.textAlignment = NSTextAlignmentLeft;
         nameLabel.textColor = [UIColor blueColor];
+        nameLabel.font = [UIFont systemFontOfSize:13.0f];
         [self.contentView addSubview: nameLabel];
         
         // Add topicLabel
@@ -32,7 +33,18 @@
         topicLabel.backgroundColor = [UIColor redColor];
         topicLabel.textAlignment = NSTextAlignmentLeft;
         topicLabel.textColor = [UIColor grayColor];
+        topicLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        topicLabel.numberOfLines = 2;
+        topicLabel.font = [UIFont systemFontOfSize:12.0f];
         [self.contentView addSubview: topicLabel];
+        
+        // Add nodeLabel
+        nodeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        nodeLabel.backgroundColor = [UIColor yellowColor];
+        nodeLabel.textAlignment = NSTextAlignmentRight;
+        nodeLabel.textColor = [UIColor blueColor];
+        nodeLabel.font = [UIFont systemFontOfSize:13.0f];
+        [self.contentView addSubview:nodeLabel];
     }
     return self;
 }
@@ -41,14 +53,16 @@
 - (void) setTopicsCell:(NSDictionary *)cellContent {
     nameLabel.text  = [[cellContent objectForKey:@"user"] objectForKey:@"login"];
     topicLabel.text = [cellContent objectForKey:@"title"];
+    nodeLabel.text = [cellContent objectForKey:@"node_name"];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    avatar.frame = CGRectMake(10, 10, 50, 50);
-    nameLabel.frame = CGRectMake(65, 10, 240, 20);
-    topicLabel.frame = CGRectMake(65, 35, 240, 90);
+    avatar.frame = CGRectMake(8, 10, 32, 32);
+    nameLabel.frame = CGRectMake(50, 10, 80, 14);
+    nodeLabel.frame = CGRectMake(160, 10, 150, 14);
+    topicLabel.frame = CGRectMake(50, 30, 260, 25);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
