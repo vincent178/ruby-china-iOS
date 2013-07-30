@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TopicsCell : UITableViewCell
+
+
 {
     UILabel *nameLabel;
     UILabel *topicLabel;

@@ -34,7 +34,8 @@
         topicLabel.textAlignment = NSTextAlignmentLeft;
         topicLabel.textColor = [UIColor grayColor];
         topicLabel.lineBreakMode = NSLineBreakByWordWrapping;
-        topicLabel.numberOfLines = 2;
+        topicLabel.adjustsFontSizeToFitWidth = false;
+        topicLabel.numberOfLines = 0;
         topicLabel.font = [UIFont systemFontOfSize:12.0f];
         [self.contentView addSubview: topicLabel];
         
@@ -62,7 +63,18 @@
     avatar.frame = CGRectMake(8, 10, 32, 32);
     nameLabel.frame = CGRectMake(50, 10, 80, 14);
     nodeLabel.frame = CGRectMake(160, 10, 150, 14);
-    topicLabel.frame = CGRectMake(50, 30, 260, 25);
+    topicLabel.frame = CGRectMake(50, 30, 260, 20);
+    
+    // Dynamic set UiLabel height
+    CGSize maximumLabelSize = CGSizeMake(260, FLT_MAX);
+    CGSize expectedLabelSize = [topicLabel.text sizeWithFont:topicLabel.font
+                                      constrainedToSize:maximumLabelSize
+                                          lineBreakMode:topicLabel.lineBreakMode];
+    CGRect newFrame = topicLabel.frame;
+    newFrame.size.height = expectedLabelSize.height;
+    topicLabel.frame = newFrame;
+    
+    NSLog(@"%f", topicLabel.frame.size.height);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

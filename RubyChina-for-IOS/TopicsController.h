@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class Node;
+@class TopicsCell;
 
 @interface TopicsController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
