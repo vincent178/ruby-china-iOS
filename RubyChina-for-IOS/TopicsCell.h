@@ -19,4 +19,5 @@
 }
 
 - (void) setTopicsCell:(NSDictionary *)cellContent;
+- (CGFloat) getTopicCellHeight;
 @end

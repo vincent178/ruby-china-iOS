@@ -85,15 +85,25 @@
     
     NSDictionary *cellContent = [self.topics objectAtIndex:indexPath.row];
     [cell setTopicsCell:cellContent];
-    NSLog(@"%@", cellContent);
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 40;
+    
+    // Get string data
+    NSDictionary *cellContent = [self.topics objectAtIndex:indexPath.row];
+    NSString *topicTitle = [cellContent objectForKey:@"title"];
+    
+    // Make Height Dynamic
+    CGSize maximumLabelSize = CGSizeMake(260, FLT_MAX);
+    CGSize expectedLabelSize = [topicTitle sizeWithFont:[UIFont systemFontOfSize:12.0f]
+                                           constrainedToSize:maximumLabelSize
+                                               lineBreakMode:NSLineBreakByWordWrapping];
+    return 40 + expectedLabelSize.height;
 }
 
 #pragma mark - Table view delegate
+
 //
 //- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 //{

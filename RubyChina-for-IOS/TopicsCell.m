@@ -73,8 +73,10 @@
     CGRect newFrame = topicLabel.frame;
     newFrame.size.height = expectedLabelSize.height;
     topicLabel.frame = newFrame;
-    
-    NSLog(@"%f", topicLabel.frame.size.height);
+}
+
+- (CGFloat) getTopicCellHeight {
+    return self.frame.size.height;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
