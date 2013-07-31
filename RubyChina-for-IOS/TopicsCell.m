@@ -24,14 +24,14 @@
         nameLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         nameLabel.textAlignment = NSTextAlignmentLeft;
         nameLabel.textColor = [UIColor grayColor];
-        nameLabel.font = [UIFont systemFontOfSize:12.0f];
+        nameLabel.font = SmallFont;
         [self.contentView addSubview: nameLabel];
         
         // Add nodeLabel
         nodeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         nodeLabel.textAlignment = NSTextAlignmentRight;
         nodeLabel.textColor = [UIColor grayColor];
-        nodeLabel.font = [UIFont systemFontOfSize:12.0f];
+        nodeLabel.font = SmallFont;
         [self.contentView addSubview:nodeLabel];
         
         // Add topicLabel
@@ -41,9 +41,8 @@
         topicLabel.lineBreakMode = NSLineBreakByWordWrapping;
         topicLabel.adjustsFontSizeToFitWidth = false;
         topicLabel.numberOfLines = 0;
-        topicLabel.font = [UIFont systemFontOfSize:13.0f];
+        topicLabel.font = MiddleFont;
         [self.contentView addSubview: topicLabel];
-        
     }
     return self;
 }
@@ -65,7 +64,7 @@
     
     // Dynamic set UiLabel height
     CGSize maximumLabelSize = CGSizeMake(260, FLT_MAX);
-    CGSize expectedLabelSize = [topicLabel.text sizeWithFont:topicLabel.font
+    CGSize expectedLabelSize = [topicLabel.text sizeWithFont:MiddleFont
                                       constrainedToSize:maximumLabelSize
                                           lineBreakMode:topicLabel.lineBreakMode];
     CGRect newFrame = topicLabel.frame;
@@ -80,7 +79,5 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 @end

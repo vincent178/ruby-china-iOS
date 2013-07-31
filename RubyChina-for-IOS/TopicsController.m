@@ -12,6 +12,7 @@
 #import "TopicsCell.h"
 #import "TopicController.h"
 #import "Topic.h"
+#import <SVPullToRefresh.h>
 
 @interface TopicsController ()
 
@@ -41,7 +42,23 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
-    [self getRemoteData];
+    if (!self.topics) {
+        [self getRemoteData];
+    }
+    
+    // Avoid retain cycle
+    __weak TopicsController *weakSelf = self;
+    
+    [self.tableView addPullToRefreshWithActionHandler:^{
+        
+        // Use GCD to execute async task
+        double delayInSeconds = 2.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [weakSelf getRemoteData];
+            [weakSelf.tableView.pullToRefreshView stopAnimating];
+        });
+    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,7 +88,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"%d", self.topics.count);
     return self.topics.count;
 }
 
@@ -98,11 +114,18 @@
     
     // Make Height Dynamic
     CGSize maximumLabelSize = CGSizeMake(260, FLT_MAX);
-    CGSize expectedLabelSize = [topicTitle sizeWithFont:[UIFont systemFontOfSize:13.0f]
+    CGSize expectedLabelSize = [topicTitle sizeWithFont:MiddleFont
                                            constrainedToSize:maximumLabelSize
                                                lineBreakMode:NSLineBreakByWordWrapping];
     return 40 + expectedLabelSize.height;
 }
+
+//- (void)setTitle:(NSString *)title forState:(SVPullToRefreshState)state {
+//    if (state == SVPullToRefreshStateAll) {
+//        self.title = @"yes";
+//    }
+//    [self.tableView setNeedsDisplay];
+//}
 
 #pragma mark - Table view delegate
 

@@ -20,6 +20,7 @@ PODS:
     - TransitionKit (= 1.1.1)
   - SOCKit (1.1)
   - SVProgressHUD (0.9)
+  - SVPullToRefresh (0.4.1)
   - TransitionKit (1.1.1)
 
 DEPENDENCIES:
@@ -27,14 +28,16 @@ DEPENDENCIES:
   - MKNetworkKit
   - RestKit
   - SVProgressHUD
+  - SVPullToRefresh
 
 SPEC CHECKSUMS:
   AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
   MKNetworkKit: f174100f92473012138b6b1c3040266af8d43a14
   Reachability: 2be6bc2fd2bd31d97f5db33e75e4b29c79e95883
   RestKit: 1f181c180105a92f11ec4f6cd7de37625e516d83
-  SOCKit: ed67aeeca4a697b63a933229e53f4670d5b9300f
+  SOCKit: 2f3bc4d07910de12dcc202815e07db68a3802581
   SVProgressHUD: 03d4845ec8e64591726428a08236c6a5489d45f8
-  TransitionKit: 3b3836af6887d16a0834fa35031028792d1d5c0c
+  SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2
+  TransitionKit: d0e3344aac92991395d4c2e72d9c5a8ceeb12910
 
 COCOAPODS: 0.22.3

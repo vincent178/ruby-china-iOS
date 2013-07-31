@@ -93,7 +93,6 @@
                
                // Get user avatar url
                NSString *avatar_url = [[[response objectForKey:@"avatar"] objectForKey:@"normal"] objectForKey:@"url"];
-               NSLog(@"%@", avatar_url);
                
            } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
                [SVProgressHUD showErrorWithStatus:@"用户名或密码错误"];
