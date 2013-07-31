@@ -43,8 +43,11 @@
     self.tableView.delegate = self;
     
     if (!self.topics) {
-        [self getRemoteData];
+        [self getRemoteData:[NSNumber numberWithInt:1]];
     }
+    
+    self.currentPage = [NSNumber numberWithInt:1];
+    NSLog(@"%@", self.currentPage);
     
     // Avoid retain cycle
     __weak TopicsController *weakSelf = self;
@@ -55,8 +58,20 @@
         double delayInSeconds = 2.0;
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            [weakSelf getRemoteData];
+            [weakSelf getRemoteData:[NSNumber numberWithInt:1]];
             [weakSelf.tableView.pullToRefreshView stopAnimating];
+        });
+    }];
+    
+    [self.tableView addInfiniteScrollingWithActionHandler:^{
+        
+        // Use GCD to execute async task
+        double delayInSeconds = 2.0;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [weakSelf getRemoteData:[NSNumber numberWithInt:[weakSelf.currentPage intValue] + 1]];
+            [weakSelf.tableView.infiniteScrollingView stopAnimating];
+            weakSelf.currentPage = [NSNumber numberWithInt:[weakSelf.currentPage intValue] + 1];
         });
     }];
 }
@@ -69,9 +84,9 @@
 
 #pragma mark - Table view data source
 
-- (void)getRemoteData {
+- (void)getRemoteData:(NSNumber *)pageNumber {
     RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
-    [remoteEngine getTopicsWithPage:1 conCompletion:^(MKNetworkOperation *completedOperation) {
+    [remoteEngine getTopicsWithPage:[pageNumber intValue] conCompletion:^(MKNetworkOperation *completedOperation) {
         NSMutableArray *response = [completedOperation responseJSON];
         [self setTopics:response];
     } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
@@ -94,7 +109,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"topicsCell";
     TopicsCell *cell = (TopicsCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {

@@ -11,6 +11,7 @@
 @class Topic;
 
 @interface TopicController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+
 {
     UIView *containerView;
 }

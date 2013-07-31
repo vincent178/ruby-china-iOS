@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396930241.94888"
+         timestampString = "396935361.179472"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         startingLineNumber = "109"
+         endingLineNumber = "109"
+         landmarkName = "-getRemoteData:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,12 +21,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396930241.94888"
+         timestampString = "396935361.179472"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "88"
-         endingLineNumber = "88"
-         landmarkName = "-tableView:numberOfRowsInSection:"
+         startingLineNumber = "103"
+         endingLineNumber = "103"
+         landmarkName = "-getRemoteData:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -34,12 +34,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396930241.94888"
+         timestampString = "396935361.179472"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82"
-         landmarkName = "-numberOfSectionsInTableView:"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "-getRemoteData:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -47,37 +47,37 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396930241.94888"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "72"
-         endingLineNumber = "72"
-         landmarkName = "-getRemoteData"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396930241.94888"
+         timestampString = "396935361.179472"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "87"
          endingLineNumber = "87"
-         landmarkName = "@implementation TopicsController"
-         landmarkType = "3">
+         landmarkName = "-getRemoteData:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396921176.328985"
+         timestampString = "396935361.179472"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "47"
-         endingLineNumber = "47"
+         startingLineNumber = "102"
+         endingLineNumber = "102"
+         landmarkName = "-getRemoteData:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "RubyChina-for-IOS/TopicsController.m"
+         timestampString = "396933533.302617"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
          landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,12 +86,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsController.m"
-         timestampString = "396930241.94888"
+         timestampString = "396935361.179472"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "91"
-         endingLineNumber = "91"
-         landmarkName = "-tableView:numberOfRowsInSection:"
+         startingLineNumber = "106"
+         endingLineNumber = "106"
+         landmarkName = "-getRemoteData:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "RubyChina-for-IOS/TopicsCell.m"
-         timestampString = "396873428.805982"
+         timestampString = "396931608.454664"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "58"
-         endingLineNumber = "58"
+         startingLineNumber = "57"
+         endingLineNumber = "57"
          landmarkName = "-layoutSubviews"
          landmarkType = "5">
       </FileBreakpoint>
