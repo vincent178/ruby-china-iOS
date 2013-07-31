@@ -7,6 +7,7 @@
 //
 
 #import "TopicController.h"
+#import "RemoteEngine.h"
 
 @interface TopicController ()
 
@@ -32,8 +33,21 @@
     self.tableView.delegate = self;
     
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight;
-    self.tableView.separatorColor = [UIColor colorWithRed:211.0/255 green:211.0/255 blue:211.0/255 alpha:0.2];
     
+//    RemoteEngine *engine = [[RemoteEngine alloc] init];
+//    MKNetworkOperation *op = [[MKNetworkOperation alloc] initWithURLString:@"http://stackoverflow.com" params:nil httpMethod:@"GET"];
+    
+//    NSURLRequest *request = [NSURLRequest requestWithURL:
+//                             [NSURL URLWithString:@"http://stackoverflow.com"]] ;
+    
+//    [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
+//        NSData *response = [completedOperation responseData];
+//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
+//        
+//    }];
+//    UIWebView *webView = [[UIWebView alloc] init];
+//    
+//    NSLog(@"%@", request);
 }
 
 - (void)didReceiveMemoryWarning
