@@ -16,7 +16,12 @@
                        onError:(MKNKResponseErrorBlock)errorBlock;
 
 - (MKNetworkOperation *) getTopicsWithPage:(NSInteger)page
-                             conCompletion:(MKNKResponseBlock)completionBlock
+                             onCompletion:(MKNKResponseBlock)completionBlock
                                    onError:(MKNKResponseErrorBlock)errorBlock;
+
+- (MKNetworkOperation *) getTopicWithTopicId:(NSUInteger)TopicId
+                                onCompletion:(MKNKResponseBlock)completionBlock
+                                     onError:(MKNKResponseErrorBlock)errorBlock;
+
 
 @end

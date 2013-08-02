@@ -34,21 +34,22 @@
     
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight;
     
+    NSLog(@"A selected topic showed here: ");
+    NSLog(@"%@", self.topic);
     
-//    RemoteEngine *engine = [[RemoteEngine alloc] init];
-//    MKNetworkOperation *op = [[MKNetworkOperation alloc] initWithURLString:@"http://stackoverflow.com" params:nil httpMethod:@"GET"];
+    // Get Topic Content
+    RemoteEngine *engine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
+    NSUInteger topicId = [[self.topic objectForKey:@"id"] integerValue];
+    [engine getTopicWithTopicId:topicId
+                   onCompletion:^(MKNetworkOperation *completedOperation) {
+                       NSDictionary *response = [completedOperation responseJSON];
+                       NSLog(@"%@", response);
+    }
+                        onError:^(MKNetworkOperation *completedOperation, NSError *error) {
+                            DLog(@"%@", error);
+    }];
     
-//    NSURLRequest *request = [NSURLRequest requestWithURL:
-//                             [NSURL URLWithString:@"http://stackoverflow.com"]] ;
-    
-//    [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
-//        NSData *response = [completedOperation responseData];
-//    } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
-//        
-//    }];
-//    UIWebView *webView = [[UIWebView alloc] init];
-//    
-//    NSLog(@"%@", request);
+
 }
 
 - (void)didReceiveMemoryWarning

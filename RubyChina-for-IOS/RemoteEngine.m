@@ -37,16 +37,25 @@
 }
 
 - (MKNetworkOperation *) getTopicsWithPage:(NSInteger)page
-                             conCompletion:(MKNKResponseBlock)completionBlock
+                             onCompletion:(MKNKResponseBlock)completionBlock
                                    onError:(MKNKResponseErrorBlock)errorBlock {
     
     MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"topics.json?page=%d", page]
                                               params:nil
                                           httpMethod:@"GET"];
     [op addCompletionHandler:completionBlock errorHandler:errorBlock];
-    
     [self enqueueOperation:op];
-    
+    return op;
+}
+
+- (MKNetworkOperation *) getTopicWithTopicId:(NSUInteger)TopicId
+                                onCompletion:(MKNKResponseBlock)completionBlock
+                                     onError:(MKNKResponseErrorBlock)errorBlock {
+    MKNetworkOperation *op = [self operationWithPath:[NSString stringWithFormat:@"topics/%d.json", TopicId]
+                                              params:nil
+                                          httpMethod:@"GET"];
+    [op addCompletionHandler:completionBlock errorHandler:errorBlock];
+    [self enqueueOperation:op];
     return op;
 }
 

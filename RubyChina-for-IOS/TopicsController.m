@@ -86,9 +86,10 @@
 
 - (void)getRemoteData:(NSNumber *)pageNumber {
     RemoteEngine *remoteEngine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
-    [remoteEngine getTopicsWithPage:[pageNumber intValue] conCompletion:^(MKNetworkOperation *completedOperation) {
+    [remoteEngine getTopicsWithPage:[pageNumber intValue] onCompletion:^(MKNetworkOperation *completedOperation) {
         NSMutableArray *response = [completedOperation responseJSON];
         [self setTopics:response];
+        NSLog(@"%@", response);
     } onError:^(MKNetworkOperation *completedOperation, NSError *error) {
         self.topics = nil;
     }];
