@@ -16,7 +16,7 @@
     UIView *containerView;
 }
 
-@property (nonatomic, strong) NSMutableDictionary *topic;
+@property (nonatomic, strong) Topic *topic;
 @property (nonatomic, copy, readwrite) NSMutableArray *replies;
 
 @end

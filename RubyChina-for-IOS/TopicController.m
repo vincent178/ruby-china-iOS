@@ -8,6 +8,7 @@
 
 #import "TopicController.h"
 #import "RemoteEngine.h"
+#import "Topic.h"
 
 @interface TopicController ()
 
@@ -35,21 +36,20 @@
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleHeight;
     
     NSLog(@"A selected topic showed here: ");
-    NSLog(@"%@", self.topic);
+    NSLog(@"%@", self.topic.ID);
     
     // Get Topic Content
-    RemoteEngine *engine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
-    NSUInteger topicId = [[self.topic objectForKey:@"id"] integerValue];
-    [engine getTopicWithTopicId:topicId
-                   onCompletion:^(MKNetworkOperation *completedOperation) {
-                       NSDictionary *response = [completedOperation responseJSON];
-                       NSLog(@"%@", response);
-    }
-                        onError:^(MKNetworkOperation *completedOperation, NSError *error) {
-                            DLog(@"%@", error);
-    }];
+//    RemoteEngine *engine = [[RemoteEngine alloc] initWithHostName:BaseAPIURL];
+//    NSUInteger topicId = [self.topic.ID integerValue];
+//    [engine getTopicWithTopicId:topicId
+//                   onCompletion:^(MKNetworkOperation *completedOperation) {
+//                       NSDictionary *response = [completedOperation responseJSON];
+//                       NSLog(@"%@", response);
+//    }
+//                        onError:^(MKNetworkOperation *completedOperation, NSError *error) {
+//                            DLog(@"%@", error);
+//    }];
     
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,25 +62,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"topicCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    if (cell == nil) {
-        UITableViewCell *cell = [[UITableViewCell alloc]
-                                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
     return cell;
 }
 
