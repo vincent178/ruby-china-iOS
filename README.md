@@ -1,10 +1,12 @@
 RubyChina-IOS
 =============
 
-**Updata
+###Updata
 
 Now I want to start over again for the uncomfortable framework I used to follow.
+
 And I want to get my hand dirty, and learn more.
+
 Please wait forward of my APP.
 
 
