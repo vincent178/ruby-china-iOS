@@ -26,11 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     NSURL *url = [[NSURL alloc] initWithString:@"www.ruby-china.org"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
-    [self.view addSubview:webView];
     
 }
 

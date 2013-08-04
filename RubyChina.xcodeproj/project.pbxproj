@@ -89,12 +89,11 @@
 		BF97E5591773D0AF009F859E /* RubyChina-for-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				BF9B803E17AE07A10060060D /* Demo */,
 				BF97E5621773D0AF009F859E /* AppDelegate.h */,
 				BF97E5631773D0AF009F859E /* AppDelegate.m */,
 				BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */,
 				BF97E55A1773D0AF009F859E /* Supporting Files */,
-				BFB3E45117ADD86C0022D8CF /* WebViewController.h */,
-				BFB3E45217ADD86C0022D8CF /* WebViewController.m */,
 			);
 			path = "RubyChina-for-IOS";
 			sourceTree = "<group>";
@@ -111,6 +110,15 @@
 				BF97E5691773D0AF009F859E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF9B803E17AE07A10060060D /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BFB3E45117ADD86C0022D8CF /* WebViewController.h */,
+				BFB3E45217ADD86C0022D8CF /* WebViewController.m */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
