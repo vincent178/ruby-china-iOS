@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA35D4FCCCC14C238DC681DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B0BD3DDE284E7F9F70D5B6 /* libPods.a */; };
+		BF96D46B17AFE04B0028AE39 /* TopicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF96D46A17AFE04B0028AE39 /* TopicsController.m */; };
 		BF97E5541773D0AF009F859E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5531773D0AF009F859E /* UIKit.framework */; };
 		BF97E5561773D0AF009F859E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5551773D0AF009F859E /* Foundation.framework */; };
 		BF97E5581773D0AF009F859E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E5571773D0AF009F859E /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		21B0BD3DDE284E7F9F70D5B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F9A103C4D4849668EFD60DD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		BF96D46917AFE04B0028AE39 /* TopicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsController.h; sourceTree = "<group>"; };
+		BF96D46A17AFE04B0028AE39 /* TopicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsController.m; sourceTree = "<group>"; };
 		BF97E5501773D0AF009F859E /* RubyChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubyChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF97E5531773D0AF009F859E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF97E5551773D0AF009F859E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF96D46717AFE0160028AE39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF96D46917AFE04B0028AE39 /* TopicsController.h */,
+				BF96D46A17AFE04B0028AE39 /* TopicsController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BF96D46817AFE0290028AE39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		BF97E5471773D0AF009F859E = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +105,8 @@
 		BF97E5591773D0AF009F859E /* RubyChina-for-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				BF96D46817AFE0290028AE39 /* Views */,
+				BF96D46717AFE0160028AE39 /* Controllers */,
 				BF97E5621773D0AF009F859E /* AppDelegate.h */,
 				BF97E5631773D0AF009F859E /* AppDelegate.m */,
 				BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */,
@@ -210,6 +231,7 @@
 			files = (
 				BF97E5601773D0AF009F859E /* main.m in Sources */,
 				BF97E5641773D0AF009F859E /* AppDelegate.m in Sources */,
+				BF96D46B17AFE04B0028AE39 /* TopicsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
