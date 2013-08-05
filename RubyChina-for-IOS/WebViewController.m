@@ -26,10 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL *url = [[NSURL alloc] initWithString:@"www.ruby-china.org"];
+    NSURL *url = [[NSURL alloc] initWithString:@"http://www.ruby-china.org"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [webView loadRequest:request];
-    
+    [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
