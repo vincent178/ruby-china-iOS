@@ -18,7 +18,6 @@
 		BF97E5681773D0AF009F859E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97E5671773D0AF009F859E /* Default@2x.png */; };
 		BF97E56A1773D0AF009F859E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF97E5691773D0AF009F859E /* Default-568h@2x.png */; };
 		BF97E56D1773D0AF009F859E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */; };
-		BFB3E45317ADD86C0022D8CF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB3E45217ADD86C0022D8CF /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +37,6 @@
 		BF97E5671773D0AF009F859E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BF97E5691773D0AF009F859E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF97E56C1773D0AF009F859E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BFB3E45117ADD86C0022D8CF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
-		BFB3E45217ADD86C0022D8CF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +86,6 @@
 		BF97E5591773D0AF009F859E /* RubyChina-for-IOS */ = {
 			isa = PBXGroup;
 			children = (
-				BF9B803E17AE07A10060060D /* Demo */,
 				BF97E5621773D0AF009F859E /* AppDelegate.h */,
 				BF97E5631773D0AF009F859E /* AppDelegate.m */,
 				BF97E56B1773D0AF009F859E /* MainStoryboard.storyboard */,
@@ -110,15 +106,6 @@
 				BF97E5691773D0AF009F859E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BF9B803E17AE07A10060060D /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				BFB3E45117ADD86C0022D8CF /* WebViewController.h */,
-				BFB3E45217ADD86C0022D8CF /* WebViewController.m */,
-			);
-			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +210,6 @@
 			files = (
 				BF97E5601773D0AF009F859E /* main.m in Sources */,
 				BF97E5641773D0AF009F859E /* AppDelegate.m in Sources */,
-				BFB3E45317ADD86C0022D8CF /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
