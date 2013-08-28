@@ -18,15 +18,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 30, 30)];
-    label.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
