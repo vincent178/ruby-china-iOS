@@ -1,7 +1,11 @@
 RubyChina-IOS
 =============
 
-###Update 2013-8-4
+### Update 2013-8-28
+
+Restart now!
+
+### Update 2013-8-4
 
 Now I want to start over again for the uncomfortable framework I used to follow.
 And I want to get my hand dirty, and learn more.
