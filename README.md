@@ -1,6 +1,10 @@
 RubyChina-IOS
 =============
 
+### Update 2013-9-27
+
+Stop this project for developing My Mac App and more learning on Objective-C
+
 ### Update 2013-8-28
 
 Restart now!
