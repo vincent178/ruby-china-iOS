@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
+		BF0F3F871806EFBF00E48E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */; };
+		BF0F3F891806EFBF00E48E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F881806EFBF00E48E53 /* UIKit.framework */; };
+		BF0F3F8F1806EFBF00E48E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F8D1806EFBF00E48E53 /* InfoPlist.strings */; };
+		BF0F3F911806EFBF00E48E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F901806EFBF00E48E53 /* main.m */; };
+		BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F941806EFBF00E48E53 /* AppDelegate.m */; };
+		BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F961806EFBF00E48E53 /* Main.storyboard */; };
+		BF0F3F9B1806EFBF00E48E53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F9A1806EFBF00E48E53 /* ViewController.m */; };
+		BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */; };
+		BF0F3FA41806EFBF00E48E53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3FA31806EFBF00E48E53 /* XCTest.framework */; };
+		BF0F3FA51806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
+		BF0F3FA61806EFBF00E48E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F881806EFBF00E48E53 /* UIKit.framework */; };
+		BF0F3FAE1806EFBF00E48E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */; };
+		BF0F3FB01806EFBF00E48E53 /* Ruby_China_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF0F3FA71806EFBF00E48E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0F3F791806EFBF00E48E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0F3F801806EFBF00E48E53;
+			remoteInfo = "Ruby-China-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0F3F841806EFBF00E48E53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF0F3F881806EFBF00E48E53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF0F3F8C1806EFBF00E48E53 /* Ruby-China-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruby-China-iOS-Info.plist"; sourceTree = "<group>"; };
+		BF0F3F8E1806EFBF00E48E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF0F3F901806EFBF00E48E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF0F3F921806EFBF00E48E53 /* Ruby-China-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruby-China-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		BF0F3F931806EFBF00E48E53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF0F3F941806EFBF00E48E53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF0F3F971806EFBF00E48E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF0F3F991806EFBF00E48E53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF0F3F9A1806EFBF00E48E53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruby-China-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0F3FA31806EFBF00E48E53 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF0F3FAB1806EFBF00E48E53 /* Ruby-China-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruby-China-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		BF0F3FAD1806EFBF00E48E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ruby_China_iOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0F3F7E1806EFBF00E48E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3F871806EFBF00E48E53 /* CoreGraphics.framework in Frameworks */,
+				BF0F3F891806EFBF00E48E53 /* UIKit.framework in Frameworks */,
+				BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0F3F9F1806EFBF00E48E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3FA41806EFBF00E48E53 /* XCTest.framework in Frameworks */,
+				BF0F3FA61806EFBF00E48E53 /* UIKit.framework in Frameworks */,
+				BF0F3FA51806EFBF00E48E53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0F3F781806EFBF00E48E53 = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */,
+				BF0F3FA91806EFBF00E48E53 /* Ruby-China-iOSTests */,
+				BF0F3F831806EFBF00E48E53 /* Frameworks */,
+				BF0F3F821806EFBF00E48E53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0F3F821806EFBF00E48E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */,
+				BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0F3F831806EFBF00E48E53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F841806EFBF00E48E53 /* Foundation.framework */,
+				BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */,
+				BF0F3F881806EFBF00E48E53 /* UIKit.framework */,
+				BF0F3FA31806EFBF00E48E53 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F931806EFBF00E48E53 /* AppDelegate.h */,
+				BF0F3F941806EFBF00E48E53 /* AppDelegate.m */,
+				BF0F3F961806EFBF00E48E53 /* Main.storyboard */,
+				BF0F3F991806EFBF00E48E53 /* ViewController.h */,
+				BF0F3F9A1806EFBF00E48E53 /* ViewController.m */,
+				BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */,
+				BF0F3F8B1806EFBF00E48E53 /* Supporting Files */,
+			);
+			path = "Ruby-China-iOS";
+			sourceTree = "<group>";
+		};
+		BF0F3F8B1806EFBF00E48E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F8C1806EFBF00E48E53 /* Ruby-China-iOS-Info.plist */,
+				BF0F3F8D1806EFBF00E48E53 /* InfoPlist.strings */,
+				BF0F3F901806EFBF00E48E53 /* main.m */,
+				BF0F3F921806EFBF00E48E53 /* Ruby-China-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF0F3FA91806EFBF00E48E53 /* Ruby-China-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */,
+				BF0F3FAA1806EFBF00E48E53 /* Supporting Files */,
+			);
+			path = "Ruby-China-iOSTests";
+			sourceTree = "<group>";
+		};
+		BF0F3FAA1806EFBF00E48E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3FAB1806EFBF00E48E53 /* Ruby-China-iOSTests-Info.plist */,
+				BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0F3FB31806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOS" */;
+			buildPhases = (
+				BF0F3F7D1806EFBF00E48E53 /* Sources */,
+				BF0F3F7E1806EFBF00E48E53 /* Frameworks */,
+				BF0F3F7F1806EFBF00E48E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ruby-China-iOS";
+			productName = "Ruby-China-iOS";
+			productReference = BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF0F3FA11806EFBF00E48E53 /* Ruby-China-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0F3FB61806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOSTests" */;
+			buildPhases = (
+				BF0F3F9E1806EFBF00E48E53 /* Sources */,
+				BF0F3F9F1806EFBF00E48E53 /* Frameworks */,
+				BF0F3FA01806EFBF00E48E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF0F3FA81806EFBF00E48E53 /* PBXTargetDependency */,
+			);
+			name = "Ruby-China-iOSTests";
+			productName = "Ruby-China-iOSTests";
+			productReference = BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0F3F791806EFBF00E48E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Vincent;
+				TargetAttributes = {
+					BF0F3FA11806EFBF00E48E53 = {
+						TestTargetID = BF0F3F801806EFBF00E48E53;
+					};
+				};
+			};
+			buildConfigurationList = BF0F3F7C1806EFBF00E48E53 /* Build configuration list for PBXProject "Ruby-China-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0F3F781806EFBF00E48E53;
+			productRefGroup = BF0F3F821806EFBF00E48E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */,
+				BF0F3FA11806EFBF00E48E53 /* Ruby-China-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0F3F7F1806EFBF00E48E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */,
+				BF0F3F8F1806EFBF00E48E53 /* InfoPlist.strings in Resources */,
+				BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0F3FA01806EFBF00E48E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3FAE1806EFBF00E48E53 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0F3F7D1806EFBF00E48E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3F9B1806EFBF00E48E53 /* ViewController.m in Sources */,
+				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
+				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0F3F9E1806EFBF00E48E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3FB01806EFBF00E48E53 /* Ruby_China_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF0F3FA81806EFBF00E48E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */;
+			targetProxy = BF0F3FA71806EFBF00E48E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF0F3F8D1806EFBF00E48E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F3F8E1806EFBF00E48E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF0F3F961806EFBF00E48E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F3F971806EFBF00E48E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F3FAD1806EFBF00E48E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF0F3FB11806EFBF00E48E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF0F3FB21806EFBF00E48E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0F3FB41806EFBF00E48E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Ruby-China-iOS/Ruby-China-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF0F3FB51806EFBF00E48E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Ruby-China-iOS/Ruby-China-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF0F3FB71806EFBF00E48E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ruby-China-iOS.app/Ruby-China-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ruby-China-iOSTests/Ruby-China-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF0F3FB81806EFBF00E48E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ruby-China-iOS.app/Ruby-China-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Ruby-China-iOSTests/Ruby-China-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0F3F7C1806EFBF00E48E53 /* Build configuration list for PBXProject "Ruby-China-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F3FB11806EFBF00E48E53 /* Debug */,
+				BF0F3FB21806EFBF00E48E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0F3FB31806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F3FB41806EFBF00E48E53 /* Debug */,
+				BF0F3FB51806EFBF00E48E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF0F3FB61806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F3FB71806EFBF00E48E53 /* Debug */,
+				BF0F3FB81806EFBF00E48E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0F3F791806EFBF00E48E53 /* Project object */;
+}
