@@ -1,1086 +1,522 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>164D9BF9554C40C29811DBEA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>73C8B94DC85F44DE95801438</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C098331A7CF64C8CBE80ADA9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F781806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F8A1806EFBF00E48E53</string>
-				<string>BF0F3FA91806EFBF00E48E53</string>
-				<string>BF0F3F831806EFBF00E48E53</string>
-				<string>BF0F3F821806EFBF00E48E53</string>
-				<string>E78248C9ADF64480806C9EFC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F791806EFBF00E48E53</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Vincent</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>BF0F3FA11806EFBF00E48E53</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>BF0F3F801806EFBF00E48E53</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>BF0F3F7C1806EFBF00E48E53</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>BF0F3F781806EFBF00E48E53</string>
-			<key>productRefGroup</key>
-			<string>BF0F3F821806EFBF00E48E53</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>BF0F3F801806EFBF00E48E53</string>
-				<string>BF0F3FA11806EFBF00E48E53</string>
-			</array>
-		</dict>
-		<key>BF0F3F7C1806EFBF00E48E53</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BF0F3FB11806EFBF00E48E53</string>
-				<string>BF0F3FB21806EFBF00E48E53</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BF0F3F7D1806EFBF00E48E53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF0F3F9B1806EFBF00E48E53</string>
-				<string>BF0F3F951806EFBF00E48E53</string>
-				<string>BF0F3F911806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF0F3F7E1806EFBF00E48E53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF0F3F871806EFBF00E48E53</string>
-				<string>BF0F3F891806EFBF00E48E53</string>
-				<string>BF0F3F851806EFBF00E48E53</string>
-				<string>73C8B94DC85F44DE95801438</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF0F3F7F1806EFBF00E48E53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF0F3F9D1806EFBF00E48E53</string>
-				<string>BF0F3F8F1806EFBF00E48E53</string>
-				<string>BF0F3F981806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF0F3F801806EFBF00E48E53</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BF0F3FB31806EFBF00E48E53</string>
-			<key>buildPhases</key>
-			<array>
-				<string>EB9C18AF98D84220BF517F13</string>
-				<string>BF0F3F7D1806EFBF00E48E53</string>
-				<string>BF0F3F7E1806EFBF00E48E53</string>
-				<string>BF0F3F7F1806EFBF00E48E53</string>
-				<string>164D9BF9554C40C29811DBEA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Ruby-China-iOS</string>
-			<key>productName</key>
-			<string>Ruby-China-iOS</string>
-			<key>productReference</key>
-			<string>BF0F3F811806EFBF00E48E53</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>BF0F3F811806EFBF00E48E53</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Ruby-China-iOS.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BF0F3F821806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F811806EFBF00E48E53</string>
-				<string>BF0F3FA21806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F831806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F841806EFBF00E48E53</string>
-				<string>BF0F3F861806EFBF00E48E53</string>
-				<string>BF0F3F881806EFBF00E48E53</string>
-				<string>BF0F3FA31806EFBF00E48E53</string>
-				<string>C098331A7CF64C8CBE80ADA9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F841806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>BF0F3F851806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F841806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F861806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>BF0F3F871806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F861806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F881806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>BF0F3F891806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F881806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F8A1806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F931806EFBF00E48E53</string>
-				<string>BF0F3F941806EFBF00E48E53</string>
-				<string>BF0F3F961806EFBF00E48E53</string>
-				<string>BF0F3F991806EFBF00E48E53</string>
-				<string>BF0F3F9A1806EFBF00E48E53</string>
-				<string>BF0F3F9C1806EFBF00E48E53</string>
-				<string>BF0F3F8B1806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Ruby-China-iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F8B1806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F8C1806EFBF00E48E53</string>
-				<string>BF0F3F8D1806EFBF00E48E53</string>
-				<string>BF0F3F901806EFBF00E48E53</string>
-				<string>BF0F3F921806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F8C1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Ruby-China-iOS-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F8D1806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F8E1806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F8E1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F8F1806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F8D1806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F901806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F911806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F901806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F921806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Ruby-China-iOS-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F931806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F941806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F951806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F941806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F961806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3F971806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F971806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F981806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F961806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F991806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F9A1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F9B1806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F9A1806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F9C1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3F9D1806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F9C1806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3F9E1806EFBF00E48E53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF0F3FB01806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF0F3F9F1806EFBF00E48E53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF0F3FA41806EFBF00E48E53</string>
-				<string>BF0F3FA61806EFBF00E48E53</string>
-				<string>BF0F3FA51806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF0F3FA01806EFBF00E48E53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BF0F3FAE1806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF0F3FA11806EFBF00E48E53</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>BF0F3FB61806EFBF00E48E53</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BF0F3F9E1806EFBF00E48E53</string>
-				<string>BF0F3F9F1806EFBF00E48E53</string>
-				<string>BF0F3FA01806EFBF00E48E53</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>BF0F3FA81806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Ruby-China-iOSTests</string>
-			<key>productName</key>
-			<string>Ruby-China-iOSTests</string>
-			<key>productReference</key>
-			<string>BF0F3FA21806EFBF00E48E53</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>BF0F3FA21806EFBF00E48E53</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Ruby-China-iOSTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>BF0F3FA31806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>BF0F3FA41806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3FA31806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3FA51806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F841806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3FA61806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3F881806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3FA71806EFBF00E48E53</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>BF0F3F791806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>BF0F3F801806EFBF00E48E53</string>
-			<key>remoteInfo</key>
-			<string>Ruby-China-iOS</string>
-		</dict>
-		<key>BF0F3FA81806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>BF0F3F801806EFBF00E48E53</string>
-			<key>targetProxy</key>
-			<string>BF0F3FA71806EFBF00E48E53</string>
-		</dict>
-		<key>BF0F3FA91806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3FAF1806EFBF00E48E53</string>
-				<string>BF0F3FAA1806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Ruby-China-iOSTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3FAA1806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3FAB1806EFBF00E48E53</string>
-				<string>BF0F3FAC1806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3FAB1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Ruby-China-iOSTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3FAC1806EFBF00E48E53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF0F3FAD1806EFBF00E48E53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3FAD1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3FAE1806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3FAC1806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3FAF1806EFBF00E48E53</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Ruby_China_iOSTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF0F3FB01806EFBF00E48E53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF0F3FAF1806EFBF00E48E53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BF0F3FB11806EFBF00E48E53</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BF0F3FB21806EFBF00E48E53</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BF0F3FB31806EFBF00E48E53</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BF0F3FB41806EFBF00E48E53</string>
-				<string>BF0F3FB51806EFBF00E48E53</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BF0F3FB41806EFBF00E48E53</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E78248C9ADF64480806C9EFC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Ruby-China-iOS/Ruby-China-iOS-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Ruby-China-iOS/Ruby-China-iOS-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BF0F3FB51806EFBF00E48E53</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E78248C9ADF64480806C9EFC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Ruby-China-iOS/Ruby-China-iOS-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Ruby-China-iOS/Ruby-China-iOS-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>BF0F3FB61806EFBF00E48E53</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>BF0F3FB71806EFBF00E48E53</string>
-				<string>BF0F3FB81806EFBF00E48E53</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>BF0F3FB71806EFBF00E48E53</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Ruby-China-iOS.app/Ruby-China-iOS</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Ruby-China-iOS/Ruby-China-iOS-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>Ruby-China-iOSTests/Ruby-China-iOSTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>BF0F3FB81806EFBF00E48E53</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Ruby-China-iOS.app/Ruby-China-iOS</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Ruby-China-iOS/Ruby-China-iOS-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Ruby-China-iOSTests/Ruby-China-iOSTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C098331A7CF64C8CBE80ADA9</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E78248C9ADF64480806C9EFC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB9C18AF98D84220BF517F13</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>BF0F3F791806EFBF00E48E53</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
+		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
+		BF0F3F871806EFBF00E48E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */; };
+		BF0F3F891806EFBF00E48E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F881806EFBF00E48E53 /* UIKit.framework */; };
+		BF0F3F8F1806EFBF00E48E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F8D1806EFBF00E48E53 /* InfoPlist.strings */; };
+		BF0F3F911806EFBF00E48E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F901806EFBF00E48E53 /* main.m */; };
+		BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F941806EFBF00E48E53 /* AppDelegate.m */; };
+		BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F961806EFBF00E48E53 /* Main.storyboard */; };
+		BF0F3F9B1806EFBF00E48E53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F9A1806EFBF00E48E53 /* ViewController.m */; };
+		BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */; };
+		BF0F3FA41806EFBF00E48E53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3FA31806EFBF00E48E53 /* XCTest.framework */; };
+		BF0F3FA51806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
+		BF0F3FA61806EFBF00E48E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F881806EFBF00E48E53 /* UIKit.framework */; };
+		BF0F3FAE1806EFBF00E48E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */; };
+		BF0F3FB01806EFBF00E48E53 /* Ruby_China_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF0F3FA71806EFBF00E48E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0F3F791806EFBF00E48E53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0F3F801806EFBF00E48E53;
+			remoteInfo = "Ruby-China-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0F3F841806EFBF00E48E53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF0F3F881806EFBF00E48E53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF0F3F8C1806EFBF00E48E53 /* Ruby-China-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruby-China-iOS-Info.plist"; sourceTree = "<group>"; };
+		BF0F3F8E1806EFBF00E48E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF0F3F901806EFBF00E48E53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF0F3F921806EFBF00E48E53 /* Ruby-China-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruby-China-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		BF0F3F931806EFBF00E48E53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF0F3F941806EFBF00E48E53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF0F3F971806EFBF00E48E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF0F3F991806EFBF00E48E53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF0F3F9A1806EFBF00E48E53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruby-China-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0F3FA31806EFBF00E48E53 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF0F3FAB1806EFBF00E48E53 /* Ruby-China-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruby-China-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		BF0F3FAD1806EFBF00E48E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ruby_China_iOSTests.m; sourceTree = "<group>"; };
+		C098331A7CF64C8CBE80ADA9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78248C9ADF64480806C9EFC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0F3F7E1806EFBF00E48E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3F871806EFBF00E48E53 /* CoreGraphics.framework in Frameworks */,
+				BF0F3F891806EFBF00E48E53 /* UIKit.framework in Frameworks */,
+				BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */,
+				73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0F3F9F1806EFBF00E48E53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3FA41806EFBF00E48E53 /* XCTest.framework in Frameworks */,
+				BF0F3FA61806EFBF00E48E53 /* UIKit.framework in Frameworks */,
+				BF0F3FA51806EFBF00E48E53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0F3F781806EFBF00E48E53 = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */,
+				BF0F3FA91806EFBF00E48E53 /* Ruby-China-iOSTests */,
+				BF0F3F831806EFBF00E48E53 /* Frameworks */,
+				BF0F3F821806EFBF00E48E53 /* Products */,
+				E78248C9ADF64480806C9EFC /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0F3F821806EFBF00E48E53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */,
+				BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0F3F831806EFBF00E48E53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F841806EFBF00E48E53 /* Foundation.framework */,
+				BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */,
+				BF0F3F881806EFBF00E48E53 /* UIKit.framework */,
+				BF0F3FA31806EFBF00E48E53 /* XCTest.framework */,
+				C098331A7CF64C8CBE80ADA9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F931806EFBF00E48E53 /* AppDelegate.h */,
+				BF0F3F941806EFBF00E48E53 /* AppDelegate.m */,
+				BF0F3F961806EFBF00E48E53 /* Main.storyboard */,
+				BF0F3F991806EFBF00E48E53 /* ViewController.h */,
+				BF0F3F9A1806EFBF00E48E53 /* ViewController.m */,
+				BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */,
+				BF0F3F8B1806EFBF00E48E53 /* Supporting Files */,
+			);
+			path = "Ruby-China-iOS";
+			sourceTree = "<group>";
+		};
+		BF0F3F8B1806EFBF00E48E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3F8C1806EFBF00E48E53 /* Ruby-China-iOS-Info.plist */,
+				BF0F3F8D1806EFBF00E48E53 /* InfoPlist.strings */,
+				BF0F3F901806EFBF00E48E53 /* main.m */,
+				BF0F3F921806EFBF00E48E53 /* Ruby-China-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF0F3FA91806EFBF00E48E53 /* Ruby-China-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */,
+				BF0F3FAA1806EFBF00E48E53 /* Supporting Files */,
+			);
+			path = "Ruby-China-iOSTests";
+			sourceTree = "<group>";
+		};
+		BF0F3FAA1806EFBF00E48E53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0F3FAB1806EFBF00E48E53 /* Ruby-China-iOSTests-Info.plist */,
+				BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0F3FB31806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOS" */;
+			buildPhases = (
+				EB9C18AF98D84220BF517F13 /* Check Pods Manifest.lock */,
+				BF0F3F7D1806EFBF00E48E53 /* Sources */,
+				BF0F3F7E1806EFBF00E48E53 /* Frameworks */,
+				BF0F3F7F1806EFBF00E48E53 /* Resources */,
+				164D9BF9554C40C29811DBEA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ruby-China-iOS";
+			productName = "Ruby-China-iOS";
+			productReference = BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF0F3FA11806EFBF00E48E53 /* Ruby-China-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0F3FB61806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOSTests" */;
+			buildPhases = (
+				BF0F3F9E1806EFBF00E48E53 /* Sources */,
+				BF0F3F9F1806EFBF00E48E53 /* Frameworks */,
+				BF0F3FA01806EFBF00E48E53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF0F3FA81806EFBF00E48E53 /* PBXTargetDependency */,
+			);
+			name = "Ruby-China-iOSTests";
+			productName = "Ruby-China-iOSTests";
+			productReference = BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0F3F791806EFBF00E48E53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Vincent;
+				TargetAttributes = {
+					BF0F3FA11806EFBF00E48E53 = {
+						TestTargetID = BF0F3F801806EFBF00E48E53;
+					};
+				};
+			};
+			buildConfigurationList = BF0F3F7C1806EFBF00E48E53 /* Build configuration list for PBXProject "Ruby-China-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0F3F781806EFBF00E48E53;
+			productRefGroup = BF0F3F821806EFBF00E48E53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */,
+				BF0F3FA11806EFBF00E48E53 /* Ruby-China-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0F3F7F1806EFBF00E48E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */,
+				BF0F3F8F1806EFBF00E48E53 /* InfoPlist.strings in Resources */,
+				BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0F3FA01806EFBF00E48E53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3FAE1806EFBF00E48E53 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		164D9BF9554C40C29811DBEA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB9C18AF98D84220BF517F13 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0F3F7D1806EFBF00E48E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3F9B1806EFBF00E48E53 /* ViewController.m in Sources */,
+				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
+				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0F3F9E1806EFBF00E48E53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0F3FB01806EFBF00E48E53 /* Ruby_China_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF0F3FA81806EFBF00E48E53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */;
+			targetProxy = BF0F3FA71806EFBF00E48E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF0F3F8D1806EFBF00E48E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F3F8E1806EFBF00E48E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF0F3F961806EFBF00E48E53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F3F971806EFBF00E48E53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0F3FAD1806EFBF00E48E53 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF0F3FB11806EFBF00E48E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF0F3FB21806EFBF00E48E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0F3FB41806EFBF00E48E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78248C9ADF64480806C9EFC /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Ruby-China-iOS/Ruby-China-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF0F3FB51806EFBF00E48E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78248C9ADF64480806C9EFC /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Ruby-China-iOS/Ruby-China-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF0F3FB71806EFBF00E48E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ruby-China-iOS.app/Ruby-China-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Ruby-China-iOSTests/Ruby-China-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF0F3FB81806EFBF00E48E53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ruby-China-iOS.app/Ruby-China-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby-China-iOS/Ruby-China-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Ruby-China-iOSTests/Ruby-China-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0F3F7C1806EFBF00E48E53 /* Build configuration list for PBXProject "Ruby-China-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F3FB11806EFBF00E48E53 /* Debug */,
+				BF0F3FB21806EFBF00E48E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0F3FB31806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F3FB41806EFBF00E48E53 /* Debug */,
+				BF0F3FB51806EFBF00E48E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0F3FB61806EFBF00E48E53 /* Build configuration list for PBXNativeTarget "Ruby-China-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0F3FB71806EFBF00E48E53 /* Debug */,
+				BF0F3FB81806EFBF00E48E53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0F3F791806EFBF00E48E53 /* Project object */;
+}
