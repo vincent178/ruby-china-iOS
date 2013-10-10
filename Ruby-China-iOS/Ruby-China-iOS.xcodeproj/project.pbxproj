@@ -15,7 +15,7 @@
 		BF0F3F911806EFBF00E48E53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F901806EFBF00E48E53 /* main.m */; };
 		BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F941806EFBF00E48E53 /* AppDelegate.m */; };
 		BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F961806EFBF00E48E53 /* Main.storyboard */; };
-		BF0F3F9B1806EFBF00E48E53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F9A1806EFBF00E48E53 /* ViewController.m */; };
+		BF0F3F9B1806EFBF00E48E53 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3F9A1806EFBF00E48E53 /* HomeController.m */; };
 		BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */; };
 		BF0F3FA41806EFBF00E48E53 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3FA31806EFBF00E48E53 /* XCTest.framework */; };
 		BF0F3FA51806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
@@ -46,8 +46,8 @@
 		BF0F3F931806EFBF00E48E53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF0F3F941806EFBF00E48E53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BF0F3F971806EFBF00E48E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BF0F3F991806EFBF00E48E53 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF0F3F9A1806EFBF00E48E53 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF0F3F991806EFBF00E48E53 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		BF0F3F9A1806EFBF00E48E53 /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF0F3FA21806EFBF00E48E53 /* Ruby-China-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruby-China-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0F3FA31806EFBF00E48E53 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -121,8 +121,8 @@
 				BF0F3F931806EFBF00E48E53 /* AppDelegate.h */,
 				BF0F3F941806EFBF00E48E53 /* AppDelegate.m */,
 				BF0F3F961806EFBF00E48E53 /* Main.storyboard */,
-				BF0F3F991806EFBF00E48E53 /* ViewController.h */,
-				BF0F3F9A1806EFBF00E48E53 /* ViewController.m */,
+				BF0F3F991806EFBF00E48E53 /* HomeController.h */,
+				BF0F3F9A1806EFBF00E48E53 /* HomeController.m */,
 				BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */,
 				BF0F3F8B1806EFBF00E48E53 /* Supporting Files */,
 			);
@@ -290,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF0F3F9B1806EFBF00E48E53 /* ViewController.m in Sources */,
+				BF0F3F9B1806EFBF00E48E53 /* HomeController.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
 			);
