@@ -22,6 +22,7 @@
 		BF0F3FA61806EFBF00E48E53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F881806EFBF00E48E53 /* UIKit.framework */; };
 		BF0F3FAE1806EFBF00E48E53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */; };
 		BF0F3FB01806EFBF00E48E53 /* Ruby_China_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */; };
+		BFCA01F4180862010093EA93 /* TopicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA01F3180862010093EA93 /* TopicsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BF0F3FAB1806EFBF00E48E53 /* Ruby-China-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruby-China-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		BF0F3FAD1806EFBF00E48E53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF0F3FAF1806EFBF00E48E53 /* Ruby_China_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ruby_China_iOSTests.m; sourceTree = "<group>"; };
+		BFCA01F2180862010093EA93 /* TopicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicsController.h; sourceTree = "<group>"; };
+		BFCA01F3180862010093EA93 /* TopicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicsController.m; sourceTree = "<group>"; };
 		C098331A7CF64C8CBE80ADA9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78248C9ADF64480806C9EFC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,11 +121,10 @@
 		BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BFCA01F5180862080093EA93 /* Controllers */,
 				BF0F3F931806EFBF00E48E53 /* AppDelegate.h */,
 				BF0F3F941806EFBF00E48E53 /* AppDelegate.m */,
 				BF0F3F961806EFBF00E48E53 /* Main.storyboard */,
-				BF0F3F991806EFBF00E48E53 /* HomeController.h */,
-				BF0F3F9A1806EFBF00E48E53 /* HomeController.m */,
 				BF0F3F9C1806EFBF00E48E53 /* Images.xcassets */,
 				BF0F3F8B1806EFBF00E48E53 /* Supporting Files */,
 			);
@@ -156,6 +158,17 @@
 				BF0F3FAC1806EFBF00E48E53 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFCA01F5180862080093EA93 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFCA01F2180862010093EA93 /* TopicsController.h */,
+				BFCA01F3180862010093EA93 /* TopicsController.m */,
+				BF0F3F991806EFBF00E48E53 /* HomeController.h */,
+				BF0F3F9A1806EFBF00E48E53 /* HomeController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +306,7 @@
 				BF0F3F9B1806EFBF00E48E53 /* HomeController.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
+				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
