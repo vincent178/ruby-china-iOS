@@ -77,7 +77,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    NSLog(@"%@", topics);
     cell.textLabel.text = [[topics objectAtIndex:indexPath.row] objectForKey:@"title"];
     
     return cell;
