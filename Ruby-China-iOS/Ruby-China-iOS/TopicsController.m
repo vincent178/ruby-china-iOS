@@ -26,17 +26,27 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+
+    [self refresh];
+}
+
+- (void)refresh {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = @"http://ruby-china.org/api/v2/topics.json";
     NSDictionary *params = @{@"page": @1, @"per_page": @2};
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topics = responseObject;
-        NSLog(@"%@", topics);
-        NSLog(@"%@", [[topics objectAtIndex:1] objectForKey:@"title"]);
-        NSString *avatar_url = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"avatar_url"];
-        NSString *user_name = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"login"];
-        NSLog(@"%@", avatar_url);
-        NSLog(@"%@", user_name);
+        [self.tableView reloadData];
+        
+        //        NSLog(@"%@", topics);
+        //        NSLog(@"%@", [[topics objectAtIndex:1] objectForKey:@"title"]);
+        //        NSString *avatar_url = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"avatar_url"];
+        //        NSString *user_name = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"login"];
+        //        NSLog(@"%@", avatar_url);
+        //        NSLog(@"%@", user_name);
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);
     }];
