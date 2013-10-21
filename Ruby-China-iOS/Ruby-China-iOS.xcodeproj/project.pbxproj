@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675379431814F6660036979C /* RCTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379421814F6660036979C /* RCTopic.m */; };
+		675379461814F6B80036979C /* RCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379451814F6B80036979C /* RCUser.m */; };
+		675379491814F7450036979C /* RCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379481814F7450036979C /* RCNode.m */; };
+		6753794C1814F77E0036979C /* RCReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 6753794B1814F77E0036979C /* RCReply.m */; };
 		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
 		BF0F3F871806EFBF00E48E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */; };
@@ -36,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		675379411814F6660036979C /* RCTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopic.h; sourceTree = "<group>"; };
+		675379421814F6660036979C /* RCTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopic.m; sourceTree = "<group>"; };
+		675379441814F6B80036979C /* RCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUser.h; sourceTree = "<group>"; };
+		675379451814F6B80036979C /* RCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUser.m; sourceTree = "<group>"; };
+		675379471814F7450036979C /* RCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNode.h; sourceTree = "<group>"; };
+		675379481814F7450036979C /* RCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNode.m; sourceTree = "<group>"; };
+		6753794A1814F77E0036979C /* RCReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCReply.h; sourceTree = "<group>"; };
+		6753794B1814F77E0036979C /* RCReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReply.m; sourceTree = "<group>"; };
 		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0F3F841806EFBF00E48E53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +98,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		675379401814F3F30036979C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				675379411814F6660036979C /* RCTopic.h */,
+				675379421814F6660036979C /* RCTopic.m */,
+				675379441814F6B80036979C /* RCUser.h */,
+				675379451814F6B80036979C /* RCUser.m */,
+				675379471814F7450036979C /* RCNode.h */,
+				675379481814F7450036979C /* RCNode.m */,
+				6753794A1814F77E0036979C /* RCReply.h */,
+				6753794B1814F77E0036979C /* RCReply.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BF0F3F781806EFBF00E48E53 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +148,7 @@
 		BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				675379401814F3F30036979C /* Models */,
 				BFCA01F5180862080093EA93 /* Controllers */,
 				BF0F3F931806EFBF00E48E53 /* AppDelegate.h */,
 				BF0F3F941806EFBF00E48E53 /* AppDelegate.m */,
@@ -304,7 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0F3F9B1806EFBF00E48E53 /* HomeController.m in Sources */,
+				675379461814F6B80036979C /* RCUser.m in Sources */,
+				675379431814F6660036979C /* RCTopic.m in Sources */,
+				675379491814F7450036979C /* RCNode.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
+				6753794C1814F77E0036979C /* RCReply.m in Sources */,
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
 				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
 			);
