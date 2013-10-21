@@ -26,9 +26,20 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    
-
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSString *url = @"http://ruby-china.org/api/v2/topics.json";
+    NSDictionary *params = @{@"page": @1, @"per_page": @2};
+    [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        topics = responseObject;
+        NSLog(@"%@", topics);
+        NSLog(@"%@", [[topics objectAtIndex:1] objectForKey:@"title"]);
+        NSString *avatar_url = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"avatar_url"];
+        NSString *user_name = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"login"];
+        NSLog(@"%@", avatar_url);
+        NSLog(@"%@", user_name);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,11 +54,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [topics count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
     static NSString *CellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -56,7 +67,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = @"我是SB";
+    NSLog(@"%@", topics);
+    cell.textLabel.text = [[topics objectAtIndex:indexPath.row] objectForKey:@"title"];
     
     return cell;
 }
