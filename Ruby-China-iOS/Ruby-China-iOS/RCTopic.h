@@ -22,7 +22,5 @@
 @property (nonatomic, strong) NSNumber *repliesCount, *lastReplyUserId, *nodeId, *hits;
 @property (nonatomic, strong) NSDate *repliedAt;
 
-+ (void)findWithPage:(int)page perPage:(int)perPage async: (void (^)(NSArray *objects, NSError *error)) async;
-
 
 @end
