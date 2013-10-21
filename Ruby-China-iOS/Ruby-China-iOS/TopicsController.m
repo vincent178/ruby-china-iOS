@@ -26,8 +26,14 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    self.navigationItem.title = @"Ruby China";
+    UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
+                                                                                target:self action:nil];
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                               target:self action:nil];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.leftBarButtonItem = self.navigationItem.backBarButtonItem;
 
     [self refresh];
 }
