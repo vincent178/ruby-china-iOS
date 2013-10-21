@@ -11,6 +11,7 @@
 		675379461814F6B80036979C /* RCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379451814F6B80036979C /* RCUser.m */; };
 		675379491814F7450036979C /* RCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379481814F7450036979C /* RCNode.m */; };
 		6753794C1814F77E0036979C /* RCReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 6753794B1814F77E0036979C /* RCReply.m */; };
+		6753794D1814FBA50036979C /* libPods.a in Sources */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
 		BF0F3F871806EFBF00E48E53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F861806EFBF00E48E53 /* CoreGraphics.framework */; };
@@ -331,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6753794D1814FBA50036979C /* libPods.a in Sources */,
 				BF0F3F9B1806EFBF00E48E53 /* HomeController.m in Sources */,
 				675379461814F6B80036979C /* RCUser.m in Sources */,
 				675379431814F6660036979C /* RCTopic.m in Sources */,

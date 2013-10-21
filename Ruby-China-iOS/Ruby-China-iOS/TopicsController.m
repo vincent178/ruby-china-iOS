@@ -7,6 +7,8 @@
 //
 
 #import "TopicsController.h"
+#import "RCTopic.h"
+#import "AFNetworking.h"
 
 @interface TopicsController ()
 
@@ -23,6 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [RCTopic findWithPage:1 perPage:30];
 }
 
 - (void)didReceiveMemoryWarning {

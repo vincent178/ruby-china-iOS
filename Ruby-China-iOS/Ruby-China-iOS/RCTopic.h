@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 
 @class RCUser;
 @class RCNode;
@@ -20,6 +21,8 @@
 @property (nonatomic, strong) NSString *title, *body, *bodyHtml, *nodeName, *lastReplyUserLogin;
 @property (nonatomic, strong) NSNumber *repliesCount, *lastReplyUserId, *nodeId, *hits;
 @property (nonatomic, strong) NSDate *repliedAt;
+
++ (void)findWithPage:(int)page perPage:(int)perPage async: (void (^)(NSArray *objects, NSError *error)) async;
 
 
 @end

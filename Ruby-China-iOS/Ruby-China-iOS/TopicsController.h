@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicsController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TopicsController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
+    NSArray *topics;
+}
 
 @end
