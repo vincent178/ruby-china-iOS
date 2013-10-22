@@ -12,11 +12,13 @@
 
 @implementation TopicCell
 
-- (id)initWithTopic:(NSDictionary *)topic {
-    TopicCell *cell = [[TopicCell alloc] init];
+- (void)setupWithTopic:(NSDictionary *)topic {
     
     // Avatar Image View
     avatarImageView = [[UIImageView alloc] initWithFrame:CGRectMake(5.0f, 15.0f, 35.0f, 35.0f)];
+    CALayer * l = [avatarImageView layer];
+    [l setMasksToBounds:YES];
+    [l setCornerRadius:4.0];
     NSURL *url = [NSURL URLWithString:[[topic objectForKey:@"user"] objectForKey:@"avatar_url"]];
     [avatarImageView setImageWithURL:url];
     [self addSubview:avatarImageView];
@@ -37,11 +39,6 @@
     NSString *formatDate = [self setTimeFormat:rawDate];
     
 
-    
-    
-    
-    
-    return cell;
 }
 
 - (NSString *)setTimeFormat:(NSString *)rawDate {

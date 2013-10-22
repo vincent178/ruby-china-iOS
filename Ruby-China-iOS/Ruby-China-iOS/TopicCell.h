@@ -17,6 +17,6 @@
     UILabel *replies_count;
 }
 
-- (id)initWithTopic:(NSDictionary *)topic;
+- (void)setupWithTopic:(NSDictionary *)topic;
 
 @end

@@ -9,6 +9,7 @@
 #import "TopicsController.h"
 #import "RCTopic.h"
 #import "AFNetworking.h"
+#import "TopicCell.h"
 
 @interface TopicsController ()
 
@@ -41,13 +42,10 @@
 - (void)refresh {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = @"http://ruby-china.org/api/v2/topics.json";
-    NSDictionary *params = @{@"page": @1, @"per_page": @2};
+    NSDictionary *params = @{@"page": @1, @"per_page": @10};
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topics = responseObject;
         NSLog(@"%@", [topics objectAtIndex:0]);
-        NSString *createdDate = [[topics objectAtIndex:0] objectForKey:@"created_at"];
-        NSString *newDate = [self setTimeFormat:createdDate];
-        NSLog(@"%@", newDate);
         
         [self.tableView reloadData];
         
@@ -75,16 +73,50 @@
 
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    TopicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[TopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    cell.textLabel.text = [[topics objectAtIndex:indexPath.row] objectForKey:@"title"];
+    [cell setupWithTopic:[topics objectAtIndex:indexPath.row]];
     
     return cell;
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80.0f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
