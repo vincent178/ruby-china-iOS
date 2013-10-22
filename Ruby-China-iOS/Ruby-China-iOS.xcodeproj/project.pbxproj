@@ -263,7 +263,7 @@
 				ORGANIZATIONNAME = Vincent;
 				TargetAttributes = {
 					BF0F3FA11806EFBF00E48E53 = {
-						TestTargetID = BF0F3F801806EFBF00E48E53;
+						TestTargetID = BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */;
 					};
 				};
 			};
@@ -422,7 +422,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = " ";
+				CODE_SIGN_IDENTITY = "iOS Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -465,7 +465,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = " ";
+				CODE_SIGN_IDENTITY = "iOS Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
