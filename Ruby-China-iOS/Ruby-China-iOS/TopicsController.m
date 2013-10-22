@@ -27,13 +27,13 @@
     
     [super viewDidLoad];
     self.navigationItem.title = @"Ruby China";
-    UIBarButtonItem *editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
-                                                                                target:self action:nil];
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                target:self action:nil];
-    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone
+                                                                                target:self action:nil];
+
     self.navigationItem.rightBarButtonItem = addButton;
-    self.navigationItem.leftBarButtonItem = self.navigationItem.backBarButtonItem;
+    self.navigationItem.leftBarButtonItem = backButton;
 
     [self refresh];
 }
@@ -46,7 +46,6 @@
         topics = responseObject;
         [self.tableView reloadData];
         
-        //        NSLog(@"%@", topics);
         //        NSLog(@"%@", [[topics objectAtIndex:1] objectForKey:@"title"]);
         //        NSString *avatar_url = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"avatar_url"];
         //        NSString *user_name = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"login"];

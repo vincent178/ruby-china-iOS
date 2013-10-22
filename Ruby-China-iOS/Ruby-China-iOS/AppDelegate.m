@@ -16,7 +16,7 @@
     // Override point for customization after application launch.
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
-
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 
 
     return YES;
