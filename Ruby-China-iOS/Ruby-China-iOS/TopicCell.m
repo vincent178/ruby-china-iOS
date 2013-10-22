@@ -58,6 +58,11 @@
     [topicTitle sizeToFit];
     [self addSubview:topicTitle];
     
+    // Verticle Line Split Topic info and Reply info
+    UIView *verticleLine = [[UIView alloc] initWithFrame:CGRectMake(275.0f, 15.0f, 1, 50)];
+    verticleLine.backgroundColor = [UIColor grayColor];
+    verticleLine.alpha = 0.3f;
+    [self addSubview:verticleLine];
 
 }
 
