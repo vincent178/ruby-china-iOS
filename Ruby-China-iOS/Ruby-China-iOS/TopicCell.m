@@ -31,13 +31,21 @@
                          initWithFrame:CGRectMake(avatarImageView.frame.origin.x + avatarImageView.frame.size.width + 10, avatarImageView.frame.origin.y, userNickSize.width, 10.0f)];
     userNickNameLabel.text = userNickName;
     userNickNameLabel.font = [UIFont systemFontOfSize:13.0f];
+    userNickNameLabel.textColor = [UIColor grayColor];
     [userNickNameLabel sizeToFit];
     [self addSubview:userNickNameLabel];
     
     // Topic Created at
     NSString *rawDate = [topic objectForKey:@"created_at"];
     NSString *formatDate = [self setTimeFormat:rawDate];
-    
+    CGSize formatDateSize = [formatDate sizeWithAttributes:attributes];
+    topicCreatedAtLabel = [[UILabel alloc]
+                           initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x + userNickNameLabel.frame.size.width + 5, avatarImageView.frame.origin.y, formatDateSize.width, 10.0f)];
+    topicCreatedAtLabel.text = formatDate;
+    topicCreatedAtLabel.font = [UIFont systemFontOfSize:13.0f];
+    topicCreatedAtLabel.textColor = [UIColor grayColor];
+    [topicCreatedAtLabel sizeToFit];
+    [self addSubview:topicCreatedAtLabel];
 
 }
 
@@ -47,12 +55,14 @@
     NSArray *components = [rawDate componentsSeparatedByString:@"T"];
     
     NSString *createdDateString = [components objectAtIndex:0];
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    NSDate *createdDate = [dateFormatter dateFromString:createdDateString];
-    
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'"];
     NSDate *currentDate = [NSDate date];
-    
-    if ([currentDate isEqualToDate:createdDate]) {
+    NSString *currentDateString = [dateFormatter stringFromDate:currentDate];
+
+    if ([currentDateString isEqualToString:createdDateString]) {
         result = @"今天";
     } else {
         result = createdDateString;

@@ -59,6 +59,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark -
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -83,6 +85,9 @@
     
     return cell;
 }
+
+#pragma mark -
+#pragma mark - Table view delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.0f;

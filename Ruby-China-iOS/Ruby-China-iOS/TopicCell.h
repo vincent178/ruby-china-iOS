@@ -11,7 +11,7 @@
 @interface TopicCell : UITableViewCell {
     UIImageView *avatarImageView;
     UILabel *userNickNameLabel;
-    UILabel *topic_created_at;
+    UILabel *topicCreatedAtLabel;
     UITextView *topic_title;
     UIImage *reply_pic;
     UILabel *replies_count;
