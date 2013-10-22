@@ -7,7 +7,22 @@
 //
 
 #import "NewTopicController.h"
+#import "TopicsController.h"
 
 @implementation NewTopicController
+
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+
+
+- (IBAction)doneButtonClicked:(id)sender {
+}
+
+- (IBAction)cancelButtonClicked:(id)sender {
+    
+}
 
 @end

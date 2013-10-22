@@ -10,6 +10,7 @@
 #import "RCTopic.h"
 #import "AFNetworking.h"
 #import "TopicCell.h"
+#import "NewTopicController.h"
 
 @interface TopicsController ()
 
@@ -28,14 +29,6 @@
     
     [super viewDidLoad];
     self.navigationItem.title = @"Ruby China";
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
-                                                                               target:self action:nil];
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone
-                                                                                target:self action:nil];
-
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.navigationItem.leftBarButtonItem = backButton;
-
     [self refresh];
 }
 
@@ -173,7 +166,6 @@
 }
 
  */
-
 
 
 @end

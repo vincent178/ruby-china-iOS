@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NewTopicController : UIViewController
+- (IBAction)doneButtonClicked:(id)sender;
+- (IBAction)cancelButtonClicked:(id)sender;
 
 @end
