@@ -44,6 +44,7 @@
     NSDictionary *params = @{@"page": @1, @"per_page": @2};
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topics = responseObject;
+        NSLog(@"%@", [topics objectAtIndex:0]);
         [self.tableView reloadData];
         
         //        NSLog(@"%@", [[topics objectAtIndex:1] objectForKey:@"title"]);

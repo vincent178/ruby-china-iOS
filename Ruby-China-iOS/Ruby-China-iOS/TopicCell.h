@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicCell : UITableViewCell
+@interface TopicCell : UITableViewCell {
+    UIImage *avatar_image;
+    UILabel *user_login;
+    UILabel *topic_created_at;
+    UITextView *topic_title;
+    UIImage *reply_pic;
+    UILabel *replies_count;
+}
+
+- (id)initWithTopic:(NSDictionary *)topic;
 
 @end
