@@ -30,7 +30,7 @@
     userNickNameLabel = [[UILabel alloc]
                          initWithFrame:CGRectMake(avatarImageView.frame.origin.x + avatarImageView.frame.size.width + 10, avatarImageView.frame.origin.y, userNickSize.width, 10.0f)];
     userNickNameLabel.text = userNickName;
-    userNickNameLabel.font = [UIFont systemFontOfSize:13.0f];
+    userNickNameLabel.font = [UIFont systemFontOfSize:11.0f];
     userNickNameLabel.textColor = [UIColor grayColor];
     [userNickNameLabel sizeToFit];
     [self addSubview:userNickNameLabel];
@@ -42,10 +42,22 @@
     topicCreatedAtLabel = [[UILabel alloc]
                            initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x + userNickNameLabel.frame.size.width + 5, avatarImageView.frame.origin.y, formatDateSize.width, 10.0f)];
     topicCreatedAtLabel.text = formatDate;
-    topicCreatedAtLabel.font = [UIFont systemFontOfSize:13.0f];
+    topicCreatedAtLabel.font = [UIFont systemFontOfSize:11.0f];
     topicCreatedAtLabel.textColor = [UIColor grayColor];
     [topicCreatedAtLabel sizeToFit];
     [self addSubview:topicCreatedAtLabel];
+    
+    // Topic Title
+    topicTitle = [[UILabel alloc]
+                  initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 7.5f, 215.0f, 32.5f)];
+    topicTitle.lineBreakMode = NSLineBreakByWordWrapping;
+    topicTitle.numberOfLines = 2;
+    topicTitle.text = [topic objectForKey:@"title"];
+    topicTitle.font = [UIFont systemFontOfSize:13.0f];
+    topicTitle.textAlignment = NSTextAlignmentLeft;
+    [topicTitle sizeToFit];
+    [self addSubview:topicTitle];
+    
 
 }
 

@@ -12,7 +12,7 @@
     UIImageView *avatarImageView;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
-    UITextView *topic_title;
+    UILabel *topicTitle;
     UIImage *reply_pic;
     UILabel *replies_count;
 }
