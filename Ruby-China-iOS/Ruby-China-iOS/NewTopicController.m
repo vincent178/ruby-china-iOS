@@ -16,10 +16,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc]
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
                                        initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                        target:self action:@selector(doneButtonClicked)];
-    self.navigationItem.rightBarButtonItem = doneButtonItem;
+    self.navigationItem.rightBarButtonItem = doneButton;
 }
 
 - (void)doneButtonClicked {
