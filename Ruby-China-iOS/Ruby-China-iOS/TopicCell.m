@@ -63,7 +63,22 @@
     verticleLine.backgroundColor = [UIColor grayColor];
     verticleLine.alpha = 0.3f;
     [self addSubview:verticleLine];
+    
+    //
+    // Reply Dialog Picture
+    // To Be Done
+    //
 
+    // Reply Count
+    replyCountLabel = [[UILabel alloc]
+                       initWithFrame:CGRectMake(verticleLine.frame.origin.x, 35.0f, self.frame.size.width - verticleLine.frame.origin.x, 20.0f)];
+    NSLog(@"Window Width: %f", self.frame.size.width);
+    NSLog(@"relpy label with: %f", self.frame.size.width - verticleLine.frame.origin.x);
+    replyCountLabel.font = [UIFont systemFontOfSize:16.0f];
+    replyCountLabel.text = [[topic objectForKey:@"replies_count"] stringValue];
+    replyCountLabel.textColor = [UIColor grayColor];
+    replyCountLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:replyCountLabel];
 }
 
 - (NSString *)setTimeFormat:(NSString *)rawDate {

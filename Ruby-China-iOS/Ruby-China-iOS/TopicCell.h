@@ -14,7 +14,7 @@
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitle;
     UIImage *reply_pic;
-    UILabel *replies_count;
+    UILabel *replyCountLabel;
 }
 
 - (void)setupWithTopic:(NSDictionary *)topic;
