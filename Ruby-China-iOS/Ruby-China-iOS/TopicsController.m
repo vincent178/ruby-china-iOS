@@ -11,6 +11,7 @@
 #import "AFNetworking.h"
 #import "TopicCell.h"
 #import "NewTopicController.h"
+#import "TopicController.h"
 
 @interface TopicsController ()
 
@@ -25,10 +26,20 @@
     return self;
 }
 
+
+
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     self.navigationItem.title = @"Ruby China";
+    
+    // Navigation Bar Item Button
+    UIBarButtonItem *newTopicButton = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+                                       target:self action:@selector(newTopicButtonClicked)];
+    self.navigationItem.rightBarButtonItem = newTopicButton;
+    
+
     [self refresh];
 }
 
@@ -46,6 +57,8 @@
         NSLog(@"%@", error);
     }];
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -86,6 +99,10 @@
     return 80.0f;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TopicController *topicController = [[TopicController alloc] init];
+    [self.navigationController pushViewController: topicController animated:YES];
+}
 
 
 
@@ -105,12 +122,13 @@
 
 
 
+#pragma mark -
+#pragma mark - Table view navigation
 
-
-
-
-
-
+- (void)newTopicButtonClicked {
+    NewTopicController *newTopicController = [[NewTopicController alloc] init];
+    [self.navigationController pushViewController:newTopicController animated:YES];
+}
 
 
 

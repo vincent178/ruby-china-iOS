@@ -15,14 +15,17 @@
     
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-}
-
-
-- (IBAction)doneButtonClicked:(id)sender {
-}
-
-- (IBAction)cancelButtonClicked:(id)sender {
     
+    UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc]
+                                       initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                       target:self action:@selector(doneButtonClicked)];
+    self.navigationItem.rightBarButtonItem = doneButtonItem;
 }
+
+- (void)doneButtonClicked {
+    NSLog(@"done button clicked");
+}
+
+
 
 @end

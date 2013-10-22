@@ -12,4 +12,7 @@
     NSArray *topics;
 }
 
+- (void)newTopicButtonClicked;
+
+
 @end

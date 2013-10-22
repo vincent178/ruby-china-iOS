@@ -8,22 +8,11 @@
         <scene sceneID="132-X5-n5z">
             <objects>
                 <viewController id="T4C-fk-vcs" customClass="NewTopicController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="0G4-8m-gc9">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uqi-64-86v">
-                            <connections>
-                                <action selector="cancelButtonClicked:" destination="T4C-fk-vcs" id="Gk5-K7-ZgN"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="vFn-em-0iI">
-                            <connections>
-                                <action selector="doneButtonClicked:" destination="T4C-fk-vcs" id="WGp-Jq-2Xy"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="0G4-8m-gc9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xL9-St-29e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="-412"/>
+            <point key="canvasLocation" x="1699" y="-1172"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -68,9 +57,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="nxN-9o-WKg" kind="push" id="Wfp-DR-ak0"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,11 +65,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="MKB-XD-ljE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="4q8-oW-4y5">
-                            <connections>
-                                <segue destination="T4C-fk-vcs" kind="push" id="hfK-Z8-sGx"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="4q8-oW-4y5"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RY4-a7-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
