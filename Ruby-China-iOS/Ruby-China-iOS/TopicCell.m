@@ -25,10 +25,43 @@
     NSString *userNickName = [[topic objectForKey:@"user"] objectForKey:@"login"];
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:13.0f]};
     CGSize userNickSize = [userNickName sizeWithAttributes:attributes];
+    userNickNameLabel = [[UILabel alloc]
+                         initWithFrame:CGRectMake(avatarImageView.frame.origin.x + avatarImageView.frame.size.width + 10, avatarImageView.frame.origin.y, userNickSize.width, 10.0f)];
+    userNickNameLabel.text = userNickName;
+    userNickNameLabel.font = [UIFont systemFontOfSize:13.0f];
+    [userNickNameLabel sizeToFit];
+    [self addSubview:userNickNameLabel];
+    
+    // Topic Created at
+    NSString *rawDate = [topic objectForKey:@"created_at"];
+    NSString *formatDate = [self setTimeFormat:rawDate];
+    
+
+    
     
     
     
     return cell;
+}
+
+- (NSString *)setTimeFormat:(NSString *)rawDate {
+    NSString *result = nil;
+    
+    NSArray *components = [rawDate componentsSeparatedByString:@"T"];
+    
+    NSString *createdDateString = [components objectAtIndex:0];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSDate *createdDate = [dateFormatter dateFromString:createdDateString];
+    
+    NSDate *currentDate = [NSDate date];
+    
+    if ([currentDate isEqualToDate:createdDate]) {
+        result = @"今天";
+    } else {
+        result = createdDateString;
+    }
+    
+    return result;
 }
 
 @end

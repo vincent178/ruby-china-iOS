@@ -45,13 +45,11 @@
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topics = responseObject;
         NSLog(@"%@", [topics objectAtIndex:0]);
-        [self.tableView reloadData];
+        NSString *createdDate = [[topics objectAtIndex:0] objectForKey:@"created_at"];
+        NSString *newDate = [self setTimeFormat:createdDate];
+        NSLog(@"%@", newDate);
         
-        //        NSLog(@"%@", [[topics objectAtIndex:1] objectForKey:@"title"]);
-        //        NSString *avatar_url = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"avatar_url"];
-        //        NSString *user_name = [[[topics objectAtIndex:1] objectForKey:@"user"] objectForKey:@"login"];
-        //        NSLog(@"%@", avatar_url);
-        //        NSLog(@"%@", user_name);
+        [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@", error);
@@ -138,5 +136,7 @@
 }
 
  */
+
+
 
 @end

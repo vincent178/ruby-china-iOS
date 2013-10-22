@@ -10,7 +10,7 @@
 
 @interface TopicCell : UITableViewCell {
     UIImageView *avatarImageView;
-    UILabel *user_login;
+    UILabel *userNickNameLabel;
     UILabel *topic_created_at;
     UITextView *topic_title;
     UIImage *reply_pic;
