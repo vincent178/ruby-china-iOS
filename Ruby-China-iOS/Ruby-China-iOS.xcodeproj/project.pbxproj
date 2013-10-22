@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67196E301816C015005E777A /* NewTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67196E2F1816C015005E777A /* NewTopicController.m */; };
 		675379431814F6660036979C /* RCTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379421814F6660036979C /* RCTopic.m */; };
 		675379461814F6B80036979C /* RCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379451814F6B80036979C /* RCUser.m */; };
 		675379491814F7450036979C /* RCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379481814F7450036979C /* RCNode.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67196E2E1816C015005E777A /* NewTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTopicController.h; sourceTree = "<group>"; };
+		67196E2F1816C015005E777A /* NewTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopicController.m; sourceTree = "<group>"; };
 		675379411814F6660036979C /* RCTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopic.h; sourceTree = "<group>"; };
 		675379421814F6660036979C /* RCTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopic.m; sourceTree = "<group>"; };
 		675379441814F6B80036979C /* RCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUser.h; sourceTree = "<group>"; };
@@ -209,6 +212,8 @@
 				BFCA01F3180862010093EA93 /* TopicsController.m */,
 				BF0F3F991806EFBF00E48E53 /* HomeController.h */,
 				BF0F3F9A1806EFBF00E48E53 /* HomeController.m */,
+				67196E2E1816C015005E777A /* NewTopicController.h */,
+				67196E2F1816C015005E777A /* NewTopicController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -263,7 +268,7 @@
 				ORGANIZATIONNAME = Vincent;
 				TargetAttributes = {
 					BF0F3FA11806EFBF00E48E53 = {
-						TestTargetID = BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */;
+						TestTargetID = BF0F3F801806EFBF00E48E53;
 					};
 				};
 			};
@@ -355,6 +360,7 @@
 				6753794C1814F77E0036979C /* RCReply.m in Sources */,
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
 				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
+				67196E301816C015005E777A /* NewTopicController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
