@@ -7,7 +7,6 @@
         <!--New Topic Controller-->
         <scene sceneID="132-X5-n5z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xL9-St-29e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="T4C-fk-vcs" customClass="NewTopicController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="0G4-8m-gc9">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uqi-64-86v">
@@ -22,6 +21,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xL9-St-29e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1129" y="-412"/>
         </scene>
@@ -61,13 +61,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pJw-Kh-84o">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="pJw-Kh-84o" customClass="TopicCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pJw-Kh-84o" id="dw2-lT-ulV">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="nxN-9o-WKg" kind="push" id="Wfp-DR-ak0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -86,6 +89,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RY4-a7-BX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="648" y="-137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1a9-Fo-Td9">
+            <objects>
+                <viewController id="nxN-9o-WKg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RMY-89-tTU"/>
+                        <viewControllerLayoutGuide type="bottom" id="zUI-jg-LS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m8H-sa-Xyd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lZB-L9-ezW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJe-MG-BIM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="326"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mh0-mx-dQX">

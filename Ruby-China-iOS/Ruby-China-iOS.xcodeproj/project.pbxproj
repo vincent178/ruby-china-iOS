@@ -13,6 +13,7 @@
 		675379491814F7450036979C /* RCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379481814F7450036979C /* RCNode.m */; };
 		6753794C1814F77E0036979C /* RCReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 6753794B1814F77E0036979C /* RCReply.m */; };
 		6753794D1814FBA50036979C /* libPods.a in Sources */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
+		6775020C181740CA0090B50D /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775020B181740CA0090B50D /* TopicController.m */; };
 		67E71C67181646FE00E1E227 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E71C66181646FE00E1E227 /* TopicCell.m */; };
 		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
@@ -53,6 +54,8 @@
 		675379481814F7450036979C /* RCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNode.m; sourceTree = "<group>"; };
 		6753794A1814F77E0036979C /* RCReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCReply.h; sourceTree = "<group>"; };
 		6753794B1814F77E0036979C /* RCReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReply.m; sourceTree = "<group>"; };
+		6775020A181740CA0090B50D /* TopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicController.h; sourceTree = "<group>"; };
+		6775020B181740CA0090B50D /* TopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicController.m; sourceTree = "<group>"; };
 		67E71C65181646FE00E1E227 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
 		67E71C66181646FE00E1E227 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +217,8 @@
 				BF0F3F9A1806EFBF00E48E53 /* HomeController.m */,
 				67196E2E1816C015005E777A /* NewTopicController.h */,
 				67196E2F1816C015005E777A /* NewTopicController.m */,
+				6775020A181740CA0090B50D /* TopicController.h */,
+				6775020B181740CA0090B50D /* TopicController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
 				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
 				67196E301816C015005E777A /* NewTopicController.m in Sources */,
+				6775020C181740CA0090B50D /* TopicController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
