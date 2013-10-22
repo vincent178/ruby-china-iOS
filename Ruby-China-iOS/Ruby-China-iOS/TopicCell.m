@@ -49,7 +49,7 @@
     
     // Topic Title
     topicTitle = [[UILabel alloc]
-                  initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 7.5f, 215.0f, 32.5f)];
+                  initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5.0f, 215.0f, 35.0f)];
     topicTitle.lineBreakMode = NSLineBreakByWordWrapping;
     topicTitle.numberOfLines = 2;
     topicTitle.text = [topic objectForKey:@"title"];
@@ -72,8 +72,6 @@
     // Reply Count
     replyCountLabel = [[UILabel alloc]
                        initWithFrame:CGRectMake(verticleLine.frame.origin.x, 35.0f, self.frame.size.width - verticleLine.frame.origin.x, 20.0f)];
-    NSLog(@"Window Width: %f", self.frame.size.width);
-    NSLog(@"relpy label with: %f", self.frame.size.width - verticleLine.frame.origin.x);
     replyCountLabel.font = [UIFont systemFontOfSize:16.0f];
     replyCountLabel.text = [[topic objectForKey:@"replies_count"] stringValue];
     replyCountLabel.textColor = [UIColor grayColor];
