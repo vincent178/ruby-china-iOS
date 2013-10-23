@@ -7,6 +7,7 @@
 //
 
 #import "TopicController.h"
+#import "TopicCellWithWebView.h"
 
 @implementation TopicController
 
@@ -14,6 +15,27 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"TopicCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+
+    cell.textLabel.text = @"123";
+    return cell;
 }
 
 @end
