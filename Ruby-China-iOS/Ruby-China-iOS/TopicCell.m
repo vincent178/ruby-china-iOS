@@ -64,10 +64,8 @@
     verticleLine.alpha = 0.3f;
     [self addSubview:verticleLine];
     
-    //
     // Reply Dialog Picture
-    // To Be Done
-    //
+//    replyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)]
 
     // Reply Count
     replyCountLabel = [[UILabel alloc]

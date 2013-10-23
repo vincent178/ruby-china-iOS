@@ -10,10 +10,10 @@
 
 @interface TopicCell : UITableViewCell {
     UIImageView *avatarImageView;
+    UIImageView *replyImageView;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitle;
-    UIImage *reply_pic;
     UILabel *replyCountLabel;
 }
 
