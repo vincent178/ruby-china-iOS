@@ -65,7 +65,9 @@
     [self addSubview:verticleLine];
     
     // Reply Dialog Picture
-//    replyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)]
+    replyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(292.0f, 23.0f, 11.0f, 11.0f)];
+    replyImageView.image = [UIImage imageNamed:@"reply.png"];
+    [self addSubview:replyImageView];
 
     // Reply Count
     replyCountLabel = [[UILabel alloc]
