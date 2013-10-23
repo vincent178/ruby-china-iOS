@@ -10,4 +10,12 @@
 
 @implementation WebViewHelper
 
++ (CGFloat)getHeightOfWebView:(UIWebView *)webView {
+    return webView.scrollView.contentSize.height;
+}
+
++ (NSString *)setWebViewWithFont:(int)fontSize Html:(NSString *)html andId:(NSString *)id {
+    return [NSString stringWithFormat:@"<div id=%@ style='font-size: %dpx;'> %@ </div>", id, fontSize, html];
+}
+
 @end

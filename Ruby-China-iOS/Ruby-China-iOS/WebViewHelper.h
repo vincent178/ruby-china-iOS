@@ -10,4 +10,7 @@
 
 @interface WebViewHelper : NSObject
 
++ (CGFloat)getHeightOfWebView:(UIWebView *)webView;
++ (NSString *)setWebViewWithFont:(int)fontSize Html:(NSString *)html andId:(NSString *)id;
+
 @end

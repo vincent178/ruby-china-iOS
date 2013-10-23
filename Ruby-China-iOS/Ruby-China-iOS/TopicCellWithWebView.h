@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicCellWithWebView : UITableViewCell {
+@interface TopicCellWithWebView : UITableViewCell <UIWebViewDelegate> {
     UIImageView *avatarImageView;
-    UIWebView *webContent;
+    UIWebView *topicDetailWebView;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitleLabel;
+    
+    CGFloat webViewHeight;
 }
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail;

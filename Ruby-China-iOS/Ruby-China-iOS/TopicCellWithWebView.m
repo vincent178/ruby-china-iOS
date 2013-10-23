@@ -9,6 +9,7 @@
 #import "TopicCellWithWebView.h"
 #import "UIImageView+WebCache.h"
 #import "DateFormat.h"
+#import "WebViewHelper.h"
 
 @implementation TopicCellWithWebView
 
@@ -67,6 +68,31 @@
     horizontalLine.alpha = 0.3f;
     [self addSubview:horizontalLine];
     
+    // Topic Detail Web View
+// TBD in tomorrow
+    NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
+    NSString *html = [WebViewHelper setWebViewWithFont:13 Html:rawHtml andId:@"height"];
+    topicDetailWebView = [[UIWebView alloc] initWithFrame:CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1)];
+    topicDetailWebView.delegate = self;
+    [topicDetailWebView loadHTMLString:html baseURL:nil];
+    [self addSubview:topicDetailWebView];
+}
+
+// TBD in tomorrow
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    webView.scrollView.scrollEnabled = NO;
+    CGRect frame = webView.frame;
+    
+    frame.size.width = 290;
+    frame.size.height = 1;
+    
+    webView.frame = frame;
+    
+    frame.size.height = webView.scrollView.contentSize.height;
+    webView.frame = frame;
+    webView.scrollView.scrollEnabled = YES;
+    
+    webViewHeight = webView.frame.size.height;
 }
 
 @end
