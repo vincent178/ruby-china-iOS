@@ -26,7 +26,7 @@
     
     // User NickName Label
     NSString *userNickName = [[topic objectForKey:@"user"] objectForKey:@"login"];
-    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:13.0f]};
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f]};
     CGSize userNickSize = [userNickName sizeWithAttributes:attributes];
     userNickNameLabel = [[UILabel alloc]
                          initWithFrame:CGRectMake(avatarImageView.frame.origin.x + avatarImageView.frame.size.width + 10, avatarImageView.frame.origin.y, userNickSize.width, 10.0f)];

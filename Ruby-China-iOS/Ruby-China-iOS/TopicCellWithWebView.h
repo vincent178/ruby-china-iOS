@@ -14,7 +14,6 @@
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitleLabel;
-    UILabel *replyCountLabel;
 }
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
