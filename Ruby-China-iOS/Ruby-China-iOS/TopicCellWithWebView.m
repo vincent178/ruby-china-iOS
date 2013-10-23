@@ -7,6 +7,8 @@
 //
 
 #import "TopicCellWithWebView.h"
+#import "UIImageView+WebCache.h"
+#import "DateFormat.h"
 
 @implementation TopicCellWithWebView
 

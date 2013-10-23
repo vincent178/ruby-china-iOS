@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TopicController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
+    NSDictionary *topicDetail;
+    NSArray *replies;
+}
 
 @property (nonatomic, strong) NSNumber *topicId;
 

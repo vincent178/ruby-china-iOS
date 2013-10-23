@@ -10,9 +10,7 @@
 #import "AFNetworking.h"
 #import "TopicCellWithWebView.h"
 
-@implementation TopicController {
-    NSDictionary *topicDetail;
-}
+@implementation TopicController 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +25,8 @@
     NSString *url = [NSString stringWithFormat:@"http://ruby-china.org/api/v2/topics/%@.json", self.topicId];
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topicDetail = responseObject;
+        replies = [topicDetail objectForKey:@"replies"];
+        
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -41,7 +41,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return ((section == 0) ? 1 : 3);
+    return ((section == 0) ? 1 : [replies count]);
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -66,5 +66,11 @@
     
     return nil;
 }
+
+#pragma mark - Table View delegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return ((indexPath.section == 0) ? 200.0f : 30.0f);
+}
+
 
 @end
