@@ -49,8 +49,6 @@
     NSDictionary *params = @{@"page": @1, @"per_page": @10};
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topics = responseObject;
-        NSLog(@"%@", [topics objectAtIndex:0]);
-        
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -101,6 +99,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     TopicController *topicController = [[TopicController alloc] init];
+    topicController.topicId = [[topics objectAtIndex:indexPath.row] objectForKey:@"id"];
     [self.navigationController pushViewController: topicController animated:YES];
 }
 

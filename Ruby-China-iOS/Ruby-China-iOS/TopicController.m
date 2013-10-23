@@ -17,18 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    NSLog(@"%@", self.topicId);
     
     [self refresh];
 }
 
 - (void)refresh {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSString *url = @"http://ruby-china.org/api/v2/topics/14765.json";
+    NSString *url = [NSString stringWithFormat:@"http://ruby-china.org/api/v2/topics/%@.json", self.topicId];
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         topicDetail = responseObject;
-//        NSLog(@"%@", topicDetail);
-        NSLog(@"%@", [topicDetail objectForKey:@"body"]);
-        
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -49,17 +47,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
-        TopicCellWithWebView *cell = [[TopicCellWithWebView alloc] init];
+        TopicCellWithWebView *topicDetailCell = [[TopicCellWithWebView alloc] init];
+        [topicDetailCell setupWithTopicDetail:topicDetail];
+        return topicDetailCell;
+    } else if (indexPath.section == 1) {
+        
+        static NSString *CellIdentifier = @"TopicsCell";
+        
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+        return cell;
     }
-    static NSString *CellIdentifier = @"TopicCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
-    return cell;
+    return nil;
 }
 
 @end

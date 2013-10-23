@@ -10,4 +10,6 @@
 
 @interface TopicController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) NSNumber *topicId;
+
 @end
