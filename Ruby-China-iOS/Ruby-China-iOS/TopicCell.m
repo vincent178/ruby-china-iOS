@@ -50,15 +50,15 @@
     [self addSubview:topicCreatedAtLabel];
     
     // Topic Title
-    topicTitle = [[UILabel alloc]
+    topicTitleLabel = [[UILabel alloc]
                   initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5.0f, 215.0f, 35.0f)];
-    topicTitle.lineBreakMode = NSLineBreakByWordWrapping;
-    topicTitle.numberOfLines = 2;
-    topicTitle.text = [topic objectForKey:@"title"];
-    topicTitle.font = [UIFont systemFontOfSize:13.0f];
-    topicTitle.textAlignment = NSTextAlignmentLeft;
-    [topicTitle sizeToFit];
-    [self addSubview:topicTitle];
+    topicTitleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    topicTitleLabel.numberOfLines = 2;
+    topicTitleLabel.text = [topic objectForKey:@"title"];
+    topicTitleLabel.font = [UIFont systemFontOfSize:13.0f];
+    topicTitleLabel.textAlignment = NSTextAlignmentLeft;
+    [topicTitleLabel sizeToFit];
+    [self addSubview:topicTitleLabel];
     
     // Verticle Line Split Topic info and Reply info
     UIView *verticleLine = [[UIView alloc] initWithFrame:CGRectMake(275.0f, 15.0f, 1, 50)];

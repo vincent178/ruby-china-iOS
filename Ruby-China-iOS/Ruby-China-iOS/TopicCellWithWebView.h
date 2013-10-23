@@ -1,22 +1,23 @@
 //
-//  TopicCell.h
+//  TopicCellWithWebView.h
 //  Ruby-China-iOS
 //
-//  Created by Liang Huang on 10/22/13.
+//  Created by Liang Huang on 10/23/13.
 //  Copyright (c) 2013 Vincent. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface TopicCell : UITableViewCell {
+@interface TopicCellWithWebView : UITableViewCell {
     UIImageView *avatarImageView;
-    UIImageView *replyImageView;
+    UIWebView *webContent;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitleLabel;
     UILabel *replyCountLabel;
 }
 
-- (void)setupWithTopic:(NSDictionary *)topic;
+- (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
+
 
 @end

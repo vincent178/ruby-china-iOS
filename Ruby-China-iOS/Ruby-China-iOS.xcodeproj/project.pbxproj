@@ -16,6 +16,7 @@
 		6775020C181740CA0090B50D /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775020B181740CA0090B50D /* TopicController.m */; };
 		6775020E181779570090B50D /* reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6775020D181779570090B50D /* reply@2x.png */; };
 		6775021318178C260090B50D /* DateFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775021218178C260090B50D /* DateFormat.m */; };
+		67750219181794930090B50D /* TopicCellWithWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67750218181794930090B50D /* TopicCellWithWebView.m */; };
 		67E71C67181646FE00E1E227 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E71C66181646FE00E1E227 /* TopicCell.m */; };
 		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
@@ -61,6 +62,8 @@
 		6775020D181779570090B50D /* reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reply@2x.png"; sourceTree = "<group>"; };
 		6775021118178C260090B50D /* DateFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateFormat.h; sourceTree = "<group>"; };
 		6775021218178C260090B50D /* DateFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateFormat.m; sourceTree = "<group>"; };
+		67750217181794930090B50D /* TopicCellWithWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCellWithWebView.h; sourceTree = "<group>"; };
+		67750218181794930090B50D /* TopicCellWithWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCellWithWebView.m; sourceTree = "<group>"; };
 		67E71C65181646FE00E1E227 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
 		67E71C66181646FE00E1E227 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +153,8 @@
 			children = (
 				67E71C65181646FE00E1E227 /* TopicCell.h */,
 				67E71C66181646FE00E1E227 /* TopicCell.m */,
+				67750217181794930090B50D /* TopicCellWithWebView.h */,
+				67750218181794930090B50D /* TopicCellWithWebView.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				675379461814F6B80036979C /* RCUser.m in Sources */,
 				67E71C67181646FE00E1E227 /* TopicCell.m in Sources */,
 				675379431814F6660036979C /* RCTopic.m in Sources */,
+				67750219181794930090B50D /* TopicCellWithWebView.m in Sources */,
 				675379491814F7450036979C /* RCNode.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
 				6753794C1814F77E0036979C /* RCReply.m in Sources */,
