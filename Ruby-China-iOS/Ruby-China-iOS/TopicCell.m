@@ -9,6 +9,7 @@
 #import "TopicCell.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
+#import "DateFormat.h"
 
 @implementation TopicCell
 
@@ -37,7 +38,8 @@
     
     // Topic Created at
     NSString *rawDate = [topic objectForKey:@"created_at"];
-    NSString *formatDate = [self setTimeFormat:rawDate];
+    DateFormat *formatter = [[DateFormat alloc] init];
+    NSString *formatDate = [formatter setTimeFormat:rawDate];
     CGSize formatDateSize = [formatDate sizeWithAttributes:attributes];
     topicCreatedAtLabel = [[UILabel alloc]
                            initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x + userNickNameLabel.frame.size.width + 5, avatarImageView.frame.origin.y, formatDateSize.width, 10.0f)];
@@ -77,28 +79,6 @@
     replyCountLabel.textColor = [UIColor grayColor];
     replyCountLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:replyCountLabel];
-}
-
-- (NSString *)setTimeFormat:(NSString *)rawDate {
-    NSString *result = nil;
-    
-    NSArray *components = [rawDate componentsSeparatedByString:@"T"];
-    
-    NSString *createdDateString = [components objectAtIndex:0];
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-    [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'"];
-    NSDate *currentDate = [NSDate date];
-    NSString *currentDateString = [dateFormatter stringFromDate:currentDate];
-
-    if ([currentDateString isEqualToString:createdDateString]) {
-        result = @"今天";
-    } else {
-        result = createdDateString;
-    }
-    
-    return result;
 }
 
 @end
