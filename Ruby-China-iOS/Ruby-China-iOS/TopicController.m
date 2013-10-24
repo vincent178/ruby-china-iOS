@@ -15,7 +15,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    NSLog(@"%@", self.topicId);
     
     [self refresh];
 }
@@ -49,6 +48,7 @@
     if (indexPath.section == 0) {
         self.topicDetailCell = [[TopicCellWithWebView alloc] init];
         [self.topicDetailCell setupWithTopicDetail:topicDetail];
+        
         return self.topicDetailCell;
     } else if (indexPath.section == 1) {
         
@@ -69,7 +69,11 @@
 
 #pragma mark - Table View delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return ((indexPath.section == 0) ? [self.topicDetailCell heightOfCell] : 30.0f);
+    if (indexPath.section == 0) {
+        return self.topicDetailCell.cellHeight;
+    } else {
+        return 40;
+    }
 }
 
 

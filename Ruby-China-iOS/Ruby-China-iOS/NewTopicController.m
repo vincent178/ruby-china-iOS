@@ -23,7 +23,6 @@
 }
 
 - (void)doneButtonClicked {
-    NSLog(@"done button clicked");
     [self.navigationController popViewControllerAnimated:YES];
 }
 

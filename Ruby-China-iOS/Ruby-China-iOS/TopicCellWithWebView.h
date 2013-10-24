@@ -14,12 +14,11 @@
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitleLabel;
-    
-    CGFloat webViewHeight;
 }
 
-- (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
-- (CGFloat)heightOfCell;
+@property (nonatomic, assign) CGFloat webViewHeight;
+@property (nonatomic, assign) CGFloat cellHeight;
 
+- (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
 
 @end
