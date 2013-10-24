@@ -19,6 +19,7 @@
 }
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
+- (CGFloat)heightOfCell;
 
 
 @end

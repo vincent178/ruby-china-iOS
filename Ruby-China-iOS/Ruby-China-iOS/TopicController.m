@@ -47,9 +47,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
-        TopicCellWithWebView *topicDetailCell = [[TopicCellWithWebView alloc] init];
-        [topicDetailCell setupWithTopicDetail:topicDetail];
-        return topicDetailCell;
+        self.topicDetailCell = [[TopicCellWithWebView alloc] init];
+        [self.topicDetailCell setupWithTopicDetail:topicDetail];
+        return self.topicDetailCell;
     } else if (indexPath.section == 1) {
         
         static NSString *CellIdentifier = @"TopicsCell";
@@ -69,7 +69,7 @@
 
 #pragma mark - Table View delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return ((indexPath.section == 0) ? 400.0f : 30.0f);
+    return ((indexPath.section == 0) ? [self.topicDetailCell heightOfCell] : 30.0f);
 }
 
 

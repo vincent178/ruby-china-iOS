@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class TopicCellWithWebView;
+
 @interface TopicController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
     NSDictionary *topicDetail;
     NSArray *replies;
 }
 
 @property (nonatomic, strong) NSNumber *topicId;
+@property (nonatomic, strong) TopicCellWithWebView *topicDetailCell;
 
 @end

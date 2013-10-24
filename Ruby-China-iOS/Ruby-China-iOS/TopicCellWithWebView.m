@@ -90,9 +90,14 @@
     
     frame.size.height = webView.scrollView.contentSize.height;
     webView.frame = frame;
-    webView.scrollView.scrollEnabled = YES;
     
     webViewHeight = webView.frame.size.height;
+}
+
+- (CGFloat)heightOfCell {
+    CGFloat height =  topicDetailWebView.frame.origin.y + webViewHeight;
+    NSLog(@"%f", height);
+    return height;
 }
 
 @end
