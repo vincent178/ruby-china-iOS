@@ -1,6 +1,11 @@
 RubyChina-IOS
 =============
 
+### ToDo 2013-10-26
+
+Use UIWebView instead of UITableView to show the detail page of topic, <br />
+hide the header and reply form of the original page and disable the link and button post, use hack to post reply content
+
 ### Update 2013-9-27
 
 Stop this project for developing My Mac App and more learning on Objective-C
