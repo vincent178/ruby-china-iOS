@@ -15,7 +15,15 @@
 }
 
 + (NSString *)setWebViewWithFont:(int)fontSize Html:(NSString *)html andId:(NSString *)id {
-    return [NSString stringWithFormat:@"<div id=%@ style='font-size: %dpx;'> %@ </div>", id, fontSize, html];
+    return [NSString stringWithFormat:@"<!DOCTYPE html>"
+            "<html>"
+            "<head>"
+            "<meta charset='utf-8'>"
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;'>"
+            "<style>body {max-width: 290px;}</style>"
+            "</head>"
+            "<body>"
+            "<div id=%@ style='font-size: %dpx;'> %@ </div></body></html>", id, fontSize, html];
 }
 
 @end

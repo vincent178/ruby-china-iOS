@@ -16,8 +16,8 @@
     UILabel *topicTitleLabel;
 }
 
-@property (nonatomic, assign) CGFloat webViewHeight;
 @property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, strong) UIWebView *webView;
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
 

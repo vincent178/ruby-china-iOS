@@ -9,6 +9,7 @@
 #import "TopicController.h"
 #import "AFNetworking.h"
 #import "TopicCellWithWebView.h"
+#import "WebViewHelper.h"
 
 @implementation TopicController 
 
@@ -68,9 +69,10 @@
 }
 
 #pragma mark - Table View delegate
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return self.topicDetailCell.cellHeight;
+        return 800;
     } else {
         return 40;
     }
