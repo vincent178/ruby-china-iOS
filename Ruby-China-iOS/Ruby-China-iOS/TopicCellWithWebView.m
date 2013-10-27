@@ -10,6 +10,11 @@
 #import "UIImageView+WebCache.h"
 #import "DateFormat.h"
 #import "WebViewHelper.h"
+#import "DTAttributedTextContentView.h"
+#import "DTAttributedTextView.h"
+#import "DTHTMLAttributedStringBuilder.h"
+#import "DTCoreTextConstants.h"
+#import "DTLinkButton.h"
 
 @implementation TopicCellWithWebView
 
@@ -70,24 +75,14 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
-    NSString *html = [WebViewHelper setWebViewWithFont:13 Html:rawHtml andId:@"height"];
-    topicDetailWebView = [[UIWebView alloc] initWithFrame:CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1)];
-    self.webView = topicDetailWebView;
-    topicDetailWebView.delegate = self;
-    topicDetailWebView.scalesPageToFit = NO;
-    [topicDetailWebView loadHTMLString:html baseURL:nil];
-    [self addSubview:self.webView];
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)aWebView {
-    aWebView.scrollView.scrollEnabled = NO;
+    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *builderOptions = @{
+                                     DTDefaultFontFamily: @"Helvetica"
+                                     };
     
-    CGRect frame = aWebView.frame;
-    frame.size.height = aWebView.scrollView.contentSize.height;
-    aWebView.frame = frame;
-    
-    self.cellHeight = aWebView.frame.origin.y + aWebView.frame.size.height;
-    NSLog(@"%f", self.cellHeight);
+    DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
+                                                    initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+    self.textView.attributedString = [stringBuilder generatedAttributedString];
 }
 
 @end
