@@ -8,7 +8,7 @@
 
 #import "TopicController.h"
 #import "AFNetworking.h"
-#import "TopicCellWithWebView.h"
+#import "TopicDetailCell.h"
 #import "WebViewHelper.h"
 #import "DTHTMLAttributedStringBuilder.h"
 
@@ -73,6 +73,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
+        
+        // load webview here --
+        // add as the controller property
+        
         
         // Get topic title height
         NSString *topicTitle = [topicDetail objectForKey:@"title"];

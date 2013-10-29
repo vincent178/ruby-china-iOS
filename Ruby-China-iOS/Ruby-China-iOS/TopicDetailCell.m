@@ -78,9 +78,15 @@
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
     NSLog(@"%@", rawHtml);
     NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
+    
+    // Load css file
+    NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
+    NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
+    DTCSSStylesheet *defaultDTCSSStylesheet = [[DTCSSStylesheet alloc] initWithStyleBlock:defaultCSS];
     NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
                                      DTDefaultLinkDecoration: @"none",
-                                     DTDefaultFontSize: @"12"};
+                                     DTDefaultFontSize: @"12",
+                                     DTDefaultStyleSheet: defaultDTCSSStylesheet};
     
     DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
                                                     initWithHTML:htmlData options:builderOptions documentAttributes:nil];
