@@ -307,7 +307,7 @@
 				ORGANIZATIONNAME = Vincent;
 				TargetAttributes = {
 					BF0F3FA11806EFBF00E48E53 = {
-						TestTargetID = BF0F3F801806EFBF00E48E53;
+						TestTargetID = BF0F3F801806EFBF00E48E53 /* Ruby-China-iOS */;
 					};
 				};
 			};
