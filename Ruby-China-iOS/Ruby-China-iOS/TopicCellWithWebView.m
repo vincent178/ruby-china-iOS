@@ -76,13 +76,19 @@
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
     NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *builderOptions = @{
-                                     DTDefaultFontFamily: @"Helvetica"
-                                     };
+    NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
+                                     DTDefaultLinkDecoration: @"none",
+                                     DTDefaultFontSize: @"12"};
     
     DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
                                                     initWithHTML:htmlData options:builderOptions documentAttributes:nil];
-    self.textView.attributedString = [stringBuilder generatedAttributedString];
+    
+    self.htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+    self.htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
+    
+    CGSize size = [self.htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
+    self.htmlTopicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
+    [self addSubview:self.htmlTopicDetailView];
 }
 
 @end

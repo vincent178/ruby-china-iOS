@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "TopicCellWithWebView.h"
 #import "WebViewHelper.h"
+#import "DTHTMLAttributedStringBuilder.h"
 
 @implementation TopicController 
 
@@ -72,7 +73,44 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return 800;
+        
+        // Get topic title height
+        NSString *topicTitle = [topicDetail objectForKey:@"title"];
+        NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:16.0f]};
+        CGSize topicTitleSize = [topicTitle sizeWithAttributes:attributes];
+        UILabel *topicTitleLabel = [[UILabel alloc]
+                           initWithFrame:CGRectMake(15.0f, 15.0f, 230.0f, topicTitleSize.height)];
+        topicTitleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        topicTitleLabel.numberOfLines = 0;
+        topicTitleLabel.text = topicTitle;
+        topicTitleLabel.font = [UIFont boldSystemFontOfSize:16.0f];
+        [topicTitleLabel sizeToFit];
+        
+        // Get the nickname label height
+        NSString *userNickName = [[topicDetail objectForKey:@"user"] objectForKey:@"login"];
+        NSDictionary *attributesSmall = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f]};
+        CGSize userNickSize = [userNickName sizeWithAttributes:attributesSmall];
+        
+        // Get the detail html content view height
+        NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
+        NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
+                                         DTDefaultLinkDecoration: @"none",
+                                         DTDefaultFontSize: @"12"};
+        
+        DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
+                                                        initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+       
+        DTAttributedTextContentView *htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+        htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
+        CGSize size = [htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
+        
+        // Calculate the height
+        // 上边缘高度 + topicTitleLabel + 和nicknamelabel间距 + nicknamelabel + 和horizonline间距 +
+        // 和htmlcontentview间距 + htmlcontentview + 下边缘高度
+        CGFloat height = 15 + topicTitleLabel.frame.size.height + 5 + userNickSize.height + 5 + 5 + size.height + 5;
+       
+        return height;
     } else {
         return 40;
     }
