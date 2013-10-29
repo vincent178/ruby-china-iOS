@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Vincent. All rights reserved.
 //
 
-#import "TopicCellWithWebView.h"
+#import "TopicDetailCell.h"
 #import "UIImageView+WebCache.h"
 #import "DateFormat.h"
 #import "WebViewHelper.h"
@@ -14,9 +14,10 @@
 #import "DTAttributedTextView.h"
 #import "DTHTMLAttributedStringBuilder.h"
 #import "DTCoreTextConstants.h"
+#import "DTCSSStylesheet.h"
 #import "DTLinkButton.h"
 
-@implementation TopicCellWithWebView
+@implementation TopicDetailCell
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail {
     
@@ -75,6 +76,7 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
+    NSLog(@"%@", rawHtml);
     NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
                                      DTDefaultLinkDecoration: @"none",

@@ -48,7 +48,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
-        self.topicDetailCell = [[TopicCellWithWebView alloc] init];
+        self.topicDetailCell = [[TopicDetailCell alloc] init];
         [self.topicDetailCell setupWithTopicDetail:topicDetail];
         
         return self.topicDetailCell;
