@@ -10,7 +10,7 @@
 #import "DTAttributedTextView.h"
 #import "DTAttributedTextContentView.h"
 
-@interface TopicDetailCell : UITableViewCell <UIWebViewDelegate, DTAttributedTextContentViewDelegate> {
+@interface TopicDetailCell : UITableViewCell <UIWebViewDelegate, DTAttributedTextContentViewDelegate, UIWebViewDelegate> {
     UIImageView *avatarImageView;
     UIWebView *topicDetailWebView;
     UILabel *userNickNameLabel;
