@@ -71,11 +71,10 @@
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
     NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"test"];
-    NSLog(@"HTML is %@", html);
     
     topicDetailWebView = [[UIWebView alloc] init];
     topicDetailWebView.delegate = self;
-    topicDetailWebView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1);
+    topicDetailWebView.frame = CGRectMake(10.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1);
     [topicDetailWebView loadHTMLString:html baseURL:nil];
     [self addSubview:topicDetailWebView];
 }
@@ -91,7 +90,6 @@
     frame.size = fittingSize;
     aWebView.frame = frame;
     self.cellHeight = frame.size.height;
-    NSLog(@"height is %f", self.cellHeight);
     
     UIView *v = self;
     while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
@@ -101,5 +99,17 @@
     [tableView beginUpdates];
     [tableView endUpdates];
 }
+
+
+-(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest
+ navigationType:(UIWebViewNavigationType)inType {
+    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
+        [[UIApplication sharedApplication] openURL:[inRequest URL]];
+        return NO;
+    }
+    
+    return YES;
+}
+
 
 @end

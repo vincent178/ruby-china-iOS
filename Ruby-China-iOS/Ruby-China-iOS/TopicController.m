@@ -30,7 +30,7 @@
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error is: %@", error);
+        NSLog(@"Get Topic List Error is: %@", error);
     }];
 }
 

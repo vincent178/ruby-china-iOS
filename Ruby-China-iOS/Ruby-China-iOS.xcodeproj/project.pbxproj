@@ -151,6 +151,7 @@
 				6775021218178C260090B50D /* DateFormat.m */,
 				6776F32A18182B850000F3D8 /* WebViewHelper.h */,
 				6776F32B18182B850000F3D8 /* WebViewHelper.m */,
+				67C117AF181FAF0F0047B3F4 /* default_css.css */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -162,7 +163,6 @@
 				67E71C66181646FE00E1E227 /* TopicCell.m */,
 				67750217181794930090B50D /* TopicDetailCell.h */,
 				67750218181794930090B50D /* TopicDetailCell.m */,
-				67C117AF181FAF0F0047B3F4 /* default_css.css */,
 			);
 			name = Components;
 			sourceTree = "<group>";
