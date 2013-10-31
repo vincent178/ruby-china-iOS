@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TopicDetailCell : UITableViewCell <UIWebViewDelegate, UIWebViewDelegate> {
+@interface TopicDetailCell : UITableViewCell <UIWebViewDelegate> {
     UIImageView *avatarImageView;
     UIWebView *topicDetailWebView;
     UILabel *userNickNameLabel;

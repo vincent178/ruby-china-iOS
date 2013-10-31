@@ -9,7 +9,7 @@
 #import "TopicController.h"
 #import "AFNetworking.h"
 #import "TopicDetailCell.h"
-#import "WebViewHelper.h"
+#import "TopicReplyCell.h"
 
 @implementation TopicController 
 
@@ -54,15 +54,16 @@
         return self.topicDetailCell;
     } else if (indexPath.section == 1) {
         
-        static NSString *CellIdentifier = @"TopicsCell";
+        static NSString *CellIdentifier = @"TopicReplyCell";
         
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        TopicReplyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
         if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            cell = [[TopicReplyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
-        cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
+//        cell.textLabel.text = [[replies objectAtIndex:indexPath.row] objectForKey:@"body"];
+        [cell setupWithTopicReply:[replies objectAtIndex:indexPath.row]];
         return cell;
     }
     
@@ -73,10 +74,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        
-        // load webview here --
-        // add as the controller property
-        
         
         // Get topic title height
         NSString *topicTitle = [topicDetail objectForKey:@"title"];
@@ -108,7 +105,7 @@
        
         return height;
     } else {
-        return 40;
+        return 100;
     }
 }
 

@@ -19,6 +19,7 @@
 		67750219181794930090B50D /* TopicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67750218181794930090B50D /* TopicDetailCell.m */; };
 		6776F32C18182B850000F3D8 /* WebViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6776F32B18182B850000F3D8 /* WebViewHelper.m */; };
 		67C117B0181FAF0F0047B3F4 /* default_css.css in Resources */ = {isa = PBXBuildFile; fileRef = 67C117AF181FAF0F0047B3F4 /* default_css.css */; };
+		67C117BC18229B2B0047B3F4 /* TopicReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */; };
 		67E71C67181646FE00E1E227 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E71C66181646FE00E1E227 /* TopicCell.m */; };
 		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
@@ -69,6 +70,8 @@
 		6776F32A18182B850000F3D8 /* WebViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewHelper.h; sourceTree = "<group>"; };
 		6776F32B18182B850000F3D8 /* WebViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewHelper.m; sourceTree = "<group>"; };
 		67C117AF181FAF0F0047B3F4 /* default_css.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default_css.css; sourceTree = "<group>"; };
+		67C117BA18229B2B0047B3F4 /* TopicReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicReplyCell.h; sourceTree = "<group>"; };
+		67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicReplyCell.m; sourceTree = "<group>"; };
 		67E71C65181646FE00E1E227 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
 		67E71C66181646FE00E1E227 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +166,8 @@
 				67E71C66181646FE00E1E227 /* TopicCell.m */,
 				67750217181794930090B50D /* TopicDetailCell.h */,
 				67750218181794930090B50D /* TopicDetailCell.m */,
+				67C117BA18229B2B0047B3F4 /* TopicReplyCell.h */,
+				67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -400,6 +405,7 @@
 				67E71C67181646FE00E1E227 /* TopicCell.m in Sources */,
 				675379431814F6660036979C /* RCTopic.m in Sources */,
 				67750219181794930090B50D /* TopicDetailCell.m in Sources */,
+				67C117BC18229B2B0047B3F4 /* TopicReplyCell.m in Sources */,
 				675379491814F7450036979C /* RCNode.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
 				6753794C1814F77E0036979C /* RCReply.m in Sources */,

@@ -1,12 +1,24 @@
-body {
+#topic-detail {
   width: 100%;
   max-width: 290px;
+  img {
+    max-width: 290px;
+  }
 }
+
+#topic-reply {
+  width: 100%;
+  max-width: 200px;
+  img {
+    max-width: 165px;
+  }
+}
+
 pre {
   font-family: Monaco,Menlo,"Courier New", monospace;
   margin: 3px 0;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 10px;
+  line-height: 12px;
   background-color: #eee;
   border: 1px solid #ddd;
   padding: 5px;
@@ -23,6 +35,3 @@ pre {
   white-space:pre
 }
 
-img {
-  max-width: 290px;
-}

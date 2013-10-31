@@ -70,7 +70,7 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
-    NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"test"];
+    NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"topic-detail"];
     
     topicDetailWebView = [[UIWebView alloc] init];
     topicDetailWebView.delegate = self;
