@@ -70,17 +70,13 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
-    NSLog(@"HTML is: %@", rawHtml);
-//    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
-    
-    // Load css file
-//    NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
-//    NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
+    NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"test"];
+    NSLog(@"HTML is %@", html);
     
     topicDetailWebView = [[UIWebView alloc] init];
     topicDetailWebView.delegate = self;
     topicDetailWebView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1);
-    [topicDetailWebView loadHTMLString:rawHtml baseURL:nil];
+    [topicDetailWebView loadHTMLString:html baseURL:nil];
     [self addSubview:topicDetailWebView];
 }
 
@@ -100,6 +96,7 @@
     UIView *v = self;
     while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
     UITableView *tableView = (UITableView *)v;
+    [aWebView sizeToFit];
     
     [tableView beginUpdates];
     [tableView endUpdates];
