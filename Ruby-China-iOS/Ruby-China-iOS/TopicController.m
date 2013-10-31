@@ -48,6 +48,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.section == 0) {
+        
         self.topicDetailCell = [[TopicDetailCell alloc] init];
         [self.topicDetailCell setupWithTopicDetail:topicDetail];
         
@@ -96,23 +97,15 @@
         CGSize userNickSize = [userNickName sizeWithAttributes:attributesSmall];
         
         // Get the detail html content view height
-//        NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
-//        NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
-//        NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
-//                                         DTDefaultLinkDecoration: @"none",
-//                                         DTDefaultFontSize: @"12"};
-//        
-//        DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
-//                                                        initWithHTML:htmlData options:builderOptions documentAttributes:nil];
-//       
-//        DTAttributedTextContentView *htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
-//        htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
-//        CGSize size = [htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
-        
+       
         // Calculate the height
         // 上边缘高度 + topicTitleLabel + 和nicknamelabel间距 + nicknamelabel + 和horizonline间距 +
         // 和htmlcontentview间距 + htmlcontentview + 下边缘高度
-        CGFloat height = 15 + topicTitleLabel.frame.size.height + 5 + userNickSize.height + 5 + 5 + self.topicDetailCell.cellHeight + 5;
+        CGFloat height = 15 + topicTitleLabel.frame.size.height + 5 + userNickSize.height + 5 + 5 + 5;
+ 
+        if (self.topicDetailCell.cellHeight) {
+            return height + self.topicDetailCell.cellHeight;
+        }
        
         return height;
     } else {

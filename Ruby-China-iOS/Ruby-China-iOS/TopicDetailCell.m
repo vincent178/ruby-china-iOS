@@ -74,32 +74,19 @@
 //    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
     
     // Load css file
-    NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
-    NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
+//    NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
+//    NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
     
-    topicDetailWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    topicDetailWebView = [[UIWebView alloc] init];
+    topicDetailWebView.delegate = self;
     topicDetailWebView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1);
     [topicDetailWebView loadHTMLString:rawHtml baseURL:nil];
     [self addSubview:topicDetailWebView];
-    
-//    DTCSSStylesheet *defaultDTCSSStylesheet = [[DTCSSStylesheet alloc] initWithStyleBlock:defaultCSS];
-//    NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
-//                                     DTDefaultLinkDecoration: @"none",
-//                                     DTDefaultFontSize: @"12",
-//                                     DTDefaultStyleSheet: defaultDTCSSStylesheet};
-//    
-//    DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
-//                                                    initWithHTML:htmlData options:builderOptions documentAttributes:nil];
-//    
-//    self.htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
-//    self.htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
-//    
-//    CGSize size = [self.htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
-//    self.htmlTopicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
-//    [self addSubview:self.htmlTopicDetailView];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)aWebView {
+    
+    aWebView.scrollView.scrollEnabled = NO;
     
     CGRect frame = aWebView.frame;
     frame.size.height = 1;
@@ -108,9 +95,11 @@
     frame.size = fittingSize;
     aWebView.frame = frame;
     self.cellHeight = frame.size.height;
+    NSLog(@"height is %f", self.cellHeight);
     
-    NSLog(@"size: %f, %f", fittingSize.width, fittingSize.height);
-    UITableView *tableView = (UITableView *)self.superview;
+    UIView *v = self;
+    while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
+    UITableView *tableView = (UITableView *)v;
     
     [tableView beginUpdates];
     [tableView endUpdates];
