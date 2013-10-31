@@ -53,7 +53,7 @@
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", error);
+        NSLog(@"TopicsController is %@", error);
     }];
 }
 

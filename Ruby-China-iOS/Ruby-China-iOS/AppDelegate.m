@@ -17,13 +17,6 @@
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    
-    
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
-    [webView loadHTMLString:@"<div id='foo' style='background: red'>The quick brown fox jumped over the lazy dog.</div>" baseURL:nil];
-    NSString *output = [webView stringByEvaluatingJavaScriptFromString:@"document.getElementById(\"foo\").offsetHeight;"];
-    NSLog(@"%@", output);
-
 
     return YES;
 }

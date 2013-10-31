@@ -10,12 +10,6 @@
 #import "UIImageView+WebCache.h"
 #import "DateFormat.h"
 #import "WebViewHelper.h"
-#import "DTAttributedTextContentView.h"
-#import "DTAttributedTextView.h"
-#import "DTHTMLAttributedStringBuilder.h"
-#import "DTCoreTextConstants.h"
-#import "DTCSSStylesheet.h"
-#import "DTLinkButton.h"
 
 @implementation TopicDetailCell
 
@@ -76,27 +70,50 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
-    NSLog(@"%@", rawHtml);
-    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
+    NSLog(@"HTML is: %@", rawHtml);
+//    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
     
     // Load css file
     NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
     NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
-    DTCSSStylesheet *defaultDTCSSStylesheet = [[DTCSSStylesheet alloc] initWithStyleBlock:defaultCSS];
-    NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
-                                     DTDefaultLinkDecoration: @"none",
-                                     DTDefaultFontSize: @"12",
-                                     DTDefaultStyleSheet: defaultDTCSSStylesheet};
     
-    DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
-                                                    initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+    topicDetailWebView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    topicDetailWebView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1);
+    [topicDetailWebView loadHTMLString:rawHtml baseURL:nil];
+    [self addSubview:topicDetailWebView];
     
-    self.htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
-    self.htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
+//    DTCSSStylesheet *defaultDTCSSStylesheet = [[DTCSSStylesheet alloc] initWithStyleBlock:defaultCSS];
+//    NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
+//                                     DTDefaultLinkDecoration: @"none",
+//                                     DTDefaultFontSize: @"12",
+//                                     DTDefaultStyleSheet: defaultDTCSSStylesheet};
+//    
+//    DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
+//                                                    initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+//    
+//    self.htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+//    self.htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
+//    
+//    CGSize size = [self.htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
+//    self.htmlTopicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
+//    [self addSubview:self.htmlTopicDetailView];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)aWebView {
     
-    CGSize size = [self.htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
-    self.htmlTopicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
-    [self addSubview:self.htmlTopicDetailView];
+    CGRect frame = aWebView.frame;
+    frame.size.height = 1;
+    aWebView.frame = frame;
+    CGSize fittingSize = [aWebView sizeThatFits:CGSizeZero];
+    frame.size = fittingSize;
+    aWebView.frame = frame;
+    self.cellHeight = frame.size.height;
+    
+    NSLog(@"size: %f, %f", fittingSize.width, fittingSize.height);
+    UITableView *tableView = (UITableView *)self.superview;
+    
+    [tableView beginUpdates];
+    [tableView endUpdates];
 }
 
 @end
