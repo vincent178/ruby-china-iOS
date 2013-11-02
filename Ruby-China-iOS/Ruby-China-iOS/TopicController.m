@@ -18,6 +18,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self refresh];
+    NSLog(@"Table View here is %@", self.tableView);
 }
 
 - (void)refresh {
@@ -56,15 +57,15 @@
         
         static NSString *CellIdentifier = @"TopicReplyCell";
         
-        TopicReplyCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        self.topicReplyCell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
-        if (cell == nil) {
-            cell = [[TopicReplyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        if (self.topicReplyCell == nil) {
+            self.topicReplyCell = [[TopicReplyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
         
 //        cell.textLabel.text = [[replies objectAtIndex:indexPath.row] objectForKey:@"body"];
-        [cell setupWithTopicReply:[replies objectAtIndex:indexPath.row]];
-        return cell;
+        [self.topicReplyCell setupWithTopicReply:[replies objectAtIndex:indexPath.row]];
+        return self.topicReplyCell;
     }
     
     return nil;
@@ -105,7 +106,22 @@
        
         return height;
     } else {
-        return 100;
+        NSDictionary *reply = [replies objectAtIndex:indexPath.row];
+        NSString *userNickName = [[reply objectForKey:@"user"] objectForKey:@"login"];
+        NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f]};
+        CGSize userNickSize = [userNickName sizeWithAttributes:attributes];
+        
+        // Calculate the height
+        // 上边缘高度 + userNickNameLabel+ 和htmlcontentview间距 + htmlcontentview + 下边缘高度
+
+        CGFloat height = 15 + userNickSize.height + 5 + 5;
+        
+        if (self.topicReplyCell.replyHeight) {
+            NSLog(@"Run here!!!!!!!!!!!!!!!!");
+            return height + self.topicReplyCell.replyHeight;
+        }
+        NSLog(@"Table View here is %@", self.tableView);
+        return height;
     }
 }
 

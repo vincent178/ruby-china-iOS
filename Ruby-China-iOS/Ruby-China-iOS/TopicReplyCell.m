@@ -16,7 +16,7 @@
 
 @implementation TopicReplyCell
 
-- (void)setupWithTopicReply:(NSDictionary *)topicDetail {
+- (void)setupWithTopicReply:(NSDictionary *)reply {
     // Setup all the content just like topic cell
     
     // Avatar Image View
@@ -24,12 +24,12 @@
     CALayer * l = [avatarImageView layer];
     [l setMasksToBounds:YES];
     [l setCornerRadius:4.0];
-    NSURL *url = [NSURL URLWithString:[[topicDetail objectForKey:@"user"] objectForKey:@"avatar_url"]];
+    NSURL *url = [NSURL URLWithString:[[reply objectForKey:@"user"] objectForKey:@"avatar_url"]];
     [avatarImageView setImageWithURL:url];
     [self addSubview:avatarImageView];
     
     // User NickName Label
-    NSString *userNickName = [[topicDetail objectForKey:@"user"] objectForKey:@"login"];
+    NSString *userNickName = [[reply objectForKey:@"user"] objectForKey:@"login"];
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f]};
     CGSize userNickSize = [userNickName sizeWithAttributes:attributes];
     userNickNameLabel = [[UILabel alloc]
@@ -41,7 +41,7 @@
     [self addSubview:userNickNameLabel];
     
     // Topic Created at
-    NSString *rawDate = [topicDetail objectForKey:@"created_at"];
+    NSString *rawDate = [reply objectForKey:@"created_at"];
     DateFormat *formatter = [[DateFormat alloc] init];
     NSString *formatDate = [formatter setTimeFormat:rawDate];
     CGSize formatDateSize = [formatDate sizeWithAttributes:attributes];
@@ -53,14 +53,13 @@
     [topicCreatedAtLabel sizeToFit];
     [self addSubview:topicCreatedAtLabel];
     
-    NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
+    NSString *rawHtml = [reply objectForKey:@"body_html"];
     NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"topic-reply"];
-    NSLog(@"HTML is %@", html);
     
     replyWebView = [[UIWebView alloc] init];
     replyWebView.delegate = self;
     
-    replyWebView.frame = CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5, 165.0f, 1);
+    replyWebView.frame = CGRectMake(userNickNameLabel.frame.origin.x - 5, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5, 260.0f, 1);
     
     [replyWebView loadHTMLString:html baseURL:nil];
     [self addSubview:replyWebView];
@@ -77,14 +76,16 @@
     frame.size = fittingSize;
     aWebView.frame = frame;
     self.replyHeight = frame.size.height;
+    NSLog(@"reply cell height is %f", self.replyHeight);
     
-    UIView *v = self;
-    while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
-    UITableView *tableView = (UITableView *)v;
-    [aWebView sizeToFit];
-    
-    [tableView beginUpdates];
-    [tableView endUpdates];
+//    UIView *v = self;
+//    while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
+//    UITableView *tableView = (UITableView *)v;
+//    NSLog(@"Father tableview is %@", tableView);
+//    [aWebView sizeToFit];
+//    
+//    [tableView beginUpdates];
+//    [tableView endUpdates];
 }
 
 

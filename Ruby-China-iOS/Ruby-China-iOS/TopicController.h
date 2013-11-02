@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class TopicDetailCell;
+@class TopicReplyCell;
 
 @interface TopicController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
     NSDictionary *topicDetail;
@@ -17,5 +18,6 @@
 
 @property (nonatomic, strong) NSNumber *topicId;
 @property (nonatomic, strong) TopicDetailCell *topicDetailCell;
+@property (nonatomic, strong) TopicReplyCell *topicReplyCell;
 
 @end

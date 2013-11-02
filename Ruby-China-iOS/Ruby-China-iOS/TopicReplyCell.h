@@ -18,6 +18,6 @@
 
 @property (nonatomic, assign) CGFloat replyHeight;
 
-- (void)setupWithTopicReply:(NSDictionary *)topicDetail;
+- (void)setupWithTopicReply:(NSDictionary *)reply;
 
 @end
