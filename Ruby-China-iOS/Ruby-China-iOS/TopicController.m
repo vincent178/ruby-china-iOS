@@ -17,6 +17,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+//    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc]
+//                                        initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+//    spinner.center = CGPointMake(160, 240);
+//    spinner.hidesWhenStopped = YES;
+//    [self.view addSubview:spinner];
+//    [spinner startAnimating];
+//    [spinner stopAnimating];
+    
     [self refresh];
     NSLog(@"Table View here is %@", self.tableView);
 }
@@ -72,6 +80,7 @@
 }
 
 #pragma mark - Table View delegate
+
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {

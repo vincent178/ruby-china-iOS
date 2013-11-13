@@ -77,15 +77,6 @@
     aWebView.frame = frame;
     self.replyHeight = frame.size.height;
     NSLog(@"reply cell height is %f", self.replyHeight);
-    
-//    UIView *v = self;
-//    while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
-//    UITableView *tableView = (UITableView *)v;
-//    NSLog(@"Father tableview is %@", tableView);
-//    [aWebView sizeToFit];
-//    
-//    [tableView beginUpdates];
-//    [tableView endUpdates];
 }
 
 
