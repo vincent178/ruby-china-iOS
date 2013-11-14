@@ -17,6 +17,17 @@
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x067AB5)];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    
+    NSString *rawData = @"2013-11-13T23:21:32.200+08:00";
+    NSArray *dataArray = [rawData componentsSeparatedByString:@"T"];
+    NSLog(@"data array here is %@", dataArray);
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSZZZ"];
+    
+    NSDate *date = [dateFormatter dateFromString:rawData];
+    NSLog(@"date is %@", date);
 
     return YES;
 }

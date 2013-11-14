@@ -10,9 +10,12 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "DateFormat.h"
-#import "WebViewHelper.h"
-
-
+#import "DTAttributedTextContentView.h"
+#import "DTAttributedTextView.h"
+#import "DTHTMLAttributedStringBuilder.h"
+#import "DTCoreTextConstants.h"
+#import "DTCSSStylesheet.h"
+#import "DTLinkButton.h"
 
 @implementation TopicReplyCell
 
@@ -41,6 +44,7 @@
     [self addSubview:userNickNameLabel];
     
     // Topic Created at
+    NSLog(@"The reply content is: %@", reply);
     NSString *rawDate = [reply objectForKey:@"created_at"];
     DateFormat *formatter = [[DateFormat alloc] init];
     NSString *formatDate = [formatter setTimeFormat:rawDate];
@@ -54,30 +58,7 @@
     [self addSubview:topicCreatedAtLabel];
     
     NSString *rawHtml = [reply objectForKey:@"body_html"];
-    NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"topic-reply"];
     
-    replyWebView = [[UIWebView alloc] init];
-    replyWebView.delegate = self;
-    
-    replyWebView.frame = CGRectMake(userNickNameLabel.frame.origin.x - 5, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5, 260.0f, 1);
-    
-    [replyWebView loadHTMLString:html baseURL:nil];
-    [self addSubview:replyWebView];
 }
-
-- (void)webViewDidFinishLoad:(UIWebView *)aWebView {
-    
-    aWebView.scrollView.scrollEnabled = NO;
-    
-    CGRect frame = aWebView.frame;
-    frame.size.height = 1;
-    aWebView.frame = frame;
-    CGSize fittingSize = [aWebView sizeThatFits:CGSizeZero];
-    frame.size = fittingSize;
-    aWebView.frame = frame;
-    self.replyHeight = frame.size.height;
-    NSLog(@"reply cell height is %f", self.replyHeight);
-}
-
 
 @end

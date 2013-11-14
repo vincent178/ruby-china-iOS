@@ -9,7 +9,12 @@
 #import "TopicDetailCell.h"
 #import "UIImageView+WebCache.h"
 #import "DateFormat.h"
-#import "WebViewHelper.h"
+#import "DTAttributedTextContentView.h"
+#import "DTAttributedTextView.h"
+#import "DTHTMLAttributedStringBuilder.h"
+#import "DTCoreTextConstants.h"
+#import "DTCSSStylesheet.h"
+#import "DTLinkButton.h"
 
 @implementation TopicDetailCell
 
@@ -20,7 +25,7 @@
     NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:16.0f]};
     CGSize topicTitleSize = [topicTitle sizeWithAttributes:attributes];
     topicTitleLabel = [[UILabel alloc]
-                         initWithFrame:CGRectMake(15.0f, 15.0f, 230.0f, topicTitleSize.height)];
+                       initWithFrame:CGRectMake(15.0f, 15.0f, 230.0f, topicTitleSize.height)];
     topicTitleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     topicTitleLabel.numberOfLines = 0;
     topicTitleLabel.text = topicTitle;
@@ -70,46 +75,27 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
-    NSString *html = [WebViewHelper setWebViewWithFont:12 Html:rawHtml andId:@"topic-detail"];
+    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
     
-    topicDetailWebView = [[UIWebView alloc] init];
-    topicDetailWebView.delegate = self;
-    topicDetailWebView.frame = CGRectMake(10.0f, horizontalLine.frame.origin.y + 5, 290.0f, 1);
-    [topicDetailWebView loadHTMLString:html baseURL:nil];
-    [self addSubview:topicDetailWebView];
+    // Load css file
+    NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
+    NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
+    DTCSSStylesheet *defaultDTCSSStylesheet = [[DTCSSStylesheet alloc] initWithStyleBlock:defaultCSS];
+    NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
+                                     DTDefaultLinkDecoration: @"none",
+                                     DTDefaultFontSize: @"12",
+                                     DTDefaultStyleSheet: defaultDTCSSStylesheet};
+    
+    DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
+                                                    initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+    
+    self.htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+    self.htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
+    
+    CGSize size = [self.htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
+    self.htmlTopicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
+    [self addSubview:self.htmlTopicDetailView];
 }
-
-- (void)webViewDidFinishLoad:(UIWebView *)aWebView {
-    
-    aWebView.scrollView.scrollEnabled = NO;
-    
-    CGRect frame = aWebView.frame;
-    frame.size.height = 1;
-    aWebView.frame = frame;
-    CGSize fittingSize = [aWebView sizeThatFits:CGSizeZero];
-    frame.size = fittingSize;
-    aWebView.frame = frame;
-    self.cellHeight = frame.size.height;
-    
-    UIView *v = self;
-    while (v && ![v isKindOfClass:[UITableView class]]) v = v.superview;
-    UITableView *tableView = (UITableView *)v;
-    [aWebView sizeToFit];
-    
-    [tableView beginUpdates];
-    [tableView endUpdates];
-}
-
-
--(BOOL) webView:(UIWebView *)inWeb shouldStartLoadWithRequest:(NSURLRequest *)inRequest
- navigationType:(UIWebViewNavigationType)inType {
-    if ( inType == UIWebViewNavigationTypeLinkClicked ) {
-        [[UIApplication sharedApplication] openURL:[inRequest URL]];
-        return NO;
-    }
-    
-    return YES;
-}
-
 
 @end
+

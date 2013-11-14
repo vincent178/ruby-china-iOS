@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DTAttributedTextView.h"
+#import "DTAttributedTextContentView.h"
 
 @interface TopicReplyCell : UITableViewCell <UIWebViewDelegate> {
     UIImageView *avatarImageView;
     UIImageView *replyImageView;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
-    UIWebView *replyWebView;
 }
 
 @property (nonatomic, assign) CGFloat replyHeight;

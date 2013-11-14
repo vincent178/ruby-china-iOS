@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DTAttributedTextView.h"
+#import "DTAttributedTextContentView.h"
 
-@interface TopicDetailCell : UITableViewCell <UIWebViewDelegate> {
+@interface TopicDetailCell : UITableViewCell <UIWebViewDelegate, DTAttributedTextContentViewDelegate> {
     UIImageView *avatarImageView;
     UIWebView *topicDetailWebView;
     UILabel *userNickNameLabel;
@@ -17,8 +19,11 @@
 }
 
 @property (nonatomic, assign) CGFloat cellHeight;
+@property (nonatomic, strong) DTAttributedTextContentView *htmlTopicDetailView;
 
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail;
 
 @end
+
+
