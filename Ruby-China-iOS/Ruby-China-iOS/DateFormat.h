@@ -10,6 +10,7 @@
 
 @interface DateFormat : NSObject
 
-- (NSString *)setTimeFormat:(NSString *)rawDate;
++ (NSString *)setTimeFormat:(NSString *)rawDate;
++ (NSString *)timeAgo:(NSString *)rawDate;
 
 @end

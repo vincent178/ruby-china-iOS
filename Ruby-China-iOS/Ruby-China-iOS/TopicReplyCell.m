@@ -45,8 +45,7 @@
     
     // Topic Created at
     NSString *rawDate = [reply objectForKey:@"created_at"];
-    DateFormat *formatter = [[DateFormat alloc] init];
-    NSString *formatDate = [formatter setTimeFormat:rawDate];
+    NSString *formatDate = [DateFormat setTimeFormat:rawDate];
     CGSize formatDateSize = [formatDate sizeWithAttributes:attributes];
     topicCreatedAtLabel = [[UILabel alloc]
                            initWithFrame:CGRectMake(userNickNameLabel.frame.origin.x + userNickNameLabel.frame.size.width + 5, avatarImageView.frame.origin.y, formatDateSize.width, 10.0f)];
