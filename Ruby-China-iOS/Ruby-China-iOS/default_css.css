@@ -14,6 +14,10 @@
   }
 }
 
+pre.highlight {
+  white-space: pre;
+}
+
 pre {
   font-family: Monaco,Menlo,"Courier New", monospace;
   margin: 3px 0;
@@ -28,6 +32,7 @@ pre {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;

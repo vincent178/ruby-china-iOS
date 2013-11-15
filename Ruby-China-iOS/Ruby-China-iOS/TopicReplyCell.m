@@ -44,7 +44,6 @@
     [self addSubview:userNickNameLabel];
     
     // Topic Created at
-    NSLog(@"The reply content is: %@", reply);
     NSString *rawDate = [reply objectForKey:@"created_at"];
     DateFormat *formatter = [[DateFormat alloc] init];
     NSString *formatDate = [formatter setTimeFormat:rawDate];

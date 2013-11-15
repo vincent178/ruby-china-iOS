@@ -75,6 +75,7 @@
     
     // Topic Detail Web View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
+    NSLog(@"The html content is %@", rawHtml);
     NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
     
     // Load css file

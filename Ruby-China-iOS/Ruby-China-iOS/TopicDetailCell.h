@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DTAttributedTextView.h"
 #import "DTAttributedTextContentView.h"
+#import "DTAttributedLabel.h"
 
 @interface TopicDetailCell : UITableViewCell <UIWebViewDelegate, DTAttributedTextContentViewDelegate> {
     UIImageView *avatarImageView;
