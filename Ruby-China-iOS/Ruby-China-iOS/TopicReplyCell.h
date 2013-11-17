@@ -18,6 +18,7 @@
 }
 
 @property (nonatomic, assign) CGFloat replyHeight;
+@property (nonatomic, strong) DTAttributedTextContentView *replyContentView;
 
 - (void)setupWithTopicReply:(NSDictionary *)reply;
 

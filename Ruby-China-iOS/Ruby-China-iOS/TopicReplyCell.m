@@ -55,8 +55,30 @@
     [topicCreatedAtLabel sizeToFit];
     [self addSubview:topicCreatedAtLabel];
     
+    /* load reply content into NSData */
     NSString *rawHtml = [reply objectForKey:@"body_html"];
+    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
     
+    /* load css file
+     * default_css.css */
+    NSString *defaultCSSFilePath = [[NSBundle mainBundle] pathForResource:@"default_css" ofType:@"css"];
+    NSString *defaultCSS = [NSString stringWithContentsOfFile:defaultCSSFilePath encoding:NSUTF8StringEncoding error:nil];
+    DTCSSStylesheet *defaultDTCSSStylesheet = [[DTCSSStylesheet alloc] initWithStyleBlock:defaultCSS];
+    NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
+                                     DTDefaultLinkDecoration: @"none",
+                                     DTDefaultFontSize: @"12",
+                                     DTDefaultStyleSheet: defaultDTCSSStylesheet};
+    
+    /* change html data into attributed string */
+    DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
+                                                    initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+    
+    self.replyContentView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+    self.replyContentView.attributedString = [stringBuilder generatedAttributedString];
+    
+    CGSize size = [self.replyContentView suggestedFrameSizeToFitEntireStringConstraintedToWidth:265.0f];
+    self.replyContentView.frame = CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5, size.width, size.height);
+    [self addSubview:self.replyContentView];
 }
 
 @end

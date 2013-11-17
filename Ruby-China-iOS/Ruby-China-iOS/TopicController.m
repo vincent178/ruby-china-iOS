@@ -100,7 +100,7 @@
         // Get the detail html content view height
         NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
         NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
-        NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica",
+        NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica, 宋体",
                                          DTDefaultLinkDecoration: @"none",
                                          DTDefaultFontSize: @"12"};
         
@@ -123,14 +123,24 @@
         NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:11.0f]};
         CGSize userNickSize = [userNickName sizeWithAttributes:attributes];
         
-        // Calculate the height
-        // 上边缘高度 + userNickNameLabel+ 和htmlcontentview间距 + htmlcontentview + 下边缘高度
-
-        CGFloat height = 15 + userNickSize.height + 5 + 5;
+        NSString *rawHtml = [reply objectForKey:@"body_html"];
+        NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *builderOptions = @{DTDefaultFontFamily: @"Helvetica, 宋体",
+                                         DTDefaultFontSize: @"12",
+                                         DTDefaultLinkDecoration: @"none"};
         
-        if (self.topicReplyCell.replyHeight) {
-            return height + self.topicReplyCell.replyHeight;
-        }
+        DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
+                                                        initWithHTML:htmlData options:builderOptions documentAttributes:nil];
+        DTAttributedTextContentView *replyContentView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+        replyContentView.attributedString = [stringBuilder generatedAttributedString];
+        CGSize size = [replyContentView suggestedFrameSizeToFitEntireStringConstraintedToWidth:265.0f];
+        
+         /* Calculate the height
+         * 上边缘高度 + userNickNameLabel+ 和replycontentview间距 + replycontentview + 下边缘高度
+         */
+        
+        CGFloat height = 15 + userNickSize.height + 5 + size.height + 5;
+        
         return height;
     }
 }

@@ -1,6 +1,10 @@
 RubyChina-IOS
 =============
 
+### Update 2013-11-17
+
+Finish topic detail and topic reply view 
+
 ### ToDo 2013-10-26
 
 Use UIWebView instead of UITableView to show the detail page of topic, <br />

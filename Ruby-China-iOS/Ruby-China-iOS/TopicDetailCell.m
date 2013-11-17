@@ -72,7 +72,7 @@
     horizontalLine.alpha = 0.3f;
     [self addSubview:horizontalLine];
     
-    // Topic Detail Web View
+    // Topic Detail View
     NSString *rawHtml = [topicDetail objectForKey:@"body_html"];
     NSLog(@"The html content is %@", rawHtml);
     NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
