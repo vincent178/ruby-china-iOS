@@ -55,14 +55,14 @@
     int result = [dateNumberNow intValue] - [dateNumber intValue];
     NSLog(@"The result is %d", result);
     
-    if (result / 60 < 1) {
+    if ((result / 60) < 1) {
         timeAgo = @"不到1分钟";
-    } else if (result / 3600 < 1) {
-        timeAgo = [NSString stringWithFormat:@"%d分钟前", result % 60];
-    } else if (result / (3600 * 24) < 1) {
-        timeAgo = [NSString stringWithFormat:@"%d小时前", result % 3600];
+    } else if ((result / 3600) < 1) {
+        timeAgo = [NSString stringWithFormat:@"%d分钟前", (result % 60)];
+    } else if ((result / 86400) < 1) {
+        timeAgo = [NSString stringWithFormat:@"%d小时前", (result % 3600)];
     } else {
-        timeAgo = [NSString stringWithFormat:@"%d天前", result % 86400];
+        timeAgo = [NSString stringWithFormat:@"%d天前", (result % 86400)];
     }
     
     return timeAgo;
