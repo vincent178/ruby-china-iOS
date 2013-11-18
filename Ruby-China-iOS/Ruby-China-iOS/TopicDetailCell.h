@@ -16,10 +16,10 @@
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitleLabel;
+    DTAttributedTextContentView *topicDetailView;
 }
 
 @property (nonatomic, assign) CGFloat cellHeight;
-@property (nonatomic, strong) DTAttributedTextContentView *htmlTopicDetailView;
 
 
 - (void)setupWithTopicDetail:(NSDictionary *)topicDetail;

@@ -73,12 +73,12 @@
     DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
                                                     initWithHTML:htmlData options:builderOptions documentAttributes:nil];
     
-    self.replyContentView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
-    self.replyContentView.attributedString = [stringBuilder generatedAttributedString];
+    replyContentView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+    replyContentView.attributedString = [stringBuilder generatedAttributedString];
     
-    CGSize size = [self.replyContentView suggestedFrameSizeToFitEntireStringConstraintedToWidth:265.0f];
-    self.replyContentView.frame = CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5, size.width, size.height);
-    [self addSubview:self.replyContentView];
+    CGSize size = [replyContentView suggestedFrameSizeToFitEntireStringConstraintedToWidth:265.0f];
+    replyContentView.frame = CGRectMake(userNickNameLabel.frame.origin.x, userNickNameLabel.frame.origin.y + userNickNameLabel.frame.size.height + 5, size.width, size.height);
+    [self addSubview:replyContentView];
 }
 
 @end

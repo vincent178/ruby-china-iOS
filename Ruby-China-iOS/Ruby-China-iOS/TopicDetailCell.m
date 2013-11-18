@@ -89,12 +89,12 @@
     DTHTMLAttributedStringBuilder *stringBuilder = [[DTHTMLAttributedStringBuilder alloc]
                                                     initWithHTML:htmlData options:builderOptions documentAttributes:nil];
     
-    self.htmlTopicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
-    self.htmlTopicDetailView.attributedString = [stringBuilder generatedAttributedString];
+    topicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:CGRectZero];
+    topicDetailView.attributedString = [stringBuilder generatedAttributedString];
     
-    CGSize size = [self.htmlTopicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
-    self.htmlTopicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
-    [self addSubview:self.htmlTopicDetailView];
+    CGSize size = [topicDetailView suggestedFrameSizeToFitEntireStringConstraintedToWidth:290.0f];
+    topicDetailView.frame = CGRectMake(15.0f, horizontalLine.frame.origin.y + 5, size.width, size.height);
+    [self addSubview:topicDetailView];
 }
 
 @end

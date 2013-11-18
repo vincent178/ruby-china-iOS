@@ -15,10 +15,10 @@
     UIImageView *replyImageView;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
+    DTAttributedTextContentView *replyContentView;
 }
 
 @property (nonatomic, assign) CGFloat replyHeight;
-@property (nonatomic, strong) DTAttributedTextContentView *replyContentView;
 
 - (void)setupWithTopicReply:(NSDictionary *)reply;
 
