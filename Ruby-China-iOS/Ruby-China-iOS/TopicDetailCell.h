@@ -13,7 +13,6 @@
 
 @interface TopicDetailCell : UITableViewCell <UIWebViewDelegate, DTAttributedTextContentViewDelegate> {
     UIImageView *avatarImageView;
-    UIWebView *topicDetailWebView;
     UILabel *userNickNameLabel;
     UILabel *topicCreatedAtLabel;
     UILabel *topicTitleLabel;
