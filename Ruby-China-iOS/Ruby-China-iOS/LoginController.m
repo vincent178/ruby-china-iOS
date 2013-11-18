@@ -7,6 +7,7 @@
 //
 
 #import "LoginController.h"
+#import "TopicsController.h"
 #import "AFHTTPRequestOperationManager.h"
 
 @interface LoginController ()
@@ -22,11 +23,6 @@
     self.loginUserPasswordField.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
-#pragma mark - Login textfiled delegate
 
 - (IBAction)loginButtonClicked:(id)sender {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -35,10 +31,28 @@
     [manager POST:@"http://ruby-china.org/account/sign_in.json" parameters:params
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
               NSLog(@"JSON: %@", responseObject);
+              TopicsController *topicsController = [[TopicsController alloc] init];
+              UINavigationController *navigationController = [[UINavigationController alloc]
+                                                              initWithRootViewController:topicsController];
+              
+//              [self.view presentedViewController:topicsController];
+              [self presentViewController:navigationController animated:YES completion:nil];
+              NSLog(@"Presented View Controller is %@", self.presentedViewController);
           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"JSON: %@", error);
           }
      ];
 }
-     
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+#pragma mark - Login textfiled delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 @end

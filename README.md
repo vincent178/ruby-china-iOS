@@ -1,6 +1,10 @@
 RubyChina-IOS
 =============
 
+### Update 2013-11-18
+
+Finish login view and direct to topics view
+
 ### Update 2013-11-17
 
 Finish topic detail and topic reply view 
@@ -33,6 +37,6 @@ ToDo List
 2. Pull down loading and infinite scroll loading
 3. Replies
 4. Node Selection
-5. Login in redirect to and sign up
+5. ~~Login in redirect to and sign up~~
 6. Make new topic
 7. Make new reply
