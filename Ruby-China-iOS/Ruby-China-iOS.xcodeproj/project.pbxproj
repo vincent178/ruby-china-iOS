@@ -19,6 +19,7 @@
 		67750219181794930090B50D /* TopicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67750218181794930090B50D /* TopicDetailCell.m */; };
 		6776F32C18182B850000F3D8 /* WebViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6776F32B18182B850000F3D8 /* WebViewHelper.m */; };
 		67AF99011838E1F30085EE4A /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AF99001838E1F30085EE4A /* LoginController.m */; };
+		67AF99061839F9E30085EE4A /* text_logo-Ruby_China.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */; };
 		67C117B0181FAF0F0047B3F4 /* default_css.css in Resources */ = {isa = PBXBuildFile; fileRef = 67C117AF181FAF0F0047B3F4 /* default_css.css */; };
 		67C117BC18229B2B0047B3F4 /* TopicReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */; };
 		67E71C67181646FE00E1E227 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E71C66181646FE00E1E227 /* TopicCell.m */; };
@@ -71,6 +72,7 @@
 		6776F32B18182B850000F3D8 /* WebViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewHelper.m; sourceTree = "<group>"; };
 		67AF98FF1838E1F30085EE4A /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		67AF99001838E1F30085EE4A /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text_logo-Ruby_China.png"; sourceTree = "<group>"; };
 		67C117AF181FAF0F0047B3F4 /* default_css.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default_css.css; sourceTree = "<group>"; };
 		67C117BA18229B2B0047B3F4 /* TopicReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicReplyCell.h; sourceTree = "<group>"; };
 		67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicReplyCell.m; sourceTree = "<group>"; };
@@ -142,6 +144,8 @@
 		6775020F181779600090B50D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */,
+				67C117AF181FAF0F0047B3F4 /* default_css.css */,
 				6775020D181779570090B50D /* reply@2x.png */,
 			);
 			name = Resources;
@@ -154,7 +158,6 @@
 				6775021218178C260090B50D /* DateFormat.m */,
 				6776F32A18182B850000F3D8 /* WebViewHelper.h */,
 				6776F32B18182B850000F3D8 /* WebViewHelper.m */,
-				67C117AF181FAF0F0047B3F4 /* default_css.css */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */,
 				6775020E181779570090B50D /* reply@2x.png in Resources */,
 				BF0F3F8F1806EFBF00E48E53 /* InfoPlist.strings in Resources */,
+				67AF99061839F9E30085EE4A /* text_logo-Ruby_China.png in Resources */,
 				67C117B0181FAF0F0047B3F4 /* default_css.css in Resources */,
 				BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */,
 			);

@@ -40,3 +40,4 @@ ToDo List
 5. ~~Login in redirect to and sign up~~
 6. Make new topic
 7. Make new reply
+8. Date format like "5分钟前回复" or "一天前回复"
