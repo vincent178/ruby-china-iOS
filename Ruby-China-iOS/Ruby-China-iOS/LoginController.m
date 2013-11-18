@@ -7,6 +7,7 @@
 //
 
 #import "LoginController.h"
+#import "AFHTTPRequestOperationManager.h"
 
 @interface LoginController ()
 
@@ -14,24 +15,30 @@
 
 @implementation LoginController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.view.backgroundColor = [UIColor blackColor];
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.loginUserNameField.delegate = self;
+    self.loginUserPasswordField.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Login textfiled delegate
+
+- (IBAction)loginButtonClicked:(id)sender {
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSDictionary *params = @{@"user": @{@"login": self.loginUserNameField.text, @"password": self.loginUserPasswordField.text}};
+    
+    [manager POST:@"http://ruby-china.org/account/sign_in.json" parameters:params
+          success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              NSLog(@"JSON: %@", responseObject);
+          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+              NSLog(@"JSON: %@", error);
+          }
+     ];
+}
+     
 @end
