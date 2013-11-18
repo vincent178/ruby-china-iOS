@@ -25,19 +25,23 @@
 
 
 - (IBAction)loginButtonClicked:(id)sender {
+    NSString *login = self.loginUserNameField.text;
+    NSString *password = self.loginUserPasswordField.text;
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSDictionary *params = @{@"user": @{@"login": self.loginUserNameField.text, @"password": self.loginUserPasswordField.text}};
+    NSDictionary *params = @{@"user": @{@"login": login, @"password": password}};
     
     [manager POST:@"http://ruby-china.org/account/sign_in.json" parameters:params
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              
               NSLog(@"JSON: %@", responseObject);
+              
+              /* Show the topics view with presentviewcontroller method */
               TopicsController *topicsController = [[TopicsController alloc] init];
               UINavigationController *navigationController = [[UINavigationController alloc]
                                                               initWithRootViewController:topicsController];
-              
-//              [self.view presentedViewController:topicsController];
               [self presentViewController:navigationController animated:YES completion:nil];
-              NSLog(@"Presented View Controller is %@", self.presentedViewController);
+              
           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"JSON: %@", error);
           }
