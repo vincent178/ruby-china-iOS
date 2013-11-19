@@ -9,6 +9,8 @@
 #import "LoginController.h"
 #import "TopicsController.h"
 #import "AFHTTPRequestOperationManager.h"
+#import "AFNetworkReachabilityManager.h"
+#import "SVProgressHUD.h"
 
 @interface LoginController ()
 
@@ -21,6 +23,7 @@
     
     self.loginUserNameField.delegate = self;
     self.loginUserPasswordField.delegate = self;
+
 }
 
 
@@ -28,11 +31,22 @@
     NSString *login = self.loginUserNameField.text;
     NSString *password = self.loginUserPasswordField.text;
     
+    
+    
+    /*
+     * Codes used in login the ruby china forum
+     */
+    
+    [SVProgressHUD showWithStatus:@"正在努力登录中..."];
+    
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSDictionary *params = @{@"user": @{@"login": login, @"password": password}};
     
     [manager POST:@"http://ruby-china.org/account/sign_in.json" parameters:params
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
+              
+              [SVProgressHUD showSuccessWithStatus:@"登录成功."];
               
               NSLog(@"JSON: %@", responseObject);
               
@@ -43,9 +57,12 @@
               [self presentViewController:navigationController animated:YES completion:nil];
               
           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-              NSLog(@"JSON: %@", error);
+              
+              [SVProgressHUD showErrorWithStatus:@"用户名或者密码错误"];
+              NSLog(@"ERROR USER INFO is %@", error);
           }
      ];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,6 +73,7 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
+    [self loginButtonClicked:self];
     return YES;
 }
 
