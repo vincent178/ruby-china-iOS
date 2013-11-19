@@ -31,8 +31,6 @@
     NSString *login = self.loginUserNameField.text;
     NSString *password = self.loginUserPasswordField.text;
     
-    
-    
     /*
      * Codes used in login the ruby china forum
      */
@@ -63,6 +61,10 @@
           }
      ];
 
+}
+
+- (IBAction)registerButtonClicked:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ruby-china.org/account/sign_up"]];
 }
 
 - (void)didReceiveMemoryWarning {
