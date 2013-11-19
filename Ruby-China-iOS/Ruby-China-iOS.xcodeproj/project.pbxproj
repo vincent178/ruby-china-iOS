@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67196E301816C015005E777A /* NewTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67196E2F1816C015005E777A /* NewTopicController.m */; };
-		675379431814F6660036979C /* RCTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379421814F6660036979C /* RCTopic.m */; };
-		675379461814F6B80036979C /* RCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379451814F6B80036979C /* RCUser.m */; };
-		675379491814F7450036979C /* RCNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 675379481814F7450036979C /* RCNode.m */; };
-		6753794C1814F77E0036979C /* RCReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 6753794B1814F77E0036979C /* RCReply.m */; };
 		6753794D1814FBA50036979C /* libPods.a in Sources */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		6775020C181740CA0090B50D /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775020B181740CA0090B50D /* TopicController.m */; };
 		6775020E181779570090B50D /* reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6775020D181779570090B50D /* reply@2x.png */; };
@@ -54,14 +50,6 @@
 /* Begin PBXFileReference section */
 		67196E2E1816C015005E777A /* NewTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTopicController.h; sourceTree = "<group>"; };
 		67196E2F1816C015005E777A /* NewTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopicController.m; sourceTree = "<group>"; };
-		675379411814F6660036979C /* RCTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopic.h; sourceTree = "<group>"; };
-		675379421814F6660036979C /* RCTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopic.m; sourceTree = "<group>"; };
-		675379441814F6B80036979C /* RCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUser.h; sourceTree = "<group>"; };
-		675379451814F6B80036979C /* RCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUser.m; sourceTree = "<group>"; };
-		675379471814F7450036979C /* RCNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNode.h; sourceTree = "<group>"; };
-		675379481814F7450036979C /* RCNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNode.m; sourceTree = "<group>"; };
-		6753794A1814F77E0036979C /* RCReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCReply.h; sourceTree = "<group>"; };
-		6753794B1814F77E0036979C /* RCReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReply.m; sourceTree = "<group>"; };
 		6775020A181740CA0090B50D /* TopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicController.h; sourceTree = "<group>"; };
 		6775020B181740CA0090B50D /* TopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicController.m; sourceTree = "<group>"; };
 		6775020D181779570090B50D /* reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reply@2x.png"; sourceTree = "<group>"; };
@@ -132,14 +120,6 @@
 		675379401814F3F30036979C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				675379411814F6660036979C /* RCTopic.h */,
-				675379421814F6660036979C /* RCTopic.m */,
-				675379441814F6B80036979C /* RCUser.h */,
-				675379451814F6B80036979C /* RCUser.m */,
-				675379471814F7450036979C /* RCNode.h */,
-				675379481814F7450036979C /* RCNode.m */,
-				6753794A1814F77E0036979C /* RCReply.h */,
-				6753794B1814F77E0036979C /* RCReply.m */,
 				679527D2183B75150065A852 /* Preferences.h */,
 				679527D3183B75150065A852 /* Preferences.m */,
 			);
@@ -409,15 +389,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6753794D1814FBA50036979C /* libPods.a in Sources */,
-				675379461814F6B80036979C /* RCUser.m in Sources */,
 				67E71C67181646FE00E1E227 /* TopicCell.m in Sources */,
-				675379431814F6660036979C /* RCTopic.m in Sources */,
 				67750219181794930090B50D /* TopicDetailCell.m in Sources */,
 				67C117BC18229B2B0047B3F4 /* TopicReplyCell.m in Sources */,
 				679527D4183B75150065A852 /* Preferences.m in Sources */,
-				675379491814F7450036979C /* RCNode.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
-				6753794C1814F77E0036979C /* RCReply.m in Sources */,
 				67AF99011838E1F30085EE4A /* LoginController.m in Sources */,
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
 				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
