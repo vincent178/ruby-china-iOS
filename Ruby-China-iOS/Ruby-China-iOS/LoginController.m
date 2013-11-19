@@ -63,6 +63,9 @@
 
 }
 
+/*
+ * Need to register within the app
+ */
 - (IBAction)registerButtonClicked:(id)sender {
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://ruby-china.org/account/sign_up"]];
 }
