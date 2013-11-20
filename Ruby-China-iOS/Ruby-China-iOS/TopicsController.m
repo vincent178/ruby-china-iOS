@@ -7,7 +7,6 @@
 //
 
 #import "TopicsController.h"
-#import "RCTopic.h"
 #import "AFNetworking.h"
 #import "TopicCell.h"
 #import "NewTopicController.h"
