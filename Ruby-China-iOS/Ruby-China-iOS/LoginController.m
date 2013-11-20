@@ -26,15 +26,7 @@
     self.loginUserPasswordField.delegate = self;
     
    
-    /* If user has login app, show the topics directlly */ 
-    if ([Preferences privateToken]) {
-        /* Show the topics view with presentviewcontroller method */
-        TopicsController *topicsController = [[TopicsController alloc] init];
-        UINavigationController *navigationController = [[UINavigationController alloc]
-                                                        initWithRootViewController:topicsController];
-        
-        [self presentViewController:navigationController animated:YES completion:nil];
-    }
+
 }
 
 

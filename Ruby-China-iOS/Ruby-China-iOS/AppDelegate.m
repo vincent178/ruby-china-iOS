@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginController.h"
+#import "TopicsController.h"
 #import "Preferences.h"
 
 
@@ -17,7 +18,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
-  
+      /* If user has login app, show the topics directlly */
+    if ([Preferences privateToken]) {
+        
+        /* Show the topics view with presentviewcontroller method */
+        TopicsController *topicsController = [[TopicsController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc]
+                                                        initWithRootViewController:topicsController];
+        
+        self.window.rootViewController = navigationController;
+    }
     return YES;
 }
 							

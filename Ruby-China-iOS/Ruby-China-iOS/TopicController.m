@@ -11,6 +11,7 @@
 #import "TopicDetailCell.h"
 #import "TopicReplyCell.h"
 #import "DTHTMLAttributedStringBuilder.h"
+#import "SVProgressHUD.h"
 
 @implementation TopicController 
 
@@ -22,6 +23,9 @@
 }
 
 - (void)refresh {
+    
+    [SVProgressHUD show];
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = [NSString stringWithFormat:@"http://ruby-china.org/api/v2/topics/%@.json", self.topicId];
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -29,6 +33,7 @@
         replies = [topicDetail objectForKey:@"replies"];
         
         [self.tableView reloadData];
+        [SVProgressHUD dismiss];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Get Topic List Error is: %@", error);

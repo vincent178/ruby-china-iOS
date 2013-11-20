@@ -11,6 +11,7 @@
 #import "TopicCell.h"
 #import "NewTopicController.h"
 #import "TopicController.h"
+#import "SVProgressHUD.h"
 
 @interface TopicsController ()
 
@@ -42,6 +43,8 @@
 }
 
 - (void)refresh {
+    [SVProgressHUD show];
+    
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = @"http://ruby-china.org/api/v2/topics.json";
     NSDictionary *params = @{@"page": @1, @"per_page": @10};
@@ -49,6 +52,7 @@
         topics = responseObject;
         
         [self.tableView reloadData];
+        [SVProgressHUD dismiss];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"TopicsController is %@", error);
