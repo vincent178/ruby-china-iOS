@@ -19,12 +19,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self refresh];
-}
-
-- (void)refresh {
     
     [SVProgressHUD show];
+    [self fetchBasicData];
+    [SVProgressHUD dismiss];
+}
+
+- (void)fetchBasicData {
+    
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSString *url = [NSString stringWithFormat:@"http://ruby-china.org/api/v2/topics/%@.json", self.topicId];
@@ -33,7 +35,6 @@
         replies = [topicDetail objectForKey:@"replies"];
         
         [self.tableView reloadData];
-        [SVProgressHUD dismiss];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Get Topic List Error is: %@", error);

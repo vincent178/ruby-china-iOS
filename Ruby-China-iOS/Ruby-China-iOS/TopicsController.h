@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TopicsController : UITableViewController <UITableViewDataSource, UITableViewDelegate> {
-    NSArray *topics;
+    NSMutableArray *topics;
 }
 
 - (void)newTopicButtonClicked;

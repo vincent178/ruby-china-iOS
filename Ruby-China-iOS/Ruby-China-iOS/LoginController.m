@@ -24,9 +24,6 @@
     
     self.loginUserNameField.delegate = self;
     self.loginUserPasswordField.delegate = self;
-    
-   
-
 }
 
 
