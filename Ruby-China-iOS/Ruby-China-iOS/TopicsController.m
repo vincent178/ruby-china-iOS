@@ -18,7 +18,9 @@
 
 @end
 
-@implementation TopicsController
+@implementation TopicsController {
+    int currentPageNumber;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
@@ -32,6 +34,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    currentPageNumber = 1;
     self.navigationItem.title = @"活跃帖子";
     
     // Navigation Bar Item Button
@@ -50,48 +53,75 @@
     
     // setup pull-to-refresh
     [self.tableView addPullToRefreshWithActionHandler:^{
-        [weakSelf insertRowAtTop];
+        [weakSelf fetchBasicData];
     }];
     
     // setup infinite scrolling
     [self.tableView addInfiniteScrollingWithActionHandler:^{
         [weakSelf insertRowAtBottom];
     }];
+    
 }
 
-- (void)insertRowAtTop {
-    __weak TopicsController *weakSelf = self;
-    
-    int64_t delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [weakSelf.tableView beginUpdates];
-        // TBD
-        [topics insertObject:[NSDate date] atIndex:0];
-        // END
-        [weakSelf.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationBottom];
-        [weakSelf.tableView endUpdates];
-        
-        [weakSelf.tableView.pullToRefreshView stopAnimating];
-    });
-}
+//- (void)insertRowAtTop {
+//    __weak TopicsController *weakSelf = self;
+//    
+//    int64_t delayInSeconds = 2.0;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        [weakSelf.tableView beginUpdates];
+//        currentPageNumber += 1;
+//        // TBD
+//        [topics insertObject:[NSDate date] atIndex:0];
+//        // END
+//        [weakSelf.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationBottom];
+//        [weakSelf.tableView endUpdates];
+//        
+//        [weakSelf.tableView.pullToRefreshView stopAnimating];
+//    });
+//}
 
 
 - (void)insertRowAtBottom {
     __weak TopicsController *weakSelf = self;
     
-    int64_t delayInSeconds = 2.0;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    currentPageNumber += 1;
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    NSString *url = @"http://ruby-china.org/api/v2/topics.json";
+    NSDictionary *params = @{@"page": [NSNumber numberWithInt:(currentPageNumber+1)], @"per_page": @20};
+    [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
         [weakSelf.tableView beginUpdates];
-        // TBD
-        [topics addObject:[topics.lastObject dateByAddingTimeInterval:-90]];
-        // END
-        [weakSelf.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:topics.count-1 inSection:0]] withRowAnimation:UITableViewRowAnimationTop];
+        
+        int oldTopicsNumber = [topics count];
+        NSArray *oldArray = [topics copy];
+        NSArray *moreTopics = responseObject;
+        NSIndexSet *indexs = [[NSIndexSet alloc]
+                              initWithIndexesInRange:NSMakeRange(oldTopicsNumber, 20)];
+        
+        NSLog(@"old topics are %d", oldTopicsNumber);
+        NSLog(@"more topics are %d", moreTopics.count);
+        
+        NSLog(@"index set are %@", indexs);
+        
+        [topics insertObjects:moreTopics atIndexes:indexs];
+        NSLog(@"topics are %d", topics.count);
+        
+        NSArray *paths = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:[oldArray count]-1 inSection:0]];
+        NSLog(@"paths is %@", paths);
+        
+        [weakSelf.tableView insertRowsAtIndexPaths:paths
+                                  withRowAnimation:UITableViewRowAnimationTop];
+        
         [weakSelf.tableView endUpdates];
         
-        [weakSelf.tableView.infiniteScrollingView stopAnimating];
-    });
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"TopicsController is %@", error);
+    }];
+    
+   
+    [weakSelf.tableView.infiniteScrollingView stopAnimating];
 }
 
 
@@ -101,7 +131,7 @@
     NSString *url = @"http://ruby-china.org/api/v2/topics.json";
     NSDictionary *params = @{@"page": @1, @"per_page": @20};
     [manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        topics = responseObject;
+        topics = [[NSMutableArray alloc] initWithArray:responseObject];
         
         [self.tableView reloadData];
         

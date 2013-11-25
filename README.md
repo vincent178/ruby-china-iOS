@@ -1,6 +1,10 @@
 RubyChina-IOS
 =============
 
+### Update 2013-11-25
+
+Find a way that in pre tag, replace `\n` with `<br />`, then render the raw html string in DTCoreText
+
 ### Update 2013-11-18
 
 Finish login view and direct to topics view
