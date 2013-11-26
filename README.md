@@ -3,7 +3,7 @@ RubyChina-IOS
 
 ### Update 2013-11-26
 
-Finish codes within pre tag, use `&nbsp;` replace blank, and use '<br />' replace `\n`
+Finish codes within pre tag, use `&nbsp;` replace blank, and use '\<br /\>' replace `\n`
 
 ### Update 2013-11-25
 
