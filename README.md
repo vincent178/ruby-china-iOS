@@ -1,6 +1,10 @@
 RubyChina-IOS
 =============
 
+### Update 2013-11-26
+
+Finish codes within pre tag, use `&nbsp;` replace blank, and use '<br />' replace `\n`
+
 ### Update 2013-11-25
 
 Find a way that in pre tag, replace `\n` with `<br />`, then render the raw html string in DTCoreText
