@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		67196E301816C015005E777A /* NewTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67196E2F1816C015005E777A /* NewTopicController.m */; };
+		672480361844A2AD00F73DD0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672480351844A2AD00F73DD0 /* SWRevealViewController.m */; };
 		6753794D1814FBA50036979C /* libPods.a in Sources */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		6775020C181740CA0090B50D /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775020B181740CA0090B50D /* TopicController.m */; };
 		6775020E181779570090B50D /* reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6775020D181779570090B50D /* reply@2x.png */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		67196E2E1816C015005E777A /* NewTopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTopicController.h; sourceTree = "<group>"; };
 		67196E2F1816C015005E777A /* NewTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopicController.m; sourceTree = "<group>"; };
+		672480341844A2AD00F73DD0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		672480351844A2AD00F73DD0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		6775020A181740CA0090B50D /* TopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicController.h; sourceTree = "<group>"; };
 		6775020B181740CA0090B50D /* TopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicController.m; sourceTree = "<group>"; };
 		6775020D181779570090B50D /* reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reply@2x.png"; sourceTree = "<group>"; };
@@ -117,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672480331844A27700F73DD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				672480341844A2AD00F73DD0 /* SWRevealViewController.h */,
+				672480351844A2AD00F73DD0 /* SWRevealViewController.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		675379401814F3F30036979C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +207,7 @@
 		BF0F3F8A1806EFBF00E48E53 /* Ruby-China-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				672480331844A27700F73DD0 /* Library */,
 				6775021018178B890090B50D /* Helpers */,
 				6775020F181779600090B50D /* Resources */,
 				675379401814F3F30036979C /* Models */,
@@ -395,6 +408,7 @@
 				679527D4183B75150065A852 /* Preferences.m in Sources */,
 				BF0F3F951806EFBF00E48E53 /* AppDelegate.m in Sources */,
 				67AF99011838E1F30085EE4A /* LoginController.m in Sources */,
+				672480361844A2AD00F73DD0 /* SWRevealViewController.m in Sources */,
 				BF0F3F911806EFBF00E48E53 /* main.m in Sources */,
 				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
 				6775021318178C260090B50D /* DateFormat.m in Sources */,
