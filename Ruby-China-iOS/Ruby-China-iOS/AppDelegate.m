@@ -28,6 +28,7 @@
         
         self.window.rootViewController = navigationController;
     }
+
     return YES;
 }
 							

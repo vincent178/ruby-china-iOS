@@ -57,7 +57,9 @@
     
     /* load reply content into NSData */
     NSString *rawHtml = [reply objectForKey:@"body_html"];
-    NSData *htmlData = [rawHtml dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *handleHTML = [[rawHtml stringByReplacingOccurrencesOfString:@" " withString:@"&nbsp;"]
+                            stringByReplacingOccurrencesOfString:@"\n" withString:@"<br />"];
+    NSData *htmlData = [handleHTML dataUsingEncoding:NSUTF8StringEncoding];
     
     /* load css file
      * default_css.css */

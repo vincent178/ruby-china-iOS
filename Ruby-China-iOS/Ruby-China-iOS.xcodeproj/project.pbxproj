@@ -15,7 +15,6 @@
 		67750219181794930090B50D /* TopicDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67750218181794930090B50D /* TopicDetailCell.m */; };
 		6776F32C18182B850000F3D8 /* WebViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6776F32B18182B850000F3D8 /* WebViewHelper.m */; };
 		679527D4183B75150065A852 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 679527D3183B75150065A852 /* Preferences.m */; };
-		6798C06518435011005C0405 /* PreTagHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798C06418435011005C0405 /* PreTagHelper.m */; };
 		67AF99011838E1F30085EE4A /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AF99001838E1F30085EE4A /* LoginController.m */; };
 		67AF99061839F9E30085EE4A /* text_logo-Ruby_China.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */; };
 		67C117B0181FAF0F0047B3F4 /* default_css.css in Resources */ = {isa = PBXBuildFile; fileRef = 67C117AF181FAF0F0047B3F4 /* default_css.css */; };
@@ -62,8 +61,6 @@
 		6776F32B18182B850000F3D8 /* WebViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewHelper.m; sourceTree = "<group>"; };
 		679527D2183B75150065A852 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
 		679527D3183B75150065A852 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
-		6798C06318435011005C0405 /* PreTagHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreTagHelper.h; sourceTree = "<group>"; };
-		6798C06418435011005C0405 /* PreTagHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreTagHelper.m; sourceTree = "<group>"; };
 		67AF98FF1838E1F30085EE4A /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		67AF99001838E1F30085EE4A /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text_logo-Ruby_China.png"; sourceTree = "<group>"; };
@@ -146,8 +143,6 @@
 				6775021218178C260090B50D /* DateFormat.m */,
 				6776F32A18182B850000F3D8 /* WebViewHelper.h */,
 				6776F32B18182B850000F3D8 /* WebViewHelper.m */,
-				6798C06318435011005C0405 /* PreTagHelper.h */,
-				6798C06418435011005C0405 /* PreTagHelper.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -405,7 +400,6 @@
 				6775021318178C260090B50D /* DateFormat.m in Sources */,
 				67196E301816C015005E777A /* NewTopicController.m in Sources */,
 				6776F32C18182B850000F3D8 /* WebViewHelper.m in Sources */,
-				6798C06518435011005C0405 /* PreTagHelper.m in Sources */,
 				6775020C181740CA0090B50D /* TopicController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
