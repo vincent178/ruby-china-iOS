@@ -13,6 +13,7 @@
 #import "TopicController.h"
 #import "SVProgressHUD.h"
 #import "SVPullToRefresh.h"
+#import "SWRevealViewController.h"
 
 @interface TopicsController ()
 
@@ -37,11 +38,22 @@
     currentPageNumber = 1;
     self.navigationItem.title = @"活跃帖子";
     
+    
     // Navigation Bar Item Button
     UIBarButtonItem *newTopicButton = [[UIBarButtonItem alloc]
                                        initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                        target:self action:@selector(newTopicButtonClicked)];
+    
+    UIBarButtonItem *sideBarButton  = [[UIBarButtonItem alloc]
+                                       initWithImage:[UIImage imageNamed:@"align_justify.png"]
+                                       style:UIBarButtonItemStylePlain
+                                       target:self action:@selector(sideBarButtonClicked)];
+                                       
+    self.navigationItem.leftBarButtonItem  = sideBarButton;
     self.navigationItem.rightBarButtonItem = newTopicButton;
+    
+    // Handle Gesture in revealController
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     // Setup basic data
     [SVProgressHUD show];
@@ -62,24 +74,6 @@
     }];
     
 }
-
-//- (void)insertRowAtTop {
-//    __weak TopicsController *weakSelf = self;
-//    
-//    int64_t delayInSeconds = 2.0;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        [weakSelf.tableView beginUpdates];
-//        currentPageNumber += 1;
-//        // TBD
-//        [topics insertObject:[NSDate date] atIndex:0];
-//        // END
-//        [weakSelf.tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:0 inSection:0]] withRowAnimation:UITableViewRowAnimationBottom];
-//        [weakSelf.tableView endUpdates];
-//        
-//        [weakSelf.tableView.pullToRefreshView stopAnimating];
-//    });
-//}
 
 
 - (void)insertRowAtBottom {
@@ -201,4 +195,11 @@
     [self.navigationController pushViewController:newTopicController animated:YES];
 }
 
+- (void)sideBarButtonClicked {
+    NSLog(@"side bar button clicked");
+}
+
+
 @end
+
+

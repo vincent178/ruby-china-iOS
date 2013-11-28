@@ -10,6 +10,8 @@
 #import "LoginController.h"
 #import "TopicsController.h"
 #import "Preferences.h"
+#import "sidebarController.h"
+#import "SWRevealViewController.h"
 
 
 
@@ -23,10 +25,16 @@
         
         /* Show the topics view with presentviewcontroller method */
         TopicsController *topicsController = [[TopicsController alloc] init];
-        UINavigationController *navigationController = [[UINavigationController alloc]
+        UINavigationController *frontController = [[UINavigationController alloc]
                                                         initWithRootViewController:topicsController];
         
-        self.window.rootViewController = navigationController;
+        sidebarController *rearController = [[sidebarController alloc] init];
+        
+        SWRevealViewController *revealController = [[SWRevealViewController alloc]
+                                                    initWithRearViewController:rearController
+                                                    frontViewController:frontController];
+        
+        self.window.rootViewController = revealController;
     }
 
     return YES;

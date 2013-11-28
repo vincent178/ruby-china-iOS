@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		67196E301816C015005E777A /* NewTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67196E2F1816C015005E777A /* NewTopicController.m */; };
 		672480361844A2AD00F73DD0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672480351844A2AD00F73DD0 /* SWRevealViewController.m */; };
+		672480391844C1F500F73DD0 /* sidebarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 672480381844C1F500F73DD0 /* sidebarController.m */; };
 		6753794D1814FBA50036979C /* libPods.a in Sources */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		6775020C181740CA0090B50D /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6775020B181740CA0090B50D /* TopicController.m */; };
 		6775020E181779570090B50D /* reply@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6775020D181779570090B50D /* reply@2x.png */; };
@@ -20,6 +21,7 @@
 		67AF99061839F9E30085EE4A /* text_logo-Ruby_China.png in Resources */ = {isa = PBXBuildFile; fileRef = 67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */; };
 		67C117B0181FAF0F0047B3F4 /* default_css.css in Resources */ = {isa = PBXBuildFile; fileRef = 67C117AF181FAF0F0047B3F4 /* default_css.css */; };
 		67C117BC18229B2B0047B3F4 /* TopicReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */; };
+		67E3B6B518470AFA00F4353F /* align_justify@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67E3B6B418470AFA00F4353F /* align_justify@2x.png */; };
 		67E71C67181646FE00E1E227 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E71C66181646FE00E1E227 /* TopicCell.m */; };
 		73C8B94DC85F44DE95801438 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C098331A7CF64C8CBE80ADA9 /* libPods.a */; };
 		BF0F3F851806EFBF00E48E53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3F841806EFBF00E48E53 /* Foundation.framework */; };
@@ -53,6 +55,8 @@
 		67196E2F1816C015005E777A /* NewTopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTopicController.m; sourceTree = "<group>"; };
 		672480341844A2AD00F73DD0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		672480351844A2AD00F73DD0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		672480371844C1F500F73DD0 /* sidebarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sidebarController.h; sourceTree = "<group>"; };
+		672480381844C1F500F73DD0 /* sidebarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sidebarController.m; sourceTree = "<group>"; };
 		6775020A181740CA0090B50D /* TopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicController.h; sourceTree = "<group>"; };
 		6775020B181740CA0090B50D /* TopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicController.m; sourceTree = "<group>"; };
 		6775020D181779570090B50D /* reply@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reply@2x.png"; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		67C117AF181FAF0F0047B3F4 /* default_css.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default_css.css; sourceTree = "<group>"; };
 		67C117BA18229B2B0047B3F4 /* TopicReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicReplyCell.h; sourceTree = "<group>"; };
 		67C117BB18229B2B0047B3F4 /* TopicReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicReplyCell.m; sourceTree = "<group>"; };
+		67E3B6B418470AFA00F4353F /* align_justify@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "align_justify@2x.png"; sourceTree = "<group>"; };
 		67E71C65181646FE00E1E227 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
 		67E71C66181646FE00E1E227 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 		BF0F3F811806EFBF00E48E53 /* Ruby-China-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby-China-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +146,7 @@
 		6775020F181779600090B50D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				67E3B6B418470AFA00F4353F /* align_justify@2x.png */,
 				67AF99051839F9E30085EE4A /* text_logo-Ruby_China.png */,
 				67C117AF181FAF0F0047B3F4 /* default_css.css */,
 				6775020D181779570090B50D /* reply@2x.png */,
@@ -262,6 +268,8 @@
 				6775020B181740CA0090B50D /* TopicController.m */,
 				67AF98FF1838E1F30085EE4A /* LoginController.h */,
 				67AF99001838E1F30085EE4A /* LoginController.m */,
+				672480371844C1F500F73DD0 /* sidebarController.h */,
+				672480381844C1F500F73DD0 /* sidebarController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -347,6 +355,7 @@
 				BF0F3F9D1806EFBF00E48E53 /* Images.xcassets in Resources */,
 				6775020E181779570090B50D /* reply@2x.png in Resources */,
 				BF0F3F8F1806EFBF00E48E53 /* InfoPlist.strings in Resources */,
+				67E3B6B518470AFA00F4353F /* align_justify@2x.png in Resources */,
 				67AF99061839F9E30085EE4A /* text_logo-Ruby_China.png in Resources */,
 				67C117B0181FAF0F0047B3F4 /* default_css.css in Resources */,
 				BF0F3F981806EFBF00E48E53 /* Main.storyboard in Resources */,
@@ -413,6 +422,7 @@
 				BFCA01F4180862010093EA93 /* TopicsController.m in Sources */,
 				6775021318178C260090B50D /* DateFormat.m in Sources */,
 				67196E301816C015005E777A /* NewTopicController.m in Sources */,
+				672480391844C1F500F73DD0 /* sidebarController.m in Sources */,
 				6776F32C18182B850000F3D8 /* WebViewHelper.m in Sources */,
 				6775020C181740CA0090B50D /* TopicController.m in Sources */,
 			);
