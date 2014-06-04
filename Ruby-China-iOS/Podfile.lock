@@ -26,6 +26,7 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.5.4):
     - DTFoundation/Core
+  - MagicalRecord (2.2)
   - SDWebImage (3.5):
     - SDWebImage/Core
   - SDWebImage/Core (3.5)
@@ -35,6 +36,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - DTCoreText (~> 1.6.8)
+  - MagicalRecord (~> 2.2)
   - SDWebImage (~> 3.5)
   - SVProgressHUD (~> 1.0)
   - SVPullToRefresh (~> 0.4.1)
@@ -43,6 +45,7 @@ SPEC CHECKSUMS:
   AFNetworking: 867cd74266eeab923f249aa8b3d56899a67cc50e
   DTCoreText: 24f96ab529f19114533ca71922469c94fb73db4d
   DTFoundation: 86e59f373c7a9b9f859f8a9c1debf072979eebec
+  MagicalRecord: b1fc46c99a9749fe7fe7e6f43a89b62ef5201933
   SDWebImage: f1a72472f8a2d54445f1fedafe2090593d9caf7f
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
   SVPullToRefresh: 61a0e4bd12bd6f8e3465909810b0fbeb1a28d5f2

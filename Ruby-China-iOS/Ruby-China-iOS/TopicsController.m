@@ -53,7 +53,7 @@
     self.navigationItem.rightBarButtonItem = newTopicButton;
     
     // Handle Gesture in revealController
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+//    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     // Setup basic data
     [SVProgressHUD show];

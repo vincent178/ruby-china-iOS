@@ -10,8 +10,8 @@
 #import "LoginController.h"
 #import "TopicsController.h"
 #import "Preferences.h"
-#import "sidebarController.h"
 #import "SWRevealViewController.h"
+#import "SidebarController.h"
 
 
 
@@ -28,7 +28,7 @@
         UINavigationController *frontController = [[UINavigationController alloc]
                                                         initWithRootViewController:topicsController];
         
-        sidebarController *rearController = [[sidebarController alloc] init];
+        SidebarController *rearController = [[SidebarController alloc] init];
         
         SWRevealViewController *revealController = [[SWRevealViewController alloc]
                                                     initWithRearViewController:rearController
