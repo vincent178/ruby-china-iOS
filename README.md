@@ -1,4 +1,4 @@
-RubyChina-IOS
+RubyChina-iOS
 =============
 
 ### Update 2013-11-26
