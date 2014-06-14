@@ -18,6 +18,7 @@ PODS:
   - AFNetworking/UIKit (2.2.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DateTools (1.2.0)
   - DTCoreText (1.6.11):
     - DTFoundation/Core (~> 1.6.1)
     - DTFoundation/DTHTMLParser (~> 1.6.1)
@@ -37,15 +38,17 @@ PODS:
   - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
-  - AFNetworking
-  - DTCoreText
-  - MagicalRecord
-  - SDWebImage
-  - SVProgressHUD
-  - SVPullToRefresh
+  - AFNetworking (~> 2.2.4)
+  - DateTools
+  - DTCoreText (~> 1.6.11)
+  - MagicalRecord (~> 2.2)
+  - SDWebImage (~> 3.6)
+  - SVProgressHUD (~> 1.0)
+  - SVPullToRefresh (~> 0.4.1)
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  DateTools: 1765514cd526b2c2ab491b7747df67e0a82e97c1
   DTCoreText: 6bbe9de74e9168b9199d0fd7a4d5da82df1f4897
   DTFoundation: d8a7f570a0f89c5a81661e6537289c578f4f97a8
   MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224

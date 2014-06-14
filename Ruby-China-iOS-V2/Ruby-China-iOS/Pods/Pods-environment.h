@@ -72,6 +72,12 @@
 #define COCOAPODS_VERSION_MINOR_DTFoundation_UIKit 6
 #define COCOAPODS_VERSION_PATCH_DTFoundation_UIKit 3
 
+// DateTools
+#define COCOAPODS_POD_AVAILABLE_DateTools
+#define COCOAPODS_VERSION_MAJOR_DateTools 1
+#define COCOAPODS_VERSION_MINOR_DateTools 2
+#define COCOAPODS_VERSION_PATCH_DateTools 0
+
 // MagicalRecord
 #define COCOAPODS_POD_AVAILABLE_MagicalRecord
 #define COCOAPODS_VERSION_MAJOR_MagicalRecord 2
