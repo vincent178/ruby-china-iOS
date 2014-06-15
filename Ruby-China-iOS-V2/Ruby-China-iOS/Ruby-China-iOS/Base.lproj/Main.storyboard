@@ -262,13 +262,72 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OqY-gt-RBb">
-                        <barButtonItem key="rightBarButtonItem" image="right2-25.png" id="wKr-SP-nr1"/>
+                        <barButtonItem key="rightBarButtonItem" image="right2-25.png" id="wKr-SP-nr1">
+                            <connections>
+                                <segue destination="gAj-5H-WY5" kind="push" id="6up-SC-jhf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMW-eW-8Vk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="-28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9bu-Uo-zW1">
+            <objects>
+                <viewController id="gAj-5H-WY5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="71C-xl-Mqm"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ae-MW-Kja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ss9-DT-2p4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynf-KB-bG9" userLabel="HeaderReply">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar_image_demo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="95N-9o-TWg">
+                                        <rect key="frame" x="15" y="15" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Flt-rf-fWe">
+                                        <rect key="frame" x="58" y="18" width="204" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfp-cC-nYD">
+                                        <rect key="frame" x="270" y="18" width="37" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Node">
+                                            <color key="titleColor" red="0.59021434390000005" green="0.76235676890000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Rn-3H-Vp2">
+                                <rect key="frame" x="0.0" y="64" width="320" height="440"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZNg-pE-lgE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="VVv-HB-etQ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="5mU-g5-DpY"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQV-QU-miL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="-28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="avs-GT-Cht">
