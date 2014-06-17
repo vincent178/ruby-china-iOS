@@ -100,6 +100,7 @@
 		671A9776194D2586001F4015 /* thumb_up-75@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 671A971B194D2586001F4015 /* thumb_up-75@2x.png */; };
 		671A9779194D2BCF001F4015 /* divider_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 671A9777194D2BCF001F4015 /* divider_line.png */; };
 		671A977A194D2BCF001F4015 /* divider_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 671A9778194D2BCF001F4015 /* divider_line@2x.png */; };
+		67260001194D4B83009F6E36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67260000194D4B83009F6E36 /* Main.storyboard */; };
 		6726FFDA194D3AE3009F6E36 /* RCTopicHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6726FFD9194D3AE3009F6E36 /* RCTopicHeader.m */; };
 		6726FFDE194D3B17009F6E36 /* RCTopicHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6726FFDD194D3B17009F6E36 /* RCTopicHeader.xib */; };
 		6726FFE2194D3B98009F6E36 /* RCTopicTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6726FFE1194D3B98009F6E36 /* RCTopicTitle.m */; };
@@ -119,7 +120,6 @@
 		675D6923193EC8180036D665 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 675D6921193EC8180036D665 /* InfoPlist.strings */; };
 		675D6925193EC8180036D665 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D6924193EC8180036D665 /* main.m */; };
 		675D6929193EC8180036D665 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D6928193EC8180036D665 /* RCAppDelegate.m */; };
-		675D692C193EC8180036D665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675D692A193EC8180036D665 /* Main.storyboard */; };
 		675D6931193EC8180036D665 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675D6930193EC8180036D665 /* Images.xcassets */; };
 		675D6938193EC8180036D665 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D6937193EC8180036D665 /* XCTest.framework */; };
 		675D6939193EC8180036D665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D6918193EC8180036D665 /* Foundation.framework */; };
@@ -233,6 +233,7 @@
 		671A971B194D2586001F4015 /* thumb_up-75@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumb_up-75@2x.png"; sourceTree = "<group>"; };
 		671A9777194D2BCF001F4015 /* divider_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divider_line.png; sourceTree = "<group>"; };
 		671A9778194D2BCF001F4015 /* divider_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "divider_line@2x.png"; sourceTree = "<group>"; };
+		67260000194D4B83009F6E36 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		6726FFD8194D3AE3009F6E36 /* RCTopicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTopicHeader.h; path = Views/RCTopicHeader.h; sourceTree = "<group>"; };
 		6726FFD9194D3AE3009F6E36 /* RCTopicHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTopicHeader.m; path = Views/RCTopicHeader.m; sourceTree = "<group>"; };
 		6726FFDD194D3B17009F6E36 /* RCTopicHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RCTopicHeader.xib; path = Views/RCTopicHeader.xib; sourceTree = "<group>"; };
@@ -264,7 +265,6 @@
 		675D6926193EC8180036D665 /* Ruby-China-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruby-China-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		675D6927193EC8180036D665 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
 		675D6928193EC8180036D665 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
-		675D692B193EC8180036D665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		675D6930193EC8180036D665 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		675D6936193EC8180036D665 /* Ruby-China-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ruby-China-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		675D6937193EC8180036D665 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -441,6 +441,13 @@
 			path = thumb_up;
 			sourceTree = "<group>";
 		};
+		67260002194D60A2009F6E36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		6726FFD1194D36FD009F6E36 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,12 +518,13 @@
 		675D691E193EC8180036D665 /* Ruby-China-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				67260002194D60A2009F6E36 /* Models */,
+				67260000194D4B83009F6E36 /* Main.storyboard */,
 				6726FFD2194D3815009F6E36 /* Views */,
 				6726FFD1194D36FD009F6E36 /* Controllers */,
 				67FC2443194BCD3D00F91AEB /* Resources */,
 				675D6927193EC8180036D665 /* RCAppDelegate.h */,
 				675D6928193EC8180036D665 /* RCAppDelegate.m */,
-				675D692A193EC8180036D665 /* Main.storyboard */,
 				675D6930193EC8180036D665 /* Images.xcassets */,
 				675D691F193EC8180036D665 /* Supporting Files */,
 			);
@@ -674,6 +682,7 @@
 				671A975C194D2586001F4015 /* star-25@2x.png in Resources */,
 				671A9724194D2586001F4015 /* right2-256.png in Resources */,
 				671A9749194D2586001F4015 /* speech_bubble_filled-256@2x.png in Resources */,
+				67260001194D4B83009F6E36 /* Main.storyboard in Resources */,
 				671A9735194D2586001F4015 /* speech_bubble-25.png in Resources */,
 				671A9760194D2586001F4015 /* star-44@2x.png in Resources */,
 				671A973C194D2586001F4015 /* speech_bubble-44@2x.png in Resources */,
@@ -734,7 +743,6 @@
 				671A974A194D2586001F4015 /* speech_bubble_filled-25@2x.png in Resources */,
 				671A976F194D2586001F4015 /* thumb_up-32.png in Resources */,
 				671A976A194D2586001F4015 /* thumb_up-12@2x.png in Resources */,
-				675D692C193EC8180036D665 /* Main.storyboard in Resources */,
 				671A9763194D2586001F4015 /* star-75.png in Resources */,
 				671A9744194D2586001F4015 /* speech_bubble_filled-128.png in Resources */,
 				671A971C194D2586001F4015 /* avatar_image_demo.jpeg in Resources */,
@@ -829,14 +837,6 @@
 				675D6922193EC8180036D665 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		675D692A193EC8180036D665 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				675D692B193EC8180036D665 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		675D6940193EC8190036D665 /* InfoPlist.strings */ = {
