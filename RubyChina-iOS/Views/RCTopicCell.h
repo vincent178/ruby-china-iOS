@@ -1,5 +1,5 @@
 //
-//  RCViewController.h
+//  RCTopicCell.h
 //  RubyChina-iOS
 //
 //  Created by Liang Huang on 6/28/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RCViewController : UIViewController
+@interface RCTopicCell : UITableViewCell
+
+@property (nonatomic, strong) UIImage *avatarImage;
 
 @end
