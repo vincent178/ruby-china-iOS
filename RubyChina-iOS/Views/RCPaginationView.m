@@ -29,6 +29,11 @@
     _previousIndex = _minPageNumber;
     _currentIndex = _previousIndex;
     
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
+    self.scrollEnabled = YES;
+    self.bounces = YES;
+    
 }
 
 - (void)initSubViews {
@@ -52,16 +57,8 @@
     }
     
    
-    self.contentSize = contentView.frame.size;
-    NSLog(@"self.contentSize = %@", NSStringFromCGSize(self.contentSize));
-    
-    self.showsHorizontalScrollIndicator = NO;
-    self.showsVerticalScrollIndicator = NO;
-    self.scrollEnabled = YES;
-    self.bounces = YES;
-    
     [self addSubview:contentView];
-    
+    self.contentSize = contentView.frame.size;
 }
 
 - (void)initTapGesture {
@@ -144,7 +141,7 @@
     if (adjustedPostion.x > (self.contentSize.width - self.frame.size.width)) {
         
         adjustedPostion = CGPointMake((self.contentSize.width - self.frame.size.width), 0);
-        NSLog(@"adjustedPostion: %@", NSStringFromCGPoint(adjustedPostion));
+        NSLog(@"RCPaginationView #adjustedPostion: %@", NSStringFromCGPoint(adjustedPostion));
         [self setContentOffset:adjustedPostion animated:YES];
         
     } else if (adjustedPostion.x > 0) {

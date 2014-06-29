@@ -15,17 +15,55 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
-        
-        UIImageView *avatarImageView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 16, 30, 30)];
-        avatarImageView.image = _avatarImage;
-        [self addSubview:avatarImageView];
-        
-        
-        
-        
-        
     }
     return self;
+}
+
+- (void)setup {
+    
+    self.frame = CGRectMake(0, 0, _size.width, _size.height);
+    
+    
+    //TODO: 1. avatar image view
+    UIImageView *avatarImageView = [[UIImageView alloc] init];
+    [self addSubview:avatarImageView];
+    
+    
+    //TODO: 2. reply number view
+    UILabel *replyNumberLabel = [[UILabel alloc] init];
+    UIImageView *replyLabelBackgroundView = [[UIImageView alloc] init];
+    [replyLabelBackgroundView addSubview:replyNumberLabel];
+    [self addSubview:replyLabelBackgroundView];
+    
+    
+    //TODO: 3. username view
+    UILabel *usernameLabel = [[UILabel alloc] init];
+    [self addSubview:usernameLabel];
+    
+    
+    //TODO: 4. category view
+    UILabel *categoryLabel = [[UILabel alloc] init];
+    UIImageView *categoryBackgroundView = [[UIImageView alloc] init];
+    [categoryBackgroundView addSubview:categoryLabel];
+    [self addSubview:categoryBackgroundView];
+    
+    
+    //TODO: 5. replied time ago
+    UILabel *repliedTimeAgoLabel = [[UILabel alloc] init];
+    [self addSubview:repliedTimeAgoLabel];
+    
+    
+    
+    //TODO: 6. topic content view
+    UILabel *topicContentLabel = [[UILabel alloc] init];
+    [self addSubview:topicContentLabel];
+    
+    
+    // DEMO
+    UIImageView *demoView = [[UIImageView alloc] initWithFrame:self.frame];
+    demoView.image = [UIImage imageNamed:@"Topic Cell.png"];
+    [self addSubview:demoView];
+    
 }
 
 - (void)awakeFromNib {

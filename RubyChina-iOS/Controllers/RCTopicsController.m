@@ -39,12 +39,12 @@
 #pragma mark - IBAction
 
 - (IBAction)previousTapped:(id)sender {
-    NSLog(@"previousTapped: ");
+    NSLog(@"RCTopicsController #previousTapped: ");
     [self.paginationView selectIndex:self.paginationView.currentIndex-1];
 }
 
 - (IBAction)nextTapped:(id)sender {
-    NSLog(@"nextTapped: ");
+    NSLog(@"RCTopicsController #nextTapped: ");
     [self.paginationView selectIndex:self.paginationView.currentIndex+1];
 }
 
@@ -59,12 +59,29 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    RCTopicCell *topicCell = [[RCTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    static NSString *CellIdentifier = @"TopicCell";
+    RCTopicCell *topicCell = [[RCTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    
+    if (!topicCell) {
+        topicCell = [[RCTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    CGSize size = CGSizeMake(320, 105.5);
+    topicCell.size = size;
+    
+    [topicCell setup];
+    
+    NSLog(@"RCTopicsController #topic.Cell.frame: %@", NSStringFromCGRect(topicCell.frame));
     
     return topicCell;
 }
 
 #pragma mark -
 #pragma mark - TableView Delegate
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 105.5;
+}
 
 @end

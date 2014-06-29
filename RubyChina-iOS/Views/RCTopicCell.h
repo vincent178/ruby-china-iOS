@@ -10,6 +10,10 @@
 
 @interface RCTopicCell : UITableViewCell
 
+@property (nonatomic, assign) CGSize size;
+
 @property (nonatomic, strong) UIImage *avatarImage;
+
+- (void)setup;
 
 @end
