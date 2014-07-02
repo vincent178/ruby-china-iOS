@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6715CB541963821100C8F957 /* NSString+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6715CB531963821100C8F957 /* NSString+DynamicHeight.m */; };
 		6789699C195E842F00354FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699B195E842F00354FCA /* Foundation.framework */; };
 		6789699E195E842F00354FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699D195E842F00354FCA /* CoreGraphics.framework */; };
 		678969A0195E842F00354FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699F195E842F00354FCA /* UIKit.framework */; };
@@ -30,6 +31,7 @@
 		678969F0195EC3B100354FCA /* topic_category_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 678969EE195EC3B100354FCA /* topic_category_bg@2x.png */; };
 		678969F3195EC69D00354FCA /* RCTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 678969F2195EC69D00354FCA /* RCTopicCell.m */; };
 		678969F5195F9C4D00354FCA /* Topic Cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 678969F4195F9C4D00354FCA /* Topic Cell@2x.png */; };
+		67D32775195FF85600330D5F /* RCAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D32774195FF85600330D5F /* RCAPIManager.m */; };
 		6A66753C6CC44B01BBF378E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E828A613CF4C26A9618932 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6715CB521963821100C8F957 /* NSString+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DynamicHeight.h"; path = "Helpers/NSString+DynamicHeight.h"; sourceTree = "<group>"; };
+		6715CB531963821100C8F957 /* NSString+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+DynamicHeight.m"; path = "Helpers/NSString+DynamicHeight.m"; sourceTree = "<group>"; };
 		67896998195E842F00354FCA /* RubyChina-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6789699B195E842F00354FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6789699D195E842F00354FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +78,8 @@
 		678969F1195EC69D00354FCA /* RCTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTopicCell.h; path = Views/RCTopicCell.h; sourceTree = "<group>"; };
 		678969F2195EC69D00354FCA /* RCTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTopicCell.m; path = Views/RCTopicCell.m; sourceTree = "<group>"; };
 		678969F4195F9C4D00354FCA /* Topic Cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Topic Cell@2x.png"; path = "../../../../../../Topic Cell@2x.png"; sourceTree = "<group>"; };
+		67D32773195FF85600330D5F /* RCAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCAPIManager.h; path = DataLayer/RCAPIManager.h; sourceTree = "<group>"; };
+		67D32774195FF85600330D5F /* RCAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCAPIManager.m; path = DataLayer/RCAPIManager.m; sourceTree = "<group>"; };
 		9EE6EB52497A4D65B35316ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C2E828A613CF4C26A9618932 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6715CB4B19637C6B00C8F957 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6715CB521963821100C8F957 /* NSString+DynamicHeight.h */,
+				6715CB531963821100C8F957 /* NSString+DynamicHeight.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		6789698F195E842F00354FCA = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +153,8 @@
 		678969A1195E842F00354FCA /* RubyChina-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6715CB4B19637C6B00C8F957 /* Helpers */,
+				67D32772195FF82D00330D5F /* DataLayer */,
 				678969DD195EAA4400354FCA /* Views */,
 				678969D9195EA92C00354FCA /* Controllers */,
 				678969D0195EA6B200354FCA /* Resources */,
@@ -219,6 +236,15 @@
 				678969F2195EC69D00354FCA /* RCTopicCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		67D32772195FF82D00330D5F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				67D32773195FF85600330D5F /* RCAPIManager.h */,
+				67D32774195FF85600330D5F /* RCAPIManager.m */,
+			);
+			name = DataLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				678969F3195EC69D00354FCA /* RCTopicCell.m in Sources */,
+				6715CB541963821100C8F957 /* NSString+DynamicHeight.m in Sources */,
+				67D32775195FF85600330D5F /* RCAPIManager.m in Sources */,
 				678969A8195E842F00354FCA /* main.m in Sources */,
 				678969E0195EAA6500354FCA /* RCPaginationView.m in Sources */,
 				678969AC195E842F00354FCA /* RCAppDelegate.m in Sources */,

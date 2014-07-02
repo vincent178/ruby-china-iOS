@@ -10,13 +10,41 @@
 #import "RCPaginationView.h"
 #import "RCTopicCell.h"
 
+#import "RCAPIManager.h"
+
+
+#import "NSString+DynamicHeight.h"
+
+
+
 @interface RCTopicsController ()
 
 @property (nonatomic, strong) NSArray *topics;
+@property (nonatomic, strong) NSArray *heights;
 
 @end
 
 @implementation RCTopicsController
+
+#pragma mark -
+#pragma mark - Data Service
+
+//TODO: prepare data for table view cell
+
+- (void)getTopics {
+    
+    RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
+    
+    [apiManager fetchTopicsListPageNumber:1
+                              withPerPage:25
+                                 withType:@"default"
+                              withHandler:^(NSArray *resultsArray, NSError *error) {
+                                  
+                                  self.topics = resultsArray;
+                                  [self.tableView reloadData];
+    }];
+    
+}
 
 #pragma mark -
 #pragma mark - View LifeCycle
@@ -29,6 +57,8 @@
     self.paginationView.maxPageNumber = 100;
     self.paginationView.selectedBackgroundImage = [UIImage imageNamed:@"pagination_selected.png"];
     [self.paginationView reloadData];
+    
+    [self getTopics];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +84,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 3;
+    return self.topics.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,6 +95,8 @@
     if (!topicCell) {
         topicCell = [[RCTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    
+    //TODO: setup topic cell
     
     CGSize size = CGSizeMake(320, 105.5);
     topicCell.size = size;
@@ -81,7 +113,13 @@
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 105.5;
+    
+    //TODO: get topic title for NSArray *topics
+    NSString *topicTitle;
+    
+    CGSize size = [topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:[UIFont systemFontOfSize:18]];
+    
+    return size.height;
 }
 
 @end

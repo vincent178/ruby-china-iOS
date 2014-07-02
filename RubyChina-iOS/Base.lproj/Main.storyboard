@@ -78,6 +78,7 @@
                     <navigationItem key="navigationItem" id="m7c-Ok-qcG"/>
                     <connections>
                         <outlet property="paginationView" destination="24f-Ch-Td3" id="zCo-oV-z8t"/>
+                        <outlet property="tableView" destination="8VC-NN-E2f" id="to4-hJ-fgC"/>
                         <outlet property="topicsTableView" destination="8VC-NN-E2f" id="ZTS-fA-aFQ"/>
                     </connections>
                 </viewController>

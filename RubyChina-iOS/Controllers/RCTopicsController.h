@@ -14,6 +14,7 @@
 
 
 @property (weak, nonatomic) IBOutlet RCPaginationView *paginationView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 
 - (IBAction)previousTapped:(id)sender;
