@@ -19,8 +19,9 @@
 
 @interface RCTopicsController ()
 
-@property (nonatomic, strong) NSArray *topics;
-@property (nonatomic, strong) NSArray *heights;
+@property (nonatomic, strong) NSMutableArray *topics;
+@property (nonatomic, strong) NSMutableArray *heights;
+@property (nonatomic, assign) NSInteger currentPage;
 
 @end
 
@@ -36,11 +37,20 @@
     RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
     
     [apiManager fetchTopicsListPageNumber:1
-                              withPerPage:25
+                              withPerPage:15
                                  withType:@"default"
                               withHandler:^(NSArray *resultsArray, NSError *error) {
                                   
-                                  self.topics = resultsArray;
+                                  [self.topics addObjectsFromArray:resultsArray];
+                                  for (NSDictionary *topic in self.topics) {
+                                      NSLog(@"topic title: %@", topic[@"title"]);
+                                      UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
+                                      CGSize size = [(NSString *)topic[@"title"] sizeOfMultiLineLabelwithWidth:302.5 font:font];
+                                      [self.heights addObject:@(size.height)];
+                                  }
+                                  
+                                  NSLog(@"self.heights: %@", self.heights);
+                                  
                                   [self.tableView reloadData];
     }];
     
@@ -49,9 +59,18 @@
 #pragma mark -
 #pragma mark - View LifeCycle
 
+- (void)setup {
+    
+    self.heights = [[NSMutableArray alloc] init];
+    self.topics = [[NSMutableArray alloc] init];
+    self.currentPage = 1;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setup];
     
     self.paginationView.minPageNumber = 1;
     self.paginationView.maxPageNumber = 100;
@@ -97,9 +116,16 @@
     }
     
     //TODO: setup topic cell
+    NSDictionary *topic = [[NSDictionary alloc] init];
+    topic = self.topics[indexPath.row];
     
-    CGSize size = CGSizeMake(320, 105.5);
-    topicCell.size = size;
+    CGFloat height = [self.heights[indexPath.row] floatValue];
+    topicCell.titleHeight = height;
+    topicCell.size= CGSizeMake(320, height + 105.5 - 35);
+    
+    topicCell.replyNumber =[topic[@"replies_count"] stringValue];
+    topicCell.username = topic[@"user"][@"login"];
+    topicCell.topicTitle = topic[@"title"];
     
     [topicCell setup];
     
@@ -114,12 +140,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    //TODO: get topic title for NSArray *topics
-    NSString *topicTitle;
+    CGFloat height = [self.heights[indexPath.row] floatValue];
     
-    CGSize size = [topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:[UIFont systemFontOfSize:18]];
-    
-    return size.height;
+    return height + 70.5;
 }
 
 @end

@@ -76,16 +76,21 @@
                              @"per_page": @(perPage),
                              @"type": type};
     
+    NSLog(@"connecting %@...", url);
     [self.manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        NSLog(@"JSON: %@", responseObject);
+        NSLog(@"API Call Success: %@", operation.response);
+        NSLog(@"API Response JSON: %@", responseObject);
+        
         //TODO: change responseObject to NSArray
         NSArray *responseArray = (NSArray *)responseObject;
+        
         successBlock(responseArray, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
-        NSLog(@"Error: %@", error);
+        NSLog(@"API Call Error: %@", error.userInfo);
+        successBlock(nil, error);
     }];
     
 }

@@ -11,8 +11,12 @@
 @interface RCTopicCell : UITableViewCell
 
 @property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGFloat titleHeight;
 
 @property (nonatomic, strong) UIImage *avatarImage;
+@property (nonatomic, strong) NSString *replyNumber;
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *topicTitle;
 
 - (void)setup;
 
