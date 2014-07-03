@@ -6,13 +6,18 @@
 //  Copyright (c) 2014 vincent178. All rights reserved.
 //
 
+// View Controllers
 #import "RCTopicsController.h"
+#import "RCLoadingController.h"
+
+// Views
 #import "RCPaginationView.h"
 #import "RCTopicCell.h"
 
+// Data Service
 #import "RCAPIManager.h"
 
-
+// Helpers
 #import "NSString+DynamicHeight.h"
 
 
@@ -21,40 +26,14 @@
 
 @property (nonatomic, strong) NSMutableArray *topics;
 @property (nonatomic, strong) NSMutableArray *heights;
-@property (nonatomic, assign) NSInteger currentPage;
+
+@property (nonatomic, strong) RCLoadingController *loadingController;
 
 @end
 
 @implementation RCTopicsController
 
-#pragma mark -
-#pragma mark - Data Service
 
-//TODO: prepare data for table view cell
-
-- (void)getTopics {
-    
-    RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
-    
-    [apiManager fetchTopicsListPageNumber:1
-                              withPerPage:15
-                                 withType:@"default"
-                              withHandler:^(NSArray *resultsArray, NSError *error) {
-                                  
-                                  [self.topics addObjectsFromArray:resultsArray];
-                                  for (NSDictionary *topic in self.topics) {
-                                      NSLog(@"topic title: %@", topic[@"title"]);
-                                      UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
-                                      CGSize size = [(NSString *)topic[@"title"] sizeOfMultiLineLabelwithWidth:302.5 font:font];
-                                      [self.heights addObject:@(size.height)];
-                                  }
-                                  
-                                  NSLog(@"self.heights: %@", self.heights);
-                                  
-                                  [self.tableView reloadData];
-    }];
-    
-}
 
 #pragma mark -
 #pragma mark - View LifeCycle
@@ -63,20 +42,27 @@
     
     self.heights = [[NSMutableArray alloc] init];
     self.topics = [[NSMutableArray alloc] init];
-    self.currentPage = 1;
     
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    [self setup];
     
     self.paginationView.minPageNumber = 1;
     self.paginationView.maxPageNumber = 100;
     self.paginationView.selectedBackgroundImage = [UIImage imageNamed:@"pagination_selected.png"];
     [self.paginationView reloadData];
     
+    
+    self.loadingController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoadingController"];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    
+    [self prepareForLoadingData];
+    [self setup];
     [self getTopics];
 }
 
@@ -89,12 +75,67 @@
 
 - (IBAction)previousTapped:(id)sender {
     NSLog(@"RCTopicsController #previousTapped: ");
-    [self.paginationView selectIndex:self.paginationView.currentIndex-1];
+    if (self.paginationView.currentIndex > 1) {
+        [self.paginationView selectIndex:self.paginationView.currentIndex-1];
+        [self prepareForLoadingData];
+        [self getTopics];
+    }
 }
 
 - (IBAction)nextTapped:(id)sender {
     NSLog(@"RCTopicsController #nextTapped: ");
-    [self.paginationView selectIndex:self.paginationView.currentIndex+1];
+    if (self.paginationView.currentIndex < 99) {
+        [self.paginationView selectIndex:self.paginationView.currentIndex+1];
+        [self prepareForLoadingData];
+        [self getTopics];
+    }
+}
+
+#pragma mark -
+#pragma mark - Data Service
+
+- (void)prepareForLoadingData {
+    
+    [self addChildViewController:self.loadingController];
+    [self.view addSubview:self.loadingController.view];
+    [self.loadingController start];
+    
+}
+
+- (void)didLoadedData {
+    
+    [self.loadingController dismiss];
+    [self.loadingController.view removeFromSuperview];
+    [self.loadingController removeFromParentViewController];
+    
+    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+}
+
+- (void)getTopics {
+    
+    RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
+    
+    [apiManager fetchTopicsListPageNumber:self.paginationView.currentIndex
+                              withPerPage:15
+                                 withType:@"default"
+                              withHandler:^(NSArray *resultsArray, NSError *error) {
+                                  
+                                  [self.topics removeAllObjects];
+                                  [self.topics addObjectsFromArray:resultsArray];
+                                  
+                                  [self.heights removeAllObjects];
+                                  for (NSDictionary *topic in self.topics) {
+                                      NSLog(@"topic title: %@", topic[@"title"]);
+                                      UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
+                                      CGSize size = [(NSString *)topic[@"title"] sizeOfMultiLineLabelwithWidth:302.5 font:font];
+                                      [self.heights addObject:@(size.height)];
+                                  }
+                                  
+                                  [self.tableView reloadData];
+                                  [self didLoadedData];
+                                  
+                              }];
+    
 }
 
 #pragma mark -
@@ -128,8 +169,6 @@
     topicCell.topicTitle = topic[@"title"];
     
     [topicCell setup];
-    
-    NSLog(@"RCTopicsController #topic.Cell.frame: %@", NSStringFromCGRect(topicCell.frame));
     
     return topicCell;
 }

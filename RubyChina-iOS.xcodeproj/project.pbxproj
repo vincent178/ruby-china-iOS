@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6715CB541963821100C8F957 /* NSString+DynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 6715CB531963821100C8F957 /* NSString+DynamicHeight.m */; };
+		6715CB571964CD2600C8F957 /* RCLoadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6715CB561964CD2600C8F957 /* RCLoadingController.m */; };
+		6761C9F81964D61200DCC27F /* RCNavigationBarAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761C9F71964D61200DCC27F /* RCNavigationBarAvatarView.m */; };
 		6789699C195E842F00354FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699B195E842F00354FCA /* Foundation.framework */; };
 		6789699E195E842F00354FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699D195E842F00354FCA /* CoreGraphics.framework */; };
 		678969A0195E842F00354FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699F195E842F00354FCA /* UIKit.framework */; };
@@ -48,6 +50,10 @@
 /* Begin PBXFileReference section */
 		6715CB521963821100C8F957 /* NSString+DynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+DynamicHeight.h"; path = "Helpers/NSString+DynamicHeight.h"; sourceTree = "<group>"; };
 		6715CB531963821100C8F957 /* NSString+DynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+DynamicHeight.m"; path = "Helpers/NSString+DynamicHeight.m"; sourceTree = "<group>"; };
+		6715CB551964CD2600C8F957 /* RCLoadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCLoadingController.h; path = Controllers/RCLoadingController.h; sourceTree = "<group>"; };
+		6715CB561964CD2600C8F957 /* RCLoadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCLoadingController.m; path = Controllers/RCLoadingController.m; sourceTree = "<group>"; };
+		6761C9F61964D61200DCC27F /* RCNavigationBarAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCNavigationBarAvatarView.h; path = Views/RCNavigationBarAvatarView.h; sourceTree = "<group>"; };
+		6761C9F71964D61200DCC27F /* RCNavigationBarAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCNavigationBarAvatarView.m; path = Views/RCNavigationBarAvatarView.m; sourceTree = "<group>"; };
 		67896998195E842F00354FCA /* RubyChina-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6789699B195E842F00354FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6789699D195E842F00354FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -223,6 +229,8 @@
 			children = (
 				678969DA195EA94C00354FCA /* RCTopicsController.h */,
 				678969DB195EA94C00354FCA /* RCTopicsController.m */,
+				6715CB551964CD2600C8F957 /* RCLoadingController.h */,
+				6715CB561964CD2600C8F957 /* RCLoadingController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +242,8 @@
 				678969DF195EAA6500354FCA /* RCPaginationView.m */,
 				678969F1195EC69D00354FCA /* RCTopicCell.h */,
 				678969F2195EC69D00354FCA /* RCTopicCell.m */,
+				6761C9F61964D61200DCC27F /* RCNavigationBarAvatarView.h */,
+				6761C9F71964D61200DCC27F /* RCNavigationBarAvatarView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -391,9 +401,11 @@
 				6715CB541963821100C8F957 /* NSString+DynamicHeight.m in Sources */,
 				67D32775195FF85600330D5F /* RCAPIManager.m in Sources */,
 				678969A8195E842F00354FCA /* main.m in Sources */,
+				6761C9F81964D61200DCC27F /* RCNavigationBarAvatarView.m in Sources */,
 				678969E0195EAA6500354FCA /* RCPaginationView.m in Sources */,
 				678969AC195E842F00354FCA /* RCAppDelegate.m in Sources */,
 				678969DC195EA94C00354FCA /* RCTopicsController.m in Sources */,
+				6715CB571964CD2600C8F957 /* RCLoadingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
