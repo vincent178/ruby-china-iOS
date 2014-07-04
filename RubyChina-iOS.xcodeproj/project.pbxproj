@@ -40,6 +40,8 @@
 		67B047D4196624E400B808A6 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B047D3196624E400B808A6 /* back@2x.png */; };
 		67B047D719662C8C00B808A6 /* RCTopicDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B047D619662C8C00B808A6 /* RCTopicDetail.m */; };
 		67B047DA19662CA000B808A6 /* RCReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B047D919662CA000B808A6 /* RCReplyCell.m */; };
+		67B047DD19662F4900B808A6 /* reply_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B047DB19662F4900B808A6 /* reply_cell@2x.png */; };
+		67B047DE19662F4900B808A6 /* topic_detail_cell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B047DC19662F4900B808A6 /* topic_detail_cell@2x.png */; };
 		67D32775195FF85600330D5F /* RCAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D32774195FF85600330D5F /* RCAPIManager.m */; };
 		6A66753C6CC44B01BBF378E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E828A613CF4C26A9618932 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -102,6 +104,8 @@
 		67B047D619662C8C00B808A6 /* RCTopicDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTopicDetail.m; path = Views/RCTopicDetail.m; sourceTree = "<group>"; };
 		67B047D819662CA000B808A6 /* RCReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCReplyCell.h; path = Views/RCReplyCell.h; sourceTree = "<group>"; };
 		67B047D919662CA000B808A6 /* RCReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCReplyCell.m; path = Views/RCReplyCell.m; sourceTree = "<group>"; };
+		67B047DB19662F4900B808A6 /* reply_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reply_cell@2x.png"; path = "Resources/images/reply_cell@2x.png"; sourceTree = "<group>"; };
+		67B047DC19662F4900B808A6 /* topic_detail_cell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "topic_detail_cell@2x.png"; path = "Resources/images/topic_detail_cell@2x.png"; sourceTree = "<group>"; };
 		67D32773195FF85600330D5F /* RCAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCAPIManager.h; path = DataLayer/RCAPIManager.h; sourceTree = "<group>"; };
 		67D32774195FF85600330D5F /* RCAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCAPIManager.m; path = DataLayer/RCAPIManager.m; sourceTree = "<group>"; };
 		9EE6EB52497A4D65B35316ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 		678969D1195EA6BB00354FCA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				67B047DB19662F4900B808A6 /* reply_cell@2x.png */,
+				67B047DC19662F4900B808A6 /* topic_detail_cell@2x.png */,
 				67B047D3196624E400B808A6 /* back@2x.png */,
 				67B047D1196621B700B808A6 /* message_Input_background@2x.png */,
 				6761CA01196519B900DCC27F /* TopicDetailController@2x.png */,
@@ -366,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				678969E3195EB01200354FCA /* pagination_bar_bg@2x.png in Resources */,
+				67B047DD19662F4900B808A6 /* reply_cell@2x.png in Resources */,
 				678969B4195E842F00354FCA /* Images.xcassets in Resources */,
 				678969E7195EB06500354FCA /* pagination_selected.png in Resources */,
 				678969E8195EB06500354FCA /* pagination_selected@2x.png in Resources */,
@@ -373,6 +380,7 @@
 				6761C9FD1964ECE800DCC27F /* icon@2x.jpg in Resources */,
 				6761CA02196519B900DCC27F /* TopicDetailController@2x.png in Resources */,
 				678969A6195E842F00354FCA /* InfoPlist.strings in Resources */,
+				67B047DE19662F4900B808A6 /* topic_detail_cell@2x.png in Resources */,
 				67B047D4196624E400B808A6 /* back@2x.png in Resources */,
 				678969F0195EC3B100354FCA /* topic_category_bg@2x.png in Resources */,
 				678969AF195E842F00354FCA /* Main.storyboard in Resources */,

@@ -10,25 +10,32 @@
 
 @implementation RCTopicDetail
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    
     if (self) {
-        // Initialization code
+        
+        self.frame = CGRectMake(0, 0, 320, 176.5);
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.frame];
+        imageView.image = [UIImage imageNamed:@"topic_detail_cell.png"];
+        
+        [self addSubview:imageView];
+        
     }
+    
     return self;
 }
 
-- (void)awakeFromNib
-{
-    // Initialization code
+- (void)awakeFromNib {
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
 }
 
 @end

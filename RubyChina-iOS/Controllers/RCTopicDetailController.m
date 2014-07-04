@@ -8,11 +8,17 @@
 
 #import "RCTopicDetailController.h"
 
+#import "RCTopicDetail.h"
+#import "RCReplyCell.h"
+
 @interface RCTopicDetailController ()
 
 @end
 
 @implementation RCTopicDetailController
+
+#pragma mark -
+#pragma mark - View Life Cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,10 +26,22 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back.png"] style:UIBarButtonItemStylePlain target:self action:@selector(returnBack)];
     
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareTo)];
+    
+    self.navigationItem.rightBarButtonItem = shareButton;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark -
+#pragma mark - IBAction
+
+- (void)shareTo {
+    NSLog(@"shareTo: ");
 }
 
 - (void)returnBack {
@@ -46,7 +64,7 @@
     if (section == 0) {
         return 1;
     } else {
-        return 4;
+        return 10;
     }
     
 }
@@ -57,11 +75,11 @@
     
     
     if (indexPath.section == 0) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+        cell = [[RCTopicDetail alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     } else {
         static NSString *identifier = @"ReplyCell";
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+        cell = [[RCReplyCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
     }
     
     return cell;
@@ -77,10 +95,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return 150;
+        return 176.5;
     }
     
-    return 70;
+    return 110;
 }
 
 @end
