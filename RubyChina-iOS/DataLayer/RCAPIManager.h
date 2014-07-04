@@ -22,7 +22,6 @@
 - (void)fetchTopicsListPageNumber:(NSInteger)page withPerPage:(NSInteger)perPage withType:(NSString *)type
                       withHandler:(void (^)(NSArray * resultsArray, NSError *error))successBlock;
 
-
-
+- (void)fetchUserInfo:(NSString *)username withHandler:(void (^)(NSArray *userInfo, NSError *error))successBlock;
 
 @end

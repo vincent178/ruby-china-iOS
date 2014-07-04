@@ -60,7 +60,7 @@
  * params[:type] default is default, options are excellent no_reply popular last
  
  * Example
- * /api/v2/topics/index.json?page=15&per_page=15
+ * /api/v2/topics.json?page=15&per_page=15
  *
  */
 
@@ -76,7 +76,7 @@
                              @"per_page": @(perPage),
                              @"type": type};
     
-    NSLog(@"connecting %@...", url);
+    NSLog(@"Connecting %@...", url);
     [self.manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSLog(@"API Call Success: %@", operation.response);
@@ -105,5 +105,38 @@
  * Example
  * /api/v2/topics/node/1.json?per_page=30
  */
+
+
+/*
+ * Get a single user
+ 
+ * Example
+ * /api/v2/users/qichunren.json
+ */
+
+- (void)fetchUserInfo:(NSString *)username withHandler:(void (^)(NSArray *, NSError *))successBlock {
+    
+    NSString *url = [self urlWithEndPoint:[NSString stringWithFormat:@"/users/%@.json", username]];
+    
+    NSLog(@"Connecting %@...", url);
+    [self.manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSLog(@"API Call Success: %@", operation.response);
+        NSLog(@"API Response JSON: %@", responseObject);
+        
+        //TODO: change responseObject to NSArray
+        NSArray *responseArray = (NSArray *)responseObject;
+        
+        successBlock(responseArray, nil);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"API Call Error: %@", error.userInfo);
+        successBlock(nil, error);
+    }];
+    
+}
+
+
 
 @end

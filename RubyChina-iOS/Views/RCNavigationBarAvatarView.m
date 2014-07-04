@@ -20,15 +20,15 @@
     if (self) {
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-        imageView.image = self.avatarImage;
+        imageView.image = [UIImage imageNamed:@"icon.jpg"];
         imageView.layer.cornerRadius = self.avatarImage.size.width / 2;
         imageView.layer.masksToBounds = YES;
         imageView.layer.borderWidth = 0;
         [self addSubview: imageView];
         
-        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(avatarViewDidTap:)];
-        
-        [self addGestureRecognizer:tapGesture];
+//        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(avatarViewDidTap:)];
+//        
+//        [self addGestureRecognizer:tapGesture];
        
     }
     return self;

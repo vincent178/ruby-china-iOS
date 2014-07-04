@@ -49,20 +49,20 @@
     self.paginationView.selectedBackgroundImage = [UIImage imageNamed:@"pagination_selected.png"];
     [self.paginationView reloadData];
     
-    
     self.loadingController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoadingController"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setup];
     
     [self prepareForLoadingData];
-    [self setup];
     [self getTopics];
 }
 
@@ -183,5 +183,20 @@
     
     return height + 70.5;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self performSegueWithIdentifier:@"YourSegueIdentifier" sender:nil];
+}
+
+#pragma mark -
+#pragma mark - Segue
+
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    UIViewController *topicDetailController = [self.storyboard instantiateViewControllerWithIdentifier:@"TopicDetailController"];
+    [self.navigationController pushViewController:topicDetailController animated:YES];
+}
+
+
 
 @end
