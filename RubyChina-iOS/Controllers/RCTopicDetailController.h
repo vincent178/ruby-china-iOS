@@ -10,6 +10,14 @@
 
 @interface RCTopicDetailController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+
+@property (nonatomic, assign) NSInteger topicID;
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+
+
+
 - (IBAction)replyButtonTapped:(id)sender;
+
 @end

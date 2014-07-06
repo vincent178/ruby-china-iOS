@@ -7,11 +7,16 @@
 //
 
 #import "RCTopicDetailController.h"
+#import "RCLoadingController.h"
+
+#import "RCAPIManager.h"
 
 #import "RCTopicDetail.h"
 #import "RCReplyCell.h"
 
 @interface RCTopicDetailController ()
+
+@property (nonatomic, strong) RCLoadingController *loadingController;
 
 @end
 
@@ -20,21 +25,68 @@
 #pragma mark -
 #pragma mark - View Life Cycle
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+
+- (void)setup {
     
+    // Left NavigationBar Button
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back.png"] style:UIBarButtonItemStylePlain target:self action:@selector(returnBack)];
-    
     self.navigationItem.leftBarButtonItem = backButton;
     
     
+    // Right NavigationBar Button
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareTo)];
-    
     self.navigationItem.rightBarButtonItem = shareButton;
+    
+    self.loadingController = [[RCLoadingController alloc] init];
+    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self setup];
+    
+    [self prepareForLoadingData];
+    
+    [self getTopicDetail];
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark -
+#pragma mark - Data Service
+
+- (void)prepareForLoadingData {
+    
+    [self addChildViewController:self.loadingController];
+    [self.view addSubview:self.loadingController.view];
+    [self.loadingController start];
+    
+}
+
+- (void)didLoadedData {
+    
+    [self.loadingController dismiss];
+    [self.loadingController.view removeFromSuperview];
+    [self.loadingController removeFromParentViewController];
+    
+    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+}
+
+- (void)getTopicDetail {
+    
+    RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
+    [apiManager fetchTopicDetail:self.topicID withHandler:^(NSArray *topicDetail, NSError *error) {
+        
+        
+        
+        
+    }];
 }
 
 #pragma mark -

@@ -115,9 +115,11 @@
     
     RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
     
+    NSString *type = self.topicType ? self.topicType : @"default";
+    
     [apiManager fetchTopicsListPageNumber:self.paginationView.currentIndex
                               withPerPage:15
-                                 withType:@"default"
+                                 withType:type
                               withHandler:^(NSArray *resultsArray, NSError *error) {
                                   
                                   [self.topics removeAllObjects];

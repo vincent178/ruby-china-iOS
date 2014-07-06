@@ -137,6 +137,34 @@
     
 }
 
+/*
+ * Get topic detail
+ * params: (optional)
+ 
+ * Example
+ * /api/v2/topics/1.json
+ */
 
+- (void)fetchTopicDetail:(NSInteger)topicID withHandler:(void (^)(NSArray *, NSError *))successBlock {
+    
+    NSString *url = [self urlWithEndPoint:[NSString stringWithFormat:@"/topics/%ld.json", (long)topicID]];
+    
+    NSLog(@"Connectiong %@...", url);
+    [self.manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSLog(@"API Call Success: %@", operation.response);
+        NSLog(@"API Response JSON: %@", responseObject);
+        
+        
+        
+        successBlock((NSArray *)responseObject, nil);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"API Call Error: %@", error.userInfo);
+        successBlock(nil, error);
+    }];
+    
+}
 
 @end

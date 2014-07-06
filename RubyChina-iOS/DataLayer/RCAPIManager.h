@@ -24,4 +24,6 @@
 
 - (void)fetchUserInfo:(NSString *)username withHandler:(void (^)(NSArray *userInfo, NSError *error))successBlock;
 
+- (void)fetchTopicDetail:(NSInteger)topicID withHandler:(void(^)(NSArray *topicDetail, NSError *error))successBlock;
+
 @end
