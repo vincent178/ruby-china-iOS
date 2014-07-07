@@ -209,4 +209,28 @@
     
 }
 
+/*
+ * Get a list of all nodes
+ 
+ * Example
+ * /api/v2/nodes.json
+ */
+
+
+- (void)fetchNodesList {
+    NSString *url = [self urlWithEndPoint:@"nodes.json"];
+    
+    NSLog(@"Connecting %@...", url);
+    [self.manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSLog(@"API Call Success: %@", operation.response);
+        NSLog(@"API Response JSON: %@", responseObject);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"API Call Error: %@", error.userInfo);
+        
+    }];
+    
+}
 @end

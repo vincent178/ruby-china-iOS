@@ -28,6 +28,10 @@
     return self;
 }
 
+- (void)setup {
+    
+}
+
 - (void)awakeFromNib {
     
 }

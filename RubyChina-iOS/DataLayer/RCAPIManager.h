@@ -29,4 +29,6 @@
 - (void)fetchNotificationsPageNumber:(NSInteger)page withPerPage:(NSInteger)perPage withToken:(NSString *)token
                          withHandler:(void (^)(NSArray *resultArray, NSError *error))successBlock;
 
+- (void)fetchNodesList;
+
 @end

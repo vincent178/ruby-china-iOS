@@ -11,6 +11,8 @@
 
 #import "RCAPIManager.h"
 
+#import "RCNodesList.h"
+
 
 #import "RCTopicDetail.h"
 #import "RCReplyCell.h"
@@ -21,6 +23,10 @@
 
 @property (nonatomic, strong) RCLoadingController *loadingController;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
+
+@property (nonatomic, strong) RCNodesList *nodesList;
+
+@property (nonatomic, strong) NSDictionary *topicDetailInfo;
 
 @end
 
@@ -41,11 +47,17 @@
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareTo)];
     self.navigationItem.rightBarButtonItem = shareButton;
     
+    // Add Loading Controller
     self.loadingController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoadingController"];
     
     
+    // NSDateFormatter 
     self.dateFormatter = [[NSDateFormatter alloc] init];
     self.dateFormatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSZZZ";
+    
+    
+    // RCNodesList
+    self.nodesList = [[RCNodesList alloc] init];
 }
 
 - (void)viewDidLoad {
@@ -92,15 +104,11 @@
         
         
         NSLog(@"topicDetail: %@", topicDetail);
+        self.topicDetailInfo = [[NSDictionary alloc] init];
+        self.topicDetailInfo = topicDetail;
+        [self.tableView reloadData];
         
-        NSString *createdDateString = topicDetail[@"created_at"];
-        
-        NSDate *createdDate = [[NSDate alloc] init];
-        createdDate = [self.dateFormatter dateFromString:createdDateString];
-        
-        NSString *postTimeAgo = [createdDate timeAgoSinceNow];
-        
-        NSLog(@"postTimeAgo: %@", postTimeAgo);
+
         
     }];
 }
@@ -139,18 +147,51 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell;
-    
+    static NSString *identifier = @"ReplyCell";
     
     if (indexPath.section == 0) {
-        cell = [[RCTopicDetail alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
-    } else {
-        static NSString *identifier = @"ReplyCell";
         
-        cell = [[RCReplyCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+        RCTopicDetail *topicDetailCell = [[RCTopicDetail alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        
+        //TODO: setup topicDetail cell
+        
+        // time ago string
+        NSString *createdDateString = self.topicDetailInfo[@"created_at"];
+        NSDate *createdDate = [[NSDate alloc] init];
+        createdDate = [self.dateFormatter dateFromString:createdDateString];
+        topicDetailCell.timeAgoString = [createdDate timeAgoSinceNow];
+        NSLog(@"topicDetailCell.timeAgoString: %@", topicDetailCell.timeAgoString);
+        
+        
+        // category name
+        NSNumber *idNumber = self.topicDetailInfo[@"node_id"];
+        NSString *nodeName = [self.nodesList nodeNamewithID:idNumber];
+        topicDetailCell.nodeName = nodeName;
+        NSLog(@"topicDetailCell.nodeName: %@", topicDetailCell.nodeName);
+        
+        
+        // topic title
+        topicDetailCell.topicTitle = self.topicTitle;
+        NSLog(@"topicDetailCell.topicTitle: %@", topicDetailCell.topicTitle);
+        
+        
+        // topic body html string
+        NSString *topicHTMLString = self.topicDetailInfo[@"body_html"];
+        topicDetailCell.topicHTMLString = topicHTMLString;
+        NSLog(@"topicDetailCell.topicHTMLString: %@", topicDetailCell.topicHTMLString);
+        
+        [topicDetailCell setup];
+        
+        return topicDetailCell;
+        
+    } else {
+        
+        RCReplyCell *replyCell = [[RCReplyCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+        
+        return replyCell;
     }
     
-    return cell;
+    return nil;
 }
 
 

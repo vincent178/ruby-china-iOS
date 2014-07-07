@@ -203,6 +203,9 @@
     NSInteger topicID = [sender[@"id"] integerValue];
     topicDetailController.topicID = topicID;
     
+    NSString *title = sender[@"title"];
+    topicDetailController.topicTitle = title;
+    
     [self.navigationController pushViewController:topicDetailController animated:YES];
 }
 

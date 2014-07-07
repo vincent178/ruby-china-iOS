@@ -12,6 +12,11 @@
 
 
 @property (nonatomic, assign) NSInteger topicID;
+@property (nonatomic, strong) NSString *topicTitle;
+
+
+
+
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

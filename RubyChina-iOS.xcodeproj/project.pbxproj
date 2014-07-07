@@ -15,7 +15,7 @@
 		6761CA00196510E300DCC27F /* RCTopicDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6761C9FF196510E300DCC27F /* RCTopicDetailController.m */; };
 		6761CA02196519B900DCC27F /* TopicDetailController@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6761CA01196519B900DCC27F /* TopicDetailController@2x.png */; };
 		6777C6B4196A502A0064AE59 /* topic_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6777C6B3196A502A0064AE59 /* topic_detail@2x.png */; };
-		6777C6B7196AC8A30064AE59 /* RCTimeAgoLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C6B6196AC8A30064AE59 /* RCTimeAgoLabel.m */; };
+		6777C6BD196ADEE10064AE59 /* RCNodesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C6BC196ADEE10064AE59 /* RCNodesList.m */; };
 		6789699C195E842F00354FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699B195E842F00354FCA /* Foundation.framework */; };
 		6789699E195E842F00354FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699D195E842F00354FCA /* CoreGraphics.framework */; };
 		678969A0195E842F00354FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699F195E842F00354FCA /* UIKit.framework */; };
@@ -73,8 +73,8 @@
 		6761C9FF196510E300DCC27F /* RCTopicDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTopicDetailController.m; path = Controllers/RCTopicDetailController.m; sourceTree = "<group>"; };
 		6761CA01196519B900DCC27F /* TopicDetailController@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TopicDetailController@2x.png"; path = "Resources/images/TopicDetailController@2x.png"; sourceTree = "<group>"; };
 		6777C6B3196A502A0064AE59 /* topic_detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "topic_detail@2x.png"; path = "Resources/images/topic_detail@2x.png"; sourceTree = "<group>"; };
-		6777C6B5196AC8A30064AE59 /* RCTimeAgoLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTimeAgoLabel.h; path = Views/RCTimeAgoLabel.h; sourceTree = "<group>"; };
-		6777C6B6196AC8A30064AE59 /* RCTimeAgoLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTimeAgoLabel.m; path = Views/RCTimeAgoLabel.m; sourceTree = "<group>"; };
+		6777C6BB196ADEE10064AE59 /* RCNodesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCNodesList.h; path = Helpers/RCNodesList.h; sourceTree = "<group>"; };
+		6777C6BC196ADEE10064AE59 /* RCNodesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCNodesList.m; path = Helpers/RCNodesList.m; sourceTree = "<group>"; };
 		67896998195E842F00354FCA /* RubyChina-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6789699B195E842F00354FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6789699D195E842F00354FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +149,8 @@
 			children = (
 				6715CB521963821100C8F957 /* NSString+DynamicHeight.h */,
 				6715CB531963821100C8F957 /* NSString+DynamicHeight.m */,
+				6777C6BB196ADEE10064AE59 /* RCNodesList.h */,
+				6777C6BC196ADEE10064AE59 /* RCNodesList.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -288,8 +290,6 @@
 				67B047D619662C8C00B808A6 /* RCTopicDetail.m */,
 				67B047D819662CA000B808A6 /* RCReplyCell.h */,
 				67B047D919662CA000B808A6 /* RCReplyCell.m */,
-				6777C6B5196AC8A30064AE59 /* RCTimeAgoLabel.h */,
-				6777C6B6196AC8A30064AE59 /* RCTimeAgoLabel.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -453,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6777C6BD196ADEE10064AE59 /* RCNodesList.m in Sources */,
 				6761CA00196510E300DCC27F /* RCTopicDetailController.m in Sources */,
 				67B047D719662C8C00B808A6 /* RCTopicDetail.m in Sources */,
 				678969F3195EC69D00354FCA /* RCTopicCell.m in Sources */,
@@ -465,7 +466,6 @@
 				67B047DA19662CA000B808A6 /* RCReplyCell.m in Sources */,
 				678969DC195EA94C00354FCA /* RCTopicsController.m in Sources */,
 				6761C9FB1964DA0C00DCC27F /* RCSidePanelController.m in Sources */,
-				6777C6B7196AC8A30064AE59 /* RCTimeAgoLabel.m in Sources */,
 				6715CB571964CD2600C8F957 /* RCLoadingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
