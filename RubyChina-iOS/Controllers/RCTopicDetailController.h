@@ -13,6 +13,7 @@
 
 @property (nonatomic, assign) NSInteger topicID;
 @property (nonatomic, strong) NSString *topicTitle;
+@property (nonatomic, strong) NSString *topicAuthor;
 
 
 

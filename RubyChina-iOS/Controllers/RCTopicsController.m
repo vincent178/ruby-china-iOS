@@ -206,6 +206,9 @@
     NSString *title = sender[@"title"];
     topicDetailController.topicTitle = title;
     
+    NSString *author = sender[@"user"][@"login"];
+    topicDetailController.topicAuthor = author;
+    
     [self.navigationController pushViewController:topicDetailController animated:YES];
 }
 

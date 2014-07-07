@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *nodeName;
 @property (nonatomic, strong) NSString *topicTitle;
 @property (nonatomic, strong) NSString *topicHTMLString;
+@property (nonatomic, strong) NSString *topicAuthor;
 
 - (void)setup;
 

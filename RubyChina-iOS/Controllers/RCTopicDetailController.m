@@ -164,8 +164,7 @@
         
         
         // category name
-        NSNumber *idNumber = self.topicDetailInfo[@"node_id"];
-        NSString *nodeName = [self.nodesList nodeNamewithID:idNumber];
+        NSString *nodeName = self.topicDetailInfo[@"node_name"];
         topicDetailCell.nodeName = nodeName;
         NSLog(@"topicDetailCell.nodeName: %@", topicDetailCell.nodeName);
         
@@ -179,6 +178,11 @@
         NSString *topicHTMLString = self.topicDetailInfo[@"body_html"];
         topicDetailCell.topicHTMLString = topicHTMLString;
         NSLog(@"topicDetailCell.topicHTMLString: %@", topicDetailCell.topicHTMLString);
+        
+        
+        // topic author
+        topicDetailCell.topicAuthor = self.topicAuthor;
+        NSLog(@"topicDetailCell.topicAuthor: %@", topicDetailCell.topicAuthor);
         
         [topicDetailCell setup];
         
@@ -204,7 +208,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
-        return 176.5;
+        return 1000;
     }
     
     return 110;
