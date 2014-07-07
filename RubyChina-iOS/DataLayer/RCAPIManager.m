@@ -116,7 +116,7 @@
 
 - (void)fetchUserInfo:(NSString *)username withHandler:(void (^)(NSArray *, NSError *))successBlock {
     
-    NSString *url = [self urlWithEndPoint:[NSString stringWithFormat:@"/users/%@.json", username]];
+    NSString *url = [self urlWithEndPoint:[NSString stringWithFormat:@"users/%@.json", username]];
     
     NSLog(@"Connecting %@...", url);
     [self.manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -145,9 +145,9 @@
  * /api/v2/topics/1.json
  */
 
-- (void)fetchTopicDetail:(NSInteger)topicID withHandler:(void (^)(NSArray *, NSError *))successBlock {
+- (void)fetchTopicDetail:(NSInteger)topicID withHandler:(void (^)(NSDictionary *, NSError *))successBlock {
     
-    NSString *url = [self urlWithEndPoint:[NSString stringWithFormat:@"/topics/%ld.json", (long)topicID]];
+    NSString *url = [self urlWithEndPoint:[NSString stringWithFormat:@"topics/%ld.json", (long)topicID]];
     
     NSLog(@"Connectiong %@...", url);
     [self.manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -157,7 +157,49 @@
         
         
         
-        successBlock((NSArray *)responseObject, nil);
+        successBlock((NSDictionary *)responseObject, nil);
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"API Call Error: %@", error.userInfo);
+        successBlock(nil, error);
+    }];
+    
+}
+
+/*
+ * Get notifications of current user, this API won't mark notifications as read
+ * require authentication
+ * params[:page]
+ * params[:per_page] default is 20
+ 
+ * Example
+ * /api/v2/notifications.json?page=1&per_page=20
+ */
+
+- (void)fetchNotificationsPageNumber:(NSInteger)page withPerPage:(NSInteger)perPage withToken:(NSString *)token
+                         withHandler:(void (^)(NSArray *, NSError *))successBlock {
+    
+    NSString *url = [self urlWithEndPoint:@"notifications.json"];
+    
+    if (!perPage) {
+        perPage = 20;
+    }
+    NSDictionary *params = @{@"page": @(page),
+                             @"per_page": @(perPage),
+                             @"token": token};
+    
+    
+    NSLog(@"Connecting %@...", url);
+    [self.manager GET:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSLog(@"API Call Success: %@", operation.response);
+        NSLog(@"API Response JSON: %@", responseObject);
+        
+        //TODO: change responseObject to NSArray
+        NSArray *responseArray = (NSArray *)responseObject;
+        
+        successBlock(responseArray, nil);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         

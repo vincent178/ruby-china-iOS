@@ -9,6 +9,7 @@
 // View Controllers
 #import "RCTopicsController.h"
 #import "RCLoadingController.h"
+#import "RCTopicDetailController.h"
 
 // Views
 #import "RCPaginationView.h"
@@ -127,7 +128,6 @@
                                   
                                   [self.heights removeAllObjects];
                                   for (NSDictionary *topic in self.topics) {
-                                      NSLog(@"topic title: %@", topic[@"title"]);
                                       UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
                                       CGSize size = [(NSString *)topic[@"title"] sizeOfMultiLineLabelwithWidth:302.5 font:font];
                                       [self.heights addObject:@(size.height)];
@@ -188,14 +188,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [self performSegueWithIdentifier:@"YourSegueIdentifier" sender:nil];
+    NSDictionary *topic = [[NSDictionary alloc] init];
+    topic = self.topics[indexPath.row];
+    [self performSegueWithIdentifier:@"ToTopicDetailSegue" sender:topic];
 }
 
 #pragma mark -
 #pragma mark - Segue
 
 - (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    UIViewController *topicDetailController = [self.storyboard instantiateViewControllerWithIdentifier:@"TopicDetailController"];
+    
+    RCTopicDetailController *topicDetailController = [self.storyboard instantiateViewControllerWithIdentifier:@"TopicDetailController"];
+    
+    NSInteger topicID = [sender[@"id"] integerValue];
+    topicDetailController.topicID = topicID;
+    
     [self.navigationController pushViewController:topicDetailController animated:YES];
 }
 

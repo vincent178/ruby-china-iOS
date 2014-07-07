@@ -19,7 +19,7 @@
         self.frame = CGRectMake(0, 0, 320, 176.5);
         
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.frame];
-        imageView.image = [UIImage imageNamed:@"topic_detail_cell.png"];
+        imageView.image = [UIImage imageNamed:@"topic_detail.png"];
         
         [self addSubview:imageView];
         

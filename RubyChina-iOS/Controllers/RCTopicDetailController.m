@@ -11,12 +11,16 @@
 
 #import "RCAPIManager.h"
 
+
 #import "RCTopicDetail.h"
 #import "RCReplyCell.h"
+
+#import "NSDate+DateTools.h"
 
 @interface RCTopicDetailController ()
 
 @property (nonatomic, strong) RCLoadingController *loadingController;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 @end
 
@@ -37,8 +41,11 @@
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareTo)];
     self.navigationItem.rightBarButtonItem = shareButton;
     
-    self.loadingController = [[RCLoadingController alloc] init];
+    self.loadingController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoadingController"];
     
+    
+    self.dateFormatter = [[NSDateFormatter alloc] init];
+    self.dateFormatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSZZZ";
 }
 
 - (void)viewDidLoad {
@@ -46,7 +53,7 @@
     
     [self setup];
     
-    [self prepareForLoadingData];
+//    [self prepareForLoadingData];
     
     [self getTopicDetail];
     
@@ -81,10 +88,19 @@
 - (void)getTopicDetail {
     
     RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
-    [apiManager fetchTopicDetail:self.topicID withHandler:^(NSArray *topicDetail, NSError *error) {
+    [apiManager fetchTopicDetail:self.topicID withHandler:^(NSDictionary *topicDetail, NSError *error) {
         
         
+        NSLog(@"topicDetail: %@", topicDetail);
         
+        NSString *createdDateString = topicDetail[@"created_at"];
+        
+        NSDate *createdDate = [[NSDate alloc] init];
+        createdDate = [self.dateFormatter dateFromString:createdDateString];
+        
+        NSString *postTimeAgo = [createdDate timeAgoSinceNow];
+        
+        NSLog(@"postTimeAgo: %@", postTimeAgo);
         
     }];
 }
