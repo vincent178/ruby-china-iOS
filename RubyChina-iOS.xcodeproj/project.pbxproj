@@ -16,6 +16,7 @@
 		6761CA02196519B900DCC27F /* TopicDetailController@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6761CA01196519B900DCC27F /* TopicDetailController@2x.png */; };
 		6777C6B4196A502A0064AE59 /* topic_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6777C6B3196A502A0064AE59 /* topic_detail@2x.png */; };
 		6777C6BD196ADEE10064AE59 /* RCNodesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C6BC196ADEE10064AE59 /* RCNodesList.m */; };
+		6777C6BF196C1AE20064AE59 /* horizontal_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6777C6BE196C1AE20064AE59 /* horizontal_line@2x.png */; };
 		6789699C195E842F00354FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699B195E842F00354FCA /* Foundation.framework */; };
 		6789699E195E842F00354FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699D195E842F00354FCA /* CoreGraphics.framework */; };
 		678969A0195E842F00354FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699F195E842F00354FCA /* UIKit.framework */; };
@@ -75,6 +76,7 @@
 		6777C6B3196A502A0064AE59 /* topic_detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "topic_detail@2x.png"; path = "Resources/images/topic_detail@2x.png"; sourceTree = "<group>"; };
 		6777C6BB196ADEE10064AE59 /* RCNodesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCNodesList.h; path = Helpers/RCNodesList.h; sourceTree = "<group>"; };
 		6777C6BC196ADEE10064AE59 /* RCNodesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCNodesList.m; path = Helpers/RCNodesList.m; sourceTree = "<group>"; };
+		6777C6BE196C1AE20064AE59 /* horizontal_line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "horizontal_line@2x.png"; path = "Resources/images/horizontal_line@2x.png"; sourceTree = "<group>"; };
 		67896998195E842F00354FCA /* RubyChina-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RubyChina-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6789699B195E842F00354FCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6789699D195E842F00354FCA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -244,6 +246,7 @@
 		678969D1195EA6BB00354FCA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6777C6BE196C1AE20064AE59 /* horizontal_line@2x.png */,
 				6777C6B3196A502A0064AE59 /* topic_detail@2x.png */,
 				67B047DF196673C000B808A6 /* topics_cell_background@2x.png */,
 				67B047DB19662F4900B808A6 /* reply_cell@2x.png */,
@@ -391,6 +394,7 @@
 				678969E7195EB06500354FCA /* pagination_selected.png in Resources */,
 				678969E8195EB06500354FCA /* pagination_selected@2x.png in Resources */,
 				678969E4195EB01200354FCA /* pagination_bar_bg.png in Resources */,
+				6777C6BF196C1AE20064AE59 /* horizontal_line@2x.png in Resources */,
 				6761C9FD1964ECE800DCC27F /* icon@2x.jpg in Resources */,
 				6761CA02196519B900DCC27F /* TopicDetailController@2x.png in Resources */,
 				678969A6195E842F00354FCA /* InfoPlist.strings in Resources */,

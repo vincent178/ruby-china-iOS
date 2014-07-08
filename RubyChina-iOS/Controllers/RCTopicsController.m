@@ -158,7 +158,6 @@
         topicCell = [[RCTopicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    //TODO: setup topic cell
     NSDictionary *topic = [[NSDictionary alloc] init];
     topic = self.topics[indexPath.row];
     
@@ -171,6 +170,9 @@
     topicCell.topicTitle = topic[@"title"];
     
     [topicCell setup];
+    
+    
+    topicCell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return topicCell;
 }

@@ -65,7 +65,7 @@
     
     [self setup];
     
-//    [self prepareForLoadingData];
+    [self prepareForLoadingData];
     
     [self getTopicDetail];
     
@@ -106,10 +106,10 @@
         NSLog(@"topicDetail: %@", topicDetail);
         self.topicDetailInfo = [[NSDictionary alloc] init];
         self.topicDetailInfo = topicDetail;
+        
         [self.tableView reloadData];
         
-
-        
+        [self didLoadedData];
     }];
 }
 
@@ -153,8 +153,6 @@
         
         RCTopicDetail *topicDetailCell = [[RCTopicDetail alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         
-        //TODO: setup topicDetail cell
-        
         // time ago string
         NSString *createdDateString = self.topicDetailInfo[@"created_at"];
         NSDate *createdDate = [[NSDate alloc] init];
@@ -185,6 +183,8 @@
         NSLog(@"topicDetailCell.topicAuthor: %@", topicDetailCell.topicAuthor);
         
         [topicDetailCell setup];
+        
+        topicDetailCell.selectionStyle = UITableViewCellSelectionStyleNone;
         
         return topicDetailCell;
         

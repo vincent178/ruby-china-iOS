@@ -69,7 +69,7 @@
     [self addSubview:repliedTimeAgoLabel];
     
     
-    // 6. topic content view
+    // 6. topic title view
     UILabel *topicTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 58.5, 302.5, self.titleHeight)];
     topicTitleLabel.text = self.topicTitle;
     topicTitleLabel.font = [UIFont systemFontOfSize:14];
