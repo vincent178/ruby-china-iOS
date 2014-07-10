@@ -148,39 +148,35 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *identifier = @"ReplyCell";
+    static NSString *detailIdentifier = @"Detail";
     
     if (indexPath.section == 0) {
         
-        RCTopicDetail *topicDetailCell = [[RCTopicDetail alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        RCTopicDetail *topicDetailCell = [[RCTopicDetail alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:detailIdentifier];
         
         // time ago string
         NSString *createdDateString = self.topicDetailInfo[@"created_at"];
         NSDate *createdDate = [[NSDate alloc] init];
         createdDate = [self.dateFormatter dateFromString:createdDateString];
         topicDetailCell.timeAgoString = [createdDate timeAgoSinceNow];
-        NSLog(@"topicDetailCell.timeAgoString: %@", topicDetailCell.timeAgoString);
         
         
         // category name
         NSString *nodeName = self.topicDetailInfo[@"node_name"];
         topicDetailCell.nodeName = nodeName;
-        NSLog(@"topicDetailCell.nodeName: %@", topicDetailCell.nodeName);
         
         
         // topic title
         topicDetailCell.topicTitle = self.topicTitle;
-        NSLog(@"topicDetailCell.topicTitle: %@", topicDetailCell.topicTitle);
         
         
         // topic body html string
         NSString *topicHTMLString = self.topicDetailInfo[@"body_html"];
         topicDetailCell.topicHTMLString = topicHTMLString;
-        NSLog(@"topicDetailCell.topicHTMLString: %@", topicDetailCell.topicHTMLString);
         
         
         // topic author
         topicDetailCell.topicAuthor = self.topicAuthor;
-        NSLog(@"topicDetailCell.topicAuthor: %@", topicDetailCell.topicAuthor);
         
         [topicDetailCell setup];
         
@@ -207,8 +203,9 @@
 #pragma mark - UITableView Delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
     if (indexPath.section == 0) {
-        return 1000;
+        return 800;
     }
     
     return 110;

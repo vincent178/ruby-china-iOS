@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RCTopicDetail.h"
+
 
 @interface RCTopicDetailController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
@@ -15,13 +17,7 @@
 @property (nonatomic, strong) NSString *topicTitle;
 @property (nonatomic, strong) NSString *topicAuthor;
 
-
-
-
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
-
 
 
 - (IBAction)replyButtonTapped:(id)sender;
