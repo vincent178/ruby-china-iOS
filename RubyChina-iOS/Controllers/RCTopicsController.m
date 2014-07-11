@@ -29,6 +29,7 @@
 @property (nonatomic, strong) NSMutableArray *heights;
 
 @property (nonatomic, strong) RCLoadingController *loadingController;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -51,6 +52,11 @@
     [self.paginationView reloadData];
     
     self.loadingController = [self.storyboard instantiateViewControllerWithIdentifier:@"LoadingController"];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    self.refreshControl.tintColor = [UIColor grayColor];
+    [self.refreshControl addTarget:self action:@selector(referenceCurrentTopicLists:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -62,9 +68,7 @@
     [super viewDidLoad];
     
     [self setup];
-    
-    [self prepareForLoadingData];
-    [self getTopics];
+    [self fetchTopics];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -78,8 +82,8 @@
     NSLog(@"RCTopicsController #previousTapped: ");
     if (self.paginationView.currentIndex > 1) {
         [self.paginationView selectIndex:self.paginationView.currentIndex-1];
-        [self prepareForLoadingData];
-        [self getTopics];
+        [self didStartLoadingData];
+        [self fetchTopics];
     }
 }
 
@@ -87,32 +91,17 @@
     NSLog(@"RCTopicsController #nextTapped: ");
     if (self.paginationView.currentIndex < 99) {
         [self.paginationView selectIndex:self.paginationView.currentIndex+1];
-        [self prepareForLoadingData];
-        [self getTopics];
+        [self didStartLoadingData];
+        [self fetchTopics];
     }
 }
 
 #pragma mark -
 #pragma mark - Data Service
 
-- (void)prepareForLoadingData {
+- (void)referenceCurrentTopicLists:(id)sender {
     
-    [self addChildViewController:self.loadingController];
-    [self.view addSubview:self.loadingController.view];
-    [self.loadingController start];
-    
-}
-
-- (void)didLoadedData {
-    
-    [self.loadingController dismiss];
-    [self.loadingController.view removeFromSuperview];
-    [self.loadingController removeFromParentViewController];
-    
-    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
-}
-
-- (void)getTopics {
+    [self.refreshControl beginRefreshing];
     
     RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
     
@@ -134,7 +123,53 @@
                                   }
                                   
                                   [self.tableView reloadData];
-                                  [self didLoadedData];
+                                  
+                                  [self.refreshControl endRefreshing];
+                              }];
+}
+
+- (void)didStartLoadingData {
+    
+    [self addChildViewController:self.loadingController];
+    [self.view addSubview:self.loadingController.view];
+    [self.loadingController start];
+    
+}
+
+- (void)didFinishLoadingData {
+    
+    [self.loadingController dismiss];
+    [self.loadingController.view removeFromSuperview];
+    [self.loadingController removeFromParentViewController];
+    
+    [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+}
+
+- (void)fetchTopics {
+    
+    [self didStartLoadingData];
+    
+    RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
+    
+    NSString *type = self.topicType ? self.topicType : @"default";
+    
+    [apiManager fetchTopicsListPageNumber:self.paginationView.currentIndex
+                              withPerPage:15
+                                 withType:type
+                              withHandler:^(NSArray *resultsArray, NSError *error) {
+                                  
+                                  [self.topics removeAllObjects];
+                                  [self.topics addObjectsFromArray:resultsArray];
+                                  
+                                  [self.heights removeAllObjects];
+                                  for (NSDictionary *topic in self.topics) {
+                                      UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
+                                      CGSize size = [(NSString *)topic[@"title"] sizeOfMultiLineLabelwithWidth:302.5 font:font];
+                                      [self.heights addObject:@(size.height)];
+                                  }
+                                  
+                                  [self.tableView reloadData];
+                                  [self didFinishLoadingData];
                                   
                               }];
     
@@ -168,6 +203,7 @@
     topicCell.replyNumber =[topic[@"replies_count"] stringValue];
     topicCell.username = topic[@"user"][@"login"];
     topicCell.topicTitle = topic[@"title"];
+    topicCell.avatarURL = topic[@"user"][@"avatar_url"];
     
     [topicCell setup];
     
