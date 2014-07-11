@@ -14,8 +14,13 @@
 
 
 @property (nonatomic, assign) NSInteger topicID;
+
+
+
 @property (nonatomic, strong) NSString *topicTitle;
 @property (nonatomic, strong) NSString *topicAuthor;
+@property (nonatomic, strong) NSString *authorPostedTimeAgo;
+@property (nonatomic, strong) NSAttributedString *attributedTopicDetail;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

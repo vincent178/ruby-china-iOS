@@ -13,8 +13,7 @@
 #import "RCNodesList.h"
 #import "NSString+DynamicHeight.h"
 #import "RCReplyCell.h"
-#import <DTCoreText/DTCoreText.h>
-#import "DTTiledLayerWithoutFade.h"
+
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @import QuartzCore;
@@ -25,10 +24,14 @@
 @property (nonatomic, strong) RCLoadingController *loadingController;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 @property (nonatomic, strong) RCNodesList *nodesList;
-@property (nonatomic, strong) NSDictionary *topicDetailInfo;
+@property (nonatomic, strong) NSDictionary *topicDetailData;
 @property (nonatomic, strong) DTAttributedTextContentView *topicDetailView;
 @property (nonatomic, assign) CGFloat topicDetailCellHeight;
-@property (nonatomic, strong) NSMutableDictionary *heights;
+
+@property (nonatomic, strong) DTCoreTextLayoutFrame *attributedTopicDetailViewFrame;
+
+@property (nonatomic, strong) UIImage *horizontalLine;
+@property (nonatomic, strong) NSMutableDictionary *heightCache;
 
 
 @end
@@ -63,9 +66,12 @@
     self.nodesList = [[RCNodesList alloc] init];
     
     
-    // heights
-    self.heights = [[NSMutableDictionary alloc] init];
+    // height cache
+    self.heightCache = [[NSMutableDictionary alloc] init];
     
+    
+    // topic detail data
+    self.topicDetailData = [[NSDictionary alloc] init];
     
 }
 
@@ -77,9 +83,6 @@
     [self prepareForLoadingData];
     
     [self getTopicDetail];
-    
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -106,21 +109,64 @@
     [self.tableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
 }
 
+- (void)handleTopicDetailData:(NSDictionary *)topicDetail {
+    
+    self.topicDetailData = topicDetail;
+    
+    /*
+     *******************************************
+     Data Prepare
+     */
+    
+    // time ago string
+    NSString *createdDateString = self.topicDetailData[@"created_at"];
+    NSDate *createdDate = [[NSDate alloc] init];
+    createdDate = [self.dateFormatter dateFromString:createdDateString];
+    NSString *timeAgoString = [createdDate timeAgoSinceNow];
+    
+    // category name
+    NSString *nodeName = self.topicDetailData[@"node_name"];
+    
+    // topic author
+    NSString *topicAuthor = self.topicAuthor;
+    
+    // authorPostedTimeAgo
+    self.authorPostedTimeAgo = [[NSString alloc] init];
+    if (topicAuthor && nodeName && timeAgoString) {
+        self.authorPostedTimeAgo = [NSString stringWithFormat:@"%@ posted in %@ %@", topicAuthor, nodeName, timeAgoString];
+    }
+    
+    self.horizontalLine = [UIImage imageNamed:@"horizontal_line.png"];
+    
+    // topic body html string
+    NSString *topicHTMLString = self.topicDetailData[@"body_html"];
+    NSData *htmlData = [topicHTMLString dataUsingEncoding:NSUTF8StringEncoding];
+    self.attributedTopicDetail = [[NSAttributedString alloc] initWithHTMLData:htmlData documentAttributes:nil];
+    
+   
+    /*
+     Data Prepare Ends
+     *******************************************
+     */
+    
+}
+
+
 - (void)getTopicDetail {
     
     RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
     [apiManager fetchTopicDetail:self.topicID withHandler:^(NSDictionary *topicDetail, NSError *error) {
         
-        
-        NSLog(@"topicDetail: %@", topicDetail);
-        self.topicDetailInfo = [[NSDictionary alloc] init];
-        self.topicDetailInfo = topicDetail;
-        
-        [self caculateHeight];
-        [self.tableView reloadData];
-        NSLog(@"reloadData");
-        
-        [self didLoadedData];
+        dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void){
+            
+            [self handleTopicDetailData:topicDetail];
+            [self caculateHeight];
+            
+            dispatch_async(dispatch_get_main_queue(), ^(void){
+                [self.tableView reloadData];
+                [self didLoadedData];
+            });
+        });
     }];
 }
 
@@ -150,12 +196,12 @@
     
     if (section == 0) {
         
-
-        
-        
         return 1;
+        
     } else {
+        
         return 10;
+        
     }
     
 }
@@ -172,42 +218,11 @@
         if (topicDetailCell == nil) {
             
             topicDetailCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:detailIdentifier];
+            
         }
         
-        
-        /*
-         *******************************************
-         Data Prepare
-         */
-        
-        // time ago string
-        NSString *createdDateString = self.topicDetailInfo[@"created_at"];
-        NSDate *createdDate = [[NSDate alloc] init];
-        createdDate = [self.dateFormatter dateFromString:createdDateString];
-        NSString *timeAgoString = [createdDate timeAgoSinceNow];
-        
-        // category name
-        NSString *nodeName = self.topicDetailInfo[@"node_name"];
-        
-        
-        // topic title
-        NSString *topicTitle = self.topicTitle;
-        
-        
-        // topic body html string
-        NSString *topicHTMLString = self.topicDetailInfo[@"body_html"];
-        
-        
-        // topic author
-        NSString *topicAuthor = self.topicAuthor;
-        
-        /*
-         Data Prepare Ends
-         *******************************************
-         */
-        
-        
-        
+        topicDetailCell.selectionStyle=UITableViewCellSelectionStyleNone;
+        topicDetailCell.layer.opacity = 1;
         
         /*
          *******************************************
@@ -215,28 +230,24 @@
          */
         
         
-        // author node and time ago label
-        NSString *authorPostedTimeAgo = nil;
-        if (topicAuthor && nodeName && timeAgoString) {
-            authorPostedTimeAgo = [NSString stringWithFormat:@"%@ posted in %@ %@", topicAuthor, nodeName, timeAgoString];
-        }
-        
         // author posted in category time ago
         UILabel *authorPostedTimeAgoLabel = [[UILabel alloc] init];
         authorPostedTimeAgoLabel.frame = CGRectMake(5, 1, 0, 11);
         authorPostedTimeAgoLabel.font = [UIFont systemFontOfSize:9];
-        authorPostedTimeAgoLabel.text = authorPostedTimeAgo;
+        authorPostedTimeAgoLabel.text = self.authorPostedTimeAgo;
         [authorPostedTimeAgoLabel sizeToFit];
+        authorPostedTimeAgoLabel.layer.opacity = 1;
         [topicDetailCell addSubview:authorPostedTimeAgoLabel];
         
         // horizontal line
         UIImageView *horizontalLine = [[UIImageView alloc] initWithFrame:CGRectMake(5, 12.5, 310, 1)];
-        horizontalLine.image = [UIImage imageNamed:@"horizontal_line.png"];
+        horizontalLine.image = self.horizontalLine;
+        horizontalLine.layer.opacity = 1;
         [topicDetailCell addSubview:horizontalLine];
         
         // topic title label
         UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
-        CGSize topicTitleLabelSize = [topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:font];
+        CGSize topicTitleLabelSize = [self.topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:font];
         
         UILabel *topicTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 20.5, topicTitleLabelSize.width, topicTitleLabelSize.height)];
         topicTitleLabel.font = font;
@@ -244,30 +255,17 @@
         topicTitleLabel.lineBreakMode = NSLineBreakByWordWrapping;
         topicTitleLabel.numberOfLines = 0;
         topicTitleLabel.textAlignment = NSTextAlignmentLeft;
+        topicTitleLabel.layer.opacity = 1;
         [topicDetailCell addSubview:topicTitleLabel];
         
         // topic content view
-        // 1. get the attributed string
-        NSData *htmlData = [topicHTMLString dataUsingEncoding:NSUTF8StringEncoding];
-        NSAttributedString *topicAttributedString = [[NSAttributedString alloc] initWithHTMLData:htmlData documentAttributes:nil];
-        
-        // 2. caculate the frame for the label
-        DTCoreTextLayouter *layouter = [[DTCoreTextLayouter alloc] initWithAttributedString:topicAttributedString];
-        CGRect maxRect = CGRectMake(8, topicTitleLabel.frame.origin.y + topicTitleLabel.frame.size.height + 4, 302.5, CGFLOAT_HEIGHT_UNKNOWN);
-        NSRange entireString = NSMakeRange(0, [topicAttributedString length]);
-        DTCoreTextLayoutFrame *layoutFrame = [layouter layoutFrameWithRect:maxRect range:entireString];
-        
-        // 3. initialize label
-        self.topicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:layoutFrame.frame];
-        [DTAttributedTextContentView setLayerClass:[DTTiledLayerWithoutFade class]];
+        self.topicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:self.attributedTopicDetailViewFrame.frame];
         self.topicDetailView.delegate = self;
-        NSLog(@"layoutFrame.frame: %@", NSStringFromCGRect(layoutFrame.frame));
-        self.topicDetailView.attributedString = topicAttributedString;
-        
-        // 4. add to superview
+        self.topicDetailView.attributedString = self.attributedTopicDetail;
+        self.topicDetailView.layer.opacity = 1;
         [topicDetailCell addSubview:self.topicDetailView];
         
-        
+
         /*
          View Prepare Ends
          *******************************************
@@ -298,13 +296,17 @@
 #pragma mark - 
 #pragma mark - UITableView Delegate
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     if (indexPath.section == 0) {
         
         CGFloat totalHeight = 0;
-        for (NSString *key in self.heights) {
-            totalHeight += [self.heights[key] floatValue];
+        for (NSString *key in self.heightCache) {
+            totalHeight += [self.heightCache[key] floatValue];
         }
         
         return totalHeight;
@@ -328,7 +330,11 @@
         
         [imageView setImageWithURL:attachment.contentURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
             
-            if (image) {
+            NSNumber *cachedHeight = self.heightCache[[attachment.contentURL absoluteString]];
+            
+            if (cachedHeight) {
+                
+            } else if (image) {
                 
                 [self.tableView beginUpdates];
                 
@@ -345,7 +351,7 @@
                 
                 attachment.originalSize = size;
                 
-                [self.heights setObject:@(size.height) forKey:[attachment.contentURL absoluteString]];
+                [self.heightCache setObject:@(size.height) forKey:[attachment.contentURL absoluteString]];
                 
                 CGRect oldTopicDetailFrame = self.topicDetailView.frame;
                 self.topicDetailView.frame = CGRectMake(oldTopicDetailFrame.origin.x, oldTopicDetailFrame.origin.y, oldTopicDetailFrame.size.width, oldTopicDetailFrame.size.height + size.height);
@@ -353,9 +359,10 @@
                 self.topicDetailView.layouter = nil;
                 [self.topicDetailView relayoutText];
                 
-                
                 [self.tableView endUpdates];
+                
             }
+            
         }];
         
         return imageView;
@@ -373,44 +380,24 @@
     
     /*
      *******************************************
-     Data Prepare
-     */
-    
-    // topic title
-    NSString *topicTitle = self.topicTitle;
-    
-    
-    // topic body html string
-    NSString *topicHTMLString = self.topicDetailInfo[@"body_html"];
-    
-    
-    
-    /*
-     *******************************************
      View Prepare
      */
     
     // topic title label
     UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
-    CGSize topicTitleLabelSize = [topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:font];
+    CGSize topicTitleLabelSize = [self.topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:font];
     
     // topic content view
-    // 1. get the attributed string
-    NSData *htmlData = [topicHTMLString dataUsingEncoding:NSUTF8StringEncoding];
-    NSAttributedString *topicAttributedString = [[NSAttributedString alloc] initWithHTMLData:htmlData documentAttributes:nil];
-    
-    // 2. caculate the frame for the label
-    DTCoreTextLayouter *layouter = [[DTCoreTextLayouter alloc] initWithAttributedString:topicAttributedString];
+    DTCoreTextLayouter *layouter = [[DTCoreTextLayouter alloc] initWithAttributedString:self.attributedTopicDetail];
     CGRect maxRect = CGRectMake(8, 20.5 + topicTitleLabelSize.height + 4, 302.5, CGFLOAT_HEIGHT_UNKNOWN);
-    NSRange entireString = NSMakeRange(0, [topicAttributedString length]);
-    DTCoreTextLayoutFrame *layoutFrame = [layouter layoutFrameWithRect:maxRect range:entireString];
+    NSRange entireString = NSMakeRange(0, [self.attributedTopicDetail length]);
+    self.attributedTopicDetailViewFrame = [layouter layoutFrameWithRect:maxRect range:entireString];
     
     
-    self.topicDetailCellHeight = layoutFrame.frame.origin.y + layoutFrame.frame.size.height + 4;
+    self.topicDetailCellHeight = self.attributedTopicDetailViewFrame.frame.origin.y + self.attributedTopicDetailViewFrame.frame.size.height + 4;
     NSLog(@"self.topicDetailCellHeight: %f", self.topicDetailCellHeight);
     
-    
-    [self.heights setObject:@(self.topicDetailCellHeight) forKey:@"origin"];
+    [self.heightCache setObject:@(self.topicDetailCellHeight) forKey:@"originFrame"];
 }
 
 

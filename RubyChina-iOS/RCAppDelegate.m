@@ -12,6 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [DTAttributedTextContentView setLayerClass:[DTTiledLayerWithoutFade class]];
     // Override point for customization after application launch.
 
     return YES;
