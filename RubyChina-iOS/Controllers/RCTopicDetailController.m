@@ -378,11 +378,6 @@
 
 - (void)caculateHeight {
     
-    /*
-     *******************************************
-     View Prepare
-     */
-    
     // topic title label
     UIFont *font = [UIFont fontWithName:@"Helvetica Neue" size:14];
     CGSize topicTitleLabelSize = [self.topicTitle sizeOfMultiLineLabelwithWidth:302.5 font:font];
