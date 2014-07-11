@@ -204,6 +204,9 @@
     topicCell.username = topic[@"user"][@"login"];
     topicCell.topicTitle = topic[@"title"];
     topicCell.avatarURL = topic[@"user"][@"avatar_url"];
+    topicCell.nodeName = topic[@"node_name"];
+    topicCell.lastRepliedDate = topic[@"updated_at"];
+    topicCell.lastRepliedUsername = topic[@"last_reply_user_login"];
     
     [topicCell setup];
     

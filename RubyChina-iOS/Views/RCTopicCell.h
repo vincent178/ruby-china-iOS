@@ -17,6 +17,9 @@
 @property (nonatomic, strong) NSString *replyNumber;
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *topicTitle;
+@property (nonatomic, strong) NSString *nodeName;
+@property (nonatomic, strong) NSString *lastRepliedDate;
+@property (nonatomic, strong) NSString *lastRepliedUsername;
 
 - (void)setup;
 

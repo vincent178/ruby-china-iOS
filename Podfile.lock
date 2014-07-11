@@ -31,9 +31,6 @@ PODS:
     - DTFoundation/Core
   - HPGrowingTextView (1.1)
   - JASidePanels (1.3.2)
-  - MagicalRecord (2.2):
-    - MagicalRecord/Core
-  - MagicalRecord/Core (2.2)
   - SDWebImage (3.6):
     - SDWebImage/Core
   - SDWebImage/Core (3.6)
@@ -48,7 +45,6 @@ DEPENDENCIES:
   - DTCoreText (~> 1.6.11)
   - HPGrowingTextView (~> 1.1)
   - JASidePanels (~> 1.3.2)
-  - MagicalRecord (~> 2.2)
   - SDWebImage (~> 3.6)
   - SVProgressHUD (~> 1.0)
   - SVPullToRefresh (~> 0.4.1)
@@ -62,7 +58,6 @@ SPEC CHECKSUMS:
   DTFoundation: ef6fb95da64f202d1600bc23dde79c6fd74c0c2d
   HPGrowingTextView: 07d5ab1f1e867acfb7a6f498b819948c9e97d07c
   JASidePanels: ca943907d88a0738c80755204c6098969d43e4e9
-  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
   SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
   SVPullToRefresh: d5161ebc833a38b465364412e5e307ca80bbb190

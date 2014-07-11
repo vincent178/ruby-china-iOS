@@ -7,7 +7,15 @@
 //
 
 #import "RCTopicCell.h"
+#import "NSString+DynamicHeight.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "NSDate+DateTools.h"
+
+@interface RCTopicCell()
+
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+
+@end
 
 @implementation RCTopicCell
 
@@ -16,6 +24,10 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
+        
+        self.dateFormatter = [[NSDateFormatter alloc] init];
+        self.dateFormatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSZZZ";
+        
     }
     return self;
 }
@@ -59,21 +71,29 @@
     
     
     //TODO: 4. category view
-    UILabel *categoryLabel = [[UILabel alloc] init];
-    categoryLabel.layer.opacity = 1.0;
-    UIImageView *categoryBackgroundView = [[UIImageView alloc] init];
-    categoryBackgroundView.layer.opacity = 1.0;
-    [categoryBackgroundView addSubview:categoryLabel];
-    [self addSubview:categoryBackgroundView];
+    UILabel *nodenameLabel = [[UILabel alloc] initWithFrame:CGRectMake(48, 37.5, 0, 15)];
+    nodenameLabel.text = self.nodeName;
+    nodenameLabel.font = [UIFont systemFontOfSize:9];
+    nodenameLabel.layer.opacity = 1.0;
+    [nodenameLabel sizeToFit];
+    [self addSubview:nodenameLabel];
     
     
     //TODO: 5. replied time ago
-    UILabel *repliedTimeAgoLabel = [[UILabel alloc] initWithFrame:CGRectMake(102.5, 37.5, 155, 15)];
-    repliedTimeAgoLabel.layer.opacity = 1.0;
-    repliedTimeAgoLabel.text = @"最后由gene_wu于4小时前回复";
-    repliedTimeAgoLabel.font = [UIFont systemFontOfSize:9];
-    [self addSubview:repliedTimeAgoLabel];
-    
+    if ([self.replyNumber intValue] > 0) {
+        CGRect lastRepliedFrame = CGRectMake(nodenameLabel.frame.origin.x + nodenameLabel.frame.size.width + 6, 37.5, 0, 15);
+        UILabel *repliedTimeAgoLabel = [[UILabel alloc] initWithFrame:lastRepliedFrame];
+        repliedTimeAgoLabel.layer.opacity = 1.0;
+        NSDate *lastRepliedDate = [[NSDate alloc] init];
+        lastRepliedDate = [self.dateFormatter dateFromString:self.lastRepliedDate];
+        NSString *timeAgoString = [lastRepliedDate timeAgoSinceNow];
+        NSString *userRepiedTimeAgo = [NSString stringWithFormat:@"%@ replied in %@", self.lastRepliedUsername, timeAgoString];
+        repliedTimeAgoLabel.text = userRepiedTimeAgo;
+        repliedTimeAgoLabel.font = [UIFont systemFontOfSize:9];
+        [repliedTimeAgoLabel sizeToFit];
+        [self addSubview:repliedTimeAgoLabel];
+    }
+
     
     // 6. topic title view
     UILabel *topicTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(8, 58.5, 302.5, self.titleHeight)];
