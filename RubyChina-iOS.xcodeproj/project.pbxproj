@@ -17,9 +17,6 @@
 		6777C6B4196A502A0064AE59 /* topic_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6777C6B3196A502A0064AE59 /* topic_detail@2x.png */; };
 		6777C6BD196ADEE10064AE59 /* RCNodesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6777C6BC196ADEE10064AE59 /* RCNodesList.m */; };
 		6777C6BF196C1AE20064AE59 /* horizontal_line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6777C6BE196C1AE20064AE59 /* horizontal_line@2x.png */; };
-		6789699C195E842F00354FCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699B195E842F00354FCA /* Foundation.framework */; };
-		6789699E195E842F00354FCA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699D195E842F00354FCA /* CoreGraphics.framework */; };
-		678969A0195E842F00354FCA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699F195E842F00354FCA /* UIKit.framework */; };
 		678969A6195E842F00354FCA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 678969A4195E842F00354FCA /* InfoPlist.strings */; };
 		678969A8195E842F00354FCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 678969A7195E842F00354FCA /* main.m */; };
 		678969AC195E842F00354FCA /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 678969AB195E842F00354FCA /* RCAppDelegate.m */; };
@@ -40,6 +37,9 @@
 		678969F0195EC3B100354FCA /* topic_category_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 678969EE195EC3B100354FCA /* topic_category_bg@2x.png */; };
 		678969F3195EC69D00354FCA /* RCTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 678969F2195EC69D00354FCA /* RCTopicCell.m */; };
 		679F6BF7196F0B5100B08FDF /* RCTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679F6BF6196F0B5100B08FDF /* RCTestController.m */; };
+		679F6BF8196F0DC800B08FDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699F195E842F00354FCA /* UIKit.framework */; };
+		679F6BF9196F0DCF00B08FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699B195E842F00354FCA /* Foundation.framework */; };
+		679F6BFA196F0DD800B08FDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6789699D195E842F00354FCA /* CoreGraphics.framework */; };
 		67B047D2196621B700B808A6 /* message_Input_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B047D1196621B700B808A6 /* message_Input_background@2x.png */; };
 		67B047D4196624E400B808A6 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67B047D3196624E400B808A6 /* back@2x.png */; };
 		67B047D719662C8C00B808A6 /* RCTopicDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B047D619662C8C00B808A6 /* RCTopicDetail.m */; };
@@ -129,9 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6789699E195E842F00354FCA /* CoreGraphics.framework in Frameworks */,
-				678969A0195E842F00354FCA /* UIKit.framework in Frameworks */,
-				6789699C195E842F00354FCA /* Foundation.framework in Frameworks */,
+				679F6BFA196F0DD800B08FDF /* CoreGraphics.framework in Frameworks */,
+				679F6BF9196F0DCF00B08FDF /* Foundation.framework in Frameworks */,
+				679F6BF8196F0DC800B08FDF /* UIKit.framework in Frameworks */,
 				6A66753C6CC44B01BBF378E5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +607,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RubyChina-iOS/RubyChina-iOS-Prefix.pch";
 				INFOPLIST_FILE = "RubyChina-iOS/RubyChina-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -624,6 +625,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RubyChina-iOS/RubyChina-iOS-Prefix.pch";
 				INFOPLIST_FILE = "RubyChina-iOS/RubyChina-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

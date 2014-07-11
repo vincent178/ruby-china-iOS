@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RCTestController : UIViewController
+@interface RCTestController : UIViewController 
 
 @end

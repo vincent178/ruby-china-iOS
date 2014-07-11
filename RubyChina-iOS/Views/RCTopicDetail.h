@@ -8,10 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "DTAttributedTextContentView.h"
-#import <DTCoreText/DTLazyImageView.h>
+
+@protocol RCImageDelegate <NSObject>
+
+- (void)didFinishDownloadImage;
+
+@end
+
+@interface RCTopicDetail : UITableViewCell <DTAttributedTextContentViewDelegate>
+
+@property (nonatomic, weak) id<RCImageDelegate> delegate;
 
 
-@interface RCTopicDetail : UITableViewCell 
+@property (nonatomic, assign) CGFloat cellHeight;
 
 @property (nonatomic, strong) NSString *timeAgoString;
 @property (nonatomic, strong) NSString *nodeName;

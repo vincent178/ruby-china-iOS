@@ -13,7 +13,7 @@ user_info_url = 'https://ruby-china.org/api/users/vincent178.json'
 user_topics_url = 'https://ruby-china.org/api/users/vincent178/topics.json?size=20'
 
 # topic detail
-topic_detail_url = 'https://ruby-china.org/api/v2/topics/20401.json'
+topic_detail_url = 'https://ruby-china.org/api/v2/topics/20385.json'
 
 # nodes list
 nodes_list_url = 'https://ruby-china.org/api/v2/nodes.json'

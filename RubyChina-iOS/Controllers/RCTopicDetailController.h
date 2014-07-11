@@ -10,7 +10,7 @@
 #import "RCTopicDetail.h"
 
 
-@interface RCTopicDetailController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface RCTopicDetailController : UIViewController <UITableViewDelegate, UITableViewDataSource, DTAttributedTextContentViewDelegate>
 
 
 @property (nonatomic, assign) NSInteger topicID;

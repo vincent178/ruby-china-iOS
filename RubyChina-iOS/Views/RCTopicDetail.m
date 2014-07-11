@@ -8,11 +8,17 @@
 
 #import "RCTopicDetail.h"
 #import "NSString+DynamicHeight.h"
-#import "DTAttributedTextContentView.h"
+
 #import <DTCoreText/DTCoreText.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+
+
 #import "DTTiledLayerWithoutFade.h"
 
 @interface RCTopicDetail()
+
+@property (nonatomic, strong) DTAttributedTextContentView *topicDetailView;
 
 
 @end
@@ -71,21 +77,19 @@
     DTCoreTextLayoutFrame *layoutFrame = [layouter layoutFrameWithRect:maxRect range:entireString];
     
     // 3. initialize label
-    DTAttributedLabel *topicAttributedDetailLabel = [[DTAttributedLabel alloc] initWithFrame:layoutFrame.frame];
+    self.topicDetailView = [[DTAttributedTextContentView alloc] initWithFrame:layoutFrame.frame];
+    self.topicDetailView.delegate = self;
     [DTAttributedTextContentView setLayerClass:[DTTiledLayerWithoutFade class]];
     NSLog(@"layoutFrame.frame: %@", NSStringFromCGRect(layoutFrame.frame));
-    topicAttributedDetailLabel.attributedString = topicAttributedString;
-    topicAttributedDetailLabel.numberOfLines = 0;
-    topicAttributedDetailLabel.lineBreakMode = NSLineBreakByCharWrapping;
+    self.topicDetailView.attributedString = topicAttributedString;
     
     // 4. add to superview
-    [self addSubview:topicAttributedDetailLabel];
+    [self addSubview:self.topicDetailView];
     
-    self.frame = CGRectMake(0, 0, 320, topicAttributedDetailLabel.frame.origin.y + topicAttributedDetailLabel.frame.size.height + 4);
+    self.frame = CGRectMake(0, 0, 320, self.topicDetailView.frame.origin.y + self.topicDetailView.frame.size.height + 4);
     
-    
-    
-    
+    self.cellHeight = self.frame.size.height;
+    NSLog(@"self.cellHeight: %f", self.cellHeight);
 }
 
 
@@ -97,6 +101,55 @@
     
     [super setSelected:selected animated:animated];
 
+}
+
+#pragma mark -
+#pragma mark - DTAttributedTextContentViewDelegate
+
+- (UIView *)attributedTextContentView:(DTAttributedTextContentView *)attributedTextContentView
+                    viewForAttachment:(DTTextAttachment *)attachment frame:(CGRect)frame {
+    
+    
+    if([attachment isKindOfClass:[DTImageTextAttachment class]]) {
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:frame];
+        
+        NSLog(@"imageView.frame: %@", NSStringFromCGRect(frame));
+        
+        [imageView setImageWithURL:attachment.contentURL completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+            
+            if (image) {
+                
+                NSLog(@"downloaded image");
+                
+                CGFloat ratio = image.size.width / 302.5;
+                
+                CGSize size = image.size;
+                
+                if (ratio > 1) {
+                    size.width = size.width / ratio;
+                    size.height = size.height / ratio;
+                }
+                
+                attachment.originalSize = size;
+                NSLog(@"attachment.originalSize: %@", NSStringFromCGSize(image.size));
+                
+                self.topicDetailView.layouter = nil;
+                [self.topicDetailView relayoutText];
+                
+                self.cellHeight = self.cellHeight + size.height;
+                
+                [self.delegate didFinishDownloadImage];
+               
+            }
+        }];
+        
+        return imageView;
+        
+    }
+    
+    return nil;
+   
 }
 
 
