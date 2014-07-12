@@ -29,9 +29,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="RPi-Df-yME" kind="push" id="TEf-3z-FeS"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -90,9 +87,41 @@
             <point key="canvasLocation" x="512" y="-234"/>
         </scene>
         <!--Topic Detail Controller-->
+        <scene sceneID="0Zd-Km-xPN">
+            <objects>
+                <viewController storyboardIdentifier="TopicDetailController1" id="PW3-kw-8w0" customClass="RCTopicDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ogj-UJ-8TZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ngB-VJ-kF0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9n2-49-uIn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Q8g-VL-IoD" customClass="RCTopicTableView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="PW3-kw-8w0" id="vda-ay-nje"/>
+                                    <outlet property="delegate" destination="PW3-kw-8w0" id="XWp-o6-Sr4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Q8g-VL-IoD" id="4du-cO-UXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9m-9m-f7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="-234"/>
+        </scene>
+        <!--Topic Detail Backup-->
         <scene sceneID="P0d-Fr-OB9">
             <objects>
-                <viewController storyboardIdentifier="TopicDetailController" id="RPi-Df-yME" customClass="RCTopicDetailController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopicDetailController" id="RPi-Df-yME" customClass="TopicDetail_Backup" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9PR-O3-hbR"/>
                         <viewControllerLayoutGuide type="bottom" id="GS3-mk-jKR"/>
@@ -140,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBG-b8-K3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="-234"/>
+            <point key="canvasLocation" x="1086" y="-1078"/>
         </scene>
         <!--Loading Controller-->
         <scene sceneID="HIV-iN-6WC">
@@ -169,6 +198,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHL-Ql-aMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="512" y="-1013"/>
+        </scene>
+        <!--Test Controller-->
+        <scene sceneID="OZz-kN-PaO">
+            <objects>
+                <viewController id="VLT-G5-aTO" customClass="RCTestController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Gh-MQ-aCE"/>
+                        <viewControllerLayoutGuide type="bottom" id="frW-fk-dLJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AvQ-O2-fi2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-Iu-oTC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96D-iP-xiZ">
+                                <rect key="frame" x="0.0" y="197" width="325" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgB-XW-g2A">
+                                <rect key="frame" x="0.0" y="324" width="325" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I59-qW-4wS">
+                                <rect key="frame" x="0.0" y="451" width="320" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView1" destination="e8Z-Iu-oTC" id="GaZ-Tc-cfI"/>
+                        <outlet property="webView2" destination="96D-iP-xiZ" id="h3Y-80-WQH"/>
+                        <outlet property="webView3" destination="MgB-XW-g2A" id="fpc-t1-PdX"/>
+                        <outlet property="webView4" destination="I59-qW-4wS" id="phS-JD-lc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WN6-Gw-pqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="-948"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qui-gW-83D">

@@ -9,6 +9,7 @@
 // View Controllers
 #import "RCTopicsController.h"
 #import "RCLoadingController.h"
+#import "TopicDetail_Backup.h"
 #import "RCTopicDetailController.h"
 
 // Views
@@ -239,7 +240,19 @@
 
 - (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     
-    RCTopicDetailController *topicDetailController = [self.storyboard instantiateViewControllerWithIdentifier:@"TopicDetailController"];
+    RCTopicDetailController *topicDetailController = [self.storyboard instantiateViewControllerWithIdentifier:@"TopicDetailController1"];
+    
+    NSInteger topicID = [sender[@"id"] integerValue];
+    topicDetailController.topicID = topicID;
+    
+    [self.navigationController pushViewController:topicDetailController animated:YES];
+
+}
+
+// backup code
+- (void)gotoTopicDetailController:(id)sender {
+    
+    TopicDetail_Backup *topicDetailController = [self.storyboard instantiateViewControllerWithIdentifier:@"TopicDetailController"];
     
     NSInteger topicID = [sender[@"id"] integerValue];
     topicDetailController.topicID = topicID;
@@ -251,6 +264,7 @@
     topicDetailController.topicAuthor = author;
     
     [self.navigationController pushViewController:topicDetailController animated:YES];
+    
 }
 
 

@@ -1,0 +1,39 @@
+NSDictionary *topicReplyData = [[NSDictionary alloc] init];
+
+if (self.topicRepliesData && self.topicRepliesData.count > 0) {
+    
+    topicReplyData = self.topicRepliesData[indexPath.row];
+
+    // 1. avatar image view
+    UIImageView *avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 13, 30, 30)];
+    [avatarView setImageWithURL:[NSURL URLWithString:topicReplyData[@"user"][@"avatar_url"]]
+               placeholderImage:[UIImage imageNamed:@"nobody.png"]];
+    avatarView.layer.opacity = 1.0;
+    avatarView.layer.cornerRadius = 5.0;
+    avatarView.clipsToBounds = YES;
+    [topicReplyCell addSubview:avatarView];
+    
+    // 2. username label
+    UILabel *usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(48, 9, 0, 19)];
+    usernameLabel.layer.opacity = 1.0;
+    usernameLabel.text = topicReplyData[@"user"][@"login"];
+    usernameLabel.font =[UIFont fontWithName:@"Helvetica Neue" size:16];
+    usernameLabel.textAlignment = NSTextAlignmentLeft;
+    [topicReplyCell addSubview:usernameLabel];
+    
+    // 3. replied time ago
+    CGRect lastRepliedFrame = CGRectMake(usernameLabel.frame.origin.x + usernameLabel.frame.size.width + 6, 12.5, 0, 14);
+    UILabel *repliedTimeAgoLabel = [[UILabel alloc] initWithFrame:lastRepliedFrame];
+    repliedTimeAgoLabel.layer.opacity = 1.0;
+    NSDate *lastRepliedDate = [[NSDate alloc] init];
+    lastRepliedDate = [self.dateFormatter dateFromString:topicReplyData[@"updated_at"]];
+    NSString *timeAgoString = [lastRepliedDate timeAgoSinceNow];
+    NSString *userRepiedTimeAgo = [NSString stringWithFormat:@"replied at %@", timeAgoString];
+    repliedTimeAgoLabel.text = userRepiedTimeAgo;
+    repliedTimeAgoLabel.font = [UIFont systemFontOfSize:9];
+    [repliedTimeAgoLabel sizeToFit];
+    [topicReplyCell addSubview:repliedTimeAgoLabel];
+    
+    // 4. replied content view
+
+}
