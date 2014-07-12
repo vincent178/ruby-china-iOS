@@ -56,6 +56,7 @@
 		67E92C2419715D2A00A5A02D /* UIView+findSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E92C2319715D2A00A5A02D /* UIView+findSuperView.m */; };
 		67E92C261971884500A5A02D /* PaginationFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67E92C251971884500A5A02D /* PaginationFooter.xib */; };
 		67E92C291971891E00A5A02D /* RCPaginationFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E92C281971891E00A5A02D /* RCPaginationFooter.m */; };
+		67E92C2C1971E02100A5A02D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67E92C2B1971E02100A5A02D /* QuartzCore.framework */; };
 		6A66753C6CC44B01BBF378E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E828A613CF4C26A9618932 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +142,7 @@
 		67E92C251971884500A5A02D /* PaginationFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaginationFooter.xib; path = Views/PaginationFooter.xib; sourceTree = "<group>"; };
 		67E92C271971891E00A5A02D /* RCPaginationFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCPaginationFooter.h; path = Views/RCPaginationFooter.h; sourceTree = "<group>"; };
 		67E92C281971891E00A5A02D /* RCPaginationFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCPaginationFooter.m; path = Views/RCPaginationFooter.m; sourceTree = "<group>"; };
+		67E92C2B1971E02100A5A02D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9EE6EB52497A4D65B35316ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C2E828A613CF4C26A9618932 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E92C2C1971E02100A5A02D /* QuartzCore.framework in Frameworks */,
 				679F6BFA196F0DD800B08FDF /* CoreGraphics.framework in Frameworks */,
 				679F6BF9196F0DCF00B08FDF /* Foundation.framework in Frameworks */,
 				679F6BF8196F0DC800B08FDF /* UIKit.framework in Frameworks */,
@@ -206,6 +209,7 @@
 		6789699A195E842F00354FCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				67E92C2B1971E02100A5A02D /* QuartzCore.framework */,
 				6789699B195E842F00354FCA /* Foundation.framework */,
 				6789699D195E842F00354FCA /* CoreGraphics.framework */,
 				6789699F195E842F00354FCA /* UIKit.framework */,
@@ -667,6 +671,28 @@
 				GCC_PREFIX_HEADER = "RubyChina-iOS/RubyChina-iOS-Prefix.pch";
 				INFOPLIST_FILE = "RubyChina-iOS/RubyChina-iOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-lxml2",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreText,
+					"-framework",
+					ImageIO,
+					"-framework",
+					MediaPlayer,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

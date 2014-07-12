@@ -21,12 +21,20 @@
 
 @implementation RCTopicDetailController
 
+- (void)setup {
+    
+    self.topicDetailData = [[NSDictionary alloc] init];
+    self.topicRepliesData = [[NSArray alloc] init];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.topicDetailData = [[NSDictionary alloc] init];
+    [self setup];
     
-    [self getTopicDetail];
+    
+    [self fetchTopicDetail];
     
 }
 
@@ -34,14 +42,14 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)getTopicDetail {
+- (void)fetchTopicDetail {
     
     RCAPIManager *apiManager = [RCAPIManager shareAPIManager];
     [apiManager fetchTopicDetail:self.topicID withHandler:^(NSDictionary *topicDetail, NSError *error) {
         
         self.topicDetailData = topicDetail;
-        
-        
+        self.topicRepliesData = topicDetail[@"replies"];
+
         [self.tableView reloadData];
     }];
 }
@@ -56,9 +64,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 1;
+        return 3;
     }
-    return 10;
+    return 0;
 }
 
 
@@ -66,49 +74,29 @@
     
     if (indexPath.section == 0) {
         
-        RCTopicDetailCell *topicDetailCell = [tableView dequeueReusableCellWithIdentifier:nil];
+        static NSString *TopicDetailCellIdentifier = @"TopicDetailCellIdentifier";
+        
+        RCTopicDetailCell *topicDetailCell = [tableView dequeueReusableCellWithIdentifier:TopicDetailCellIdentifier];
+        NSLog(@"dequeueReusableCellWithIdentifier");
         
         if (topicDetailCell == nil) {
-            topicDetailCell = [[RCTopicDetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+            topicDetailCell = [[RCTopicDetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TopicDetailCellIdentifier];
+            NSLog(@"initWithStyle");
         }
         
-        if (self.topicDetailData && self.topicDetailData.count > 0) {
-            topicDetailCell.topicDetailBody = self.topicDetailData[@"body_html"];
-            topicDetailCell.topicID = [NSString stringWithFormat:@"%ld", (long)self.topicID ];
+        topicDetailCell.topicDetailBody = self.topicDetailData[@"body_html"];
+        topicDetailCell.topicID = [NSString stringWithFormat:@"%ld", (long)self.topicID ];
+        [topicDetailCell setup];
             
-            [topicDetailCell setup];
-        }
-
         
         return topicDetailCell;
         
         
     } else if(indexPath.section == 1) {
         
-        static NSString *identifier = @"TopicReplyCellIdentifier";
+//        static NSString *TopicReplyCellIdentifier = @"TopicReplyCellIdentifier";
         
-        RCTopicDetailCell *topicDetailCell = [tableView dequeueReusableCellWithIdentifier:identifier];
-        
-        if (topicDetailCell == nil) {
-            topicDetailCell = [[RCTopicDetailCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-            
-        } else {
-            
-            while ([topicDetailCell.contentView.subviews lastObject] != nil) {
-                [(UIView *)[topicDetailCell.contentView.subviews lastObject] removeFromSuperview];
-            }
-        }
-        
-        if (self.topicDetailData && self.topicDetailData.count > 0) {
-            topicDetailCell.topicDetailBody = self.topicDetailData[@"body_html"];
-            topicDetailCell.topicID = [NSString stringWithFormat:@"%ld", (long)self.topicID ];
-            
-            [topicDetailCell setup];
-        }
-        
-        
-        return topicDetailCell;
-    
+        return nil;
     }
     
     return nil;
@@ -118,12 +106,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    if (indexPath.section == 0) {
-    
+    if (indexPath.section == 0) {
+        
+        NSLog(@"self.tableView.topicDetailHeight: %f", self.tableView.topicDetailHeight);
         return self.tableView.topicDetailHeight;
-//    }
+    }
     
-//    return 44;
+    return 44;
 }
 
 

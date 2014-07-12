@@ -7,6 +7,7 @@
 //
 
 #import "RCAppDelegate.h"
+#import <iOS-Hierarchy-Viewer/iOSHierarchyViewer.h>
 
 @implementation RCAppDelegate
 
@@ -38,6 +39,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    [iOSHierarchyViewer start];
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 

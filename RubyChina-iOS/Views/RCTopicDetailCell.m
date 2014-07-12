@@ -14,7 +14,14 @@
 @interface RCTopicDetailCell()
 
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) NSString *htmlTemplate;
+
+
+
+
 @property (nonatomic, strong) UIWebView *webView;
+
+
 
 @end
 
@@ -25,6 +32,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     if (self) {
+        
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.layer.opacity = 1;
         
@@ -59,13 +67,22 @@
         horizontalLine.layer.opacity = 1;
         [self addSubview:horizontalLine];
         
-        
-        self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(8, 20.5, self.frame.size.width, 0)];
+        self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(8, 20.5, self.frame.size.width, 10)];
+        self.webView.layer.opacity = 1.0;
         self.webView.delegate = self;
         self.webView.autoresizingMask = UIViewAutoresizingNone;
         self.webView.scrollView.scrollEnabled = NO;
         self.webView.scrollView.scrollsToTop = NO;
         [self addSubview:self.webView];
+        
+        
+        NSString  *path = [[NSBundle mainBundle] pathForResource:@"index" ofType: @"html"];
+        NSError *error = nil;
+        self.htmlTemplate = [NSString stringWithContentsOfFile:path
+                                                      encoding: NSUTF8StringEncoding
+                                                         error: &error];
+        
+   
         
     }
     
@@ -73,27 +90,13 @@
 }
 
 - (void)setup {
-
     
-    NSString  *path = [[NSBundle mainBundle] pathForResource:@"index" ofType: @"html"];
-    NSError *error = nil;
-    NSString *template = [NSString stringWithContentsOfFile:path
-                                                 encoding: NSUTF8StringEncoding
-                                                    error: &error];
-    
-//    template = [template stringByReplacingOccurrencesOfString:@"[[content_id]]"
-//                                                   withString:self.topicID];
-    
-    template = [template stringByReplacingOccurrencesOfString:@"[[content_body]]"
-                                                   withString:self.topicDetailBody];
-    
-    NSLog(@"template: %@", template);
-    
-    // Finally, load the content
-    [self.webView loadHTMLString:template
-                         baseURL:[[NSBundle mainBundle] bundleURL]];
-
-    
+    if (self.topicDetailBody) {
+        
+        NSString *template = [self.htmlTemplate stringByReplacingOccurrencesOfString:@"[[content_body]]"
+                                                                          withString:self.topicDetailBody];
+        [self.webView loadHTMLString:template baseURL:nil];
+    }
 }
 
 - (void)awakeFromNib {
@@ -102,15 +105,13 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 #pragma mark UIWebViewDelegate
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     NSLog(@"webViewDidStartLoad");
-    webView.alpha = 0.f;
+    webView.alpha = 1.f;
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
@@ -119,86 +120,24 @@
     NSLog(@"webViewDidFinishLoad");
     
     RCTopicTableView *tableView = (RCTopicTableView *)[self findSuperViewWithClass:[RCTopicTableView class]];
+    CGSize realSize = self.webView.scrollView.contentSize;
     
+    self.webView.frame = CGRectMake(0, 20.5, self.frame.size.width, realSize.height);
     
-    NSString *result = [webView stringByEvaluatingJavaScriptFromString:@"document.body.offsetHeight;"];
-    CGFloat height = [result floatValue];
-    CGFloat totalHeight = height + 20.5;
-    NSLog(@"totalHeight: %ld",(long)totalHeight);
-    
-    
+    CGFloat totalHeight = realSize.height + 20.5 + 4;
     tableView.topicDetailHeight = totalHeight;
     self.frame = CGRectMake(0, 0, self.frame.size.width, totalHeight);
-    self.webView.frame = CGRectMake(8, 20.5, self.frame.size.width, height);
     
     [tableView beginUpdates];
     [tableView endUpdates];
-    
-    NSLog(@"result: %@", result);
-    
-    
-    
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
-    
-//    NSLog(@"shouldStartLoadWithRequest");
-//    
-//    NSURL *url = [request URL];
-//    
-//    NSLog(@"url: %@", url);
-//    
-//    NSString *scheme = [url scheme];
-//    
-//    NSLog(@"scheme: %@", scheme);
-//    
-//    if ([scheme isEqualToString:@"ready"]) {
-//        
-//        // URLs look like ready://content/12345/232
-//        //                     content id --^    ^---- document height
-//        
-//        
-//        NSString *topicID = [[url pathComponents] objectAtIndex:1];
-//        
-//        if (![self.topicID isEqualToString:topicID]) { // sanity check
-//            return NO;
-//        }
-//        
-//        RCTopicTableView *tableView = (RCTopicTableView *)[self findSuperViewWithClass:[RCTopicTableView class]];
-//        
-//        
-//        NSInteger height = [[[url pathComponents] objectAtIndex:2] integerValue];
-//        NSInteger totalHeight = height + 20.5;
-//        NSLog(@"totalHeight: %ld",(long)totalHeight);
-//        
-//        if (totalHeight != tableView.topicDetailHeight) {
-//            
-//            tableView.topicDetailHeight = totalHeight;
-//            self.frame = CGRectMake(0, 0, self.frame.size.width, totalHeight);
-//            self.webView.frame = CGRectMake(0, 20.5, self.frame.size.width, height);
-//            
-//            NSLog(@"self.frame: %@", NSStringFromCGRect(self.frame));
-//            NSLog(@"self.webView.frame: %@", NSStringFromCGRect(self.webView.frame));
-//            
-//            [tableView beginUpdates];
-//            [tableView endUpdates];
-//        }
-//        
-//        return NO;
-//    }
-//    
     return YES;
     
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    CGRect r = self.webView.frame;
-    r.origin = CGPointMake(0, 20.5);
-    r.size = CGSizeMake(self.frame.size.width, 10);
-    self.webView.frame = r;
-}
+
 
 @end

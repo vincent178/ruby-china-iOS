@@ -15,6 +15,9 @@
 
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
+@property (nonatomic, strong) UIImageView *avatarView;
+@property (nonatomic, strong) UILabel *replyNumberLabel;
+
 @end
 
 @implementation RCTopicCell
@@ -28,37 +31,52 @@
         self.dateFormatter = [[NSDateFormatter alloc] init];
         self.dateFormatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss.SSSZZZ";
         
+        
+        self.frame = CGRectMake(0, 0, _size.width, _size.height);
+        self.layer.opacity = 1.0;
+        
+        // 1. avatar image view
+        self.avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 18.5, 30, 30)];
+        self.avatarView.layer.opacity = 1.0;
+        self.avatarView.layer.cornerRadius = 5.0;
+        self.avatarView.clipsToBounds = YES;
+        [self addSubview:self.avatarView];
+        
+        
+        // 2. reply number view
+        UIImageView *replyLabelBackgroundView = [[UIImageView alloc] initWithFrame:CGRectMake(273, 25.5, 37.5, 15)];
+        replyLabelBackgroundView.layer.opacity = 1.0;
+        self.replyNumberLabel = [[UILabel alloc] initWithFrame:replyLabelBackgroundView.frame];
+        self.replyNumberLabel.layer.opacity = 1.0;
+        replyLabelBackgroundView.image = [UIImage imageNamed:@"reply_number_bg.png"];
+        self.replyNumberLabel.textAlignment = NSTextAlignmentCenter;
+        self.replyNumberLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:12];
+        self.replyNumberLabel.backgroundColor = [UIColor clearColor];
+        self.replyNumberLabel.textColor = [UIColor whiteColor];
+        [self addSubview:replyLabelBackgroundView];
+        [self addSubview:self.replyNumberLabel];
+        
+        
+        
+        
     }
     return self;
 }
 
 - (void)setup {
     
-    self.frame = CGRectMake(0, 0, _size.width, _size.height);
-    self.layer.opacity = 1.0;
+
     
-    // 1. avatar image view
-    UIImageView *avatarView = [[UIImageView alloc] initWithFrame:CGRectMake(8, 18.5, 30, 30)];
-    [avatarView setImageWithURL:[NSURL URLWithString:self.avatarURL] placeholderImage:[UIImage imageNamed:@"nobody.png"]];
-    avatarView.layer.opacity = 1.0;
-    avatarView.layer.cornerRadius = 5.0;
-    avatarView.clipsToBounds = YES;
-    [self addSubview:avatarView];
+
+    [self.avatarView setImageWithURL:[NSURL URLWithString:self.avatarURL] placeholderImage:[UIImage imageNamed:@"nobody.png"]];
+    
+    self.replyNumberLabel.text = self.replyNumber;
+
     
     
-    // 2. reply number view
-    UIImageView *replyLabelBackgroundView = [[UIImageView alloc] initWithFrame:CGRectMake(273, 25.5, 37.5, 15)];
-    replyLabelBackgroundView.layer.opacity = 1.0;
-    UILabel *replyNumberLabel = [[UILabel alloc] initWithFrame:replyLabelBackgroundView.frame];
-    replyNumberLabel.layer.opacity = 1.0;
-    replyLabelBackgroundView.image = [UIImage imageNamed:@"reply_number_bg.png"];
-    replyNumberLabel.text = self.replyNumber;
-    replyNumberLabel.textAlignment = NSTextAlignmentCenter;
-    replyNumberLabel.font = [UIFont fontWithName:@"Helvetica Neue" size:12];
-    replyNumberLabel.backgroundColor = [UIColor clearColor];
-    replyNumberLabel.textColor = [UIColor whiteColor];
-    [self addSubview:replyLabelBackgroundView];
-    [self addSubview:replyNumberLabel];
+
+
+
     
     
     // 3. username view
