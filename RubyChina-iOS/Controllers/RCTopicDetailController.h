@@ -13,6 +13,8 @@
 @interface RCTopicDetailController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, assign) NSInteger topicID;
+@property (nonatomic, strong) NSString *topicAuthorName;
+@property (nonatomic, strong) NSString *topicTitle;
 
 
 @property (weak, nonatomic) IBOutlet RCTopicTableView *tableView;

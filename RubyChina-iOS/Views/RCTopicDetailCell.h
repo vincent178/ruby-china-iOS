@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString *authorName;
 @property (nonatomic, strong) NSString *topicDetailBody;
 @property (nonatomic, strong) NSString *topicID;
+@property (nonatomic, strong) NSString *topicTitle;
 
 - (void)setup;
 

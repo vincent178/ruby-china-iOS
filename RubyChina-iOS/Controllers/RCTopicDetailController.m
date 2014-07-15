@@ -26,6 +26,7 @@
     self.topicDetailData = [[NSDictionary alloc] init];
     self.topicRepliesData = [[NSArray alloc] init];
     
+    
 }
 
 - (void)viewDidLoad {
@@ -64,9 +65,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 3;
+        return 1;
     }
-    return 0;
+    return self.topicRepliesData.count;
 }
 
 
@@ -84,9 +85,22 @@
             NSLog(@"initWithStyle");
         }
         
+        topicDetailCell.createdDateString = self.topicDetailData[@"created_at"];
+        NSLog(@"topicDetailCell.createdDateString: %@", topicDetailCell.createdDateString);
+        
+        topicDetailCell.nodeName = self.topicDetailData[@"node_name"];
+        NSLog(@"topicDetailCell.nodeName: %@", topicDetailCell.nodeName);
+        
+        topicDetailCell.authorName = self.topicAuthorName;
+        NSLog(@"topicDetailCell.authorName: %@", topicDetailCell.authorName);
+        
+        topicDetailCell.topicTitle = self.topicTitle;
+        NSLog(@"topicDetailCell.topicTitle: %@", topicDetailCell.topicTitle);
+        
         topicDetailCell.topicDetailBody = self.topicDetailData[@"body_html"];
         topicDetailCell.topicID = [NSString stringWithFormat:@"%ld", (long)self.topicID ];
-        [topicDetailCell setup];
+        
+       [topicDetailCell setup];
             
         
         return topicDetailCell;
@@ -94,9 +108,28 @@
         
     } else if(indexPath.section == 1) {
         
-//        static NSString *TopicReplyCellIdentifier = @"TopicReplyCellIdentifier";
+        static NSString *TopicReplyCellIdentifier = @"TopicReplyCellIdentifier";
         
-        return nil;
+        RCTopicReplyCell *topicReplyCell = [tableView dequeueReusableCellWithIdentifier:TopicReplyCellIdentifier];
+        
+        if (topicReplyCell == nil) {
+            topicReplyCell = [[RCTopicReplyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TopicReplyCellIdentifier];
+        }
+        
+        NSDictionary *topicReplyData = self.topicRepliesData[indexPath.row];
+        
+        
+        topicReplyCell.replyBody = topicReplyData[@"body_html"];
+        topicReplyCell.replyID = topicReplyData[@"id"];
+        topicReplyCell.replyDateString = topicReplyData[@"created_at"];
+        topicReplyCell.avatarURL = topicReplyData[@"user"][@"avatar_url"];
+        topicReplyCell.username = topicReplyData[@"user"][@"login"];
+        topicReplyCell.userID = topicReplyData[@"user"][@"id"];
+        topicReplyCell.indexPathRow = indexPath.row;
+        
+        [topicReplyCell updateContent];
+        
+        return topicReplyCell;
     }
     
     return nil;
@@ -108,8 +141,13 @@
     
     if (indexPath.section == 0) {
         
-        NSLog(@"self.tableView.topicDetailHeight: %f", self.tableView.topicDetailHeight);
         return self.tableView.topicDetailHeight;
+    }
+    
+    if (indexPath.section == 1) {
+        
+        NSLog(@"cellHeight: %f", [self.tableView.topicReplyHeights[indexPath.row] floatValue]);
+        return [self.tableView.topicReplyHeights[indexPath.row] floatValue];
     }
     
     return 44;

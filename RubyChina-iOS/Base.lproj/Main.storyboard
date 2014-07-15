@@ -199,53 +199,6 @@
             </objects>
             <point key="canvasLocation" x="512" y="-1013"/>
         </scene>
-        <!--Test Controller-->
-        <scene sceneID="OZz-kN-PaO">
-            <objects>
-                <viewController id="VLT-G5-aTO" customClass="RCTestController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Gh-MQ-aCE"/>
-                        <viewControllerLayoutGuide type="bottom" id="frW-fk-dLJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AvQ-O2-fi2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-Iu-oTC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                            </webView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96D-iP-xiZ">
-                                <rect key="frame" x="0.0" y="197" width="325" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgB-XW-g2A">
-                                <rect key="frame" x="0.0" y="324" width="325" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I59-qW-4wS">
-                                <rect key="frame" x="0.0" y="451" width="320" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="webView1" destination="e8Z-Iu-oTC" id="GaZ-Tc-cfI"/>
-                        <outlet property="webView2" destination="96D-iP-xiZ" id="h3Y-80-WQH"/>
-                        <outlet property="webView3" destination="MgB-XW-g2A" id="fpc-t1-PdX"/>
-                        <outlet property="webView4" destination="I59-qW-4wS" id="phS-JD-lc5"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WN6-Gw-pqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="130" y="-948"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qui-gW-83D">
             <objects>

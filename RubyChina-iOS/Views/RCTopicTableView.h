@@ -11,5 +11,6 @@
 @interface RCTopicTableView : UITableView
 
 @property (nonatomic, assign) CGFloat topicDetailHeight;
+@property (nonatomic, strong) NSMutableArray *topicReplyHeights;
 
 @end

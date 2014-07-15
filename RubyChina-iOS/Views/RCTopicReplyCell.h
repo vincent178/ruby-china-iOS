@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RCTopicReplyCell : UITableViewCell
+@interface RCTopicReplyCell : UITableViewCell <UIWebViewDelegate>
 
+@property (nonatomic, strong) NSString *avatarURL;
+@property (nonatomic, strong) NSString *replyBody;
+@property (nonatomic, strong) NSNumber *replyID;
+@property (nonatomic, strong) NSString *replyDateString;
+@property (nonatomic, strong) NSNumber *userID;
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, assign) NSInteger indexPathRow;
 
-- (void)setup;
+- (void)updateContent;
 
 @end

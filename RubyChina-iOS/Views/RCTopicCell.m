@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) UIImageView *avatarView;
 @property (nonatomic, strong) UILabel *replyNumberLabel;
+@property (nonatomic, strong) UILabel *usernameLabel;
 
 @end
 
@@ -57,7 +58,12 @@
         [self addSubview:self.replyNumberLabel];
         
         
-        
+        // 3. username view
+        self.usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(48, 14, 100, 18)];
+        self.usernameLabel.layer.opacity = 1.0;
+        self.usernameLabel.font =[UIFont fontWithName:@"Helvetica Neue" size:16];
+        self.usernameLabel.textAlignment = NSTextAlignmentLeft;
+        [self addSubview:self.usernameLabel];
         
     }
     return self;
@@ -71,23 +77,9 @@
     [self.avatarView setImageWithURL:[NSURL URLWithString:self.avatarURL] placeholderImage:[UIImage imageNamed:@"nobody.png"]];
     
     self.replyNumberLabel.text = self.replyNumber;
-
-    
-    
+    self.usernameLabel.text = self.username;
 
 
-
-    
-    
-    // 3. username view
-    UILabel *usernameLabel = [[UILabel alloc] initWithFrame:CGRectMake(48, 14, 100, 18)];
-    usernameLabel.layer.opacity = 1.0;
-    usernameLabel.text = self.username;
-    usernameLabel.font =[UIFont fontWithName:@"Helvetica Neue" size:16];
-    usernameLabel.textAlignment = NSTextAlignmentLeft;
-    [self addSubview:usernameLabel];
-    
-    
     //TODO: 4. category view
     UILabel *nodenameLabel = [[UILabel alloc] initWithFrame:CGRectMake(48, 37.5, 0, 15)];
     nodenameLabel.text = self.nodeName;
