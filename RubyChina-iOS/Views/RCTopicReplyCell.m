@@ -122,7 +122,11 @@
     
     
     CGFloat totalHeight = realSize.height + 20.5 + 4;
-    [tableView.topicReplyHeights insertObject:@(totalHeight) atIndex:self.indexPathRow];
+    
+    
+    [tableView.topicReplyHeights replaceObjectAtIndex:self.indexPathRow withObject:@(totalHeight)];
+//    [tableView.topicReplyHeights insertObject:@(totalHeight) atIndex:self.indexPathRow];
+    
     NSLog(@"self.indexPathRow: %ld", self.indexPathRow);
     NSLog(@"totalHeight: %f", totalHeight);
     
@@ -135,7 +139,6 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
     return YES;
-    
 }
 
 

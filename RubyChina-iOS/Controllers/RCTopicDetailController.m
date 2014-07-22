@@ -146,8 +146,21 @@
     
     if (indexPath.section == 1) {
         
-        NSLog(@"cellHeight: %f", [self.tableView.topicReplyHeights[indexPath.row] floatValue]);
-        return [self.tableView.topicReplyHeights[indexPath.row] floatValue];
+//        if (self.tableView.topicReplyHeights.count > 0) {
+//            NSLog(@"cellHeight: %f", [self.tableView.topicReplyHeights[indexPath.row] floatValue]);
+//            return [self.tableView.topicReplyHeights[indexPath.row] floatValue];
+//        }
+        
+        if (indexPath.row >= self.tableView.topicReplyHeights.count) {
+            for (int i = 0; i < 10; i++) {
+                [self.tableView.topicReplyHeights addObject:[NSNull null]];
+            }
+        }
+        
+        if ([self.tableView.topicReplyHeights[indexPath.row] respondsToSelector:@selector(floatValue)]) {
+            NSLog(@"cellHeight: %f", [self.tableView.topicReplyHeights[indexPath.row] floatValue]);
+            return [self.tableView.topicReplyHeights[indexPath.row] floatValue];
+        }
     }
     
     return 44;
